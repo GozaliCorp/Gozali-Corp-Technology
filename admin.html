@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Panel Admin — Gozali Digital Production</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --navy:#0E1A40; --navy-2:#16265C; --gold:#F4B63E; --gold-2:#E09A1F;
+  --orange:#F97316; --orange-2:#EA6A0A; --ai:#21B8D6; --ai-2:#1796B0;
+  --cream:#FBF6EC; --ink:#0E1A40; --muted:#5B6488; --line:rgba(14,26,64,.12);
+  --radius:18px; --shadow:0 14px 34px -16px rgba(14,26,64,.30); --shadow-sm:0 6px 16px -10px rgba(14,26,64,.3);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --fd:"Fraunces",Georgia,serif; --fb:"Plus Jakarta Sans",system-ui,sans-serif;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family:var(--fb); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+.wrap{ max-width:1100px; margin-inline:auto; padding-inline:22px; }
+
+/* ---------- Top bar ---------- */
+.bar{ position:sticky; top:0; z-index:30; background:rgba(251,246,236,.88); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.bar__in{ display:flex; align-items:center; justify-content:space-between; gap:14px; height:66px; flex-wrap:wrap; }
+.brand{ display:flex; align-items:center; gap:11px; font-family:var(--fd); font-weight:700; font-size:1.12rem; }
+.brand__dot{ width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,var(--gold),var(--orange)); display:grid; place-items:center; color:var(--navy); font-weight:800; transform:rotate(-8deg); box-shadow:var(--shadow-sm); }
+.brand .tag{ font-family:var(--fb); font-size:.66rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:var(--navy); padding:3px 9px; border-radius:100px; margin-left:4px; }
+.bar__act{ display:flex; gap:10px; flex-wrap:wrap; }
+
+/* ---------- Buttons ---------- */
+.btn{ --bg:var(--navy); --fg:#fff; display:inline-flex; align-items:center; gap:8px; font-family:var(--fb); font-weight:700; font-size:.9rem; background:var(--bg); color:var(--fg); padding:11px 18px; border:0; border-radius:100px; cursor:pointer; transition:transform .3s var(--ease), box-shadow .3s var(--ease), background .2s; box-shadow:var(--shadow-sm); }
+.btn:hover{ transform:translateY(-2px); }
+.btn--gold{ --bg:var(--gold); --fg:var(--navy); } .btn--gold:hover{ background:var(--gold-2); }
+.btn--orange{ --bg:var(--orange); --fg:#fff; } .btn--orange:hover{ background:var(--orange-2); }
+.btn--ghost{ --bg:#fff; --fg:var(--navy); border:1.6px solid var(--line); box-shadow:none; } .btn--ghost:hover{ border-color:var(--navy); }
+.btn--sm{ padding:8px 13px; font-size:.82rem; }
+.btn:disabled{ opacity:.5; cursor:not-allowed; transform:none; }
+
+/* ---------- Layout ---------- */
+.head{ padding:30px 0 6px; }
+.head h1{ font-family:var(--fd); font-size:clamp(1.6rem,4vw,2.2rem); }
+.head p{ color:var(--muted); margin-top:4px; }
+.grid{ display:grid; grid-template-columns:minmax(0,420px) 1fr; gap:24px; align-items:start; padding-block:24px 60px; }
+.card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+.card__pad{ padding:24px; }
+.panel-form{ position:sticky; top:84px; }
+
+/* ---------- Form ---------- */
+.card h2{ font-family:var(--fd); font-size:1.3rem; margin-bottom:4px; }
+.card .sub{ color:var(--muted); font-size:.9rem; margin-bottom:18px; }
+.row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.field{ display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
+.field.full{ grid-column:1 / -1; }
+label{ font-weight:600; font-size:.86rem; }
+input,select,textarea{ font-family:var(--fb); font-size:.94rem; color:var(--ink); padding:12px 13px; border:1.6px solid var(--line); border-radius:12px; background:var(--cream); width:100%; transition:border-color .2s, box-shadow .2s; }
+textarea{ resize:vertical; min-height:78px; }
+input:focus,select:focus,textarea:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 4px rgba(244,182,62,.18); background:#fff; }
+.uploader{ display:flex; align-items:center; gap:14px; border:1.6px dashed var(--line); border-radius:14px; padding:13px; background:var(--cream); }
+.uploader__prev{ width:70px; height:70px; flex:none; border-radius:12px; overflow:hidden; background:linear-gradient(135deg,var(--navy),var(--navy-2)); display:grid; place-items:center; }
+.uploader__prev svg{ width:28px; height:28px; opacity:.6; } .uploader__prev img{ width:100%; height:100%; object-fit:cover; }
+.uploader__btn{ font-weight:700; font-size:.85rem; color:var(--navy); background:var(--gold); padding:9px 15px; border-radius:100px; cursor:pointer; display:inline-block; }
+.uploader__btn:hover{ background:var(--gold-2); } .uploader small{ display:block; color:var(--muted); margin-top:5px; font-size:.78rem; }
+.form-act{ display:flex; gap:10px; margin-top:18px; flex-wrap:wrap; align-items:center; }
+.msg{ font-size:.86rem; font-weight:600; }
+
+/* ---------- List ---------- */
+.list-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; flex-wrap:wrap; }
+.list-head h2{ font-family:var(--fd); font-size:1.3rem; }
+.count{ font-size:.82rem; font-weight:700; color:var(--navy); background:rgba(14,26,64,.07); padding:4px 11px; border-radius:100px; }
+.item{ display:flex; align-items:center; gap:14px; padding:13px; border:1px solid var(--line); border-radius:14px; margin-bottom:11px; background:#fff; transition:box-shadow .25s, transform .25s; }
+.item:hover{ box-shadow:var(--shadow-sm); }
+.item.editing{ border-color:var(--gold); box-shadow:0 0 0 3px rgba(244,182,62,.2); }
+.item__cov{ width:58px; height:58px; flex:none; border-radius:11px; overflow:hidden; display:grid; place-items:center; position:relative; }
+.item__cov svg{ width:24px; height:24px; } .item__cov img{ width:100%; height:100%; object-fit:cover; }
+.item__main{ flex:1; min-width:0; }
+.item__main h3{ font-family:var(--fb); font-weight:700; font-size:1rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.item__meta{ display:flex; align-items:center; gap:8px; margin-top:3px; flex-wrap:wrap; }
+.badge{ font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 9px; border-radius:100px; color:#fff; }
+.b-Ebook{ background:var(--navy-2); } .b-Digital{ background:var(--gold-2); } .b-Jasa{ background:var(--orange); } .b-AI{ background:var(--ai-2); }
+.item__price{ font-weight:700; font-size:.9rem; } .item__price s{ color:var(--muted); font-weight:500; font-size:.78rem; margin-left:5px; }
+.item__act{ display:flex; gap:7px; flex:none; }
+.iconbtn{ width:36px; height:36px; border-radius:10px; border:1.6px solid var(--line); background:#fff; cursor:pointer; display:grid; place-items:center; transition:.2s; font-size:.95rem; }
+.iconbtn:hover{ border-color:var(--navy); } .iconbtn.del:hover{ background:#fde7e1; border-color:var(--orange-2); color:var(--orange-2); }
+.empty{ text-align:center; color:var(--muted); padding:40px 16px; border:1.6px dashed var(--line); border-radius:14px; }
+
+/* ---------- JSON export ---------- */
+.export{ margin-top:18px; padding-top:18px; border-top:1px solid var(--line); }
+.export .note{ font-size:.86rem; color:var(--muted); margin-bottom:12px; }
+.export .note code{ background:rgba(14,26,64,.08); padding:2px 6px; border-radius:6px; }
+details summary{ cursor:pointer; font-weight:600; font-size:.86rem; margin-top:12px; }
+textarea.json{ margin-top:10px; min-height:150px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.8rem; background:var(--navy); color:#D6DBF0; border-color:transparent; }
+
+/* ---------- Banner ---------- */
+.banner{ display:none; gap:10px; align-items:flex-start; background:#fff7e6; border:1px solid #F4B63E; border-radius:14px; padding:13px 15px; margin-top:16px; font-size:.86rem; color:#7a5b12; }
+.banner.show{ display:flex; }
+
+@media (max-width:860px){
+  .grid{ grid-template-columns:1fr; }
+  .panel-form{ position:static; }
+}
+@media (prefers-reduced-motion:reduce){ *{ transition:none !important; } }
+a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-offset:2px; border-radius:8px; }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar__in">
+    <div class="brand">
+      <span class="brand__dot">G</span> Gozali <span class="tag">Panel Admin</span>
+    </div>
+    <div class="bar__act">
+      <a href="index.html" class="btn btn--ghost btn--sm" target="_blank">↗ Lihat situs</a>
+      <button class="btn btn--ghost btn--sm" id="reload" type="button">⟳ Muat ulang</button>
+      <button class="btn btn--gold btn--sm" id="download" type="button">⬇ Download products.json</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="head">
+    <h1>Kelola produk &amp; ebook</h1>
+    <p>Tambah, ubah, atau hapus produk. Setelah selesai, unduh <code>products.json</code> lalu ganti file itu di repo GitHub agar katalog tayang untuk semua pengunjung.</p>
+    <div class="banner" id="offlineBanner">
+      <span>⚠️</span>
+      <span><b>Mode lokal:</b> file <code>products.json</code> tidak bisa dibaca saat dibuka lewat <code>file://</code>, jadi daftar di bawah memakai data contoh bawaan. Setelah online di GitHub Pages, daftar akan terbaca dari <code>products.json</code> sungguhan. Anda tetap bisa menyusun &amp; mengunduh JSON dari sini.</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- ===== FORM ===== -->
+    <div class="card panel-form">
+      <div class="card__pad">
+        <h2 id="formTitle">Tambah produk</h2>
+        <p class="sub" id="formSub">Isi detail di bawah lalu klik “Tambah”.</p>
+
+        <div class="row">
+          <div class="field">
+            <label for="fNama">Nama produk *</label>
+            <input id="fNama" type="text" placeholder="cth: Ebook Jago Excel" />
+          </div>
+          <div class="field">
+            <label for="fKat">Kategori</label>
+            <select id="fKat">
+              <option value="Ebook">Ebook</option>
+              <option value="Digital">Produk Digital</option>
+              <option value="Jasa">Jasa / Paket</option>
+              <option value="AI">AI Tools / Agent</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="fHarga">Harga *</label>
+            <input id="fHarga" type="text" placeholder="Rp 49rb" />
+          </div>
+          <div class="field">
+            <label for="fCoret">Harga coret</label>
+            <input id="fCoret" type="text" placeholder="Rp 99rb (opsional)" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="fDesk">Deskripsi singkat</label>
+          <textarea id="fDesk" placeholder="Ceritakan singkat isi/produk ini…"></textarea>
+        </div>
+        <div class="field">
+          <label>Gambar produk</label>
+          <div class="uploader">
+            <div class="uploader__prev" id="prev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>
+            </div>
+            <div>
+              <label class="uploader__btn" for="fImg">Unggah gambar</label>
+              <input id="fImg" type="file" accept="image/*" hidden />
+              <small>JPG/PNG, opsional. Kosong = pakai warna kategori.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-act">
+          <button class="btn btn--orange" id="save" type="button">Tambah</button>
+          <button class="btn btn--ghost" id="cancel" type="button" style="display:none">Batal edit</button>
+          <span class="msg" id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== LIST + EXPORT ===== -->
+    <div class="card">
+      <div class="card__pad">
+        <div class="list-head">
+          <h2>Daftar produk</h2>
+          <span class="count" id="count">0 produk</span>
+        </div>
+        <div id="list"></div>
+
+        <div class="export">
+          <p class="note">Langkah terbit: <b>Download products.json</b> → buka repo GitHub → <code>Add file → Upload files</code> → ganti <code>products.json</code> lama → commit.</p>
+          <div class="bar__act">
+            <button class="btn btn--gold btn--sm" id="download2" type="button">⬇ Download products.json</button>
+            <button class="btn btn--ghost btn--sm" id="copy" type="button">Salin JSON</button>
+          </div>
+          <details>
+            <summary>Lihat isi products.json</summary>
+            <textarea class="json" id="jsonBox" readonly spellcheck="false"></textarea>
+          </details>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  const covers = {
+    Ebook:'linear-gradient(135deg,#243a7a,#16265C)',
+    Digital:'linear-gradient(135deg,#E09A1F,#F97316)',
+    Jasa:'linear-gradient(135deg,#F97316,#c0392b)',
+    AI:'linear-gradient(135deg,#16265C,#21B8D6)'
+  };
+  const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>';
+  const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const $ = id => document.getElementById(id);
+
+  const DEFAULT_PRODUCTS = [
+    {nama:"Mahir Bikin Konten Viral", kat:"Ebook", harga:"Rp 49rb", coret:"Rp 99rb",
+     desk:"Panduan lengkap bikin konten yang nempel di Instagram, TikTok, X, dan Facebook.", img:""},
+    {nama:"Paket Konten Medsos 30 Hari", kat:"Jasa", harga:"Rp 1,5jt", coret:"",
+     desk:"Konten siap tayang sebulan penuh: desain, video reels, caption, dan jadwal posting.", img:""},
+    {nama:"AI Agent Auto-Reply WhatsApp", kat:"AI", harga:"Rp 750rb", coret:"",
+     desk:"Chatbot AI yang membalas pesan pelanggan otomatis 24/7, lengkap dengan setup.", img:""},
+    {nama:"Template & Preset Editing Reels", kat:"Digital", harga:"Rp 79rb", coret:"Rp 149rb",
+     desk:"Kumpulan template dan preset siap pakai untuk edit reels lebih cepat dan rapi.", img:""}
+  ];
+
+  let products = [];
+  let editIndex = -1;   // -1 = mode tambah
+  let imgData = '';
+
+  function flash(text, ok){
+    $('msg').style.color = ok===false ? '#c0392b' : '#1f8a55';
+    $('msg').textContent = text;
+    if (text) setTimeout(()=>{ $('msg').textContent=''; }, 3500);
+  }
+  function setPreview(src){
+    $('prev').innerHTML = src
+      ? '<img src="'+src+'" alt="">'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>';
+  }
+  function refreshJson(){ $('jsonBox').value = JSON.stringify(products, null, 2); }
+
+  function renderList(){
+    const list = $('list');
+    $('count').textContent = products.length + ' produk';
+    if (!products.length){ list.innerHTML = '<div class="empty">Belum ada produk. Tambah lewat form di kiri.</div>'; refreshJson(); return; }
+    list.innerHTML = '';
+    products.forEach((p,i)=>{
+      const row = document.createElement('div');
+      row.className = 'item' + (i===editIndex ? ' editing' : '');
+      const cov = p.img ? '<img src="'+p.img+'" alt="">' : ICON;
+      const coret = p.coret ? '<s>'+esc(p.coret)+'</s>' : '';
+      row.innerHTML =
+        '<div class="item__cov" style="background:'+(covers[p.kat]||covers.Ebook)+'">'+cov+'</div>'+
+        '<div class="item__main">'+
+          '<h3>'+esc(p.nama)+'</h3>'+
+          '<div class="item__meta">'+
+            '<span class="badge b-'+esc(p.kat)+'">'+esc(p.kat)+'</span>'+
+            '<span class="item__price">'+esc(p.harga)+coret+'</span>'+
+          '</div>'+
+        '</div>'+
+        '<div class="item__act">'+
+          '<button class="iconbtn edit" title="Edit">✎</button>'+
+          '<button class="iconbtn del" title="Hapus">🗑</button>'+
+        '</div>';
+      row.querySelector('.edit').addEventListener('click', ()=>startEdit(i));
+      row.querySelector('.del').addEventListener('click', ()=>removeItem(i));
+      list.appendChild(row);
+    });
+    refreshJson();
+  }
+
+  function clearForm(){
+    $('fNama').value=''; $('fHarga').value=''; $('fCoret').value=''; $('fDesk').value='';
+    $('fKat').value='Ebook'; $('fImg').value=''; imgData=''; setPreview('');
+  }
+  function toAddMode(){
+    editIndex = -1;
+    $('formTitle').textContent='Tambah produk';
+    $('formSub').textContent='Isi detail di bawah lalu klik “Tambah”.';
+    $('save').textContent='Tambah';
+    $('cancel').style.display='none';
+    clearForm(); renderList();
+  }
+  function startEdit(i){
+    editIndex = i;
+    const p = products[i];
+    $('fNama').value=p.nama||''; $('fKat').value=p.kat||'Ebook';
+    $('fHarga').value=p.harga||''; $('fCoret').value=p.coret||''; $('fDesk').value=p.desk||'';
+    imgData = p.img||''; setPreview(imgData);
+    $('formTitle').textContent='Edit produk';
+    $('formSub').textContent='Ubah detail lalu klik “Simpan perubahan”.';
+    $('save').textContent='Simpan perubahan';
+    $('cancel').style.display='';
+    renderList();
+    window.scrollTo({ top:0, behavior:'smooth' });
+  }
+  function removeItem(i){
+    if (!confirm('Hapus produk "'+products[i].nama+'"?')) return;
+    products.splice(i,1);
+    if (editIndex===i) toAddMode(); else { if (editIndex>i) editIndex--; renderList(); }
+    flash('Produk dihapus. Jangan lupa Download products.json.');
+  }
+
+  $('save').addEventListener('click', ()=>{
+    const nama=$('fNama').value.trim(), harga=$('fHarga').value.trim();
+    if(!nama || !harga){ flash('Nama dan harga wajib diisi.', false); return; }
+    const p = { nama, kat:$('fKat').value, harga, coret:$('fCoret').value.trim(), desk:$('fDesk').value.trim(), img:imgData };
+    if (editIndex===-1){ products.push(p); flash('Ditambahkan. Jangan lupa Download products.json.'); }
+    else { products[editIndex]=p; flash('Perubahan disimpan. Jangan lupa Download products.json.'); }
+    toAddMode();
+  });
+  $('cancel').addEventListener('click', toAddMode);
+
+  $('fImg').addEventListener('change', ()=>{
+    const f=$('fImg').files[0]; if(!f) return;
+    const r=new FileReader(); r.onload=()=>{ imgData=r.result; setPreview(imgData); }; r.readAsDataURL(f);
+  });
+
+  function downloadJson(){
+    const blob=new Blob([JSON.stringify(products,null,2)],{type:'application/json'});
+    const url=URL.createObjectURL(blob); const a=document.createElement('a');
+    a.href=url; a.download='products.json'; document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    flash('products.json terunduh. Upload ke GitHub untuk menerbitkan.');
+  }
+  $('download').addEventListener('click', downloadJson);
+  $('download2').addEventListener('click', downloadJson);
+  $('copy').addEventListener('click', async ()=>{
+    try{ await navigator.clipboard.writeText(JSON.stringify(products,null,2)); }
+    catch(e){ $('jsonBox').focus(); $('jsonBox').select(); document.execCommand('copy'); }
+    flash('JSON disalin ke clipboard.');
+  });
+
+  function load(){
+    fetch('products.json',{cache:'no-store'})
+      .then(r=>{ if(!r.ok) throw 0; return r.json(); })
+      .then(d=>{ products = Array.isArray(d)?d:DEFAULT_PRODUCTS.slice(); $('offlineBanner').classList.remove('show'); renderList(); })
+      .catch(()=>{ products = DEFAULT_PRODUCTS.slice(); $('offlineBanner').classList.add('show'); renderList(); });
+  }
+  $('reload').addEventListener('click', ()=>{ toAddMode(); load(); flash('Dimuat ulang dari products.json.'); });
+
+  load();
+})();
+</script>
+</body>
+</html>
