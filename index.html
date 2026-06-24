@@ -373,6 +373,32 @@ h1,h2,h3{ font-family:var(--font-display); line-height:1.08; font-weight:600; }
 .reveal[data-d="3"]{ transition-delay:.24s }
 
 /* =========================================================
+   PEMBAYARAN
+   ========================================================= */
+.pay{ background:var(--white); }
+.pay-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.pay-card{ background:var(--cream); border:1px solid rgba(14,26,64,.07); border-radius:var(--radius-lg); padding:30px; position:relative; overflow:hidden; }
+.pay-card__ic{ width:52px; height:52px; border-radius:15px; display:grid; place-items:center; margin-bottom:16px; }
+.pay-card:nth-child(1) .pay-card__ic{ background:rgba(33,184,214,.16); color:var(--ai-2); }
+.pay-card:nth-child(2) .pay-card__ic{ background:rgba(244,182,62,.2); color:var(--gold-2); }
+.pay-card__ic svg{ width:26px; height:26px; }
+.pay-card h3{ font-size:1.3rem; font-weight:600; margin-bottom:6px; }
+.pay-card p.k{ color:var(--muted); font-size:.92rem; margin-bottom:18px; }
+.ewallets{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.ewallets span{ font-size:.8rem; font-weight:700; color:#fff; padding:6px 13px; border-radius:100px; letter-spacing:.01em; }
+.ew-dana{ background:#118EEA; } .ew-ovo{ background:#4C2A86; } .ew-gopay{ background:#00AA13; } .ew-link{ background:#E11F26; }
+.pay-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; background:#fff; border:1px solid rgba(14,26,64,.1); border-radius:14px; padding:14px 16px; margin-bottom:10px; flex-wrap:wrap; }
+.pay-row .lbl{ font-size:.76rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:2px; }
+.pay-row .val{ font-family:var(--font-display); font-size:1.35rem; font-weight:600; letter-spacing:.02em; color:var(--navy); }
+.copy-btn{ display:inline-flex; align-items:center; gap:7px; font-family:var(--font-body); font-weight:700; font-size:.84rem; color:var(--navy); background:var(--gold); border:0; padding:9px 15px; border-radius:100px; cursor:pointer; transition:.25s; flex:none; }
+.copy-btn:hover{ background:var(--gold-2); }
+.copy-btn.done{ background:#1f8a55; color:#fff; }
+.pay-name{ font-size:.9rem; color:var(--ink); margin-top:6px; }
+.pay-name b{ font-weight:700; }
+.pay-confirm{ margin-top:18px; }
+.pay-note{ text-align:center; color:var(--muted); font-size:.9rem; margin-top:30px; }
+
+/* =========================================================
    11) RESPONSIVE
    ========================================================= */
 @media (max-width:1040px){
@@ -394,6 +420,7 @@ h1,h2,h3{ font-family:var(--font-display); line-height:1.08; font-weight:600; }
     border-bottom:1px solid rgba(14,26,64,.1); box-shadow:var(--shadow);
   }
   .work-grid{ grid-template-columns:1fr; }
+  .pay-grid{ grid-template-columns:1fr; }
   .svc-grid{ grid-template-columns:1fr; }
   .footer__top{ grid-template-columns:1fr; gap:28px; }
   .cta-box{ flex-direction:column; align-items:flex-start; }
@@ -425,7 +452,7 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-
     <nav class="nav__links" id="navLinks">
       <a href="#layanan">Layanan</a>
       <a href="#produk">Produk</a>
-      <a href="#ebook">Ebook</a>
+      <a href="#pembayaran">Pembayaran</a>
       <a href="#kontak">Kontak</a>
     </nav>
     <div class="nav__cta">
@@ -552,6 +579,63 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-
 
     <div class="work-grid" id="katalogGrid"></div>
     <p class="katalog-status" id="katalogStatus">Memuat produk…</p>
+  </div>
+</section>
+
+<!-- ============ PEMBAYARAN ============ -->
+<section class="section pay" id="pembayaran">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Pembayaran</span>
+        <h2 class="h2 reveal" data-d="1" style="margin-top:14px;">Bayar mudah, banyak pilihan</h2>
+      </div>
+      <p class="lead reveal" data-d="2">Pilih e-wallet atau transfer bank. Setelah bayar, konfirmasikan ke WhatsApp kami.</p>
+    </div>
+
+    <div class="pay-grid">
+      <!-- E-WALLET -->
+      <article class="pay-card reveal" data-d="1">
+        <div class="pay-card__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="16" height="12" rx="3"/><path d="M18 9h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2"/><circle cx="18.5" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>E-Wallet</h3>
+        <p class="k">DANA, OVO, GoPay &amp; LinkAja — ke satu nomor.</p>
+        <div class="ewallets">
+          <span class="ew-dana">DANA</span>
+          <span class="ew-ovo">OVO</span>
+          <span class="ew-gopay">GoPay</span>
+          <span class="ew-link">LinkAja</span>
+        </div>
+        <div class="pay-row">
+          <div>
+            <span class="lbl">Nomor tujuan</span>
+            <span class="val">0856 0000 0279</span>
+          </div>
+          <button class="copy-btn" type="button" data-copy="085600000279">⧉ Salin</button>
+        </div>
+        <p class="pay-name">a.n. <b>M Gozali Salim</b></p>
+      </article>
+
+      <!-- BANK -->
+      <article class="pay-card reveal" data-d="2">
+        <div class="pay-card__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M5 10V20M19 10V20M3 20h18M12 3 3 8h18l-9-5z"/><path d="M9 13v4M15 13v4"/></svg>
+        </div>
+        <h3>Transfer Bank</h3>
+        <p class="k">Bank Mandiri.</p>
+        <div class="pay-row">
+          <div>
+            <span class="lbl">Bank Mandiri — No. Rekening</span>
+            <span class="val">1020004981236</span>
+          </div>
+          <button class="copy-btn" type="button" data-copy="1020004981236">⧉ Salin</button>
+        </div>
+        <p class="pay-name">a.n. <b>M Gozali Salim</b></p>
+      </article>
+    </div>
+
+    <p class="pay-note reveal">Sudah bayar? <a href="https://wa.me/6285600000279?text=Halo%20Gozali%2C%20saya%20sudah%20transfer%20pembayaran" target="_blank" rel="noopener" style="color:var(--orange-2);font-weight:700;">Konfirmasi via WhatsApp →</a></p>
   </div>
 </section>
 
@@ -707,6 +791,23 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     .then(d => render(Array.isArray(d) ? d : DEFAULT_PRODUCTS))
     .catch(() => render(DEFAULT_PRODUCTS));
 })();
+
+/* ---------- Tombol salin nomor pembayaran ---------- */
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const val = btn.getAttribute('data-copy');
+    try { await navigator.clipboard.writeText(val); }
+    catch(e){
+      const t = document.createElement('textarea');
+      t.value = val; document.body.appendChild(t); t.select();
+      document.execCommand('copy'); t.remove();
+    }
+    const old = btn.innerHTML;
+    btn.innerHTML = '✓ Tersalin';
+    btn.classList.add('done');
+    setTimeout(() => { btn.innerHTML = old; btn.classList.remove('done'); }, 1800);
+  });
+});
 </script>
 </body>
 </html>
