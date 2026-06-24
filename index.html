@@ -555,81 +555,6 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-
   </div>
 </section>
 
-<!-- ============ PANEL ADMIN: TAMBAH PRODUK DIGITAL ============ -->
-<!-- Catatan: panel ini untuk pemilik toko. Untuk menyembunyikannya dari
-     pengunjung, tambahkan style="display:none" pada <section> di bawah ini. -->
-<section class="section admin" id="tambah-produk">
-  <div class="wrap">
-    <div class="admin__card reveal">
-      <div class="admin__head">
-        <span class="tagi">Panel Admin</span>
-      </div>
-      <h2>Tambah produk digital</h2>
-      <p class="admin__note">Isi detail produk dan unggah gambarnya untuk pratinjau langsung di katalog. Untuk menerbitkannya ke semua pengunjung, unduh <code>products.json</code> di bawah lalu ganti file tersebut di repo GitHub Anda.</p>
-
-      <div class="form-grid">
-        <div class="field">
-          <label for="pNama">Nama produk</label>
-          <input id="pNama" type="text" placeholder="cth: Ebook Jago Excel" />
-        </div>
-        <div class="field">
-          <label for="pKategori">Kategori</label>
-          <select id="pKategori">
-            <option value="Ebook">Ebook</option>
-            <option value="Digital">Produk Digital</option>
-            <option value="Jasa">Jasa / Paket</option>
-            <option value="AI">AI Tools / Agent</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="pHarga">Harga (cth: Rp 49rb)</label>
-          <input id="pHarga" type="text" placeholder="Rp 49.000" />
-        </div>
-        <div class="field">
-          <label for="pCoret">Harga coret (opsional)</label>
-          <input id="pCoret" type="text" placeholder="Rp 99.000" />
-        </div>
-        <div class="field full">
-          <label for="pDesk">Deskripsi singkat</label>
-          <textarea id="pDesk" placeholder="Ceritakan singkat isi/produk ini..."></textarea>
-        </div>
-
-        <div class="uploader">
-          <div class="uploader__preview" id="pPreview">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>
-          </div>
-          <div>
-            <label class="uploader__btn" for="pGambar">Unggah gambar produk</label>
-            <input id="pGambar" type="file" accept="image/*" hidden />
-            <small>Format JPG/PNG. Opsional — kalau kosong dipakai warna default.</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="admin__actions">
-        <button class="btn btn--orange" id="pTambah" type="button">Tambah ke katalog <span class="arr">→</span></button>
-        <button class="btn btn--ghost" id="pReset" type="button">Bersihkan form</button>
-        <span class="admin__msg" id="pMsg" role="status"></span>
-      </div>
-
-      <div class="admin__export">
-        <div class="admin__export-head">
-          <strong>Langkah terbit:</strong> setelah menambah/menghapus produk, unduh <code>products.json</code> lalu ganti file lama di GitHub.
-        </div>
-        <div class="admin__actions">
-          <button class="btn btn--gold" id="pDownload" type="button">⬇ Download products.json</button>
-          <button class="btn btn--ghost" id="pCopy" type="button">Salin JSON</button>
-        </div>
-        <details class="admin__json">
-          <summary>Lihat isi products.json</summary>
-          <textarea id="pJson" readonly spellcheck="false"></textarea>
-        </details>
-      </div>
-      <p class="admin__hint">Alur: tambah produk di sini → Download products.json → upload/replace file itu di repo GitHub → commit. Katalog langsung update untuk semua pengunjung. Tombol ✕ pada kartu untuk menghapus.</p>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CTA STRIP ============ -->
 <section class="section">
   <div class="wrap">
@@ -685,7 +610,7 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-
     </div>
     <div class="footer__bot">
       <span>© 2026 Gozali Digital Production. Semua hak dilindungi.</span>
-      <span>Kebijakan Privasi · Syarat &amp; Ketentuan</span>
+      <span>Kebijakan Privasi · Syarat &amp; Ketentuan · <a href="admin.html">Panel Admin</a></span>
     </div>
   </div>
 </footer>
@@ -717,23 +642,12 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 /* =========================================================
-   KATALOG DINAMIS + FORM TAMBAH PRODUK (alur products.json)
+   KATALOG DINAMIS (dibaca dari products.json)
    ========================================================= */
 (function(){
-  const grid    = document.getElementById('katalogGrid');
-  const status  = document.getElementById('katalogStatus');
-  const fNama   = document.getElementById('pNama');
-  const fKat    = document.getElementById('pKategori');
-  const fHarga  = document.getElementById('pHarga');
-  const fCoret  = document.getElementById('pCoret');
-  const fDesk   = document.getElementById('pDesk');
-  const fGambar = document.getElementById('pGambar');
-  const preview = document.getElementById('pPreview');
-  const msg     = document.getElementById('pMsg');
-  const jsonBox = document.getElementById('pJson');
-  const WA      = 'https://wa.me/6285600000279?text=';
-  let imgData   = '';
-  let products  = [];
+  const grid   = document.getElementById('katalogGrid');
+  const status = document.getElementById('katalogStatus');
+  const WA     = 'https://wa.me/6285600000279?text=';
 
   const covers = {
     Ebook:   'linear-gradient(135deg,#243a7a,#16265C)',
@@ -745,8 +659,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   const esc = s => String(s).replace(/[&<>"']/g, c =>
     ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-  /* Cadangan: dipakai bila products.json gagal dimuat
-     (mis. saat membuka file langsung lewat file:// di komputer). */
+  /* Cadangan bila products.json gagal dimuat (mis. dibuka via file://). */
   const DEFAULT_PRODUCTS = [
     {nama:"Mahir Bikin Konten Viral", kat:"Ebook", harga:"Rp 49rb", coret:"Rp 99rb",
      desk:"Panduan lengkap bikin konten yang nempel di Instagram, TikTok, X, dan Facebook.", img:""},
@@ -758,14 +671,13 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
      desk:"Kumpulan template dan preset siap pakai untuk edit reels lebih cepat dan rapi.", img:""}
   ];
 
-  function buildCard(p, i){
+  function card(p){
     const el = document.createElement('article');
     el.className = 'prod reveal';
     const cover = p.img ? '<img src="'+p.img+'" alt="'+esc(p.nama)+'">' : ICON;
     const coret = p.coret ? '<s>'+esc(p.coret)+'</s>' : '';
     const wa = WA + encodeURIComponent('Halo Gozali, saya mau pesan: ' + p.nama);
     el.innerHTML =
-      '<button class="prod__del" title="Hapus produk" aria-label="Hapus">&times;</button>'+
       '<div class="prod__cover" style="background:'+(covers[p.kat]||covers.Ebook)+'">'+
         '<span class="prod__tag">'+esc(p.kat)+'</span><div class="prod__deco"></div>'+cover+
       '</div>'+
@@ -777,93 +689,23 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
           '<a href="'+wa+'" target="_blank" rel="noopener" class="prod__buy">Pesan <span class="arr">&rarr;</span></a>'+
         '</div>'+
       '</div>';
-    el.querySelector('.prod__del').addEventListener('click', () => {
-      products.splice(i, 1); renderAll();
-    });
     return el;
   }
 
-  function refreshJson(){
-    if (jsonBox) jsonBox.value = JSON.stringify(products, null, 2);
-  }
-
-  function renderAll(){
+  function render(list){
     grid.innerHTML = '';
-    products.forEach((p, i) => {
-      const card = buildCard(p, i);
-      grid.appendChild(card);
-      requestAnimationFrame(() => card.classList.add('in'));
+    (list||[]).forEach(p => {
+      const c = card(p);
+      grid.appendChild(c);
+      requestAnimationFrame(() => c.classList.add('in'));
     });
-    if (status) status.style.display = products.length ? 'none' : 'block';
-    refreshJson();
+    if (status) status.style.display = (list && list.length) ? 'none' : 'block';
   }
 
-  /* Muat katalog dari products.json (jika ada), atau cadangan */
   fetch('products.json', { cache:'no-store' })
-    .then(r => { if(!r.ok) throw new Error('no file'); return r.json(); })
-    .then(data => { products = Array.isArray(data) ? data : DEFAULT_PRODUCTS; renderAll(); })
-    .catch(() => { products = DEFAULT_PRODUCTS.slice(); renderAll(); });
-
-  /* Pratinjau gambar yang diunggah */
-  fGambar.addEventListener('change', () => {
-    const file = fGambar.files[0];
-    if (!file) return;
-    const r = new FileReader();
-    r.onload = () => { imgData = r.result; preview.innerHTML = '<img src="'+imgData+'" alt="">'; };
-    r.readAsDataURL(file);
-  });
-
-  /* Tambah produk */
-  document.getElementById('pTambah').addEventListener('click', () => {
-    if (!fNama.value.trim() || !fHarga.value.trim()){
-      msg.style.color = '#c0392b';
-      msg.textContent = 'Nama produk dan harga wajib diisi.';
-      return;
-    }
-    products.push({
-      nama: fNama.value.trim(),
-      kat:  fKat.value,
-      harga: fHarga.value.trim(),
-      coret: fCoret.value.trim(),
-      desk:  fDesk.value.trim(),
-      img:   imgData
-    });
-    renderAll();
-    msg.style.color = '#1f8a55';
-    msg.textContent = '\u2713 Ditambahkan. Jangan lupa Download products.json.';
-    resetForm();
-    setTimeout(() => { msg.textContent = ''; }, 4000);
-  });
-
-  function resetForm(){
-    fNama.value=''; fHarga.value=''; fCoret.value=''; fDesk.value='';
-    fKat.value='Ebook'; fGambar.value=''; imgData='';
-    preview.innerHTML = ICON;
-  }
-  document.getElementById('pReset').addEventListener('click', () => { resetForm(); msg.textContent=''; });
-
-  /* Download products.json */
-  document.getElementById('pDownload').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify(products, null, 2)], { type:'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = 'products.json';
-    document.body.appendChild(a); a.click(); a.remove();
-    URL.revokeObjectURL(url);
-    msg.style.color = '#1f8a55';
-    msg.textContent = '\u2713 products.json terunduh. Upload ke GitHub untuk menerbitkan.';
-    setTimeout(() => { msg.textContent = ''; }, 4000);
-  });
-
-  /* Salin JSON */
-  document.getElementById('pCopy').addEventListener('click', async () => {
-    const txt = JSON.stringify(products, null, 2);
-    try { await navigator.clipboard.writeText(txt); }
-    catch(e){ if (jsonBox){ jsonBox.focus(); jsonBox.select(); document.execCommand('copy'); } }
-    msg.style.color = '#1f8a55';
-    msg.textContent = '\u2713 JSON disalin ke clipboard.';
-    setTimeout(() => { msg.textContent = ''; }, 3000);
-  });
+    .then(r => { if(!r.ok) throw 0; return r.json(); })
+    .then(d => render(Array.isArray(d) ? d : DEFAULT_PRODUCTS))
+    .catch(() => render(DEFAULT_PRODUCTS));
 })();
 </script>
 </body>
