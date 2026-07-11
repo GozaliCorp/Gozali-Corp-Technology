@@ -281,6 +281,9 @@ section.block{padding:96px 0;position:relative}
   background:rgba(10,25,47,.7);border:1px solid var(--line);padding:5px 10px;border-radius:8px;color:var(--cyan);
 }
 .prod-cover .emoji{font-size:46px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.5))}
+.prod-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.price .coret{display:block;font-size:11px;color:#5b6b86;text-decoration:line-through;font-weight:400;letter-spacing:0;margin-bottom:1px}
+.shop-empty{grid-column:1/-1;text-align:center;color:var(--ink-300);font-size:14px;padding:30px}
 .prod-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex-grow:1}
 .prod-body h3{font-size:16.5px;margin-bottom:8px}
 .prod-body p{font-size:13px;color:var(--ink-300);margin-bottom:18px;flex-grow:1}
@@ -760,80 +763,7 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
       <p>Panduan, template, dan tools siap pakai untuk mempercepat pekerjaan Anda. Klik "Beli" untuk melanjutkan pemesanan via WhatsApp.</p>
     </div>
 
-    <!-- CATATAN: Ubah judul, deskripsi, dan harga produk di bawah sesuai katalog Anda. -->
-    <div class="shop-grid">
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">E-Book</span><span class="emoji">🧠</span></div>
-        <div class="prod-body">
-          <h3>Jago Prompt AI</h3>
-          <p>Panduan lengkap menyusun prompt efektif untuk hasil AI yang maksimal, disertai contoh terapan.</p>
-          <div class="prod-foot">
-            <div class="price">Rp 49.000<small>Sekali bayar</small></div>
-            <button class="buy" onclick="openModal('E-Book: Jago Prompt AI','Rp 49.000')">Beli</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">E-Book</span><span class="emoji">💰</span></div>
-        <div class="prod-body">
-          <h3>Cuan dari AI</h3>
-          <p>Strategi memanfaatkan AI untuk menghasilkan pendapatan digital, dari ide hingga eksekusi nyata.</p>
-          <div class="prod-foot">
-            <div class="price">Rp 59.000<small>Sekali bayar</small></div>
-            <button class="buy" onclick="openModal('E-Book: Cuan dari AI','Rp 59.000')">Beli</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">Bundle</span><span class="emoji">📚</span></div>
-        <div class="prod-body">
-          <h3>Bundle Seri GCT-AI</h3>
-          <p>Paket hemat berisi seluruh seri E-Book AI terbitan Gozali Corp Technology dalam satu unduhan.</p>
-          <div class="prod-foot">
-            <div class="price">Rp 199.000<small>Hemat 40%</small></div>
-            <button class="buy" onclick="openModal('Bundle Seri GCT-AI (E-Book Lengkap)','Rp 199.000')">Beli</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">Smart Tools</span><span class="emoji">⚙️</span></div>
-        <div class="prod-body">
-          <h3>Template Otomasi Admin</h3>
-          <p>Kumpulan template &amp; skrip otomatisasi untuk mempercepat pekerjaan admin dan operasional harian.</p>
-          <div class="prod-foot">
-            <div class="price">Rp 79.000<small>Sekali bayar</small></div>
-            <button class="buy" onclick="openModal('Template Otomasi Admin','Rp 79.000')">Beli</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">Jasa</span><span class="emoji">🌐</span></div>
-        <div class="prod-body">
-          <h3>Paket Website Profil Instan</h3>
-          <p>Website profil bisnis profesional yang siap tampil online, cocok untuk UMKM yang ingin naik kelas.</p>
-          <div class="prod-foot">
-            <div class="price">Mulai 350K<small>Per proyek</small></div>
-            <button class="buy" onclick="openModal('Paket Website Profil Instan','Mulai Rp 350.000')">Pesan</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod reveal">
-        <div class="prod-cover"><span class="kind">Jasa</span><span class="emoji">🎬</span></div>
-        <div class="prod-body">
-          <h3>Produksi Video Iklan</h3>
-          <p>Produksi video iklan komersial &amp; konten kreatif untuk memperkuat brand dan mendorong konversi.</p>
-          <div class="prod-foot">
-            <div class="price">Custom<small>Sesuai brief</small></div>
-            <button class="buy" onclick="openModal('Jasa Produksi Video Iklan','Custom (Konsultasi)')">Konsultasi</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="shop-grid" id="shopGrid"><!-- produk dimuat dinamis dari products.json / admin --></div>
   </div>
 </section>
 
@@ -914,7 +844,7 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
     </circle>
   </g>
 </svg><span class="gold">GOZALI</span> <span>CORP</span></a>
-        <p>Solusi infrastruktur IT, otomatisasi sistem, dan produksi media kreatif terpercaya di Indonesia.</p>
+        <p>Solusi infrastruktur IT, otomatisasi sistem, dan produksi media kreatif tepercaya di Indonesia.</p>
         <div class="socials">
           <a href="https://wa.me/6285600000279" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.65.15s-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49h-.56c-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.05-1.32A10 10 0 1 0 12 2z"/></svg></a>
           <a href="mailto:gozalitechnology@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
@@ -1159,6 +1089,55 @@ document.querySelectorAll('.stat .n[data-to]').forEach(el => countIO.observe(el)
 
 /* ---- Seamless marquee (duplicate content) ---- */
 document.querySelectorAll('.marquee-track').forEach(t => { t.innerHTML += t.innerHTML; });
+
+/* ---- Dynamic products (E-Book & Digital Store) ---- */
+const DEFAULT_PRODUCTS = [
+  {nama:"Mahir Prompt AI untuk Pemula",kat:"Ebook",harga:"Rp 49.000",coret:"Rp 99.000",desk:"Panduan menyusun prompt efektif untuk ChatGPT & AI lain, dari nol hingga mahir.",img:"",emoji:"🧠",note:"Sekali bayar",aksi:"Beli"},
+  {nama:"Paket Konten Medsos 30 Hari",kat:"Jasa",harga:"Rp 1.500.000",coret:"",desk:"Konten sebulan penuh: desain, reels, caption, dan jadwal posting siap tayang.",img:"",emoji:"🎬",note:"Per proyek",aksi:"Pesan"},
+  {nama:"AI Agent Auto-Reply WhatsApp",kat:"AI",harga:"Rp 750.000",coret:"",desk:"Chatbot AI yang membalas pesan pelanggan otomatis 24/7, lengkap dengan setup.",img:"",emoji:"🤖",note:"Setup + support",aksi:"Konsultasi"},
+  {nama:"Bundle Template & Preset Konten",kat:"Digital",harga:"Rp 79.000",coret:"Rp 149.000",desk:"Template dan preset siap pakai untuk membuat konten lebih cepat, rapi, dan konsisten.",img:"",emoji:"🎨",note:"Sekali bayar",aksi:"Beli"}
+];
+const EMOJI_BY_KAT = {Ebook:'📘','E-Book':'📘',Bundle:'📚',AI:'🤖',Jasa:'🌐',Digital:'⚙️','Smart Tools':'⚙️'};
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+async function loadProducts(){
+  try{ const ls=localStorage.getItem('gct_products'); if(ls){ const a=JSON.parse(ls); if(Array.isArray(a)&&a.length) return a; } }catch(e){}
+  try{ const r=await fetch('products.json',{cache:'no-store'}); if(r.ok){ const d=await r.json(); const a=Array.isArray(d)?d:(d.products||[]); if(a.length) return a; } }catch(e){}
+  return DEFAULT_PRODUCTS;
+}
+function renderProducts(list){
+  const grid=document.getElementById('shopGrid'); if(!grid) return;
+  if(!list || !list.length){ grid.innerHTML='<div class="shop-empty">Belum ada produk. Tambahkan lewat panel admin.</div>'; return; }
+  grid.innerHTML='';
+  list.forEach(p=>{
+    const kind=p.kat||p.kind||'Produk';
+    const title=p.nama||p.title||'';
+    const desc=p.desk||p.desc||'';
+    const price=p.harga||p.price||'';
+    const coret=p.coret||'';
+    const note=p.note||'';
+    const aksi=p.aksi||p.action||'Beli';
+    const img=p.img||'';
+    const emoji=p.emoji||EMOJI_BY_KAT[kind]||'🛍️';
+    const cover = img ? `<img src="${esc(img)}" alt="${esc(title)}" loading="lazy">` : `<span class="emoji">${emoji}</span>`;
+    const card=document.createElement('div');
+    card.className='prod reveal in';
+    card.innerHTML=`
+      <div class="prod-cover"><span class="kind">${esc(kind)}</span>${cover}</div>
+      <div class="prod-body">
+        <h3>${esc(title)}</h3>
+        <p>${esc(desc)}</p>
+        <div class="prod-foot">
+          <div class="price">${coret?`<span class="coret">${esc(coret)}</span>`:''}${esc(price)}${note?`<small>${esc(note)}</small>`:''}</div>
+          <button class="buy">${esc(aksi)}</button>
+        </div>
+      </div>`;
+    card.querySelector('.buy').addEventListener('click',()=>openModal(title, price));
+    card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',(e.clientX-r.left)+'px');card.style.setProperty('--my',(e.clientY-r.top)+'px');});
+    grid.appendChild(card);
+  });
+}
+loadProducts().then(renderProducts);
 
 </script>
 </body>
