@@ -6,6 +6,7 @@
 <title>Gozali Corp Technology — One-Stop IT Solution & Digital Production</title>
 <meta name="description" content="Gozali Corp Technology membantu perorangan, UMKM, hingga korporasi membangun ekosistem digital terintegrasi: produksi konten, otomatisasi cerdas, solusi IT, dan produk digital premium.">
 <meta name="theme-color" content="#0A192F">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20120%20120%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22f%22%20x1%3D%2212%22%20y1%3D%2210%22%20x2%3D%22108%22%20y2%3D%22112%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%233A78FF%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2322D3EE%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22fg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFD874%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23F4B63E%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Cpath%20d%3D%22M60%206%20L106.8%2033%20L106.8%2087%20L60%20114%20L13.2%2087%20L13.2%2033%20Z%22%20fill%3D%22%230A192F%22%20stroke%3D%22url%28%23f%29%22%20stroke-width%3D%226%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%3Cpath%20d%3D%22M78.67%2067.52%20A22%2022%200%201%201%2078.67%2052.48%22%20fill%3D%22none%22%20stroke%3D%22url%28%23f%29%22%20stroke-width%3D%2212%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%3Crect%20x%3D%2255%22%20y%3D%2254%22%20width%3D%2224%22%20height%3D%2212%22%20rx%3D%223%22%20fill%3D%22url%28%23f%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%2278%22%20cy%3D%2260%22%20r%3D%225%22%20fill%3D%22url%28%23fg%29%22/%3E%0A%3C/svg%3E">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Gozali Corp Technology — One-Stop IT & Digital Production">
@@ -115,6 +116,7 @@ header{
   box-shadow:0 6px 18px -6px rgba(0,82,255,.8);
 }
 .brand span{color:var(--blue-bright)}
+.brand .gold{background:linear-gradient(120deg,#FFE29A,#F4B63E 55%,#E39A1C);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav-links{display:flex;gap:30px;font-size:14.5px;font-weight:500}
 .nav-links a{color:var(--ink-300);transition:color .2s;position:relative}
 .nav-links a:hover{color:#fff}
@@ -160,7 +162,8 @@ header{
 }
 .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
 .hero h1{font-size:clamp(34px,6vw,62px);margin:26px 0 22px;letter-spacing:-.03em}
-.grad{background:linear-gradient(100deg,var(--blue-bright),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{background:linear-gradient(100deg,#3A78FF,#22D3EE,#5BE8FF,#3A78FF);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradShift 6s linear infinite}
+@keyframes gradShift{to{background-position:220% center}}
 .hero p.lead{font-size:clamp(15px,2vw,18px);color:var(--ink-300);max-width:620px;margin:0 auto 34px}
 .hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .hero-trust{margin-top:40px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-family:var(--font-mono);font-size:12px;color:var(--ink-300);letter-spacing:.04em}
@@ -344,9 +347,80 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
 .inp:focus{outline:none;border-color:var(--blue-bright);box-shadow:0 0 0 3px rgba(0,82,255,.18)}
 .inp::placeholder{color:#4c5f7d}
 
+/* payment method picker */
+.pay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.pay-opt{
+  background:var(--navy-950);border:1px solid var(--line);border-radius:11px;
+  padding:11px 6px;text-align:center;cursor:pointer;transition:.18s;
+  font-size:12.5px;font-weight:600;color:var(--ink-200);user-select:none;
+}
+.pay-opt .em{display:block;font-size:18px;margin-bottom:4px;line-height:1}
+.pay-opt:hover{border-color:#33507f}
+.pay-opt.sel{border-color:var(--orange);background:rgba(255,107,0,.1);color:#fff}
+.pay-info{
+  display:none;background:rgba(255,107,0,.08);border:1px dashed rgba(255,107,0,.4);
+  border-radius:12px;padding:14px 16px;margin-bottom:20px;
+}
+.pay-info.show{display:block;animation:pop .25s var(--ease)}
+.pay-info .lab{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-300);margin-bottom:6px}
+.pay-info .num-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.pay-info .num{font-family:var(--font-mono);font-size:17px;font-weight:700;color:#fff;letter-spacing:.02em}
+.pay-info .an{font-size:12px;color:var(--ink-300);margin-top:6px}
+.copy-btn{
+  background:var(--orange);color:#fff;border:none;cursor:pointer;flex-shrink:0;
+  font-family:var(--font-sans);font-weight:600;font-size:12px;padding:8px 12px;border-radius:9px;transition:.18s;
+}
+.copy-btn:hover{background:var(--orange-deep)}
+.copy-btn.ok{background:#16a34a}
+
+/* QRIS display */
+.qris-info{display:none;background:#fff;border-radius:14px;padding:16px 16px 14px;margin-bottom:20px;text-align:center;border:1px solid var(--line)}
+.qris-info.show{display:block;animation:pop .25s var(--ease)}
+.qris-head{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#334155;margin-bottom:12px}
+.qris-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px;font-weight:800;color:#0A192F;font-size:14px;letter-spacing:.01em}
+.qris-brand .q{background:#E11D48;color:#fff;font-family:var(--font-mono);font-size:11px;font-weight:700;padding:3px 7px;border-radius:5px;letter-spacing:.05em}
+.qris-img{width:196px;height:196px;margin:0 auto;display:block;image-rendering:pixelated;border-radius:8px}
+.qris-meta{margin-top:12px;color:#0A192F;font-size:12px;line-height:1.65}
+.qris-meta .m{font-weight:700;font-size:12.5px}
+.qris-meta .n{color:#475569;font-family:var(--font-mono);font-size:11px;letter-spacing:.02em}
+.qris-hint{margin-top:10px;font-size:11px;color:#64748B}
+
 /* ============ REVEAL ANIMATION ============ */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
+
+/* ============ ADVANCED TECH FX ============ */
+/* logo mark */
+.brand-mark{width:38px;height:38px;flex-shrink:0;transition:filter .35s var(--ease),transform .35s var(--ease);filter:drop-shadow(0 3px 8px rgba(0,82,255,.45))}
+.brand:hover .brand-mark{filter:drop-shadow(0 0 11px rgba(34,211,238,.75));transform:scale(1.07) rotate(-3deg)}
+
+/* scroll progress bar */
+#scrollbar{position:fixed;top:0;left:0;height:3px;width:0;z-index:90;background:linear-gradient(90deg,#3A78FF,#22D3EE,#F4B63E);box-shadow:0 0 12px rgba(34,211,238,.7);transition:width .08s linear}
+
+/* cursor spotlight on cards */
+.sol-card,.prod{position:relative;overflow:hidden}
+.sol-card::before,.prod::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;transition:opacity .35s;pointer-events:none;z-index:0;
+  background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),rgba(58,120,255,.16),transparent 62%)}
+.sol-card:hover::before,.prod:hover::before{opacity:1}
+.sol-card>*,.prod>*{position:relative;z-index:1}
+
+/* button shine sweep */
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-140%;width:55%;height:100%;transform:skewX(-22deg);pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.32),transparent);transition:left .6s var(--ease)}
+.btn:hover::after{left:150%}
+.btn>*{position:relative}
+
+/* tech marquee */
+.marquee{overflow:hidden;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:rgba(9,20,38,.55);padding:15px 0;position:relative}
+.marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--navy-950),transparent)}
+.marquee::after{right:0;background:linear-gradient(270deg,var(--navy-950),transparent)}
+.marquee-track{display:flex;width:max-content;animation:scrollX 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-item{display:inline-flex;align-items:center;gap:11px;padding:0 26px;font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-300);white-space:nowrap}
+.marquee-item::before{content:"◆";color:var(--cyan);font-size:8px}
+@keyframes scrollX{to{transform:translateX(-50%)}}
 
 /* ============ RESPONSIVE ============ */
 @media(max-width:980px){
@@ -381,11 +455,63 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
 </style>
 </head>
 <body>
+<div id="scrollbar"></div>
 
 <!-- ================= NAV ================= -->
 <header>
   <div class="wrap nav">
-    <a href="#home" class="brand"><span class="mark">G</span>GOZALI <span>CORP</span></a>
+    <a href="#home" class="brand"><svg class="brand-mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gozali Corp">
+  <defs>
+    <linearGradient id="gBlueCyan-n" x1="12" y1="10" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A78FF"/>
+      <stop offset=".55" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#5BE8FF"/>
+    </linearGradient>
+    <linearGradient id="gGold-n" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD874"/>
+      <stop offset="1" stop-color="#F4B63E"/>
+    </linearGradient>
+    <radialGradient id="gInner-n" cx="42%" cy="34%" r="80%">
+      <stop offset="0" stop-color="#122a52"/>
+      <stop offset="1" stop-color="#0A192F"/>
+    </radialGradient>
+    <filter id="soft-n" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+
+  <!-- Hexagon chip -->
+  <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z"
+        fill="url(#gInner-n)" stroke="url(#gBlueCyan-n)" stroke-width="4.5"
+        stroke-linejoin="round"/>
+  <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z"
+        fill="none" stroke="#5BE8FF" stroke-width="1" stroke-linejoin="round" opacity=".35"/>
+
+  <!-- Orbit ring -->
+  <circle cx="59" cy="60" r="40" fill="none" stroke="#22D3EE" stroke-width="1"
+          stroke-dasharray="2 6" opacity=".45"/>
+
+  <!-- Orbiting nodes (rotate group) -->
+  <g>
+    <circle cx="59" cy="20" r="3.6" fill="url(#gGold-n)"/>
+    <circle cx="93.6" cy="80" r="2.6" fill="#5BE8FF"/>
+    <circle cx="24.4" cy="80" r="2.6" fill="#3A78FF"/>
+    <animateTransform attributeName="transform" type="rotate"
+        from="0 59 60" to="360 59 60" dur="14s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Monogram G -->
+  <g>
+    <path d="M78.67 67.52 A22 22 0 1 1 78.67 52.48" fill="none"
+          stroke="url(#gBlueCyan-n)" stroke-width="11" stroke-linecap="round"/>
+    <rect x="55" y="54.4" width="23.5" height="11.2" rx="3" fill="url(#gBlueCyan-n)"/>
+    <!-- terminal node (gold luxury spark) -->
+    <circle cx="78" cy="60" r="4.2" fill="url(#gGold-n)"/>
+    <circle cx="78" cy="60" r="4.2" fill="url(#gGold-n)" filter="url(#soft-n)" opacity=".8">
+      <animate attributeName="opacity" values=".3;.95;.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg><span class="gold">GOZALI</span> <span>CORP</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#home">Beranda</a>
       <a href="#solutions">Solusi Bisnis</a>
@@ -445,6 +571,13 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
     </div>
   </div>
 </section>
+
+<!-- ================= TECH MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mtrack">
+    <span class="marquee-item">AI &amp; Automation</span><span class="marquee-item">Cloud Infrastructure</span><span class="marquee-item">Web &amp; Mobile Apps</span><span class="marquee-item">Video Production</span><span class="marquee-item">Chatbot &amp; API</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">Smart Tools</span><span class="marquee-item">E-Book Premium</span><span class="marquee-item">Digital Marketing</span><span class="marquee-item">Cyber Security</span>
+  </div>
+</div>
 
 <!-- ================= SOLUTIONS ================= -->
 <section id="solutions" class="block">
@@ -575,10 +708,10 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
       </div>
 
       <div class="stat-grid reveal">
-        <div class="stat"><div class="n">4<span class="u">+</span></div><div class="l">Pilar Layanan Terintegrasi</div></div>
+        <div class="stat"><div class="n" data-to="4" data-suf="+">0</div><div class="l">Pilar Layanan Terintegrasi</div></div>
         <div class="stat"><div class="n">24/7</div><div class="l">Sistem Otomatisasi</div></div>
-        <div class="stat"><div class="n">3</div><div class="l">Skala: Perorangan–Korporat</div></div>
-        <div class="stat"><div class="n">100<span class="u">%</span></div><div class="l">Fokus Solusi Terapan</div></div>
+        <div class="stat"><div class="n" data-to="3">0</div><div class="l">Skala: Perorangan–Korporat</div></div>
+        <div class="stat"><div class="n" data-to="100" data-suf="%">0</div><div class="l">Fokus Solusi Terapan</div></div>
       </div>
     </div>
   </div>
@@ -714,7 +847,58 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#home" class="brand"><span class="mark">G</span>GOZALI <span>CORP</span></a>
+        <a href="#home" class="brand"><svg class="brand-mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gozali Corp">
+  <defs>
+    <linearGradient id="gBlueCyan-f" x1="12" y1="10" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A78FF"/>
+      <stop offset=".55" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#5BE8FF"/>
+    </linearGradient>
+    <linearGradient id="gGold-f" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD874"/>
+      <stop offset="1" stop-color="#F4B63E"/>
+    </linearGradient>
+    <radialGradient id="gInner-f" cx="42%" cy="34%" r="80%">
+      <stop offset="0" stop-color="#122a52"/>
+      <stop offset="1" stop-color="#0A192F"/>
+    </radialGradient>
+    <filter id="soft-f" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+
+  <!-- Hexagon chip -->
+  <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z"
+        fill="url(#gInner-f)" stroke="url(#gBlueCyan-f)" stroke-width="4.5"
+        stroke-linejoin="round"/>
+  <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z"
+        fill="none" stroke="#5BE8FF" stroke-width="1" stroke-linejoin="round" opacity=".35"/>
+
+  <!-- Orbit ring -->
+  <circle cx="59" cy="60" r="40" fill="none" stroke="#22D3EE" stroke-width="1"
+          stroke-dasharray="2 6" opacity=".45"/>
+
+  <!-- Orbiting nodes (rotate group) -->
+  <g>
+    <circle cx="59" cy="20" r="3.6" fill="url(#gGold-f)"/>
+    <circle cx="93.6" cy="80" r="2.6" fill="#5BE8FF"/>
+    <circle cx="24.4" cy="80" r="2.6" fill="#3A78FF"/>
+    <animateTransform attributeName="transform" type="rotate"
+        from="0 59 60" to="360 59 60" dur="14s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Monogram G -->
+  <g>
+    <path d="M78.67 67.52 A22 22 0 1 1 78.67 52.48" fill="none"
+          stroke="url(#gBlueCyan-f)" stroke-width="11" stroke-linecap="round"/>
+    <rect x="55" y="54.4" width="23.5" height="11.2" rx="3" fill="url(#gBlueCyan-f)"/>
+    <!-- terminal node (gold luxury spark) -->
+    <circle cx="78" cy="60" r="4.2" fill="url(#gGold-f)"/>
+    <circle cx="78" cy="60" r="4.2" fill="url(#gGold-f)" filter="url(#soft-f)" opacity=".8">
+      <animate attributeName="opacity" values=".3;.95;.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg><span class="gold">GOZALI</span> <span>CORP</span></a>
         <p>Solusi infrastruktur IT, otomatisasi sistem, dan produksi media kreatif tepercaya di Indonesia.</p>
         <div class="socials">
           <a href="https://wa.me/6285600000279" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.65.15s-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49h-.56c-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.05-1.32A10 10 0 1 0 12 2z"/></svg></a>
@@ -744,7 +928,8 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
       <div class="foot">
         <h5>Metode Pembayaran</h5>
         <p class="pay">
-          <b>E-Wallet:</b> DANA / OVO / GoPay / LinkAja<br>
+          <b>E-Wallet</b> (DANA/OVO/GoPay/LinkAja)<br>
+          <b>085600000279</b><br>
           <b>Bank Mandiri:</b> 1020004981236<br>
           a.n. M Gozali Salim
         </p>
@@ -777,6 +962,36 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
       <input class="inp" type="email" id="clientEmail" placeholder="email@contoh.com">
     </label>
 
+    <span class="t" style="font-size:12.5px;color:var(--ink-200);margin-bottom:9px;display:block;font-weight:500">Pilih Metode Pembayaran</span>
+    <div class="pay-grid">
+      <div class="pay-opt" onclick="pickPay(this,'DANA')"><span class="em">🔵</span>DANA</div>
+      <div class="pay-opt" onclick="pickPay(this,'OVO')"><span class="em">🟣</span>OVO</div>
+      <div class="pay-opt" onclick="pickPay(this,'GoPay')"><span class="em">🟢</span>GoPay</div>
+      <div class="pay-opt" onclick="pickPay(this,'LinkAja')"><span class="em">🔴</span>LinkAja</div>
+      <div class="pay-opt" onclick="pickPay(this,'QRIS')"><span class="em">📱</span>QRIS</div>
+      <div class="pay-opt" onclick="pickPay(this,'Bank Mandiri')"><span class="em">🏦</span>Mandiri</div>
+    </div>
+
+    <div class="pay-info" id="payInfo">
+      <div class="lab" id="payLabel">Nomor Tujuan</div>
+      <div class="num-row">
+        <span class="num" id="payNumber">—</span>
+        <button class="copy-btn" id="copyBtn" onclick="copyNumber()">Salin</button>
+      </div>
+      <div class="an">a.n. M Gozali Salim</div>
+    </div>
+
+    <div class="qris-info" id="qrisInfo">
+      <div class="qris-head">Scan untuk membayar</div>
+      <div class="qris-brand"><span class="q">QRIS</span> Semua Aplikasi</div>
+      <img id="qrisImg" class="qris-img" alt="QRIS Gozali Corp Technology" src="data:image/png;base64,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">
+      <div class="qris-meta">
+        <div class="m">M GOZALI SALIM, DIGITAL &amp; KREATIF</div>
+        <div class="n">NMID: ID1026545885604</div>
+      </div>
+      <div class="qris-hint">Bisa untuk semua e-wallet &amp; m-banking (DANA, OVO, GoPay, ShopeePay, dll.)</div>
+    </div>
+
     <button class="btn btn-orange btn-block" onclick="sendToWhatsApp()">
       Lanjutkan Pembayaran via WhatsApp
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -797,19 +1012,59 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => na
 /* ---- Order modal ---- */
 const modal = document.getElementById('orderModal');
 let currentProduct = "", currentPrice = "";
+let payMethod = "", payNumber = "";
+
+const EWALLET_NUMBER = "085600000279";
+const MANDIRI_NUMBER = "1020004981236";
+
+function pickPay(el, method){
+  document.querySelectorAll('.pay-opt').forEach(o => o.classList.remove('sel'));
+  el.classList.add('sel');
+  payMethod = method;
+  const numInfo = document.getElementById('payInfo');
+  const qrInfo = document.getElementById('qrisInfo');
+  if(method === 'QRIS'){
+    payNumber = "";
+    numInfo.classList.remove('show');
+    qrInfo.classList.add('show');
+  } else {
+    qrInfo.classList.remove('show');
+    payNumber = (method === 'Bank Mandiri') ? MANDIRI_NUMBER : EWALLET_NUMBER;
+    document.getElementById('payLabel').innerText = (method === 'Bank Mandiri') ? 'No. Rekening Bank Mandiri' : 'Nomor ' + method;
+    document.getElementById('payNumber').innerText = payNumber;
+    numInfo.classList.add('show');
+    const cb = document.getElementById('copyBtn'); cb.classList.remove('ok'); cb.innerText = 'Salin';
+  }
+}
+
+function copyNumber(){
+  const cb = document.getElementById('copyBtn');
+  navigator.clipboard.writeText(payNumber).then(() => {
+    cb.innerText = 'Tersalin ✓'; cb.classList.add('ok');
+    setTimeout(() => { cb.innerText = 'Salin'; cb.classList.remove('ok'); }, 1800);
+  }).catch(() => { cb.innerText = payNumber; });
+}
 
 function openModal(name, price){
   currentProduct = name; currentPrice = price;
   document.getElementById('sumName').innerText = name;
   document.getElementById('sumPrice').innerText = price;
+  resetPay();
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+function resetPay(){
+  payMethod = ""; payNumber = "";
+  document.querySelectorAll('.pay-opt').forEach(o => o.classList.remove('sel'));
+  document.getElementById('payInfo').classList.remove('show');
+  document.getElementById('qrisInfo').classList.remove('show');
 }
 function closeModal(){
   modal.classList.remove('open');
   document.body.style.overflow = 'auto';
   document.getElementById('clientName').value = '';
   document.getElementById('clientEmail').value = '';
+  resetPay();
 }
 modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
@@ -818,6 +1073,11 @@ function sendToWhatsApp(){
   const name = document.getElementById('clientName').value.trim();
   const email = document.getElementById('clientEmail').value.trim();
   if(!name){ alert('Mohon isi nama Anda terlebih dahulu.'); return; }
+  if(!payMethod){ alert('Silakan pilih metode pembayaran terlebih dahulu.'); return; }
+
+  const payLine = (payMethod === 'QRIS')
+    ? `• QRIS — M GOZALI SALIM, DIGITAL & KREATIF\n• NMID: ID1026545885604`
+    : `• ${payMethod}: ${payNumber}\n• a.n. M Gozali Salim`;
 
   const msg =
 `Halo Gozali Corp Technology,
@@ -832,7 +1092,10 @@ Saya ingin memesan produk digital berikut:
 • Nama: ${name}
 • Email: ${email || '-'}
 
-Mohon informasi metode pembayaran dan tautan unduhannya. Terima kasih!`;
+*Metode Pembayaran*
+${payLine}
+
+Saya akan segera melakukan pembayaran. Mohon konfirmasi dan tautan unduhannya. Terima kasih!`;
 
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
@@ -844,6 +1107,45 @@ const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ---- Scroll progress bar ---- */
+const bar = document.getElementById('scrollbar');
+function onScroll(){
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight);
+  bar.style.width = (p * 100) + '%';
+}
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+/* ---- Cursor spotlight on cards ---- */
+document.querySelectorAll('.sol-card, .prod').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+});
+
+/* ---- Animated stat counters ---- */
+function animateCount(el){
+  const to = +el.dataset.to, suf = el.dataset.suf || '';
+  const dur = 1200, t0 = performance.now();
+  (function tick(now){
+    const p = Math.min((now - t0) / dur, 1);
+    const val = Math.round((1 - Math.pow(1 - p, 3)) * to);
+    el.innerHTML = val + (suf ? '<span class="u">' + suf + '</span>' : '');
+    if(p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+const countIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ animateCount(e.target); countIO.unobserve(e.target); } });
+}, { threshold: 0.6 });
+document.querySelectorAll('.stat .n[data-to]').forEach(el => countIO.observe(el));
+
+/* ---- Seamless marquee (duplicate content) ---- */
+const mt = document.getElementById('mtrack');
+if(mt){ mt.innerHTML += mt.innerHTML; }
+
 </script>
 </body>
 </html>
