@@ -1,459 +1,575 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex" />
-<title>Panel Admin — Gozali Corp Technology</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Admin — Produk Digital | Gozali Corp Technology</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0E1A40; --navy-2:#16265C; --gold:#F4B63E; --gold-2:#E09A1F;
-  --orange:#F97316; --orange-2:#EA6A0A; --ai:#21B8D6; --ai-2:#1796B0;
-  --cream:#FBF6EC; --ink:#0E1A40; --muted:#5B6488; --line:rgba(14,26,64,.12);
-  --radius:18px; --shadow:0 14px 34px -16px rgba(14,26,64,.30); --shadow-sm:0 6px 16px -10px rgba(14,26,64,.3);
-  --ease:cubic-bezier(.22,1,.36,1); --fd:"Fraunces",Georgia,serif; --fb:"Plus Jakarta Sans",system-ui,sans-serif;
-  --c-AI:#21B8D6; --c-Blockchain:#F4B63E; --c-Gadget:#F97316; --c-Startup:#1FA971; --c-Cybersecurity:#E4572E; --c-Viral:#C2317E;
+  --navy-950:#0A192F;--navy-900:#0C1D38;--navy-850:#102544;--line:#1E3358;--line-soft:#17284a;
+  --blue:#0052FF;--blue-bright:#3A78FF;--cyan:#22D3EE;--gold:#F4B63E;--gold-lite:#FFE29A;
+  --orange:#FF6B00;--green:#16a34a;--red:#e5484d;
+  --ink-100:#EAF1FB;--ink-200:#C6D3E8;--ink-300:#95A6C2;
+  --font:'Plus Jakarta Sans',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  --radius:16px;--ease:cubic-bezier(.22,.61,.36,1);
 }
-*{ box-sizing:border-box; margin:0; padding:0; }
-body{ font-family:var(--fb); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; }
-img{ max-width:100%; display:block; } a{ color:inherit; text-decoration:none; }
-.wrap{ max-width:1120px; margin-inline:auto; padding-inline:22px; }
-.bar{ position:sticky; top:0; z-index:30; background:rgba(251,246,236,.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-.bar__in{ display:flex; align-items:center; justify-content:space-between; gap:14px; height:64px; flex-wrap:wrap; }
-.brand{ display:flex; align-items:center; gap:11px; font-family:var(--fd); font-weight:700; font-size:1.08rem; }
-.brand__dot{ width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,var(--gold),var(--orange)); display:grid; place-items:center; color:var(--navy); font-weight:800; transform:rotate(-8deg); }
-.brand .tag{ font-family:var(--fb); font-size:.64rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:var(--navy); padding:3px 9px; border-radius:100px; }
-.bar__act{ display:flex; gap:9px; flex-wrap:wrap; }
-.btn{ --bg:var(--navy); --fg:#fff; display:inline-flex; align-items:center; gap:8px; font-family:var(--fb); font-weight:700; font-size:.88rem; background:var(--bg); color:var(--fg); padding:10px 16px; border:0; border-radius:100px; cursor:pointer; transition:.25s; box-shadow:var(--shadow-sm); }
-.btn:hover{ transform:translateY(-2px); }
-.btn--gold{ --bg:var(--gold); --fg:var(--navy); } .btn--gold:hover{ background:var(--gold-2); }
-.btn--orange{ --bg:var(--orange); --fg:#fff; } .btn--orange:hover{ background:var(--orange-2); }
-.btn--ghost{ --bg:#fff; --fg:var(--navy); border:1.6px solid var(--line); box-shadow:none; } .btn--ghost:hover{ border-color:var(--navy); }
-.btn--sm{ padding:8px 13px; font-size:.82rem; }
-.head{ padding:26px 0 4px; } .head h1{ font-family:var(--fd); font-size:clamp(1.5rem,4vw,2rem); } .head p{ color:var(--muted); margin-top:4px; }
-.head code{ background:rgba(14,26,64,.08); padding:2px 6px; border-radius:6px; font-size:.86em; }
-/* tabs */
-.tabs{ display:inline-flex; gap:4px; background:#fff; border:1px solid var(--line); border-radius:100px; padding:5px; margin:20px 0 4px; box-shadow:var(--shadow-sm); }
-.tab{ border:0; background:transparent; font-family:var(--fb); font-weight:700; font-size:.9rem; color:var(--muted); padding:9px 20px; border-radius:100px; cursor:pointer; transition:.2s; }
-.tab.active{ background:var(--navy); color:#fff; }
-.panel{ display:none; } .panel.active{ display:block; }
-.grid{ display:grid; grid-template-columns:minmax(0,430px) 1fr; gap:22px; align-items:start; padding-block:20px 60px; }
-.card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
-.card__pad{ padding:22px; }
-.form-sticky{ position:sticky; top:82px; }
-.card h2{ font-family:var(--fd); font-size:1.25rem; margin-bottom:2px; } .card .sub{ color:var(--muted); font-size:.88rem; margin-bottom:16px; }
-.row{ display:grid; grid-template-columns:1fr 1fr; gap:13px; }
-.field{ display:flex; flex-direction:column; gap:6px; margin-bottom:13px; } .field.full{ grid-column:1 / -1; }
-label{ font-weight:600; font-size:.85rem; }
-input,select,textarea{ font-family:var(--fb); font-size:.93rem; color:var(--ink); padding:11px 12px; border:1.6px solid var(--line); border-radius:11px; background:var(--cream); width:100%; transition:.2s; }
-textarea{ resize:vertical; min-height:74px; }
-input:focus,select:focus,textarea:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 4px rgba(244,182,62,.18); background:#fff; }
-.uploader{ display:flex; align-items:center; gap:13px; border:1.6px dashed var(--line); border-radius:13px; padding:12px; background:var(--cream); }
-.uploader__prev{ width:64px; height:64px; flex:none; border-radius:11px; overflow:hidden; background:linear-gradient(135deg,var(--navy),var(--navy-2)); display:grid; place-items:center; }
-.uploader__prev svg{ width:26px; height:26px; opacity:.6; } .uploader__prev img{ width:100%; height:100%; object-fit:cover; }
-.uploader__btn{ font-weight:700; font-size:.83rem; color:var(--navy); background:var(--gold); padding:8px 14px; border-radius:100px; cursor:pointer; display:inline-block; } .uploader__btn:hover{ background:var(--gold-2); }
-.uploader small{ display:block; color:var(--muted); margin-top:5px; font-size:.76rem; }
-.form-act{ display:flex; gap:9px; margin-top:16px; flex-wrap:wrap; align-items:center; }
-.msg{ font-size:.84rem; font-weight:600; }
-.list-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:13px; flex-wrap:wrap; }
-.list-head h2{ font-family:var(--fd); font-size:1.25rem; } .count{ font-size:.8rem; font-weight:700; color:var(--navy); background:rgba(14,26,64,.07); padding:4px 11px; border-radius:100px; }
-.item{ display:flex; align-items:center; gap:13px; padding:12px; border:1px solid var(--line); border-radius:13px; margin-bottom:10px; background:#fff; transition:.25s; }
-.item:hover{ box-shadow:var(--shadow-sm); } .item.editing{ border-color:var(--gold); box-shadow:0 0 0 3px rgba(244,182,62,.2); }
-.item__cov{ width:56px; height:56px; flex:none; border-radius:10px; overflow:hidden; display:grid; place-items:center; }
-.item__cov svg{ width:22px; height:22px; } .item__cov img{ width:100%; height:100%; object-fit:cover; }
-.item__main{ flex:1; min-width:0; } .item__main h3{ font-family:var(--fb); font-weight:700; font-size:.98rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.item__meta{ display:flex; align-items:center; gap:8px; margin-top:3px; flex-wrap:wrap; }
-.badge{ font-size:.68rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 9px; border-radius:100px; color:#fff; }
-.b-Ebook{ background:var(--navy-2); } .b-Digital{ background:var(--gold-2); } .b-Jasa{ background:var(--orange); } .b-AI{ background:var(--ai-2); }
-.small{ font-size:.8rem; color:var(--muted); }
-.item__act{ display:flex; gap:6px; flex:none; }
-.iconbtn{ width:34px; height:34px; border-radius:9px; border:1.6px solid var(--line); background:#fff; cursor:pointer; display:grid; place-items:center; transition:.2s; }
-.iconbtn:hover{ border-color:var(--navy); } .iconbtn.del:hover{ background:#fde7e1; border-color:var(--orange-2); }
-.empty{ text-align:center; color:var(--muted); padding:36px 16px; border:1.6px dashed var(--line); border-radius:13px; }
-.export{ margin-top:16px; padding-top:16px; border-top:1px solid var(--line); }
-.export .note{ font-size:.84rem; color:var(--muted); margin-bottom:11px; } .export .note code{ background:rgba(14,26,64,.08); padding:2px 6px; border-radius:6px; }
-details summary{ cursor:pointer; font-weight:600; font-size:.84rem; margin-top:11px; }
-textarea.json{ margin-top:9px; min-height:140px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.78rem; background:var(--navy); color:#D6DBF0; border-color:transparent; }
-.banner{ display:none; gap:10px; align-items:flex-start; background:#fff7e6; border:1px solid #F4B63E; border-radius:13px; padding:12px 14px; margin-top:14px; font-size:.85rem; color:#7a5b12; } .banner.show{ display:flex; }
-.banner code{ background:rgba(0,0,0,.06); padding:1px 5px; border-radius:5px; }
-@media (max-width:860px){ .grid{ grid-template-columns:1fr; } .form-sticky{ position:static; } }
-@media (prefers-reduced-motion:reduce){ *{ transition:none !important; } }
-a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-2); outline-offset:2px; border-radius:8px; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--navy-950);color:var(--ink-200);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-bright);text-decoration:none}
+::selection{background:var(--blue);color:#fff}
+
+/* ===== LOGIN GATE ===== */
+#gate{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;
+  background:radial-gradient(120% 100% at 50% 0%,#0e2551,#0A192F)}
+.gate-card{width:100%;max-width:380px;background:linear-gradient(180deg,var(--navy-850),var(--navy-900));border:1px solid var(--line);border-radius:22px;padding:34px 30px;text-align:center}
+.gate-card .logo{width:60px;height:60px;margin:0 auto 18px}
+.gate-card h1{font-size:20px;color:#fff;margin-bottom:6px}
+.gate-card p{font-size:13px;color:var(--ink-300);margin-bottom:22px}
+.gate-card .err{color:var(--red);font-size:12.5px;min-height:18px;margin-top:10px}
+
+/* ===== SHELL ===== */
+.shell{display:none;min-height:100vh;flex-direction:column}
+.shell.on{display:flex}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:14px 22px;background:rgba(10,25,47,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.03em;font-size:16px}
+.brand .logo{width:34px;height:34px}
+.brand .g{background:linear-gradient(120deg,#FFE29A,#F4B63E 55%,#E39A1C);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .c{color:var(--blue-bright)}
+.brand small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--ink-300);font-weight:400}
+.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+.container{max-width:1180px;width:100%;margin:0 auto;padding:24px 22px 60px}
+.pagehead{margin-bottom:18px}
+.pagehead h2{color:#fff;font-size:22px;letter-spacing:-.01em}
+.pagehead p{color:var(--ink-300);font-size:13.5px;margin-top:4px}
+
+/* info banner */
+.banner{display:flex;gap:12px;background:rgba(0,82,255,.08);border:1px solid rgba(0,82,255,.25);border-radius:14px;padding:14px 16px;margin-bottom:22px;font-size:13px;color:var(--ink-200)}
+.banner b{color:#fff}
+.banner .i{flex-shrink:0;color:var(--blue-bright)}
+
+/* toolbar */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-weight:600;font-size:13.5px;cursor:pointer;
+  padding:10px 16px;border-radius:11px;border:1px solid transparent;transition:.2s var(--ease);white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:linear-gradient(120deg,#FFD874,#F4B63E);color:#3a2a05}
+.btn-gold:hover{filter:brightness(1.05)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:#0046dd}
+.btn-ghost{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--ink-100)}
+.btn-ghost:hover{border-color:#33507f;background:rgba(255,255,255,.06)}
+.btn-red{background:rgba(229,72,77,.12);border-color:rgba(229,72,77,.4);color:#ff8b8e}
+.btn-red:hover{background:rgba(229,72,77,.2)}
+.btn-sm{padding:7px 11px;font-size:12px;border-radius:9px}
+
+/* layout */
+.grid{display:grid;grid-template-columns:400px 1fr;gap:24px;align-items:start}
+.panel{background:linear-gradient(180deg,var(--navy-850),var(--navy-900));border:1px solid var(--line-soft);border-radius:var(--radius);padding:22px}
+.panel h3{color:#fff;font-size:15px;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.panel h3 .tag{font-family:var(--mono);font-size:10px;background:rgba(58,120,255,.15);color:var(--blue-bright);padding:3px 8px;border-radius:6px;letter-spacing:.05em}
+
+/* form */
+label.fld{display:block;margin-bottom:14px}
+label.fld .t{display:block;font-size:12.5px;color:var(--ink-200);margin-bottom:6px;font-weight:500}
+label.fld .t small{color:var(--ink-300);font-weight:400}
+.inp,select,textarea{width:100%;background:var(--navy-950);border:1px solid var(--line);border-radius:10px;padding:11px 13px;color:#fff;font-family:var(--font);font-size:13.5px;transition:border-color .2s}
+textarea{resize:vertical;min-height:70px}
+.inp:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue-bright);box-shadow:0 0 0 3px rgba(0,82,255,.18)}
+.inp::placeholder,textarea::placeholder{color:#4c5f7d}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%2395A6C2' stroke-width='2'%3E%3Cpath d='M3 5l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+
+/* image upload */
+.imgbox{display:flex;gap:12px;align-items:center}
+.imgprev{width:64px;height:64px;border-radius:10px;border:1px dashed var(--line);display:grid;place-items:center;overflow:hidden;flex-shrink:0;background:var(--navy-950);font-size:26px}
+.imgprev img{width:100%;height:100%;object-fit:cover}
+
+.form-actions{display:flex;gap:10px;margin-top:6px}
+
+/* live preview card */
+.previewwrap{margin-top:20px;border-top:1px solid var(--line-soft);padding-top:18px}
+.previewwrap .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-300);margin-bottom:12px}
+.pcard{background:linear-gradient(180deg,var(--navy-850),var(--navy-900));border:1px solid var(--line-soft);border-radius:14px;overflow:hidden;max-width:260px}
+.pcover{height:120px;position:relative;display:grid;place-items:center;background:radial-gradient(120% 120% at 20% 0%,rgba(0,82,255,.35),transparent 60%),linear-gradient(135deg,#10254a,#0c1c38);border-bottom:1px solid var(--line-soft)}
+.pcover .k{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;background:rgba(10,25,47,.7);border:1px solid var(--line);padding:4px 8px;border-radius:7px;color:var(--cyan)}
+.pcover .e{font-size:38px}
+.pcover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pbody{padding:15px}
+.pbody h4{color:#fff;font-size:14px;margin-bottom:6px}
+.pbody p{color:var(--ink-300);font-size:12px;margin-bottom:12px}
+.pfoot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pprice{font-family:var(--mono);font-weight:700;color:#fff;font-size:14px}
+.pprice .co{display:block;font-size:9.5px;color:#5b6b86;text-decoration:line-through;font-weight:400}
+.pprice small{display:block;font-size:9px;color:var(--ink-300);font-weight:400}
+.pbuy{background:var(--blue);color:#fff;border:none;font-size:11.5px;font-weight:600;padding:8px 12px;border-radius:8px}
+
+/* list */
+.count{font-family:var(--mono);font-size:11px;color:var(--ink-300);margin-left:auto}
+.plist{display:flex;flex-direction:column;gap:12px}
+.item{display:flex;align-items:center;gap:14px;background:var(--navy-950);border:1px solid var(--line-soft);border-radius:12px;padding:12px 14px}
+.item .thumb{width:48px;height:48px;border-radius:9px;flex-shrink:0;display:grid;place-items:center;font-size:24px;overflow:hidden;background:linear-gradient(135deg,#10254a,#0c1c38);border:1px solid var(--line-soft)}
+.item .thumb img{width:100%;height:100%;object-fit:cover}
+.item .meta{min-width:0;flex:1}
+.item .meta .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan)}
+.item .meta .nm{color:#fff;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .meta .pr{font-size:12px;color:var(--ink-300);font-family:var(--mono)}
+.item .ctrls{display:flex;gap:6px;flex-shrink:0}
+.iconbtn{width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--ink-200);cursor:pointer;display:grid;place-items:center;transition:.18s}
+.iconbtn:hover{border-color:#33507f;color:#fff;background:rgba(255,255,255,.05)}
+.iconbtn.del:hover{border-color:rgba(229,72,77,.5);color:#ff8b8e;background:rgba(229,72,77,.12)}
+.iconbtn:disabled{opacity:.35;cursor:not-allowed}
+.empty{text-align:center;color:var(--ink-300);font-size:13px;padding:40px 10px}
+
+/* toast */
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(30px);opacity:0;
+  background:#0e2551;border:1px solid var(--line);color:#fff;padding:12px 20px;border-radius:12px;font-size:13.5px;z-index:80;
+  transition:.3s var(--ease);box-shadow:0 20px 40px -20px rgba(0,0,0,.8);pointer-events:none}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#toast.ok{border-color:rgba(22,163,74,.5)} #toast.ok::before{content:"✓ ";color:#4ade80}
+
+/* modal (password change) */
+.modal{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(4,10,22,.8);backdrop-filter:blur(6px)}
+.modal.on{display:flex}
+.modal .m{width:100%;max-width:380px;background:linear-gradient(180deg,var(--navy-850),var(--navy-900));border:1px solid var(--line);border-radius:18px;padding:26px}
+.modal h3{color:#fff;font-size:17px;margin-bottom:16px}
+
+@media(max-width:820px){
+  .grid{grid-template-columns:1fr}
+  .container{padding:18px 16px 50px}
+}
 </style>
 </head>
 <body>
 
-<header class="bar">
-  <div class="wrap bar__in">
-    <div class="brand"><span class="brand__dot">G</span> Gozali Corp <span class="tag">Panel Admin</span></div>
-    <div class="bar__act">
-      <a href="index.html" class="btn btn--ghost btn--sm" target="_blank">↗ Lihat situs</a>
-      <button class="btn btn--ghost btn--sm" id="reload" type="button">⟳ Muat ulang</button>
+<!-- ============ LOGIN GATE ============ -->
+<div id="gate">
+  <div class="gate-card">
+    <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lg" x1="12" y1="10" x2="108" y2="112" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3A78FF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+        <linearGradient id="lgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD874"/><stop offset="1" stop-color="#F4B63E"/></linearGradient>
+      </defs>
+      <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z" fill="#0A192F" stroke="url(#lg)" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M78.67 67.52 A22 22 0 1 1 78.67 52.48" fill="none" stroke="url(#lg)" stroke-width="12" stroke-linecap="round"/>
+      <rect x="55" y="54" width="24" height="12" rx="3" fill="url(#lg)"/><circle cx="78" cy="60" r="5" fill="url(#lgg)"/>
+    </svg>
+    <h1>Panel Admin</h1>
+    <p>Masuk untuk mengelola produk digital</p>
+    <input class="inp" type="password" id="pw" placeholder="Kata sandi admin" autocomplete="current-password">
+    <div class="err" id="gateErr"></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:6px" onclick="tryLogin()">Masuk</button>
+  </div>
+</div>
+
+<!-- ============ SHELL ============ -->
+<div class="shell" id="shell">
+  <div class="topbar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <use href="#litem"/>
+        <path d="M60 6 L106.8 33 L106.8 87 L60 114 L13.2 87 L13.2 33 Z" fill="#0A192F" stroke="url(#lg)" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M78.67 67.52 A22 22 0 1 1 78.67 52.48" fill="none" stroke="url(#lg)" stroke-width="12" stroke-linecap="round"/>
+        <rect x="55" y="54" width="24" height="12" rx="3" fill="url(#lg)"/><circle cx="78" cy="60" r="5" fill="url(#lgg)"/>
+      </svg>
+      <div><span class="g">GOZALI</span> <span class="c">CORP</span><small>ADMIN PANEL</small></div>
+    </div>
+    <div class="top-actions">
+      <button class="btn btn-ghost btn-sm" onclick="openPwModal()">Ubah Sandi</button>
+      <a class="btn btn-ghost btn-sm" href="index.html" target="_blank">Lihat Situs ↗</a>
+      <button class="btn btn-red btn-sm" onclick="logout()">Keluar</button>
     </div>
   </div>
-</header>
 
-<div class="wrap">
-  <div class="head">
-    <h1>Kelola konten situs</h1>
-    <p>Atur <b>Produk</b>, <b>Berita</b>, <b>Edukasi</b>, dan <b>Pembayaran</b> (QRIS &amp; nomor). Setelah selesai, unduh file JSON-nya lalu ganti file itu di repo GitHub agar tayang untuk semua pengunjung.</p>
-    <div class="banner" id="offlineBanner">
-      <span>⚠️</span>
-      <span><b>Mode lokal:</b> file <code>products.json</code>/<code>news.json</code> tak terbaca via <code>file://</code>, jadi memakai data contoh. Setelah online di GitHub Pages, data terbaca dari file asli. Anda tetap bisa menyusun &amp; mengunduh JSON dari sini.</span>
+  <div class="container">
+    <div class="pagehead">
+      <h2>Produk Digital — E-Book & Store</h2>
+      <p>Tambah, edit, hapus, dan urutkan produk yang tampil di etalase website.</p>
     </div>
-    <div class="tabs">
-      <button class="tab active" data-tab="produk" type="button">🛍 Produk</button>
-      <button class="tab" data-tab="berita" type="button">📰 Berita</button>
-      <button class="tab" data-tab="edukasi" type="button">🎓 Edukasi</button>
-      <button class="tab" data-tab="pembayaran" type="button">💳 Pembayaran</button>
-    </div>
-  </div>
 
-  <!-- ================= PANEL PRODUK ================= -->
-  <div class="panel active" id="panel-produk">
+    <div class="banner">
+      <span class="i">ⓘ</span>
+      <div>Perubahan langsung tersimpan sebagai <b>pratinjau</b> di browser ini. Agar tampil untuk <b>semua pengunjung</b>, klik <b>Unduh products.json</b> lalu unggah/commit file itu ke repositori GitHub Anda (menggantikan products.json yang lama).</div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn btn-gold" onclick="downloadJSON()">⬇ Unduh products.json</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('importFile').click()">⬆ Impor products.json</button>
+      <button class="btn btn-ghost" onclick="loadFromServer()">⟳ Muat dari Server</button>
+      <button class="btn btn-ghost" onclick="resetDefault()">Reset Contoh</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden onchange="importJSON(event)">
+    </div>
+
     <div class="grid">
-      <div class="card form-sticky">
-        <div class="card__pad">
-          <h2 id="p_title">Tambah produk</h2>
-          <p class="sub" id="p_sub">Isi detail lalu klik “Tambah”.</p>
-          <div class="row">
-            <div class="field"><label for="p_nama">Nama produk *</label><input id="p_nama" type="text" placeholder="cth: Ebook Jago Excel"></div>
-            <div class="field"><label for="p_kat">Kategori</label><select id="p_kat"><option value="Ebook">Ebook</option><option value="Digital">Produk Digital</option><option value="Jasa">Jasa / Paket</option><option value="AI">AI Tools / Agent</option></select></div>
+      <!-- FORM -->
+      <div class="panel">
+        <h3 id="formTitle"><span class="tag">BARU</span> Tambah Produk</h3>
+
+        <label class="fld"><span class="t">Kategori</span>
+          <select id="f_kat" onchange="onKatChange();syncPreview()">
+            <option>Ebook</option><option>Bundle</option><option>AI</option>
+            <option>Jasa</option><option>Digital</option><option>Smart Tools</option><option value="__custom">Lainnya…</option>
+          </select>
+        </label>
+        <label class="fld" id="katCustomWrap" style="display:none"><span class="t">Kategori Kustom</span>
+          <input class="inp" id="f_kat_custom" placeholder="mis. Webinar" oninput="syncPreview()">
+        </label>
+
+        <label class="fld"><span class="t">Nama Produk</span>
+          <input class="inp" id="f_nama" placeholder="mis. Mahir Prompt AI untuk Pemula" oninput="syncPreview()">
+        </label>
+
+        <label class="fld"><span class="t">Deskripsi Singkat</span>
+          <textarea id="f_desk" placeholder="Jelaskan manfaat produk dalam 1–2 kalimat." oninput="syncPreview()"></textarea>
+        </label>
+
+        <div class="row2">
+          <label class="fld"><span class="t">Harga</span>
+            <input class="inp" id="f_harga" placeholder="Rp 49.000" oninput="syncPreview()">
+          </label>
+          <label class="fld"><span class="t">Harga Coret <small>(opsional)</small></span>
+            <input class="inp" id="f_coret" placeholder="Rp 99.000" oninput="syncPreview()">
+          </label>
+        </div>
+
+        <div class="row2">
+          <label class="fld"><span class="t">Catatan Kecil <small>(opsional)</small></span>
+            <input class="inp" id="f_note" placeholder="Sekali bayar" oninput="syncPreview()">
+          </label>
+          <label class="fld"><span class="t">Label Tombol</span>
+            <input class="inp" id="f_aksi" placeholder="Beli" oninput="syncPreview()">
+          </label>
+        </div>
+
+        <label class="fld"><span class="t">Emoji Ikon <small>(dipakai bila tanpa gambar)</small></span>
+          <input class="inp" id="f_emoji" placeholder="🧠" maxlength="4" oninput="syncPreview()">
+        </label>
+
+        <label class="fld"><span class="t">Gambar Produk <small>(opsional, otomatis dikecilkan)</small></span>
+          <div class="imgbox">
+            <div class="imgprev" id="imgPrev">🖼️</div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <button class="btn btn-ghost btn-sm" type="button" onclick="document.getElementById('imgFile').click()">Pilih Gambar</button>
+              <button class="btn btn-red btn-sm" type="button" onclick="clearImage()">Hapus Gambar</button>
+            </div>
+            <input type="file" id="imgFile" accept="image/*" hidden onchange="onImage(event)">
           </div>
-          <div class="row">
-            <div class="field"><label for="p_harga">Harga *</label><input id="p_harga" type="text" placeholder="Rp 49rb"></div>
-            <div class="field"><label for="p_coret">Harga coret</label><input id="p_coret" type="text" placeholder="Rp 99rb (opsional)"></div>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-blue" id="saveBtn" onclick="saveProduct()" style="flex:1;justify-content:center">Tambah Produk</button>
+          <button class="btn btn-ghost" id="cancelBtn" onclick="resetForm()" style="display:none">Batal</button>
+        </div>
+
+        <div class="previewwrap">
+          <div class="lbl">Pratinjau Kartu</div>
+          <div class="pcard">
+            <div class="pcover" id="pv_cover"><span class="k" id="pv_k">Ebook</span><span class="e" id="pv_e">🧠</span></div>
+            <div class="pbody">
+              <h4 id="pv_nm">Nama Produk</h4>
+              <p id="pv_de">Deskripsi produk akan tampil di sini.</p>
+              <div class="pfoot">
+                <div class="pprice"><span class="co" id="pv_co" style="display:none"></span><span id="pv_pr">Rp 0</span><small id="pv_no"></small></div>
+                <button class="pbuy" id="pv_ak">Beli</button>
+              </div>
+            </div>
           </div>
-          <div class="field"><label for="p_desk">Deskripsi</label><textarea id="p_desk" placeholder="Deskripsi singkat…"></textarea></div>
-          <div class="field"><label>Gambar produk</label>
-            <div class="uploader"><div class="uploader__prev" id="p_prev"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg></div>
-              <div><label class="uploader__btn" for="p_img">Unggah gambar</label><input id="p_img" type="file" accept="image/*" hidden><small>Opsional. Kosong = warna kategori.</small></div></div>
-          </div>
-          <div class="form-act"><button class="btn btn--orange" id="p_save" type="button">Tambah</button><button class="btn btn--ghost" id="p_cancel" type="button" style="display:none">Batal edit</button><span class="msg" id="p_msg"></span></div>
         </div>
       </div>
-      <div class="card"><div class="card__pad">
-        <div class="list-head"><h2>Daftar produk</h2><span class="count" id="p_count">0</span></div>
-        <div id="p_list"></div>
-        <div class="export">
-          <p class="note">Terbit: <b>Download products.json</b> → GitHub → ganti file lama → commit.</p>
-          <div class="bar__act"><button class="btn btn--gold btn--sm" id="p_download" type="button">⬇ Download products.json</button><button class="btn btn--ghost btn--sm" id="p_copy" type="button">Salin JSON</button></div>
-          <details><summary>Lihat isi products.json</summary><textarea class="json" id="p_json" readonly></textarea></details>
-        </div>
-      </div></div>
-    </div>
-  </div>
 
-  <!-- ================= PANEL BERITA ================= -->
-  <div class="panel" id="panel-berita">
-    <div class="grid">
-      <div class="card form-sticky">
-        <div class="card__pad">
-          <h2 id="n_title">Tambah berita</h2>
-          <p class="sub" id="n_sub">Isi detail lalu klik “Tambah”.</p>
-          <div class="field"><label for="n_judul">Judul berita *</label><input id="n_judul" type="text" placeholder="cth: AI Agent makin pintar…"></div>
-          <div class="row">
-            <div class="field"><label for="n_kat">Kategori</label><select id="n_kat"><option>AI</option><option>Blockchain</option><option>Gadget</option><option>Startup</option><option>Cybersecurity</option><option>Viral</option></select></div>
-            <div class="field"><label for="n_baca">Menit baca</label><input id="n_baca" type="number" min="1" value="3"></div>
-          </div>
-          <div class="field"><label for="n_ring">Ringkasan</label><textarea id="n_ring" placeholder="Ringkasan singkat berita…"></textarea></div>
-          <div class="row">
-            <div class="field"><label for="n_tgl">Tanggal</label><input id="n_tgl" type="date"></div>
-            <div class="field"><label for="n_link">Link (opsional)</label><input id="n_link" type="text" placeholder="https://…"></div>
-          </div>
-          <div class="field"><label>Gambar sampul</label>
-            <div class="uploader"><div class="uploader__prev" id="n_prev"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 8h3v9a2 2 0 0 1-2 2M7 8h6M7 11h6M7 14h4"/></svg></div>
-              <div><label class="uploader__btn" for="n_img">Unggah gambar</label><input id="n_img" type="file" accept="image/*" hidden><small>Opsional. Kosong = warna kategori.</small></div></div>
-          </div>
-          <div class="form-act"><button class="btn btn--orange" id="n_save" type="button">Tambah</button><button class="btn btn--ghost" id="n_cancel" type="button" style="display:none">Batal edit</button><span class="msg" id="n_msg"></span></div>
-        </div>
+      <!-- LIST -->
+      <div class="panel">
+        <h3>Daftar Produk <span class="count" id="count">0 produk</span></h3>
+        <div class="plist" id="plist"></div>
       </div>
-      <div class="card"><div class="card__pad">
-        <div class="list-head"><h2>Daftar berita</h2><span class="count" id="n_count">0</span></div>
-        <div id="n_list"></div>
-        <div class="export">
-          <p class="note">Terbit: <b>Download news.json</b> → GitHub → ganti file lama → commit. Berita paling atas jadi <b>sorotan utama</b> di hero.</p>
-          <div class="bar__act"><button class="btn btn--gold btn--sm" id="n_download" type="button">⬇ Download news.json</button><button class="btn btn--ghost btn--sm" id="n_copy" type="button">Salin JSON</button></div>
-          <details><summary>Lihat isi news.json</summary><textarea class="json" id="n_json" readonly></textarea></details>
-        </div>
-      </div></div>
-    </div>
-  </div>
-
-  <!-- ================= PANEL EDUKASI ================= -->
-  <div class="panel" id="panel-edukasi">
-    <div class="grid">
-      <div class="card form-sticky">
-        <div class="card__pad">
-          <h2 id="e_title">Tambah materi edukasi</h2>
-          <p class="sub" id="e_sub">Isi detail lalu klik “Tambah”.</p>
-          <div class="field"><label for="e_judul">Judul materi *</label><input id="e_judul" type="text" placeholder="cth: Dasar-dasar AI untuk Pemula"></div>
-          <div class="row">
-            <div class="field"><label for="e_level">Level</label><select id="e_level"><option>Pemula</option><option>Menengah</option><option>Lanjut</option></select></div>
-            <div class="field"><label for="e_durasi">Durasi</label><input id="e_durasi" type="text" placeholder="45 mnt"></div>
-          </div>
-          <div class="field"><label for="e_ring">Ringkasan</label><textarea id="e_ring" placeholder="Ringkasan singkat materi…"></textarea></div>
-          <div class="field"><label for="e_link">Link (opsional)</label><input id="e_link" type="text" placeholder="https://…"></div>
-          <div class="field"><label>Gambar sampul</label>
-            <div class="uploader"><div class="uploader__prev" id="e_prev"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
-              <div><label class="uploader__btn" for="e_img">Unggah gambar</label><input id="e_img" type="file" accept="image/*" hidden><small>Opsional. Kosong = warna level.</small></div></div>
-          </div>
-          <div class="form-act"><button class="btn btn--orange" id="e_save" type="button">Tambah</button><button class="btn btn--ghost" id="e_cancel" type="button" style="display:none">Batal edit</button><span class="msg" id="e_msg"></span></div>
-        </div>
-      </div>
-      <div class="card"><div class="card__pad">
-        <div class="list-head"><h2>Daftar materi</h2><span class="count" id="e_count">0</span></div>
-        <div id="e_list"></div>
-        <div class="export">
-          <p class="note">Terbit: <b>Download edukasi.json</b> → GitHub → ganti file lama → commit.</p>
-          <div class="bar__act"><button class="btn btn--gold btn--sm" id="e_download" type="button">⬇ Download edukasi.json</button><button class="btn btn--ghost btn--sm" id="e_copy" type="button">Salin JSON</button></div>
-          <details><summary>Lihat isi edukasi.json</summary><textarea class="json" id="e_json" readonly></textarea></details>
-        </div>
-      </div></div>
-    </div>
-  </div>
-
-  <!-- ================= PANEL PEMBAYARAN ================= -->
-  <div class="panel" id="panel-pembayaran">
-    <div class="grid">
-      <div class="card form-sticky">
-        <div class="card__pad">
-          <h2>Info pembayaran</h2>
-          <p class="sub">Ganti QRIS &amp; nomor rekening di sini. Perubahan langsung terlihat di pratinjau.</p>
-          <div class="field"><label>Gambar QRIS</label>
-            <div class="uploader"><div class="uploader__prev" id="pay_prev" style="background:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1A40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M20 14v0M17 20h0M20 17v4"/></svg></div>
-              <div><label class="uploader__btn" for="pay_qris">Unggah QRIS</label><input id="pay_qris" type="file" accept="image/*" hidden><small>Boleh kartu QRIS penuh atau kode QR-nya saja. Disarankan <b>kode QR saja</b> agar paling tajam. Gambar otomatis dirapikan ke bentuk persegi.</small></div></div>
-          </div>
-          <div class="field"><label for="pay_merchant">Nama merchant</label><input id="pay_merchant" type="text" placeholder="M GOZALI SALIM, DIGITAL &amp; KREATIF"></div>
-          <div class="field"><label for="pay_nmid">NMID</label><input id="pay_nmid" type="text" placeholder="ID1026545885604"></div>
-          <div class="row">
-            <div class="field"><label for="pay_ew">Nomor e-wallet</label><input id="pay_ew" type="text" placeholder="085600000279"></div>
-            <div class="field"><label for="pay_holder">Atas nama</label><input id="pay_holder" type="text" placeholder="M Gozali Salim"></div>
-          </div>
-          <div class="row">
-            <div class="field"><label for="pay_bankname">Nama bank</label><input id="pay_bankname" type="text" placeholder="Bank Mandiri"></div>
-            <div class="field"><label for="pay_bankno">No. rekening</label><input id="pay_bankno" type="text" placeholder="1020004981236"></div>
-          </div>
-          <div class="field"><label for="pay_wa">Nomor WhatsApp (konfirmasi)</label><input id="pay_wa" type="text" placeholder="6285600000279"></div>
-          <div class="form-act"><span class="msg" id="pay_msg"></span></div>
-        </div>
-      </div>
-      <div class="card"><div class="card__pad">
-        <div class="list-head"><h2>Pratinjau</h2></div>
-        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:linear-gradient(135deg,#0E1A40,#16265C);border-radius:16px;padding:18px;margin-bottom:16px">
-          <div style="background:#fff;padding:10px;border-radius:12px;flex:none"><img id="pay_qrBig" alt="Pratinjau QRIS" style="display:block;width:132px;height:132px;object-fit:contain;background:#fff"></div>
-          <div style="min-width:170px">
-            <div style="font-weight:800;color:#F4B63E;font-size:.92rem;line-height:1.2" id="pay_pvMerchant">—</div>
-            <div style="font-size:.78rem;color:#C6CCE6;margin-top:3px" id="pay_pvNmid">NMID: —</div>
-            <div style="font-size:.82rem;color:#EAEDFA;margin-top:9px" id="pay_pvEw">E-wallet: —</div>
-            <div style="font-size:.82rem;color:#EAEDFA;margin-top:2px" id="pay_pvBank">Bank: —</div>
-          </div>
-        </div>
-        <div class="export">
-          <p class="note">Terbit: <b>Download pembayaran.json</b> → GitHub → ganti file lama → commit.</p>
-          <div class="bar__act"><button class="btn btn--gold btn--sm" id="pay_download" type="button">⬇ Download pembayaran.json</button><button class="btn btn--ghost btn--sm" id="pay_copy" type="button">Salin JSON</button></div>
-          <details><summary>Lihat isi pembayaran.json</summary><textarea class="json" id="pay_json" readonly></textarea></details>
-        </div>
-      </div></div>
     </div>
   </div>
 </div>
 
+<!-- password change modal -->
+<div class="modal" id="pwModal">
+  <div class="m">
+    <h3>Ubah Kata Sandi Admin</h3>
+    <label class="fld"><span class="t">Sandi Baru</span><input class="inp" type="password" id="np1" placeholder="Minimal 6 karakter"></label>
+    <label class="fld"><span class="t">Ulangi Sandi Baru</span><input class="inp" type="password" id="np2" placeholder="Ketik ulang"></label>
+    <div class="err" id="pwErr" style="color:var(--red);font-size:12.5px;min-height:16px"></div>
+    <div class="form-actions">
+      <button class="btn btn-gold" style="flex:1;justify-content:center" onclick="changePw()">Simpan Sandi</button>
+      <button class="btn btn-ghost" onclick="closePwModal()">Batal</button>
+    </div>
+    <p style="font-size:11.5px;color:var(--ink-300);margin-top:12px">Sandi disimpan sebagai hash SHA-256 di browser ini. Ini pengaman ringan untuk situs statis, bukan keamanan tingkat server.</p>
+  </div>
+</div>
+
+<div id="toast"></div>
+
 <script>
-const $=id=>document.getElementById(id);
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const catColors={AI:'#21B8D6',Blockchain:'#F4B63E',Gadget:'#F97316',Startup:'#1FA971',Cybersecurity:'#E4572E',Viral:'#C2317E'};
-let offline=false;
-function download(name,arr){ const b=new Blob([JSON.stringify(arr,null,2)],{type:'application/json'}); const u=URL.createObjectURL(b); const a=document.createElement('a'); a.href=u; a.download=name; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(u); }
-async function copyTxt(t){ try{ await navigator.clipboard.writeText(t);}catch(e){ const x=document.createElement('textarea'); x.value=t; document.body.appendChild(x); x.select(); document.execCommand('copy'); x.remove(); } }
+/* ================= AUTH ================= */
+const DEFAULT_HASH = "b43e8d67d36ff778c115bbac6cae0a4fba372760a54360b03b0c151af80addc9"; // "GozaliAdmin2026"
+async function sha256(str){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function currentHash(){ try{ return localStorage.getItem('gct_admin_hash') || DEFAULT_HASH; }catch(e){ return DEFAULT_HASH; } }
 
-/* tabs */
-document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
-  t.classList.add('active'); $('panel-'+t.dataset.tab).classList.add('active');
-}));
+async function tryLogin(){
+  const v = document.getElementById('pw').value;
+  const h = await sha256(v);
+  if(h === currentHash()){
+    try{ sessionStorage.setItem('gct_admin_ok','1'); }catch(e){}
+    showShell();
+  } else {
+    document.getElementById('gateErr').textContent = 'Kata sandi salah. Coba lagi.';
+  }
+}
+document.getElementById('pw').addEventListener('keydown',e=>{ if(e.key==='Enter') tryLogin(); });
+function showShell(){
+  document.getElementById('gate').style.display='none';
+  document.getElementById('shell').classList.add('on');
+  init();
+}
+function logout(){ try{ sessionStorage.removeItem('gct_admin_ok'); }catch(e){} location.reload(); }
+(function(){ try{ if(sessionStorage.getItem('gct_admin_ok')==='1') showShell(); }catch(e){} })();
 
-/* ============ MANAGER PRODUK ============ */
-const PRODUK=(function(){
-  const covers={Ebook:'linear-gradient(135deg,#243a7a,#16265C)',Digital:'linear-gradient(135deg,#E09A1F,#F97316)',Jasa:'linear-gradient(135deg,#F97316,#c0392b)',AI:'linear-gradient(135deg,#16265C,#21B8D6)'};
-  const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>';
-  const DEF=[
-    {nama:"Mahir Prompt AI untuk Pemula",kat:"Ebook",harga:"Rp 49rb",coret:"Rp 99rb",desk:"Panduan menyusun prompt efektif untuk ChatGPT & AI lain, dari nol.",img:""},
-    {nama:"Paket Konten Medsos 30 Hari",kat:"Jasa",harga:"Rp 1,5jt",coret:"",desk:"Konten sebulan penuh: desain, reels, caption, dan jadwal posting.",img:""},
-    {nama:"AI Agent Auto-Reply WhatsApp",kat:"AI",harga:"Rp 750rb",coret:"",desk:"Chatbot AI yang membalas pesan pelanggan otomatis 24/7 + setup.",img:""},
-    {nama:"Bundle Template & Preset Konten",kat:"Digital",harga:"Rp 79rb",coret:"Rp 149rb",desk:"Template dan preset siap pakai untuk konten lebih cepat & rapi.",img:""}
-  ];
-  let data=[], edit=-1, img='';
-  const setPrev=s=>{ $('p_prev').innerHTML=s?'<img src="'+s+'" alt="">':'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.6"/></svg>'; };
-  const flash=(t,ok)=>{ $('p_msg').style.color=ok===false?'#c0392b':'#1f8a55'; $('p_msg').textContent=t; if(t)setTimeout(()=>$('p_msg').textContent='',3500); };
-  const json=()=>$('p_json').value=JSON.stringify(data,null,2);
-  function render(){
-    $('p_count').textContent=data.length; const L=$('p_list');
-    if(!data.length){ L.innerHTML='<div class="empty">Belum ada produk.</div>'; json(); return; }
-    L.innerHTML='';
-    data.forEach((p,i)=>{ const r=document.createElement('div'); r.className='item'+(i===edit?' editing':'');
-      const cov=p.img?'<img src="'+p.img+'" alt="">':ICON; const coret=p.coret?'<span class="small">'+esc(p.coret)+'</span>':'';
-      r.innerHTML='<div class="item__cov" style="background:'+(covers[p.kat]||covers.Ebook)+'">'+cov+'</div>'+
-        '<div class="item__main"><h3>'+esc(p.nama)+'</h3><div class="item__meta"><span class="badge b-'+esc(p.kat)+'">'+esc(p.kat)+'</span><span class="small"><b>'+esc(p.harga)+'</b> '+coret+'</span></div></div>'+
-        '<div class="item__act"><button class="iconbtn edit" title="Edit">✎</button><button class="iconbtn del" title="Hapus">🗑</button></div>';
-      r.querySelector('.edit').addEventListener('click',()=>startEdit(i)); r.querySelector('.del').addEventListener('click',()=>del(i)); L.appendChild(r);
-    }); json();
-  }
-  function clear(){ ['p_nama','p_harga','p_coret','p_desk'].forEach(id=>$(id).value=''); $('p_kat').value='Ebook'; $('p_img').value=''; img=''; setPrev(''); }
-  function addMode(){ edit=-1; $('p_title').textContent='Tambah produk'; $('p_sub').textContent='Isi detail lalu klik “Tambah”.'; $('p_save').textContent='Tambah'; $('p_cancel').style.display='none'; clear(); render(); }
-  function startEdit(i){ edit=i; const p=data[i]; $('p_nama').value=p.nama||''; $('p_kat').value=p.kat||'Ebook'; $('p_harga').value=p.harga||''; $('p_coret').value=p.coret||''; $('p_desk').value=p.desk||''; img=p.img||''; setPrev(img);
-    $('p_title').textContent='Edit produk'; $('p_sub').textContent='Ubah lalu “Simpan perubahan”.'; $('p_save').textContent='Simpan perubahan'; $('p_cancel').style.display=''; render(); window.scrollTo({top:0,behavior:'smooth'}); }
-  function del(i){ if(!confirm('Hapus "'+data[i].nama+'"?'))return; data.splice(i,1); if(edit===i)addMode(); else{ if(edit>i)edit--; render(); } flash('Dihapus. Jangan lupa Download products.json.'); }
-  $('p_save').addEventListener('click',()=>{ const nama=$('p_nama').value.trim(),harga=$('p_harga').value.trim(); if(!nama||!harga){flash('Nama & harga wajib.',false);return;}
-    const p={nama,kat:$('p_kat').value,harga,coret:$('p_coret').value.trim(),desk:$('p_desk').value.trim(),img}; if(edit===-1){data.push(p);flash('Ditambahkan. Download products.json.');}else{data[edit]=p;flash('Disimpan. Download products.json.');} addMode(); });
-  $('p_cancel').addEventListener('click',addMode);
-  $('p_img').addEventListener('change',()=>{ const f=$('p_img').files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{img=r.result;setPrev(img);}; r.readAsDataURL(f); });
-  $('p_download').addEventListener('click',()=>{ download('products.json',data); flash('products.json terunduh.'); });
-  $('p_copy').addEventListener('click',()=>{ copyTxt(JSON.stringify(data,null,2)); flash('JSON disalin.'); });
-  function load(){ fetch('products.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{data=Array.isArray(d)?d:DEF.slice();render();}).catch(()=>{data=DEF.slice();offline=true;render();}); }
-  return { load, addMode };
-})();
+/* password change */
+function openPwModal(){ document.getElementById('pwModal').classList.add('on'); }
+function closePwModal(){ document.getElementById('pwModal').classList.remove('on'); document.getElementById('np1').value='';document.getElementById('np2').value='';document.getElementById('pwErr').textContent=''; }
+async function changePw(){
+  const a=document.getElementById('np1').value, b=document.getElementById('np2').value;
+  const e=document.getElementById('pwErr');
+  if(a.length<6){ e.textContent='Sandi minimal 6 karakter.'; return; }
+  if(a!==b){ e.textContent='Konfirmasi sandi tidak sama.'; return; }
+  try{ localStorage.setItem('gct_admin_hash', await sha256(a)); }catch(err){}
+  closePwModal(); toast('Kata sandi berhasil diubah');
+}
 
-/* ============ MANAGER BERITA ============ */
-const BERITA=(function(){
-  const NICON='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 8h3v9a2 2 0 0 1-2 2M7 8h6M7 11h6M7 14h4"/></svg>';
-  const DEF=[
-    {judul:"AI Agent makin pintar: kini bisa kerjakan tugas multi-langkah sendiri",kategori:"AI",ringkasan:"Model terbaru mampu merencanakan dan mengeksekusi tugas kompleks tanpa banyak arahan manusia.",tanggal:"2026-07-06",baca:4,img:"",link:"#"},
-    {judul:"Chip AI generasi baru bikin laptop makin ngebut & hemat daya",kategori:"Gadget",ringkasan:"Prosesor dengan NPU besar mendorong fitur AI berjalan langsung di perangkat.",tanggal:"2026-07-05",baca:3,img:"",link:"#"},
-    {judul:"Tools AI ini lagi viral: bikin video hanya dari teks",kategori:"Viral",ringkasan:"Warganet ramai mencoba pembuatan video instan yang hasilnya makin realistis.",tanggal:"2026-07-01",baca:3,img:"",link:"#"}
-  ];
-  let data=[], edit=-1, img='';
-  const bg=p=>{ const c=catColors[p.kategori]||'#16265C'; return 'linear-gradient(135deg,'+c+',#16265C)'; };
-  const setPrev=s=>{ $('n_prev').innerHTML=s?'<img src="'+s+'" alt="">':NICON; };
-  const flash=(t,ok)=>{ $('n_msg').style.color=ok===false?'#c0392b':'#1f8a55'; $('n_msg').textContent=t; if(t)setTimeout(()=>$('n_msg').textContent='',3500); };
-  const fmt=d=>{try{return new Date(d).toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'});}catch(e){return d;}};
-  const json=()=>$('n_json').value=JSON.stringify(data,null,2);
-  function render(){
-    $('n_count').textContent=data.length; const L=$('n_list');
-    if(!data.length){ L.innerHTML='<div class="empty">Belum ada berita.</div>'; json(); return; }
-    L.innerHTML='';
-    data.forEach((p,i)=>{ const r=document.createElement('div'); r.className='item'+(i===edit?' editing':'');
-      const cov=p.img?'<img src="'+p.img+'" alt="">':NICON;
-      r.innerHTML='<div class="item__cov" style="background:'+bg(p)+'">'+cov+'</div>'+
-        '<div class="item__main"><h3>'+esc(p.judul)+'</h3><div class="item__meta"><span class="badge" style="background:'+(catColors[p.kategori]||'#16265C')+'">'+esc(p.kategori)+'</span><span class="small">'+fmt(p.tanggal)+' • '+esc(p.baca)+' mnt</span>'+(i===0?'<span class="small">⭐ sorotan</span>':'')+'</div></div>'+
-        '<div class="item__act"><button class="iconbtn edit" title="Edit">✎</button><button class="iconbtn del" title="Hapus">🗑</button></div>';
-      r.querySelector('.edit').addEventListener('click',()=>startEdit(i)); r.querySelector('.del').addEventListener('click',()=>del(i)); L.appendChild(r);
-    }); json();
-  }
-  function clear(){ ['n_judul','n_ring','n_link'].forEach(id=>$(id).value=''); $('n_kat').value='AI'; $('n_baca').value=3; $('n_tgl').value=new Date().toISOString().slice(0,10); $('n_img').value=''; img=''; setPrev(''); }
-  function addMode(){ edit=-1; $('n_title').textContent='Tambah berita'; $('n_sub').textContent='Isi detail lalu klik “Tambah”.'; $('n_save').textContent='Tambah'; $('n_cancel').style.display='none'; clear(); render(); }
-  function startEdit(i){ edit=i; const p=data[i]; $('n_judul').value=p.judul||''; $('n_kat').value=p.kategori||'AI'; $('n_baca').value=p.baca||3; $('n_ring').value=p.ringkasan||''; $('n_tgl').value=p.tanggal||''; $('n_link').value=p.link||''; img=p.img||''; setPrev(img);
-    $('n_title').textContent='Edit berita'; $('n_sub').textContent='Ubah lalu “Simpan perubahan”.'; $('n_save').textContent='Simpan perubahan'; $('n_cancel').style.display=''; render(); window.scrollTo({top:0,behavior:'smooth'}); }
-  function del(i){ if(!confirm('Hapus berita ini?'))return; data.splice(i,1); if(edit===i)addMode(); else{ if(edit>i)edit--; render(); } flash('Dihapus. Jangan lupa Download news.json.'); }
-  $('n_save').addEventListener('click',()=>{ const judul=$('n_judul').value.trim(); if(!judul){flash('Judul wajib.',false);return;}
-    const p={judul,kategori:$('n_kat').value,ringkasan:$('n_ring').value.trim(),tanggal:$('n_tgl').value||new Date().toISOString().slice(0,10),baca:parseInt($('n_baca').value)||3,img,link:$('n_link').value.trim()||'#'};
-    if(edit===-1){data.unshift(p);flash('Ditambahkan (jadi teratas). Download news.json.');}else{data[edit]=p;flash('Disimpan. Download news.json.');} addMode(); });
-  $('n_cancel').addEventListener('click',addMode);
-  $('n_img').addEventListener('change',()=>{ const f=$('n_img').files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{img=r.result;setPrev(img);}; r.readAsDataURL(f); });
-  $('n_download').addEventListener('click',()=>{ download('news.json',data); flash('news.json terunduh.'); });
-  $('n_copy').addEventListener('click',()=>{ copyTxt(JSON.stringify(data,null,2)); flash('JSON disalin.'); });
-  function load(){ fetch('news.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{data=Array.isArray(d)?d:DEF.slice();render();}).catch(()=>{data=DEF.slice();offline=true;render();}); }
-  return { load, addMode };
-})();
+/* ================= DATA ================= */
+const KEY='gct_products';
+const DEFAULT_PRODUCTS=[
+  {nama:"Mahir Prompt AI untuk Pemula",kat:"Ebook",harga:"Rp 49.000",coret:"Rp 99.000",desk:"Panduan menyusun prompt efektif untuk ChatGPT & AI lain, dari nol hingga mahir.",img:"",emoji:"🧠",note:"Sekali bayar",aksi:"Beli"},
+  {nama:"Paket Konten Medsos 30 Hari",kat:"Jasa",harga:"Rp 1.500.000",coret:"",desk:"Konten sebulan penuh: desain, reels, caption, dan jadwal posting siap tayang.",img:"",emoji:"🎬",note:"Per proyek",aksi:"Pesan"},
+  {nama:"AI Agent Auto-Reply WhatsApp",kat:"AI",harga:"Rp 750.000",coret:"",desk:"Chatbot AI yang membalas pesan pelanggan otomatis 24/7, lengkap dengan setup.",img:"",emoji:"🤖",note:"Setup + support",aksi:"Konsultasi"},
+  {nama:"Bundle Template & Preset Konten",kat:"Digital",harga:"Rp 79.000",coret:"Rp 149.000",desk:"Template dan preset siap pakai untuk membuat konten lebih cepat, rapi, dan konsisten.",img:"",emoji:"🎨",note:"Sekali bayar",aksi:"Beli"}
+];
+const EMOJI_BY_KAT={Ebook:'📘',Bundle:'📚',AI:'🤖',Jasa:'🌐',Digital:'⚙️','Smart Tools':'⚙️'};
+let products=[];
+let editIndex=-1;
+let pendingImg="";
 
-/* ============ MANAGER EDUKASI ============ */
-const EDUKASI=(function(){
-  const lvlColors={Pemula:'#1FA971',Menengah:'#E09A1F',Lanjut:'#F97316'};
-  const EICON='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>';
-  const DEF=[
-    {judul:"Dasar-dasar AI untuk Pemula",level:"Pemula",ringkasan:"Kenalan dengan konsep AI, machine learning, dan cara memakainya sehari-hari.",durasi:"45 mnt",img:"",link:"#"},
-    {judul:"Bikin AI Agent Pertamamu",level:"Menengah",ringkasan:"Langkah praktis merancang chatbot & AI agent tanpa harus jago coding.",durasi:"1,5 jam",img:"",link:"#"},
-    {judul:"AI Automation untuk Bisnis",level:"Lanjut",ringkasan:"Rancang alur otomasi yang menghemat waktu dari lead sampai laporan.",durasi:"2 jam",img:"",link:"#"}
-  ];
-  let data=[], edit=-1, img='';
-  const bg=p=>{ const c=lvlColors[p.level]||'#1FA971'; return 'linear-gradient(135deg,'+c+',#16265C)'; };
-  const setPrev=s=>{ $('e_prev').innerHTML=s?'<img src="'+s+'" alt="">':EICON; };
-  const flash=(t,ok)=>{ $('e_msg').style.color=ok===false?'#c0392b':'#1f8a55'; $('e_msg').textContent=t; if(t)setTimeout(()=>$('e_msg').textContent='',3500); };
-  const json=()=>$('e_json').value=JSON.stringify(data,null,2);
-  function render(){
-    $('e_count').textContent=data.length; const L=$('e_list');
-    if(!data.length){ L.innerHTML='<div class="empty">Belum ada materi.</div>'; json(); return; }
-    L.innerHTML='';
-    data.forEach((p,i)=>{ const r=document.createElement('div'); r.className='item'+(i===edit?' editing':'');
-      const cov=p.img?'<img src="'+p.img+'" alt="">':EICON;
-      r.innerHTML='<div class="item__cov" style="background:'+bg(p)+'">'+cov+'</div>'+
-        '<div class="item__main"><h3>'+esc(p.judul)+'</h3><div class="item__meta"><span class="badge" style="background:'+(lvlColors[p.level]||'#1FA971')+'">'+esc(p.level)+'</span><span class="small">⏱ '+esc(p.durasi||'-')+'</span></div></div>'+
-        '<div class="item__act"><button class="iconbtn edit" title="Edit">✎</button><button class="iconbtn del" title="Hapus">🗑</button></div>';
-      r.querySelector('.edit').addEventListener('click',()=>startEdit(i)); r.querySelector('.del').addEventListener('click',()=>del(i)); L.appendChild(r);
-    }); json();
-  }
-  function clear(){ ['e_judul','e_ring','e_durasi','e_link'].forEach(id=>$(id).value=''); $('e_level').value='Pemula'; $('e_img').value=''; img=''; setPrev(''); }
-  function addMode(){ edit=-1; $('e_title').textContent='Tambah materi edukasi'; $('e_sub').textContent='Isi detail lalu klik “Tambah”.'; $('e_save').textContent='Tambah'; $('e_cancel').style.display='none'; clear(); render(); }
-  function startEdit(i){ edit=i; const p=data[i]; $('e_judul').value=p.judul||''; $('e_level').value=p.level||'Pemula'; $('e_durasi').value=p.durasi||''; $('e_ring').value=p.ringkasan||''; $('e_link').value=p.link||''; img=p.img||''; setPrev(img);
-    $('e_title').textContent='Edit materi'; $('e_sub').textContent='Ubah lalu “Simpan perubahan”.'; $('e_save').textContent='Simpan perubahan'; $('e_cancel').style.display=''; render(); window.scrollTo({top:0,behavior:'smooth'}); }
-  function del(i){ if(!confirm('Hapus materi ini?'))return; data.splice(i,1); if(edit===i)addMode(); else{ if(edit>i)edit--; render(); } flash('Dihapus. Jangan lupa Download edukasi.json.'); }
-  $('e_save').addEventListener('click',()=>{ const judul=$('e_judul').value.trim(); if(!judul){flash('Judul wajib.',false);return;}
-    const p={judul,level:$('e_level').value,ringkasan:$('e_ring').value.trim(),durasi:$('e_durasi').value.trim()||'-',img,link:$('e_link').value.trim()||'#'};
-    if(edit===-1){data.push(p);flash('Ditambahkan. Download edukasi.json.');}else{data[edit]=p;flash('Disimpan. Download edukasi.json.');} addMode(); });
-  $('e_cancel').addEventListener('click',addMode);
-  $('e_img').addEventListener('change',()=>{ const f=$('e_img').files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{img=r.result;setPrev(img);}; r.readAsDataURL(f); });
-  $('e_download').addEventListener('click',()=>{ download('edukasi.json',data); flash('edukasi.json terunduh.'); });
-  $('e_copy').addEventListener('click',()=>{ copyTxt(JSON.stringify(data,null,2)); flash('JSON disalin.'); });
-  function load(){ fetch('edukasi.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{data=Array.isArray(d)?d:DEF.slice();render();}).catch(()=>{data=DEF.slice();offline=true;render();}); }
-  return { load, addMode };
-})();
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(products)); }catch(e){} }
+function load(){
+  try{ const ls=localStorage.getItem(KEY); if(ls){ const a=JSON.parse(ls); if(Array.isArray(a)) return a; } }catch(e){}
+  return JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+}
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 
-/* ============ MANAGER PEMBAYARAN ============ */
-const PEMBAYARAN=(function(){
-  const QICON='<svg viewBox="0 0 24 24" fill="none" stroke="#0E1A40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M17 20h0M20 17v4"/></svg>';
-  const DEF={qris:'',merchant:'M GOZALI SALIM, DIGITAL & KREATIF',nmid:'ID1026545885604',ewallet_no:'085600000279',bank_name:'Bank Mandiri',bank_no:'1020004981236',holder:'M Gozali Salim',wa:'6285600000279'};
-  let cur=Object.assign({},DEF);
-  const flash=(t,ok)=>{ $('pay_msg').style.color=ok===false?'#c0392b':'#1f8a55'; $('pay_msg').textContent=t; if(t)setTimeout(()=>$('pay_msg').textContent='',3500); };
-  function setPrev(s){ $('pay_prev').innerHTML = s ? '<img src="'+s+'" alt="" style="width:100%;height:100%;object-fit:contain;background:#fff">' : QICON; if($('pay_qrBig')) $('pay_qrBig').src = s || ''; }
-  function readForm(){
-    cur.merchant=$('pay_merchant').value.trim()||DEF.merchant;
-    cur.nmid=$('pay_nmid').value.trim()||DEF.nmid;
-    cur.ewallet_no=$('pay_ew').value.trim()||DEF.ewallet_no;
-    cur.holder=$('pay_holder').value.trim()||DEF.holder;
-    cur.bank_name=$('pay_bankname').value.trim()||DEF.bank_name;
-    cur.bank_no=$('pay_bankno').value.trim()||DEF.bank_no;
-    cur.wa=$('pay_wa').value.trim()||DEF.wa;
-  }
-  function update(){
-    readForm();
-    $('pay_pvMerchant').textContent=cur.merchant;
-    $('pay_pvNmid').textContent='NMID: '+cur.nmid;
-    $('pay_pvEw').textContent='E-wallet: '+cur.ewallet_no+' · a.n. '+cur.holder;
-    $('pay_pvBank').textContent=cur.bank_name+': '+cur.bank_no;
-    $('pay_json').value=JSON.stringify(cur,null,2);
-  }
-  ['pay_merchant','pay_nmid','pay_ew','pay_holder','pay_bankname','pay_bankno','pay_wa'].forEach(id=>$(id).addEventListener('input',update));
-  $('pay_qris').addEventListener('change',()=>{
-    const f=$('pay_qris').files[0]; if(!f)return;
-    const r=new FileReader();
-    r.onload=()=>{ const im=new Image(); im.onload=()=>{
-      const size=660, c=document.createElement('canvas'); c.width=c.height=size; const x=c.getContext('2d');
-      x.fillStyle='#fff'; x.fillRect(0,0,size,size);
-      const sc=Math.min(size/im.width,size/im.height), w=im.width*sc, h=im.height*sc;
-      x.drawImage(im,(size-w)/2,(size-h)/2,w,h);
-      cur.qris=c.toDataURL('image/png'); setPrev(cur.qris); update(); flash('QRIS diperbarui. Jangan lupa Download pembayaran.json.');
-    }; im.onerror=()=>flash('Gambar tak terbaca.',false); im.src=r.result; };
-    r.readAsDataURL(f);
+function init(){
+  products=load();
+  renderList();
+  resetForm();
+  onKatChange();
+  syncPreview();
+}
+
+/* ================= LIST ================= */
+function renderList(){
+  const box=document.getElementById('plist');
+  document.getElementById('count').textContent=products.length+' produk';
+  if(!products.length){ box.innerHTML='<div class="empty">Belum ada produk. Tambahkan lewat formulir di kiri.</div>'; return; }
+  box.innerHTML='';
+  products.forEach((p,i)=>{
+    const kat=p.kat||'Produk';
+    const emoji=p.emoji||EMOJI_BY_KAT[kat]||'🛍️';
+    const thumb=p.img?`<img src="${esc(p.img)}" alt="">`:emoji;
+    const el=document.createElement('div');
+    el.className='item';
+    el.innerHTML=`
+      <div class="thumb">${thumb}</div>
+      <div class="meta">
+        <div class="k">${esc(kat)}</div>
+        <div class="nm">${esc(p.nama||'')}</div>
+        <div class="pr">${esc(p.harga||'')}</div>
+      </div>
+      <div class="ctrls">
+        <button class="iconbtn" title="Naik" ${i===0?'disabled':''} onclick="move(${i},-1)">↑</button>
+        <button class="iconbtn" title="Turun" ${i===products.length-1?'disabled':''} onclick="move(${i},1)">↓</button>
+        <button class="iconbtn" title="Edit" onclick="editProduct(${i})">✎</button>
+        <button class="iconbtn del" title="Hapus" onclick="delProduct(${i})">🗑</button>
+      </div>`;
+    box.appendChild(el);
   });
-  $('pay_download').addEventListener('click',()=>{ readForm(); download('pembayaran.json',cur); flash('pembayaran.json terunduh.'); });
-  $('pay_copy').addEventListener('click',()=>{ readForm(); copyTxt(JSON.stringify(cur,null,2)); flash('JSON disalin.'); });
-  function fillForm(p){
-    $('pay_merchant').value=p.merchant||''; $('pay_nmid').value=p.nmid||'';
-    $('pay_ew').value=p.ewallet_no||''; $('pay_holder').value=p.holder||'';
-    $('pay_bankname').value=p.bank_name||''; $('pay_bankno').value=p.bank_no||'';
-    $('pay_wa').value=p.wa||''; cur=Object.assign({},DEF,p); setPrev(p.qris||''); update();
-  }
-  function load(){ fetch('pembayaran.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{fillForm(Object.assign({},DEF,d||{}));}).catch(()=>{fillForm(DEF);offline=true;}); }
-  return { load, addMode:()=>{} };
-})();
+}
+function move(i,dir){
+  const j=i+dir; if(j<0||j>=products.length) return;
+  [products[i],products[j]]=[products[j],products[i]];
+  save(); renderList();
+}
+function delProduct(i){
+  if(!confirm('Hapus produk "'+(products[i].nama||'')+'"?')) return;
+  products.splice(i,1); save(); renderList();
+  if(editIndex===i) resetForm();
+  toast('Produk dihapus');
+}
 
-function loadAll(){ offline=false; PRODUK.load(); BERITA.load(); EDUKASI.load(); PEMBAYARAN.load(); setTimeout(()=>{ $('offlineBanner').classList.toggle('show',offline); },400); }
-$('reload').addEventListener('click',()=>{ PRODUK.addMode(); BERITA.addMode(); EDUKASI.addMode(); loadAll(); });
-loadAll();
+/* ================= FORM ================= */
+function getKat(){
+  const sel=document.getElementById('f_kat').value;
+  return sel==='__custom' ? (document.getElementById('f_kat_custom').value.trim()||'Lainnya') : sel;
+}
+function onKatChange(){
+  const cust=document.getElementById('f_kat').value==='__custom';
+  document.getElementById('katCustomWrap').style.display=cust?'block':'none';
+}
+function fillForm(p){
+  const sel=document.getElementById('f_kat');
+  const known=[...sel.options].some(o=>o.value===p.kat);
+  if(known && p.kat!=='__custom'){ sel.value=p.kat; document.getElementById('katCustomWrap').style.display='none'; }
+  else { sel.value='__custom'; document.getElementById('katCustomWrap').style.display='block'; document.getElementById('f_kat_custom').value=p.kat||''; }
+  document.getElementById('f_nama').value=p.nama||'';
+  document.getElementById('f_desk').value=p.desk||'';
+  document.getElementById('f_harga').value=p.harga||'';
+  document.getElementById('f_coret').value=p.coret||'';
+  document.getElementById('f_note').value=p.note||'';
+  document.getElementById('f_aksi').value=p.aksi||'';
+  document.getElementById('f_emoji').value=p.emoji||'';
+  pendingImg=p.img||'';
+  paintImgPrev();
+}
+function readForm(){
+  return {
+    kat:getKat(),
+    nama:document.getElementById('f_nama').value.trim(),
+    desk:document.getElementById('f_desk').value.trim(),
+    harga:document.getElementById('f_harga').value.trim(),
+    coret:document.getElementById('f_coret').value.trim(),
+    note:document.getElementById('f_note').value.trim(),
+    aksi:document.getElementById('f_aksi').value.trim()||'Beli',
+    emoji:document.getElementById('f_emoji').value.trim(),
+    img:pendingImg||''
+  };
+}
+function resetForm(){
+  editIndex=-1; pendingImg="";
+  document.getElementById('f_kat').value='Ebook';
+  document.getElementById('f_kat_custom').value='';
+  ['f_nama','f_desk','f_harga','f_coret','f_note','f_emoji'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f_aksi').value='Beli';
+  document.getElementById('katCustomWrap').style.display='none';
+  document.getElementById('formTitle').innerHTML='<span class="tag">BARU</span> Tambah Produk';
+  document.getElementById('saveBtn').textContent='Tambah Produk';
+  document.getElementById('cancelBtn').style.display='none';
+  paintImgPrev(); syncPreview();
+}
+function editProduct(i){
+  editIndex=i; fillForm(products[i]);
+  document.getElementById('formTitle').innerHTML='<span class="tag" style="background:rgba(244,182,62,.18);color:#F4B63E">EDIT</span> Ubah Produk';
+  document.getElementById('saveBtn').textContent='Simpan Perubahan';
+  document.getElementById('cancelBtn').style.display='inline-flex';
+  syncPreview();
+  document.querySelector('.container').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function saveProduct(){
+  const p=readForm();
+  if(!p.nama){ toast('Nama produk wajib diisi',false); return; }
+  if(!p.harga){ toast('Harga wajib diisi',false); return; }
+  if(editIndex>=0){ products[editIndex]=p; toast('Perubahan disimpan'); }
+  else { products.push(p); toast('Produk ditambahkan'); }
+  save(); renderList(); resetForm();
+}
+
+/* ================= IMAGE ================= */
+function onImage(ev){
+  const file=ev.target.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    const img=new Image();
+    img.onload=()=>{
+      const max=480, sc=Math.min(1,max/img.width);
+      const w=Math.round(img.width*sc), h=Math.round(img.height*sc);
+      const cv=document.createElement('canvas'); cv.width=w; cv.height=h;
+      cv.getContext('2d').drawImage(img,0,0,w,h);
+      pendingImg=cv.toDataURL('image/jpeg',0.82);
+      paintImgPrev(); syncPreview();
+    };
+    img.src=e.target.result;
+  };
+  reader.readAsDataURL(file);
+  ev.target.value='';
+}
+function clearImage(){ pendingImg=""; paintImgPrev(); syncPreview(); }
+function paintImgPrev(){
+  const box=document.getElementById('imgPrev');
+  box.innerHTML = pendingImg ? `<img src="${pendingImg}" alt="">` : '🖼️';
+}
+
+/* ================= LIVE PREVIEW ================= */
+function syncPreview(){
+  const p=readForm();
+  const kat=p.kat||'Ebook';
+  const emoji=p.emoji||EMOJI_BY_KAT[kat]||'🛍️';
+  document.getElementById('pv_k').textContent=kat;
+  document.getElementById('pv_nm').textContent=p.nama||'Nama Produk';
+  document.getElementById('pv_de').textContent=p.desk||'Deskripsi produk akan tampil di sini.';
+  document.getElementById('pv_pr').textContent=p.harga||'Rp 0';
+  const co=document.getElementById('pv_co');
+  if(p.coret){ co.style.display='block'; co.textContent=p.coret; } else co.style.display='none';
+  document.getElementById('pv_no').textContent=p.note||'';
+  document.getElementById('pv_ak').textContent=p.aksi||'Beli';
+  const cover=document.getElementById('pv_cover');
+  cover.querySelector('img')?.remove();
+  const e=document.getElementById('pv_e');
+  if(pendingImg){ e.style.display='none'; const im=new Image(); im.src=pendingImg; cover.appendChild(im); }
+  else { e.style.display='block'; e.textContent=emoji; }
+}
+
+/* ================= IMPORT / EXPORT ================= */
+function downloadJSON(){
+  const blob=new Blob([JSON.stringify(products,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download='products.json'; a.click();
+  URL.revokeObjectURL(a.href);
+  toast('products.json diunduh — commit ke GitHub untuk publikasi');
+}
+function importJSON(ev){
+  const file=ev.target.files[0]; if(!file) return;
+  const r=new FileReader();
+  r.onload=e=>{
+    try{
+      const d=JSON.parse(e.target.result);
+      const a=Array.isArray(d)?d:(d.products||[]);
+      if(!Array.isArray(a)) throw 0;
+      products=a; save(); renderList(); resetForm(); toast('products.json diimpor ('+a.length+' produk)');
+    }catch(err){ toast('File tidak valid',false); }
+  };
+  r.readAsText(file); ev.target.value='';
+}
+async function loadFromServer(){
+  try{
+    const r=await fetch('products.json',{cache:'no-store'});
+    if(!r.ok) throw 0;
+    const d=await r.json(); const a=Array.isArray(d)?d:(d.products||[]);
+    products=a; save(); renderList(); resetForm(); toast('Dimuat dari server ('+a.length+' produk)');
+  }catch(e){ toast('Gagal memuat products.json dari server',false); }
+}
+function resetDefault(){
+  if(!confirm('Kembalikan ke daftar produk contoh? Perubahan lokal akan hilang.')) return;
+  products=JSON.parse(JSON.stringify(DEFAULT_PRODUCTS)); save(); renderList(); resetForm(); toast('Direset ke contoh');
+}
+
+/* ================= TOAST ================= */
+let toastT;
+function toast(msg,ok=true){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.className='show'+(ok?' ok':'');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.className='',2600);
+}
 </script>
 </body>
 </html>
