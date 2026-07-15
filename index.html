@@ -297,6 +297,39 @@ section.block{padding:96px 0;position:relative}
 }
 .buy:hover{background:#0046dd;transform:translateY(-2px)}
 
+/* ============ BERITA ============ */
+#berita{background:linear-gradient(180deg,var(--navy-950),#0a1c38)}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.news{
+  display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--navy-850),var(--navy-900));
+  border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:24px 22px;position:relative;overflow:hidden;
+  transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;
+}
+.news:hover{transform:translateY(-5px);border-color:#2b4a7d;box-shadow:0 26px 50px -28px rgba(0,0,0,.75)}
+.news .kat{
+  align-self:flex-start;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.28);color:var(--cyan);
+  padding:5px 10px;border-radius:7px;margin-bottom:14px;
+}
+.news h3{font-size:16px;line-height:1.35;margin-bottom:10px}
+.news p{font-size:13.5px;color:var(--ink-300);margin-bottom:18px;flex-grow:1}
+.news .meta{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  font-family:var(--font-mono);font-size:11px;color:#6d80a0;
+  border-top:1px solid var(--line-soft);padding-top:14px;
+}
+.news .meta .dot{width:3px;height:3px;border-radius:50%;background:#41567c}
+.news .src{color:var(--ink-300)}
+.news .go{
+  margin-top:14px;display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;font-weight:600;color:var(--blue-bright);transition:gap .2s
+}
+.news:hover .go{gap:10px}
+.news-empty{grid-column:1/-1;text-align:center;color:var(--ink-300);font-size:14px;padding:34px}
+.news-note{text-align:center;font-size:11.5px;color:#5b6b86;margin-top:28px;font-family:var(--font-mono)}
+
 /* ============ CTA BAND ============ */
 .cta-band{position:relative;overflow:hidden;border-radius:26px;padding:64px 40px;text-align:center;
   background:linear-gradient(120deg,#06122a,#0a2a6b);border:1px solid #1b3a72}
@@ -436,7 +469,7 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
 
 /* ============ RESPONSIVE ============ */
 @media(max-width:980px){
-  .cards-3,.cards-4,.shop-grid{grid-template-columns:1fr 1fr}
+  .cards-3,.cards-4,.shop-grid,.news-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
   .step:nth-child(2)::after{display:none}
   .why-grid{grid-template-columns:1fr;gap:36px}
@@ -455,7 +488,7 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
   .nav-links.show a::after{display:none}
   .menu-btn{display:grid;place-items:center}
   .nav-cta .btn.desktop-only{display:none}
-  .cards-3,.cards-4,.shop-grid,.steps{grid-template-columns:1fr}
+  .cards-3,.cards-4,.shop-grid,.steps,.news-grid{grid-template-columns:1fr}
   .step::after{display:none}
   .stat-grid{grid-template-columns:1fr 1fr}
   .foot-grid{grid-template-columns:1fr}
@@ -482,6 +515,7 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
       <a href="#services">4 Pilar Layanan</a>
       <a href="#trust">Mengapa Kami</a>
       <a href="#shop">Produk Digital</a>
+      <a href="#berita">Berita</a>
     </nav>
     <div class="nav-cta">
       <a href="https://wa.me/6285600000279" target="_blank" rel="noopener" class="btn btn-blue desktop-only" style="padding:11px 20px">Konsultasi Gratis</a>
@@ -717,6 +751,19 @@ label.fld .t{font-size:12.5px;color:var(--ink-200);margin-bottom:7px;display:blo
     </div>
 
     <div class="shop-grid" id="shopGrid"><!-- produk dimuat dinamis dari products.json / admin --></div>
+  </div>
+</section>
+
+<!-- ================= BERITA TEKNOLOGI ================= -->
+<section id="berita" class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Update 24 Jam Terakhir</span>
+      <h2>Berita Teknologi Terkini</h2>
+      <p>Rangkuman berita teknologi pilihan, diperbarui otomatis setiap hari. Klik untuk membaca artikel lengkap di sumber aslinya.</p>
+    </div>
+    <div class="news-grid" id="newsGrid"><!-- dimuat dinamis dari news.json --></div>
+    <p class="news-note">Ringkasan disusun otomatis dengan bantuan AI. Hak cipta artikel ada pada masing-masing media sumber.</p>
   </div>
 </section>
 
@@ -1040,6 +1087,53 @@ function renderProducts(list){
   });
 }
 loadProducts().then(renderProducts);
+
+/* ---- Dynamic news (auto-posted via GitHub Actions) ---- */
+const KAT_WARNA = {
+  AI:'#22D3EE', Gadget:'#F4B63E', Startup:'#FF6B00',
+  Keamanan:'#ff6b81', Software:'#3A78FF', Internet:'#8b5cf6'
+};
+function tglIndo(s){
+  const b=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+  const d=new Date(s);
+  return isNaN(d) ? (s||'') : `${d.getDate()} ${b[d.getMonth()]} ${d.getFullYear()}`;
+}
+async function loadNews(){
+  try{
+    const r = await fetch('news.json',{cache:'no-store'});
+    if(r.ok){ const d = await r.json(); if(Array.isArray(d)) return d; }
+  }catch(e){}
+  return [];
+}
+function renderNews(list){
+  const grid = document.getElementById('newsGrid');
+  if(!grid) return;
+  if(!list.length){
+    grid.innerHTML = '<div class="news-empty">Belum ada berita. Jalankan workflow "Auto Post Berita Teknologi" di GitHub Actions.</div>';
+    return;
+  }
+  grid.innerHTML = '';
+  list.slice(0,6).forEach(n => {
+    const kat = n.kategori || 'AI';
+    const warna = KAT_WARNA[kat] || 'var(--cyan)';
+    const punyaLink = n.link && n.link !== '#';
+    const el = document.createElement(punyaLink ? 'a' : 'div');
+    el.className = 'news reveal in';
+    if(punyaLink){ el.href = n.link; el.target = '_blank'; el.rel = 'noopener noreferrer'; }
+    el.innerHTML = `
+      <span class="kat" style="color:${warna};border-color:${warna}44;background:${warna}14">${esc(kat)}</span>
+      <h3>${esc(n.judul || '')}</h3>
+      <p>${esc(n.ringkasan || '')}</p>
+      <div class="meta">
+        <span>${tglIndo(n.tanggal)}</span><span class="dot"></span>
+        <span>${esc(String(n.baca || 3))} mnt baca</span>
+        ${n.sumber ? `<span class="dot"></span><span class="src">${esc(n.sumber)}</span>` : ''}
+      </div>
+      ${punyaLink ? '<span class="go">Baca di sumber →</span>' : ''}`;
+    grid.appendChild(el);
+  });
+}
+loadNews().then(renderNews);
 
 </script>
 </body>
