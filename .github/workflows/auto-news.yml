@@ -1,0 +1,51 @@
+name: Auto Post Berita Teknologi
+
+on:
+  schedule:
+    # GitHub memakai waktu UTC. WIB = UTC+7.
+    # 22:00 UTC = 05:00 WIB  |  10:00 UTC = 17:00 WIB
+    - cron: "0 22,10 * * *"
+  workflow_dispatch: # tombol jalankan manual di tab Actions
+
+# Wajib: memberi izin workflow untuk commit news.json kembali ke repo
+permissions:
+  contents: write
+
+# Cegah dua run bertabrakan
+concurrency:
+  group: auto-news
+  cancel-in-progress: false
+
+jobs:
+  perbarui-berita:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Ambil kode repo
+        uses: actions/checkout@v4
+
+      - name: Siapkan Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Ambil & tulis ulang berita
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Ganti bila ingin model lain (mis. gemini-3.5-flash).
+          # Kalau model ini hilang, skrip otomatis mencoba model cadangan.
+          GEMINI_MODEL: gemini-2.5-flash
+        run: python scripts/fetch_news.py
+
+      - name: Commit hasil ke repo
+        run: |
+          git config user.name "gozali-news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json
+          if git diff --staged --quiet; then
+            echo "Tidak ada perubahan — tidak perlu commit."
+          else
+            git commit -m "Auto: perbarui berita teknologi ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
