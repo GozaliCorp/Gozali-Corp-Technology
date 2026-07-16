@@ -1,5 +1,85 @@
 [
   {
+    "judul": "iOS 27 Hadir dengan Peningkatan Signifikan Dibanding Versi Lama",
+    "kategori": "Software",
+    "ringkasan": "Apple merilis pembaruan iOS 27, membawa sejumlah perubahan dan fitur baru yang patut dicermati.",
+    "tanggal": "2026-07-16",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTFLcENpbjJRcmY4ZHI0UEI4NHZocmxacEhkNHo0YllOdFNKN2ZycjRPRm1DTXJ3Um5OZ2QwRlJYaEFSaGgxZEx0LVVRUW93S0lGcnNCb3NYSGRsRUViLVVNWldTUm44cHJ0NWN3ZnVqdEN2Zzg5b1c2M1BzOTdiNGN0QlA2LUN6ZnpsQ2xMWQ?oc=5",
+    "sumber": "Industry.co.id"
+  },
+  {
+    "judul": "Menteri Dukung Larangan Penggunaan Gawai di Lingkungan Sekolah",
+    "kategori": "Gadget",
+    "ringkasan": "Menteri Komunikasi dan Informatika mendukung kebijakan pembatasan penggunaan gawai bagi siswa di sekolah.",
+    "tanggal": "2026-07-16",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlhBd21kLXg0ZDdNX3lLU3pSNmRSWUtmaGZIWmpjOGJQRlBGak1reE1aa1pldi1tcnB5VG5WbUtVM0V5dTI0X3dZcGgzcHJ2cG1PZ3g3d0k3UHFfckVXV2hTVHNBaUNDYWItdGJGdVhkMnlPTkxXQjg4bElxTUxRdVBBa3J4WFB1dFJFVzlVUURhNGFSTzVJNWlrb2dTU3BEMHZacjlRSy1CelAtWkFPVlhRYTNNS01NSjgyd2JHNNIBxAFBVV95cUxQZ21vTDZuVmxJX3I2bEdpOWZfS2F2dVAwSG13TTM1aktjRmtZdW1LcVVOOHJLTUhELWhIRlF6d2FUUmk3NHotU1BMNlc0Zm5wYUhfTW9BN0duX3lXTEpKYnpVZEoxTmMwNEdRcDBVbFBFUDVhMEVjTkRZejJNVHlJVndJTUVwR1FBVWljd0hIRW1RYVVTSDl0VVBHN1d1UTBPTnM1NnlVVG41Q1k3eFVJVEl6d0F4cTRoZGFSOGVqcXRkc3g1?oc=5",
+    "sumber": "CNN Indonesia"
+  },
+  {
+    "judul": "Apple Integrasikan Kecerdasan Buatan Canggih di iOS 27 Beta",
+    "kategori": "AI",
+    "ringkasan": "Versi beta iOS 27 dari Apple kini menyertakan berbagai fitur berbasis kecerdasan buatan terbaru.",
+    "tanggal": "2026-07-16",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBELUh3T1h2SmRjNU9MWkFDMzliODdYSVpfeW5xS3hiR3hBZ18zWkdWTGFYcl9Ra3RJWWJRREcwcnlBS2hFeFJZSVE4dXZ2SDdrTVp6UTd4WGRZVG5MYm5DdGdhMVoxWkxI?oc=5",
+    "sumber": "achmadnurhidayat.id"
+  },
+  {
+    "judul": "Kolaborasi Robotika Jepang dan Nvidia Hadapi Dominasi China",
+    "kategori": "Startup",
+    "ringkasan": "Empat perusahaan robotika Jepang berkolaborasi dengan Nvidia untuk bersaing di pasar global.",
+    "tanggal": "2026-07-16",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQzZyTjJyWFpLU0FHV2tBNFllZmw4Ymt4cmMwOW1tUDNEUktUakUtY1BGNVJMZTNwTnQzSUlCQ1hJaG96Y2NtYnE0b0VpOG94NllacEdxRWc4SjRmNV9JVTctR2RnNXV6YnRidC1pbThhNUYxblpQa1cxU0pHeTZ0OXFPblVJRWxWQUNCT2dSa3NzamtMdXBQcU5xaUFrczBOeEd4bGNhSkVUNll1QjlhSWRld0VtZw?oc=5",
+    "sumber": "Bloomberg Technoz"
+  },
+  {
+    "judul": "Mitsubishi Xforce Terbaru Hadir dengan Teknologi Hybrid Canggih",
+    "kategori": "Gadget",
+    "ringkasan": "Mitsubishi meluncurkan New Xforce, SUV perkotaan yang dibekali teknologi hybrid generasi terkini.",
+    "tanggal": "2026-07-16",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOY2dXQXctbFdobVBSZHRrelpleG5oVU51UUlnV2xzYUFEVjJpWWt6c19yZ2JlX3BxV2hRU2dTNDl5STdDVHBuV2YwRl9rMjlsbFEyVFVUM0NYNlJZdkJDVHMtcFFpYkl3dTc1WnVpWE9hSHg2UjRRazJtYlpoZTg1TXBSMUlQRU9SR21DLXR6bUM4OVJOLWd2Q2lyV1o0YU91bjVWTzdyWG5yRVFSbE5Ga2Y3TmVVNEJUZjJqZy10TzNtcGR5ZXUxR1pNNWZhTnZ3MnJRQVhKNXF1bGVUSXc?oc=5",
+    "sumber": "Mitsubishi Motors Indonesia"
+  },
+  {
+    "judul": "Perangkat Seluler Tentara AS di Timur Tengah Jadi Sasaran Serangan Iran",
+    "kategori": "Keamanan",
+    "ringkasan": "Laporan menyebutkan perangkat seluler milik tentara Amerika Serikat di Timur Tengah menjadi target serangan.",
+    "tanggal": "2026-07-16",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSGJjY09FUXlNWEJCanBzLURKOURsNVFmLURHSFhRdXNkdU14aGtrNlMxMEgzenQ1YlAyc1lZR2p3MGNiQVk5WXp1ZjNGeHdmdVFDUjFQa1VtM1JqQXdBQzdTcm9qV3pJTjd4YUZhYUJhZkpBbWxpczBxNmJZbTZlVFVkN0FEZHdObHlBVC1zZFpTS1doeFJXbmdCMzY?oc=5",
+    "sumber": "viv.co.id"
+  },
+  {
+    "judul": "Rusia Tawarkan Kerjasama Industri dan Teknologi ke Indonesia",
+    "kategori": "Startup",
+    "ringkasan": "Rusia membuka peluang kerja sama dengan Indonesia, mulai dari bahan baku hingga transfer teknologi.",
+    "tanggal": "2026-07-16",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSndZSFZMSFlVVk9kQTFNeDlWZDczUXhZeS1xNkcwRDFSYWxpbkhFZzhpZGtSMDJnV2dlRlAwNXY0NmUtamZaX3pGekNsMHhvQnBzWTRZYkVndXZLOTFqcVZnZEFSQ0VfVnFSamR2WFBKUzRKa1k1YkpIeDNMV0xvTWdfaUNxNlVaU1A3aTRlMnMyUTRKdWhvazVIc09jZ3J0WUhmcGE2YVR6YXJZYnN2S0IzZTdwekxOVVdZMmxha9IBxAFBVV95cUxPQ29TSUlvZzlVd3pjb1NWOUdnMlRvYTVTdXlmeGw2YlA4ejVic215Wk10SFZIcWstVVlKWE5XVzFiNm02aTR4ai1pbkk4OVc3Z0M0Rm9JRjlORllsS3BabGp0LUZGV1NTXzE4NW9SWWNGTDNfZklLdk10UVZvR0RTaF96M19XeEFRaFpnd1dPMkZCa1NSbUdsLURHUmpPMU9WUFpHYTJKajc5aV9PeUpmTXMzZnZzQTVQbnJmQWpXT1pvTVZi?oc=5",
+    "sumber": "Warta Ekonomi"
+  },
+  {
+    "judul": "Analisis Kebijakan Pembatasan Gawai di Sekolah",
+    "kategori": "Gadget",
+    "ringkasan": "Sebuah analisis mendalam mengulas dampak kebijakan pembatasan gawai terhadap pendidikan digital di sekolah.",
+    "tanggal": "2026-07-16",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOFVMUDVIRjRTXzFaZjNmUEhXQnU2c3BpdEgtUFFNYU5FYTJrMkR6U1FESjZBTjhXT3M4d0pMdmJkVHdMNlU4US1aVmw2cHRET21sVjFubDIxRHc3M1Fqd214OUdJRDRFNHZnRDlEeUlCcnROQ2pSUWQ2cGM1RE84cTBiTWpfN2xZbDlkRU9CQWtjaVctSjlQeEZCNFo3MjRnZXRYeDM4WlV3N0d5eWRkYkxWQQ?oc=5",
+    "sumber": "Sukabumi Ku"
+  },
+  {
     "judul": "Samsung Pamerkan Layar Lipat Fleksibel Generasi Baru Tanpa Bekas Lipatan",
     "kategori": "Gadget",
     "ringkasan": "Samsung memperkenalkan inovasi layar lipat terbaru yang lebih tipis dan tidak meninggalkan bekas lipatan saat dibuka.",
