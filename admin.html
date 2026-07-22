@@ -358,7 +358,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
           <h3><span class="tag">DATA</span> Rekening &amp; Kontak</h3>
 
           <label class="fld"><span class="t">Nomor E-Wallet <small>(DANA / OVO / GoPay / LinkAja)</small></span>
-            <input class="inp" id="b_ewallet" placeholder="085600000279" oninput="syncBayar()">
+            <input class="inp" id="b_ewallet" placeholder="Contoh: 08xxxxxxxxxx" oninput="syncBayar()">
           </label>
 
           <div class="row2">
@@ -366,7 +366,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
               <input class="inp" id="b_bank_name" placeholder="Bank Mandiri" oninput="syncBayar()">
             </label>
             <label class="fld"><span class="t">No. Rekening</span>
-              <input class="inp" id="b_bank_no" placeholder="1020004981236" oninput="syncBayar()">
+              <input class="inp" id="b_bank_no" placeholder="Nomor rekening bank" oninput="syncBayar()">
             </label>
           </div>
 
@@ -797,7 +797,7 @@ function pilihTab(nama){
 const KEY_BAYAR = 'gct_pembayaran';
 const BAYAR_DEFAULT = {
   qris:"", merchant:"M GOZALI SALIM, DIGITAL & KREATIF", nmid:"ID1026545885604",
-  ewallet_no:"085600000279", bank_name:"Bank Mandiri", bank_no:"1020004981236",
+  ewallet_no:"", bank_name:"Bank Mandiri", bank_no:"",
   holder:"M Gozali Salim", wa:"6281399899954"
 };
 let bayar = {...BAYAR_DEFAULT};
