@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Indosat Business Luncurkan AI untuk Efisiensi Energi Industri",
+    "kategori": "AI",
+    "ringkasan": "Indosat Business memperkenalkan solusi berbasis kecerdasan buatan untuk membantu sektor industri mengelola dan mengurangi konsumsi listrik.",
+    "tanggal": "2026-07-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGVWek5HMkdXcnFwT2Ezd1ZvMmlPbXltWTd5Vk00OGg4SlNVMnhyMV9uREtGQjQ4YWVzZEtEbW5oUndSM1h2X2JRczNwTVppT2FnOE5NeE53b2hsUGw0ZXB6eW4ySmJhSXE0SzU0TlFCR2o3elpDLXdWbDFWTlAwYjEtX1B0QUtPclYtWDNRd2FTenBBTFZyMDNrV3AyeklPQnVvSFQzcDJ2U0ZaZDVqaQ?oc=5",
+    "sumber": "Niaga.Asia"
+  },
+  {
+    "judul": "Fitur AI Samsung My FanCam Otomatis Lacak Subjek Video Tanpa Edit Manual",
+    "kategori": "AI",
+    "ringkasan": "Samsung menyematkan kecerdasan buatan pada fitur My FanCam yang mampu melacak subjek video secara otomatis, mempermudah pengguna.",
+    "tanggal": "2026-07-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjE1c3BuRUFHQWhydHNYZHVLMG1CdlBMbHFaYUlKOTNpUWRUSFhJcUd2VkY4MWdCUVh1WUM1VS1sODR2SlNCVmRVbkM5SHlHY2I5UmRVNm1NZFBkek12THp4cWFxb3FoSGFUR245eFc4RXFuUFVfeHJpUF9pV2FmNkl6VElCaWtEd29sYkdYYzBxRUZnSk1BUXVSa18xdGhFckpPb1pabXJDdklhdDIyRkFkNUc0S1hBbUYxdkdKTlo3YUU?oc=5",
+    "sumber": "Media Indonesia"
+  },
+  {
+    "judul": "Perempuan Terkaya di Industri Teknologi: Pendiri Startup dan Tokoh AI",
+    "kategori": "Startup",
+    "ringkasan": "Daftar perempuan terkaya di sektor teknologi didominasi oleh pendiri startup dan pemimpin di bidang kecerdasan buatan.",
+    "tanggal": "2026-07-25",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNa3lxUEdUbGxqa09tRGhxcUtqZ3hvRmpVN2ZqMlhKbHM3YVJfN3NfMjZVN0NHLUZkbWJlNVBBcmZBRnVJUlNTOUFkRTJYUnA3N2RON1FTbmpGdEhueE9qM0RraThOVWRLSk9Rc21TYXZIZDRBT0FDVUVVakhub2tFOE5KN3hDaEZfQ2d0dzJDdmFIVEptLVlJcHF1eHVOcFJVN0xuaElmblY5V29DWUE3aS0yT3FqSVhydVFkVQ?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Jepang Perkuat Kemitraan AI untuk Kurangi Ketergantungan Global",
+    "kategori": "AI",
+    "ringkasan": "Jepang meningkatkan kolaborasi dalam pengembangan kecerdasan buatan untuk mengurangi dominasi Amerika Serikat dan Tiongkok.",
+    "tanggal": "2026-07-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU3U3NGEzWVRQSVJwUXE0aFlZOS04SjdSQUlJWjFETWFvTl80SkRHTE04clJVSnI3M3hJT3JCQklUZFBkYzlpTVlHUk9BZm5HMW1DTGZ3dGJERzA1b2RGdEZtb3BHeU1nSU1NSnVuUC0wNUc1U293bUl5c21ibmFBLVhlZTJseVE0X0dIeFVOc2FnMnZoQkhrWmY1SnZROUNuWldXR3Joc1ZTQdIBogFBVV95cUxOV3RfQWlub0NlWWxxaUl6a2o3VkZRX3dSRzl3SW9hcXpjUGNxRGZBMVFtMkxjVlp1YnlUNENDZTRhQlJPZkVOU1c0UDdlclNaMGtWV0lrTU96VE1mdmxBM29IbGV1QXkyWGt1bjgwRjN2QWFHc3FpYnlvbHNWUG1FbGk0dF9IRHM4dFRBZllVSDFDQ0tRUENQT2RGSnVuMGRmRGc?oc=5",
+    "sumber": "VOI.ID"
+  },
+  {
+    "judul": "Bahaya Gadget bagi Anak, Orang Tua Diminta Lindungi Generasi Emas",
+    "kategori": "Gadget",
+    "ringkasan": "Seorang dokter mengingatkan orang tua tentang risiko penggunaan gadget berlebihan pada anak dan pentingnya melindungi masa depan mereka.",
+    "tanggal": "2026-07-25",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbXhvVmtKZjVETlFHY0Q1TjF1bkpNVERPNGJ3QUl6cHNWM0VMWkRZSU1IaUp4M3QwR1c3OEY1dGlPVVdMaXhJM1oybXFBT0V3Y1hzNzNmR2UzeFBzc0YyVXAycnEzUzExbVp0TjJ3VW9GLUE5eEVqdjRZQmZqaGRzeA?oc=5",
+    "sumber": "SUARA PAKTA"
+  },
+  {
+    "judul": "Samsung dan Broadcom Sepakati $200 Miliar untuk Chip AI",
+    "kategori": "AI",
+    "ringkasan": "Kerja sama senilai 200 miliar dolar antara Samsung dan Broadcom untuk chip AI memicu persaingan global di industri manufaktur semikonduktor.",
+    "tanggal": "2026-07-25",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORFFTT2pscFR2NXFTb3hidGxrZERGdXRvUkJyOGp6N3BWZVFJNzJpVFptRGhJV0k5Vlp6VHllUHRWZURldF9NbzBiX3hhZzVVdUp2YktBbmtjN01GU2RLU3dad282MnpVTmhLbUtaRm0ya3ptMWw1cE5wZTJUbW55TjRJX3VvMmZxQlN5SFAtSkRacHV2Y0V3dFVUM3VtaDBCWFFYZEhGTUx3cnBwc3c?oc=5",
+    "sumber": "feedberry.com"
+  },
+  {
+    "judul": "Synergy Solusi Manfaatkan AI untuk Kepatuhan Regulasi Bisnis",
+    "kategori": "AI",
+    "ringkasan": "Synergy Solusi menawarkan teknologi kecerdasan buatan untuk membantu perusahaan memenuhi berbagai regulasi bisnis secara efisien.",
+    "tanggal": "2026-07-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNb3owYW9TSXZxdWZlREUxbHQyZDF3amFVd3pibUVRYTFTbzdTZDM4ZjVFdUdrN3JYOVFra20tNEZZUXR5dHZTZU53RmlzaHJLX1lOYXhZZHRCQlBYSm8tZHJCSVVFQ3EwMUtCdEU3bFR6Mmx3VEZvZTlXaUNFVkd1bXVueGMwWVp5eXY0TUNpaE5ZbjJ3QU1TQ245QW1OcFJqRXIzV2R2UGg2YUZMT2Uw0gG0AUFVX3lxTE5MZzlKSXFoQ1BjQkdkdVZ0cXVWTHRvNFVyNzd6ekpVb05LdkVRZVdkTl9pRVhKXzdGR092eF83VC15YzhzSHc4RlRNY0tkNk1KWW84bkE5bVd2TkNLMWFxUGZ1akNLRGtDdnVVRmVTWERMZUZwVGlHVzU0elU5bktSVWt4S0dSV09hT0pReWhkQW1QTklLazhXNTRoaGswdG1uQzc3UkVaZGV5cEVWd3FubDRMag?oc=5",
+    "sumber": "Warta Ekonomi"
+  },
+  {
+    "judul": "Prediksi 10 Ponsel Terlaris 2026, Mana Paling Layak Dibeli?",
+    "kategori": "Gadget",
+    "ringkasan": "Sebuah prediksi menyebutkan daftar ponsel yang diperkirakan akan laris manis pada tahun 2026, termasuk rekomendasi terbaik di kelasnya.",
+    "tanggal": "2026-07-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOeEluVVpmNkJWSjdhYnpsLTJBaEZJZEJ4MFlSbDVSd2dYVmNpNTc5RzFmY0RIZnhJTkZMNUt2YWJheXdrZjkzc2lqbHZEQUhrSFpNaGlNUkc2RkdQajFZRzZnQ1R3YzdnVzNLUGhsak9EWm56cm5ZMDdXRmh4OHpQYXN0cDhyOEpYLWtJZGhEYy1IODBMdlp2MFNpdGdFTFU3d3FXTWNFNUdVekFiZDhfMkE1QUlsNU85M2NDenAxUDl2STlpMUM1V2xtbXdIUmNVTFhRTnltTnNjZGVUSDVDNHRoUXMzM1NTOXd0Q0stN18zV3JVc2hjRkVHa1k5c19MaUxnTmtoVUxXTmk00gG8AUFVX3lxTE1tUGdCeTR1eEJMeWU0dWp1ZVJMNnB3QndSX1VWaXd4Ny1Nd0YtdWpSUkFndDZ0U3kxQU9iZDFadFRzVzZQZEJaaXgxVWRBODlMczYwalU1VzB1aTZrNEY2aUtGT3JIYTJ3MzVrTTd3eXlZdHJDdnZUTW1YVFFnZnhvcGdwTzlhdEFXREhYdC1iUDd4bVZhVkM0NVcyQlR5NzcwcUlDck5XUnlfV2pOcFFNdEVKbUlOWU1ZLTQy?oc=5",
+    "sumber": "Potensi Bisnis"
+  },
+  {
     "judul": "skip",
     "kategori": "AI",
     "ringkasan": "skip",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMk1BVXVCVHZaX1Zqc2N2OFpFc3ctS1doeF9FOVdWMEZiLVFsQ0JyRVpBRWZQTUF6MEVILVlQaEVQY2xhTDd4djJrRDR0eDdoZ2p0b3dXb3BhZ0VKSnVsV1BIaFBvdFhSYXNuMGlRNW81LWpuNFliaGlCRWJIMjlYQTJPM1hmVDBPQ1NvcXBlQ1hqNFM1WG5GWUlB?oc=5",
     "sumber": "Detak Banten"
-  },
-  {
-    "judul": "Teknologi Gameplay Starlight Princess Menuju Komputasi Adaptif Baru",
-    "kategori": "Software",
-    "ringkasan": "Perkembangan teknologi gameplay Starlight Princess diproyeksikan menuju era komputasi adaptif generasi baru.",
-    "tanggal": "2026-07-24",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOVBhUF91ampZejExaFFQRTZBUC1xMU9xeXlfWk9pSnk1LWVSbWg4OENzLWNmcXdxdDNsY2pacXJZUWNTdlBMd3Rqb3pUTXVhcVlWZnhBb2FlUTZ1ZFQxSE5sc3psWlFQUGJKQkJSWkgxUUtKZ0NTUnJnanplQjVtbzdLX0Z3RjFiVUZHWFVIVEZSODk3MndGSmt1OXBuUklDRXFIY081azVSdTM1blBGcUR1Y21vMDRNejhHZFNqWU5XWDc3alBWYWYtbUYtblVyWV9z?oc=5",
-    "sumber": "Media Center Rokan Hilir"
-  },
-  {
-    "judul": "Indonesia dan India Tingkatkan Kolaborasi Riset dan Startup Teknologi",
-    "kategori": "Startup",
-    "ringkasan": "Indonesia dan India sepakat memperkuat kerja sama dalam bidang riset dan pengembangan startup teknologi.",
-    "tanggal": "2026-07-24",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbGZTQnFDbUt5VnNBeXlfeFRMOWo1U3JMSUpaZm9BZmJTaUtQenBGWWhxbllKYUpzcTZUa1d1cTVrckYxdDRjY3UyNEdCU3REeU5wc2lmSV84SGloUXdpZUN1Tkw3OWVFdEhxV1VnYmFoYTVFQ3VxaXFiaVhybC1uc0lsWmg?oc=5",
-    "sumber": "SinPo.id"
-  },
-  {
-    "judul": "Saham Teknologi Anjlok Akibat Investasi AI, Bitcoin Relatif Stabil",
-    "kategori": "AI",
-    "ringkasan": "Saham perusahaan teknologi mengalami penurunan nilai signifikan, sementara Bitcoin bertahan di kisaran harga tertentu.",
-    "tanggal": "2026-07-24",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHZwZ1ZNMzlLNkpwOWpqUi10RzdYbjhrTENnUEJIM2lHMFNzaG1WSjE0UUpFRm9GUzcwd0VsU0RVVHA0aEE3OWNDY20zVVI1akU1SXo1VS1FTlVIUl9KcGxabVl0cnZOWnU5NkZvampodF9rNkhIUTljaEJ2eEl3OUd4OHhjOGI1SGpmMGlhTmpmTnRKRW1sNXNlRFVKUXY3TUk0cVEtNW8?oc=5",
-    "sumber": "Pluang"
-  },
-  {
-    "judul": "Kemenkes Ingatkan Bahaya Kecanduan Gadget pada Remaja",
-    "kategori": "Gadget",
-    "ringkasan": "Kementerian Kesehatan memperingatkan potensi kecemasan dan depresi pada remaja akibat ketergantungan pada gawai.",
-    "tanggal": "2026-07-24",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaDhtLU9jZThhSktVdzhpaHlPcmszMzZld1JDWkN3N24xUWpVUWx6TnBod2FoUFY4QjNNY0oxMXJSTXVjalh0Qmx0dk1nRjNGTEV4Z21hdFprbHVZX2piUUhOOE5uU1FHYnVCQ2I1dURybHhaeEpGMWdPTy1RSEZjMHJQQzlFZVFHTkNpbF9meUhGeVhLcVctUmtfNWdrTlBKS2c3el9nR3YtbGcyTjZ6TFdTMXJlYzU1Z2NpeHZ4bng3ck5ab1dnQnl6Qm9Sa2pidDJF0gHYAUFVX3lxTE9TRV95UF9hQXQxNmkxcWFDUmVmWjhUVmN3QW45SVhYXzNLVTMyTXNfRTNtWkJoMW5VaTFTOVBFbUJVUEQ4MFJPbkdGUUhQelJKeEFKRFF4cm5Pb3BHLXRUSzQ3NjhLWnE0N3ctVXZ4RnJOTmxfT0NINmdnYTdoaGFNRmdoRWhlU1hoaEtqSnF0c01ZOU9MbmRzelZKRndKTVBZYUNsWkpTSDZpSHZLdVUwXzJ2MG9yemdHOTV6S19yYUpsdndmdnhfRUlwWU9CMWZnSThFZVFFVg?oc=5",
-    "sumber": "detikHealth"
-  },
-  {
-    "judul": "Batasi Penggunaan Gadget, Promosikan Permainan Tradisional Anak",
-    "kategori": "Gadget",
-    "ringkasan": "Dorongan agar orang tua membatasi penggunaan gawai anak dan kembali menghidupkan permainan tradisional.",
-    "tanggal": "2026-07-24",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcGU3WG5HOVRnNzYyenI5U2VtWGlUdmlhS3NHLUdwWW1hQlRFU1cwTjJlZG5uTldmTlRvZ09rQjlsNktWZWI0R1gxNmFlQmtTRmtXaEdxSTVvNFdvNlQteTVDR1NSMndYLUFzQ3N5TDN5VHI0UFg4NHFLOV9PQUVmY3hMLUQwWWZIZm9Ib05OWl96bElVUHNlaEE2a0JnbDZuVDhZRk42TkFoaGdScFNxZFZxcHR2MTNNWUE4emdzRjlpaGZQcEZTUTFQZFlReHZCMWhFYl82Vm1QYTdpaWQ3UU00X0RoQdIB6wFBVV95cUxQVmdyRmwwa0FkUVJXelEwLUtnWEJta2VhZEZhVjd1YzY1NW5yZWxlT2M2cEFKRjhtVUxzb0lKa3dNX0Y2M0d5Tng4bm1LQW1xYUZGblBKbHJvN1VIZEFmR0FQdHlRTDBvb3VjLWE4V2FieGNjd1JXZC00cURfS29lYWp0RzZkalNtblVkdHVaQ0IzazFKNzJjYlQyVXJHWTFQN0ljUlA0YmhjclNzdENYQW1PeFZEWHNkaWxDQXhXSlF5d0RtNzdCYkhmMVBLNzZ2d1kyMXBOZkpyTHFzMzFQcVE5aktwQnk4aXJN?oc=5",
-    "sumber": "tvOneNews"
-  },
-  {
-    "judul": "Pemrograman Berbasis AI: Tantangan Baru dan Penghapusan Hambatan Teknis",
-    "kategori": "AI",
-    "ringkasan": "Tren pemrograman kini didukung AI, menghilangkan hambatan teknis namun menciptakan tantangan baru bagi App Store.",
-    "tanggal": "2026-07-24",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONzU1ZFktUFBZQ0IwRjRsTWpFZm04LUFUSmxZczBLdDBjZnkzMkp0SVVVMjZuSjBDMUp5SGhsNkRjRVV5emhDZzJVUjFHUkZFeE1jYkFHY296OElrZzBtZGhIWFpFVENjOGg0NzRDX3JvZmpVeXJ0TkdXSnhPVUpOWmZ1S2NhX0N6MlFfazNnTlc0UjZXWHo2a1FoaHZKd3FYQk9yTm9JLVpHRXFJNlNUOVZn?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Pameran IEAE 2026 Akan Ungkap Masa Depan Teknologi Pintar",
-    "kategori": "Startup",
-    "ringkasan": "Pameran IEAE 2026 di JIExpo dijadwalkan akan memamerkan perkembangan teknologi pintar di masa depan.",
-    "tanggal": "2026-07-24",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObzhwMFUwbUM5b2wwRUtwd1Jaa1VXbExTRno1OXpQS0VvU0JsMlNSU0o1YkluQU1PV3NqRzVka2tSb0FpOGxHbXpNbExtNklJRW03YzJaWUlyaTZtUVhjWS02Yks5dkc0TzRxS2U1QzlTQVBYWUVYWVlFMXZoSDhwamxZNE1IMVdjSzdyb1BuU2sxTlpWa0QzbmhIV3BuQQ?oc=5",
-    "sumber": "eventguide.id"
-  },
-  {
-    "judul": "YouTube Perketat Monetisasi Konten AI Buatan",
-    "kategori": "AI",
-    "ringkasan": "YouTube memberlakukan aturan monetisasi lebih ketat, membatasi konten buatan AI yang dinilai kurang berkualitas.",
-    "tanggal": "2026-07-24",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLUwxa0F0U3NKSU10VlppOERYOWNPX2ZGN09jb2FibGExWXRIVmZRSk0tUl8xc0ZXNU50MzhFNE9FM1g2c0pyRVpueFpNa00yMjZDQkZSNV8tdHN2S2tqbFdQbmlUVU5WTGZseXhCSm5SMDc3Y2FiREt3dVJCS1dtbjV5akFRN0RUbDNMRVhJZUlFMFNHVGFTWHBSTFQ0Uk5OR0Z2VnlB?oc=5",
-    "sumber": "Marketeers"
   }
 ]
