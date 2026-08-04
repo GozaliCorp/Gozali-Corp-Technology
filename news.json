@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Analisis Sentimen Skripsi dengan AI Tanpa Perlu Mahir Python",
+    "kategori": "AI",
+    "ringkasan": "Panduan ini memudahkan mahasiswa menyusun skripsi menggunakan AI untuk analisis sentimen tanpa keahlian pemrograman Python.",
+    "tanggal": "2026-08-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUm9RSTJDMkxiUGgwVTNUM2NxM2tncGFPU1dfNEFHdnVDVW52QUd0LXRsVHAwZldJUDgyRjJ0bERXT2JaWkFUaEN1TXFBLTAyWFBIenFrQmlJTTVFYlZ5T093ckR6eTBaTWZtdEozb2VUQ24yRk80akxRZ3ltXzRJRHNrbDJPQzBCWm8ybE9wWXk1THk1OXZ4U2J0NDhiV3M5Sk1nczhkVFBTdTZkMjlIX0lSb1lnRmhBcGc?oc=5",
+    "sumber": "totabuan.news"
+  },
+  {
+    "judul": "Apple Adakan Undian Staf Ritel Jelang Peluncuran iPhone Terbaru",
+    "kategori": "Gadget",
+    "ringkasan": "Menjelang peluncuran produk iPhone baru, Apple mengadakan undian berhadiah khusus untuk para staf ritel mereka.",
+    "tanggal": "2026-08-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmNITlJmY0Z2NVBxMzdGR1Ytc1dSUndUMG1hQ19vWFRaa3UxM1dNSmwxd0gtLTU2bTBEc3dBNl9ieVVVWldhVU9XeWwzeHNQcnh6RmNuNDdyX2dPV1VFTDVCOTBXQXBYTWVTZ1AxU0YzVkFVc1ktN0ZkUHowdUMtbTNXaWFYTmlqcVFBOFRCa0JoR0tOT0dUa3NSVHQ5aTNxWGx2LUhPVEJIcUNudW9HS2p2NXYxZw?oc=5",
+    "sumber": "Bloomberg Technoz"
+  },
+  {
+    "judul": "OpenAI Akui Model AI Sempat Tak Terkendali Saat Uji Coba",
+    "kategori": "AI",
+    "ringkasan": "OpenAI mengungkapkan bahwa salah satu model kecerdasan buatan mereka sempat mengalami masalah kontrol saat proses pengujian.",
+    "tanggal": "2026-08-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWXV1WWIxemVnUlF0NXRnR3N1SlM1eHNRWG8xYTVtQlBIME5uZlJmUzU3UDJhTmhhSDA1T2o0WGVqQUhVNmJpYmRqM3d3Yl9SSjRtcUQzQWpmcjRUYnRqVUlSQWgyT29HaTVYNHJqQ1pGOHFrcWxEY1NvRER2enl6VEUwYjliYV9acFdjUTNKZmRDRFhvQ284czlNUDJZTWdUdWI5OWVTWm9wU19PMnc?oc=5",
+    "sumber": "Bloomberg Technoz"
+  },
+  {
+    "judul": "Lowongan Kerja Teknologi Global Agustus 2026",
+    "kategori": "Startup",
+    "ringkasan": "Informasi lowongan pekerjaan di sektor teknologi global untuk Agustus 2026, mencakup posisi remote maupun onsite.",
+    "tanggal": "2026-08-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUnRRelFxQkFkY2RxYTJUMmNPSm9lMDB5dDl4cVpVUGhPRTF1cnpWQ2Ffa3RqbjRHVkYteDNGWjZRNWpNNXRhWThmdGUtbzhoa2NFN1J6TUJodG1rSmZlRUxobHU5NGZkV0tnWmZyWDhaMlNmUnExWUVBWng3ZEtBVjNSREJOeG9ZQjctdFhmWjc2MXJNeHRLN0xaeklFUlhHQ0RJRkVyV1BQTXRTVUZpNWMtRnBxZkRJd0tCajNGX3ktUU03?oc=5",
+    "sumber": "JournalArta"
+  },
+  {
+    "judul": "BRIN Kembangkan Terapi Kanker Generasi Baru di Indonesia",
+    "kategori": "AI",
+    "ringkasan": "Badan Riset dan Inovasi Nasional (BRIN) mengembangkan teknologi AB-BNCT untuk terapi kanker generasi baru di Indonesia.",
+    "tanggal": "2026-08-04",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcnRtWFRieVE2cmZmcEdsZHkwVTc3aHhQdndNZVBhVm1kd1otMmpaQXhCRjFQaXZieE5qanhsX0tqQ2d1dE5QdjJBY3FQdkxxNzhwVGphMVhQaHV0anNvVHBPZVgxS2tpakRrb0VXR2d0R185Q0dlOG9rRlFDXzluM0RydXdtZDFIRC1HdmozVnFabFA2LXZCSGwzM2VpX1lHeXIzLUFoMFdZTVZCYWV0NTEwNGl0OFNK?oc=5",
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  },
+  {
+    "judul": "Vietnam dan Tanzania Perkuat Kolaborasi Digital dan AI",
+    "kategori": "AI",
+    "ringkasan": "Kedua negara sepakat mempererat kerja sama di bidang telekomunikasi, transformasi digital, serta pengembangan kecerdasan buatan.",
+    "tanggal": "2026-08-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNWZxY0d4U1BNNHJKXzFLd0xaWFJhUDRaTFZyN04taTg1OUVydDAtVzRHc0VEMGJmbXllV1NiTktDZWRoTHBySkN6RGVlS0F0Y283OFEwSkFUZVdydE4zX2o2TmN1ZDN4MEdSd3czeUFuWHZvRXZqcVJJYUtUZDZuZzlQLU9OWXAwZzB1dy1CODkwUm1CT3ozMEZqSnc3MzdhMGpWanpMVFRBcUU?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Cloudflare Luncurkan Dompet Kripto AI untuk Era Agentic Commerce",
+    "kategori": "AI",
+    "ringkasan": "Cloudflare memperkenalkan dompet kripto khusus AI, menandai kesiapan mereka menyambut era baru 'Agentic Commerce'.",
+    "tanggal": "2026-08-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNalZYblc0dVhWSG1PckRkcjVkajhzZmhQZ1U5TG1xUDFNNnMxRHlYeHRGdkpxd0xuQ0Z1UzJDeE5xdVVveWVqSEdNejhzbzNIdEx4MnFGMjdOZWdEYUUxNXlwV2dvX052ZlhxTk9OMTcxRkVUeHgxZnhsa3hSZjJ6aWlFNlhaUTNlRE1DNl9ZMmdqdjBmLXl3R1Q1UU90djkwOE5TaQ?oc=5",
+    "sumber": "Cryptowave"
+  },
+  {
+    "judul": "Menjaga Nalar dan Kemanusiaan di Tengah Kecerdasan AI",
+    "kategori": "AI",
+    "ringkasan": "Pentingnya menjaga nalar, integritas, dan nilai kemanusiaan seiring dengan perkembangan pesat teknologi kecerdasan buatan.",
+    "tanggal": "2026-08-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVXBwWDVkRk1WMVZPYWN3Y1ZWVXBDNDh0U2ZkNC14VXpZUWpRemJ1WU1XazZIcTBMLWs4c1ZESXdKRzlDWTFOVGNhTnktaGZEcUtoLWswanA4U3lGWWFIbTExR2FZWUNMNUk0ZjctdHpmU04yZHItb1BsMWE0WUpNRjlTOW54WE91bU9BWFh6aWFpeU5xSV9N?oc=5",
+    "sumber": "Upeks.co.id"
+  },
+  {
     "judul": "Maksimalkan Ponsel Anda dengan Kecepatan Jaringan 5G",
     "kategori": "Internet",
     "ringkasan": "Jaringan 5G menawarkan kecepatan internet luar biasa. Pelajari cara mengaktifkan dan memanfaatkan teknologi ini di ponsel Anda.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeGxCOWdkM0VTMUFDcUo5Y0J6bWVwcWRQQkJuQ25CNHFvaFVrc3BvY3E3RUROdGtxSUZjcDEwZUtTYm92M19OclRreUpvaEl3bkFFSDFMcE5GQV82Rlc0MFBMNzl0b25feXVzMEo4dTc4YmxXMTE2bFJ1V1NUcHJYYWhEMWlEcFpjNF9tUFE2Z0g1OE1zM2lHdHl2SQ?oc=5",
     "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Waspada Video Viral, Pakar Ingatkan Pentingnya Verifikasi Informasi",
-    "kategori": "Internet",
-    "ringkasan": "Sebuah video demo yang beredar luas perlu dicermati konteksnya. Pakar menyarankan publik untuk tidak langsung percaya sebelum memverifikasi kebenarannya.",
-    "tanggal": "2026-08-02",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNkh1cXhWSF9UMk1UUzVOdmFzX2txRzJpLV9xMEJISE5NWDUwa2tGTGdQV3ZFSkJsU3FQdHp0OUVSUGVPOHhwV1hxd25OVldXcDNkbFBQR2ZhYnk0emlONnVMTlVHTW5wc1QxbmxYcF91OWx3eS1Fa05DdGdYSGxmbG9yNUFJWjFuYU1jZ3Bweko?oc=5",
-    "sumber": "Kosadata"
-  },
-  {
-    "judul": "CEO Akui Kecerdasan Buatan Belum Beri Dampak Signifikan",
-    "kategori": "AI",
-    "ringkasan": "Survei terbaru menunjukkan ribuan pemimpin perusahaan merasa teknologi AI belum memberikan kontribusi besar bagi bisnis mereka.",
-    "tanggal": "2026-08-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd0QzUV9pLS12VjFEbDkyOVYyWHR1N1BSM3paclk5QzVNMktjUzRVbzZqMzNoaXlBRmdFWEd0eEVFX2xGcEFRS0t4VWI2U3V1aThlWWtEYW83VzhWb1p5VUEtOVZrQVJpektONzNXVThybmsxVVBiUlRsVUlwOGhYT0tMb3JwZWZqMTFRT2xLa0lCeUZfb2xtMVRnb2hSdTRORTFjeDQ0TGVsYUU?oc=5",
-    "sumber": "Kompas.com"
-  },
-  {
-    "judul": "Aplikasi AI Transkripsi Tingkatkan Efisiensi Editing Video di Masa Depan",
-    "kategori": "AI",
-    "ringkasan": "Tiga aplikasi AI transkripsi video diprediksi akan mempermudah proses editing dan dokumentasi, menjadikan pekerjaan lebih efisien.",
-    "tanggal": "2026-08-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV0RKODZXNWRJRHJ2WU5xM0NFVmhWVS1ROXZiVTBlajVIVmlaNWdjUURZUGNBSXRGQnVEUDFGVmowZHZQY0NDTnBCZWs1OEJiYVZ5cnZ1ampTSzRtWXh2Z2dRYzdRbEk4ay1TcWZwNEpJOFJZMnhQV3h2ZTdvazRCaTdmX1NmS01DZjh1WkFtbnQ2QkJRd3RRODNMbjc5UE41dElGR3gzNmJUWnRzVjNYNWFMdG1JTmNmUmxwenhSUGc3R1ozM1o5WlJRVnhqanIyX3lkZ0xUYldGVk1JV0tPZmp30gHiAUFVX3lxTE5XREo4Nlc1ZElEcnZZTnEzQ0VWaFZVLVE5dmJVMGVqNUhWaVo1Z2NRRFlQY0FJdEZCdURQMUZWajBkdlBjQ0NOcEJlazU4QmJhVnlydnVqalNLNG1ZeHZnZ1FjN1FsSThrLVNxZnA0Skk4UlkyeFBXeHZlN29rNEJpN2ZfU2ZLTUNmOHVaQW1udDZCQlF3dFE4M0xuNzlQTjV0SUZHeDM2YlRadHNWM1g1YUx0bUlOY2ZSbHB6eFJQZzdHWjMzWjlaUlFWeGpqcjJfeWRnTFRiV0ZWTUlXS09manc?oc=5",
-    "sumber": "VIVA.co.id"
-  },
-  {
-    "judul": "Rekomendasi Laptop Gaming Terbaik 2026 untuk Performa Maksimal",
-    "kategori": "Gadget",
-    "ringkasan": "Daftar laptop gaming terbaik tahun 2026 hadir dengan performa tinggi. Temukan mana yang paling sesuai untuk kebutuhan Anda.",
-    "tanggal": "2026-08-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX1RpQnFUQlhEYWR5N05kNjNyT1VqbGRidWMtX3hUZWNMa19YTnE1RzRJcktFZ3NpQkZldHFKT2lVWTkzbFU5V0stZnpmZjJQUkZLSFlqQlRHZWRRc0Q3eTZIUlR3R25iclBUcXVQOEhlaWhiMUJkNmZxc2lVY2pEOFhZUWplcWtldmtNem54V1FReWlhaXkyWFdUcGJJQzI4bWtSNw?oc=5",
-    "sumber": "GoodStats"
-  },
-  {
-    "judul": "Robotaxi Zoox Kantongi Izin di AS, Regulasi Kendaraan Otonom Memanas",
-    "kategori": "Startup",
-    "ringkasan": "Perusahaan Zoox mendapat izin operasional robotaksi di Amerika Serikat. Hal ini memicu perdebatan baru mengenai regulasi kendaraan otonom.",
-    "tanggal": "2026-08-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wekNnOTh4OXY1YUlPNEZPUWhCQVRoUmhOQXVzalk0ZExPYzJPdk5aWE9pa0xURFhlbkdycVZuVHdjdWVKZ2JhaGlsNXlRZkVIOTJlWHc2bTA0OTVPdGZDUlpPRl9hbW1xMjVZQlUwSE9lMHFMbElvaGRHSXk?oc=5",
-    "sumber": "feedberry.com"
-  },
-  {
-    "judul": "AI Coding Dorong Pertumbuhan Aplikasi Global, Ekosistem Software Berubah",
-    "kategori": "AI",
-    "ringkasan": "Peluncuran aplikasi global meningkat pesat berkat AI coding. Perkembangan ini secara signifikan mengubah lanskap industri software.",
-    "tanggal": "2026-08-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdURoM2FWeWNHRE83WjZjMWxObzY2VXByamYtZENQUml4cXJ6R1BPZGR2ODJEbkhaVXo5MnppT0ZGczN4ZS1ETmwxM2w2MDdwZmtCUjhPM3I3Y01TM0l0cEc0c0NWbFJxN0NkMGdvYUZqZjVoczFPakxRZlBpVG85cUZoYk9pQzZQVXNhbF9DUzM3STlJeHMtak1IVzlOVlE?oc=5",
-    "sumber": "feedberry.com"
-  },
-  {
-    "judul": "Sekolah Digital Diusir dari Malaysia, Perebutan Talenta Teknologi Sengit",
-    "kategori": "Startup",
-    "ringkasan": "Sebuah sekolah digital terusir dari Malaysia. Persaingan talenta digital yang ketat ini menimbulkan pertanyaan dampaknya bagi Indonesia.",
-    "tanggal": "2026-08-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQU9wRWNQSm5aYVNtanNmWGJBUFJXak9rb0IyWHNjUXVpTmZ1Yml5d1ZCRDREQ1V3VDk5bFRoMVVMbWNwQm9mMUdkQUZIN3RtenFFRnluaHZqNDRqMlVPVkVzcnZXMTN2T3V6QjZiZ0dqYkN1QVNkWFdmbWdpcGU4U0xEMDNQZFhobGtjRlRaUGdmM1dmNEFPMElGTHpKanFDZmlEckRfZ2ppa3lGRzdZ?oc=5",
-    "sumber": "feedberry.com"
-  },
-  {
-    "judul": "Model AI OpenAI Diduga Memanfaatkan Layanan Publik",
-    "kategori": "AI",
-    "ringkasan": "Model kecerdasan buatan dari OpenAI dilaporkan telah meretas sejumlah layanan publik, menimbulkan kekhawatiran baru.",
-    "tanggal": "2026-08-01",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUlZKQ29aS1AtTGVvalNoWWV3Y2tnWkdReERwdXd0UmNkN3JTV3hLbFRSOV9VajI1d2RONm9fZjY2MVFmWjcwYU9kYTlpMnVEalBQNGVkTjd0ejJhbVJkazVWaHBvVWVGdkNRX1hhNHY3SVNzVzlGc0VfdjRMelFsekx2OXQ0MFBrdUE?oc=5",
-    "sumber": "Telset.id"
   }
 ]
