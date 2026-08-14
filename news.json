@@ -1,5 +1,85 @@
 [
   {
+    "judul": "DPR Usulkan Pengawasan Kendaraan ODOL dengan Teknologi Digital",
+    "kategori": "Software",
+    "ringkasan": "Dewan Perwakilan Rakyat mengusulkan penggunaan teknologi digital untuk memantau kendaraan dengan muatan berlebih (ODOL) sebagai bagian dari revisi Undang-Undang Lalu Lintas Angkutan Jalan.",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWGZLX1pySEdyTm95dFJWMGRUalFVU2YwQzdPejl4a1daaHJGdjZhX1BISXNrZml2azA0elk0cUlldU5ZLThxUGpJNnh3N2RGMnJRM2Q3WnVFU09kcFJnUi15M0xNeXQ2aFNKckIwV0dSTGN5Q244VENBU3pHUnk3ZENuSjRacFQzc1E5TERvRzBPc04tcG00b2pTY0trUW9WbFc5QjR0dVUtQQ?oc=5",
+    "sumber": "Suara Pemerintah"
+  },
+  {
+    "judul": "UGM, Indosat, NVIDIA Resmikan Pusat Riset AI Pertama di Kampus",
+    "kategori": "AI",
+    "ringkasan": "Universitas Gadjah Mada bersama Indosat dan NVIDIA mendirikan pusat teknologi kecerdasan buatan pertama berbasis universitas di Indonesia.",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYnBMb05XWHV0TVIzVm9ySm1hMEZIcEVLUU9xQjRBNkpFMTlFRUE4U3ZXSmt5Z2tEY3U3Zk1WZm95ckkyZHA2STBnUFpZWXlBZ2NfUEtnMTFSYUg0cG9oY2VTS253QXZ2RmhoVko0RlgyTW1IdzhlMEx6Vm82eFIwNEdKWUZ6Rm1lRFczN2dvNnJmS0l6eTZqTXJNQmZEY1YtTlVNWVZrRVA2MG8tSldkTi1ITTNqWkNmcnNJUmN5TkFpQnZDMk13c0hQcmdjUWs?oc=5",
+    "sumber": "Gerbang Kaltim"
+  },
+  {
+    "judul": "Direktur BCA Ungkap Tiga Kunci Hadapi Ketidakpastian Bisnis",
+    "kategori": "Startup",
+    "ringkasan": "Jahja Setiaatmadja membagikan tiga strategi kunci yang diterapkan BCA dalam menghadapi ketidakpastian dan disrupsi teknologi di sektor keuangan.",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUVFLQXBCYWt4VVlJNzExWk5OODdTNWZRT2JPMWZqN1FFQUpxa0JuMWNNdkxxRW9tak9acWRfaXVaVTJQUkxPNFd3WExoVDlwVzlVWjJLVGhTQkdxR0l0djhqRHB0VkdTVEJ5bkczdzhYV2xnOWx4bWdYQl9ZbVhPekdQVEwzMFdOQ1YxRWFUdlNBVlU0eXJKWHZfTkgxcnhrQkpKZg?oc=5",
+    "sumber": "The Asian Post"
+  },
+  {
+    "judul": "Teknologi Modern Tingkatkan Efektivitas Pemeliharaan Jalan",
+    "kategori": "Software",
+    "ringkasan": "Penerapan teknologi mutakhir kini menjadi fokus utama dalam upaya meningkatkan efisiensi dan kualitas pemeliharaan infrastruktur jalan.",
+    "tanggal": "2026-08-14",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeFNoR003enBWemNtS3ZHM2pRNnZvb19OVUkwTzJaOFphZmxOVWdtaGNHSG43UzFlbzlnVVY0R2wyUFp5TXo3b2t1bDNIa3lGbE44Zzh5WlJSTjZNVGNwQjg1ZVJPVldCOExpZXEyazlhRWp1UzFPUmd5Z3hTYlBMSlJ3?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OcnVZU3ZQZndnRldtZU5jV05MbGpxT2stclJYQmxwQk5WNlZpc3JWM2JHclJrMS1na1ctNG1FMjB1RVRXQ0stYmx6dzNHWWRPeWV1WHBKMkFSbmc0eDRPRUdOZ3BkVjFoOEp0SzlFd2E?oc=5",
+    "sumber": "Readers.id"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcUxNaENIWlZvUXZRQ0J2R3ZWbjhkdDF0RnNIanN3dXFvNmNMaVIwenI5RWlVZ01BRk0wNXQxVlQxRENyVnVJQzlrWVp4Snp0WENUY1ptbUZPODBPNlprMnhvTFBGVGUyLUE3dGdmZHN4cm1TaWVpWHByeURnMEdmX1JnY2tuU3o5ZlJZbjJDM05hODlCS21zNy0xZkR0ZXhCQ3Nr?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Taiwan Alami Serangan Siber Massal, Diduga Ada Keterlibatan China",
+    "kategori": "Keamanan",
+    "ringkasan": "Taiwan melaporkan adanya serangan siber berskala besar yang mengganggu sistemnya, dengan dugaan kuat mengarah pada keterlibatan pihak China.",
+    "tanggal": "2026-08-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc2JmaEp4cnk4bXNlV01NdWp0TDMtNDhTckpzUWx6bmxZazFDYWRRQXRRcWw2VHBTR2NqN09oU0R0cUNSQ2c2WF9ILUIyNDJqa0JET01TSjVDaGVVTUlVdlZ6aUYteWg4LURHRlBqNlFwNHRVa2o3NEJTMTBpQjdMdl85TWRITEhsQ20wYlZRcXFOMFUxeTIzTmxyM0RJV2lzUmpsWDh0bmp0WURqMGd6SEo4ZEdiWk1LTVd3R2RtRlJJUdIBxwFBVV95cUxQV09oNlFmOHRUVXpFeUVmR0ZDTTVvWVdJRFRObmRGdDhxYW5BLWJnSUVvcEJMaDgwTWo0QndXZlYtall2YXFubTVVZy1SaEZ6b09UOE80MVNsUUhBUHpUOTRYYjc3MW9CeUN2QWVIUGxScnI0MzcxdjVtYWRzVmVwckYzY0hpMFRYOXh6WnFQQjNZVTNSYS01VE5uem5GYS15aVZwNW5qUHNmcHhZWlhMc01RX1psdW9yR3Zzb3RZd0lVOXJUMFJ3?oc=5",
+    "sumber": "CNN Indonesia"
+  },
+  {
+    "judul": "DPR Dorong Regulasi AI Berbasis Risiko dan Kedaulatan Data Nasional",
+    "kategori": "AI",
+    "ringkasan": "Anggota DPR menekankan pentingnya regulasi kecerdasan buatan yang berfokus pada risiko dan percepatan RUU Satu Data untuk kedaulatan digital.",
+    "tanggal": "2026-08-14",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQbWQxZk5Mb243Mi1GNWZJWDJFbkowR3UxQnRERTRfWFNHRTJLdFdKRkdDWU5jVXdNZGFkVENBaWNjdUdMZlpCZ3Q5RVhFSHQtQ0ZrSnVnbkktWXRmZUFLTmxHeHJ1QTlsQzJPalItY29lVTlxS0c4MDlQaDJFS19wX2E0VllfV25qY0JwQnQxREFDTlo0THZtSDZqUGhnNUozTTFVZ0RkOUxEUzdIZ0drdmpJRndFUVBFUnhFNGZFUURMMnRZajU2NjB0VDMzUFpnZG12U3JZLXVQaTZqU2NVTHoxbHNHZmpENF82cGJqbVlibHVFWGRzRHJQR2d0YUVmMWlBMVd6VEszN1FjVWpNRDYydUlCWVJTLUhXU1BaM1RJLU9pc09maHJibm5jS0Z4dHFzYWxWbndxY056ZEZhWl9qcw?oc=5",
+    "sumber": "Metropolitan Post -"
+  },
+  {
     "judul": "Prestasi Gemilang Indonesia di Olimpiade AI Internasional Kazakhstan",
     "kategori": "AI",
     "ringkasan": "Tim Indonesia berhasil meraih empat medali dalam ajang Olimpiade Kecerdasan Buatan di Kazakhstan, menunjukkan kemajuan signifikan.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQV2ptU3QwOTdnb1BSRmlvUXpHX3JqenlCS1k1N1duaWxIWXM5bVZzNVhJUzB0OW9ZUmt0MWJMcDZwSGVoOE1RaWxzVV8tX2xZQTNJelptLWROMF9mM1Btck9SN291Q1BvOW1UaW44ZHpiYnlkTXFUcmp1aXVkWUl1alN4dmxJa0J4ZXJDS0dqa2gwQnRnQklkOTdvQmtuaHVxRk5qUlUweEIyTm1YeFR4V01vSHZKTm1NZ2c?oc=5",
     "sumber": "NUSABALI.com"
-  },
-  {
-    "judul": "Pembaruan One UI 9 Beta 5 Hadirkan Perbaikan Kritis untuk Galaxy S26",
-    "kategori": "Software",
-    "ringkasan": "Pembaruan One UI 9 Beta 5 berukuran 1,1 GB kini tersedia, membawa sejumlah perbaikan penting untuk pengguna Galaxy S26.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWlI1UjYyenNhaUx2VXNFUDF2MDVVRVN6eml5YWVfTEtGTi10Z3U3UExJdGZzdWJORFZQUW5xOHZKbXZPYmkyUkdKcUhtZ0JBdFBrNHdVbjF1OGVHWTFvaGRCRHgxVFBoeHQ3LUU3ZFRwLUZrc1VyUk9za0tTRXNuM3d5WFUzb0xvYUxyRA?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "MTsN 6 Bantul Tingkatkan Pengajaran Teknologi Lewat Workshop Cyber",
-    "kategori": "Internet",
-    "ringkasan": "Sekolah menggelar workshop cyber untuk memperkuat metode pembelajaran berbasis teknologi di kalangan siswa.",
-    "tanggal": "2026-08-12",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcGZJLWtvdndkN2hRUlJaMVg0UVZ5UUI0WDdtOG5WRFJSSE14Mkc3TGNSaml2Wkt3bFVsM3QzM0FjNjdadkU3SWhXajdvNlEzV1Y0eDdicmRZWGdUaFpLVW9jZTNCLXNzNHotM2J1dzZyMWdOczktX1h0Y1JrSlZCNFl5ODZSSG1SenVHQ2V4bHByTzFHNDBuNTYtcnQ1R1VoRmRyODVDWUw2V01SZmo4YmpXMWQwWHRzVWlvVFVSMmNYMWhaSERwX3VUNUFOSlZNamk3UmVBckRrSzdWamdrNlpn?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Sony dan TSMC Bersinergi Ciptakan Sensor Kamera Ponsel Terbaru",
-    "kategori": "Gadget",
-    "ringkasan": "Kolaborasi Sony dan TSMC menghasilkan pengembangan sensor kamera smartphone generasi baru yang menjanjikan peningkatan kualitas.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xSkNrWnkydzRoSEVhcGxxTGNLWlJONUhoVk5CQ1JMRlo2S2dMal9xNmo2ZzVvMjZzeG5HQVJsb1hkQVRhSmdfU0xsXzFLaVFKeFRYb1pTRUM0RHFETmRUVjNYVW1qQ04t?oc=5",
-    "sumber": "Readers.id"
-  },
-  {
-    "judul": "Diskon Besar HP di Amazon Great Freedom Sale 2026",
-    "kategori": "Gadget",
-    "ringkasan": "Amazon menawarkan diskon menarik untuk berbagai model HP dalam rangka Great Freedom Sale 2026, beberapa turun harga signifikan.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdUh0b0ItdzdjLTI1ZHVNeVBLeHRSQWlHem5pOGpIWGU4OG9rTkhqcWtYVU5lQWtVYjQzZFFwNDhDYkVhWHlLQ2xzZEpFSVZJZzZZX1VyNWllVkhpODBLT2pTaDEzR1VadzYzRDM0RENDNnc2N0ROQ1Jvck82Wnh3UGVybm12SmFoalB2MkFQdUFpUQ?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "Sensor Kamera Sony-TSMC Baru, Solusi Panas dan Boros Baterai?",
-    "kategori": "Gadget",
-    "ringkasan": "Sensor kamera terbaru dari Sony dan TSMC berpotensi mengatasi masalah umum seperti panas berlebih dan konsumsi daya baterai yang boros.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOU43NHg5U2VVdDd2c0ZrbDRZd1MyUkxiSDZwMXEtb2dEaGF4eVFiQ2h2dEVkMnFHMFNFVTl2bmRXWjREdGt2ekI3UGwwd1dPcjI3Nlc3VGJOM0ItbVFaRGRNaFkxaWxXUnQ1M0Y1bjBkaTFxbzJvUVc4V2p3eXliaGZtaDlaZExkdmcyUWhraUV0Z0RuYmhCMVhEVGp0Um9QOFJLbtIBqgFBVV95cUxQQi1UYnhTelR6MlVKa3A3VTJCVHZ4YTcxejNMQjF1SDVUcWlEME9YSVBEWHNMUEdmM2k5ZUowV3dFMlJYSlNDanQ4ODZIaGpxYkY5NUVyNHdHYjh6eHN2V1c0ZkZUR2YwbVlxUno3M2U5cERVZkhscXVlNU95LWpNamluZU54QTF1QWhpU1loV2p0Z0gyMkduTm9ubG80ODQybGFmQU1nbkt3Zw?oc=5",
-    "sumber": "VIVA Gadget"
-  },
-  {
-    "judul": "Memahami Kecerdasan Artifisial Melalui Konteks Deep Learning",
-    "kategori": "AI",
-    "ringkasan": "Artikel ini membahas konsep dasar kecerdasan artifisial, khususnya dalam kaitannya dengan teknik deep learning.",
-    "tanggal": "2026-08-12",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONkU5ZndZQ2ZVTF9sMTlsVnNtX1FUdURfTzJSYWdNcUhnSzNQTmg2eFU1Z0ZzcG85LWE1RFhEYjhaQkFFeVp4bzQ4c3FoYWVnMkdGT0JiSlNiU0NjU29LRnVKdF9hREl0a1hfNTdlV2V1QmZkOC11WTJGRzV2dXlOME55Y1JTdnpSMUdheFF3NFl6dlBSSHJ2RVRpU0U?oc=5",
-    "sumber": "Media Indonesia"
-  },
-  {
-    "judul": "Saham Sektor AI Menguatkan Wall Street, Indeks Naik",
-    "kategori": "AI",
-    "ringkasan": "Performa positif saham-saham perusahaan kecerdasan artifisial mendorong penguatan indeks saham utama Wall Street seperti S&P 500 dan Nasdaq.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbEd2UFJQeFZKeW5keE5BbTJfb2RTVkhZbVhPSW1nNUFaTk1Bek5hbDVvUWZzV0pDQnM4THhIWkNUWmU5VXFFRXo3Y3Q3V3ZybzBxRk5NWFpIQjRNUGZJUDEzbDM2NjNEem55b2FMcXRTbWx2aHBMcFo2TEpkbDRlQ0lLMUhPc3JuVGlqeEtGb0J5bkdlcXfSAY4BQVVfeXFMT19SZkc1bWtYby1NcVEyaXE0QWRWZnRsNmtTNF82QXQ2cDVWSlRiaDRGNGNBWFc0bnp4V1EyZE92WUItVkZzRWRoNkVrakFRT3RQR0EzU1NWc0t4TmdrRS1HRElsTkJGSTdkY25SeTZIY0RzU1N4dGg0SENjYUd2dkZqTC0teGd6engtcHZGQQ?oc=5",
-    "sumber": "kontan.co.id"
-  },
-  {
-    "judul": "Nintendo Segera Hadir di Indonesia, Siap Sambut Penggemar Setia",
-    "kategori": "Gadget",
-    "ringkasan": "Perusahaan game legendaris Nintendo dipastikan akan hadir di pasar Indonesia pada Desember 2026, membawa konsol dan game favoritnya.",
-    "tanggal": "2026-08-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yclBRMkVJN1JBc05MbUxSUkdBSzZUV1NIVHEtcW1YSlVUbFZNR3N5Ym1uRkFzbUFxYjZHUFZPNlc5TnlBSHAxQVNYSjdrVHRKekNkWFpRLWtUNmp4bVA5WWY0TQ?oc=5",
-    "sumber": "readers.id"
   }
 ]
