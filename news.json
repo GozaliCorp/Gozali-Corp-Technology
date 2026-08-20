@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Jurnalisme Seluler: Integritas Informasi Kunci di Tengah Disinformasi",
+    "kategori": "Internet",
+    "ringkasan": "Jurnalisme seluler menekankan pentingnya integritas informasi, bukan hanya teknologi, untuk memerangi disinformasi.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRFlzZllRYTNFWml6Zm1ER1BGLWZTbnFFRU9TOGxmajBsUDcxZnZpa0c2bmlSWllYdG5mZFlHSjdyeVFmSXlEQk85MXRUWEdyNnF0Q3hoTU95cGJiVU1jOVlZRXN1Y1ZNczh3d2RJOFQ3SldzME5Ob1lPc05uem5nazFTbG5zUTZUU2NxVmxocWlNaXg3ZlctQUFoZGxKNGhwZHhKTVRDcWdyYV9OSGFxT2RGcGZNY19pNmg1V3NISm4waTFqZ2lpX0dvR2Z3ZG9weVpISmpnWjQ5UHh5Y2hJ?oc=5",
+    "sumber": "Pikiran Rakyat Koran"
+  },
+  {
+    "judul": "Polisi Garut Edukasi Pelajar tentang AI untuk Lawan Hoaks dan Deepfake",
+    "kategori": "AI",
+    "ringkasan": "Polres Garut meluncurkan program pelatihan pemahaman AI bagi pelajar guna mencegah penyebaran hoaks dan deepfake.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMVd3X0dyQ29CTzRGNmRHbWo1LUtGeFl0dlY4a1RxR3BoUHZaYWRIcFEyTk1LX0JkSmpVTTFyTUF2UkNUWlU1ejRtS0pqQi04cURJRUI1bkZRRWRjQWZfeFVqYnBtakVMRFFOSWJ1b21WT3JnSFhMOFQ2R2ZDdXF2Z3ppbzAwZkZfNE1USGdPMENpbVNuMlpnMkNoTnRmN1RZX3hIQjFvMVJYaWVya0dCVWl6cTRkMTJXNnhzeVRTSTlwYWFKY0xVWkZOSkFjTW8?oc=5",
+    "sumber": "Pikiran Rakyat Koran"
+  },
+  {
+    "judul": "Pemkab Bogor Perkuat Jaringan Komunikasi Sandi Antisipasi Ancaman Siber",
+    "kategori": "Keamanan",
+    "ringkasan": "Pemerintah Kabupaten Bogor meningkatkan sistem komunikasi sandi untuk memperkuat pertahanan terhadap ancaman siber.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZnM5ZXl2OEFJbE50akJrdUE5WHh6dWVSd0dTamVmaUt2WkRfenRxYXVBcEpqdk05SnBsSXpOUHBYdlk2Ti01T2lqU1hVS2U1Mk5NcUN4c1BjVUxYRlhRYWFjYjhhckh6aldEeXJjNlprcmNfeG5heHJfb3pHTGpGZ1gteVdFNzdubmNPR2VkYkZmanc?oc=5",
+    "sumber": "Kontrol News"
+  },
+  {
+    "judul": "UMKM Didorong Inovasi dan Pemanfaatan Teknologi untuk Berkembang",
+    "kategori": "Startup",
+    "ringkasan": "Pelaku UMKM diajak untuk terus berinovasi dan memanfaatkan kemajuan teknologi guna mendorong pertumbuhan usaha.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZUxuSk5waVZvYzEydE1VM1N0d1ZTek1fTDVSLWlZanc2RmhYSkkzd3FrdUhsVjB0OGZFRTFoeHFGZmUxUF9MSFU2MXJBX2JuZ0p0UWN5a09UYjhUR19lSUdsYVhEME4yaE5LNEF3Ty1lbzhjVkZpUVR4WGJpbWxQZms1ZmdUTjhiYnEwamlhYTliZ3JMRWZaWU5Pd005NW9SbEdybzNaVmZVMDNaclR6cGlXZExxZkpNOFRfXzRQM2VfZw?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
+    "judul": "Keamanan Siber AI Tetap Butuh Keahlian Manusia Ungkap Kaspersky",
+    "kategori": "AI",
+    "ringkasan": "Kaspersky menegaskan bahwa meskipun AI canggih, keahlian manusia tetap krusial dalam menjaga keamanan siber.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcU1WLUdpSjFFaThNWXVEaXlMMDdxaDFIUnRwZXNqZmpoTEtVU1ViZWV5UDBxMEJ4TmZNUDBka0RzbzRNc0ZhZlNNanJIaWkxYnJWM1p5ZlcyX0hZeVpEQUVUUDFfd0p6ZUNGRDhvOFZuZ1dOUHVyNzk4YjFlRHo5bDR4MnBJYlhaWVlQSDUwZGdUVHVsUGc?oc=5",
+    "sumber": "Qoo Media"
+  },
+  {
+    "judul": "Tips Memilih Smartphone Bekas di Bawah Rp500 Ribu untuk Pedagang",
+    "kategori": "Gadget",
+    "ringkasan": "Pedagang modern dapat memilih smartphone bekas berkualitas di bawah Rp500 ribu untuk mendukung operasional bisnis mereka.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOV3pwV2JlWGFmNXZpTW9zLS1qeFIzNTJscFpLOVpqUG9WVTZEMUdlbGZydHlBX3FMWEZwNmgzOUtzbFpsbzBPc3hGRzRzS1J4WmlRa1MtbGJ0NHkwRldKUkE3NzBETGwwbHpYN3JvbGlSQWRJSUJycExBeUxoaUkxc1Q2Wmd0ZUhZcF9wbXFlSE5senRIekY4c3NkZG1JYlc5YndPWTQxQmVYQnNGbXM3SXVhZ2UyV1BZLVJ0MjNaMW9JWmU5VVVBNkpSTTlfSnhQLUZISDVBSE5wUUdkTV8wSG1zTFJZcE0?oc=5",
+    "sumber": "Obor Keadilan"
+  },
+  {
+    "judul": "Broadcom Cari Pinjaman Besar untuk Akuisisi Chip AI",
+    "kategori": "AI",
+    "ringkasan": "Broadcom dilaporkan sedang menjajaki pinjaman senilai lebih dari $60 miliar untuk mendanai kesepakatan terkait chip AI.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUDRmR05aMTFYNEFSQkRJNEdnTFMyZ2lqOU1PZGItS0xzbV8yTnIyQ0hXSjhaUHowV1I5UWxmNVROZE8yMjJHQ1VQclJtSWw2eGFKb0tId2FBU2Jyam13YnJVZktJMEU1eUFkVnpqMmFwQ19RR3lZeHZWNFFZaFdpVVA0RXUyV09xZWZaR2hEZnM1aW82Wld1N2ZnZzROUVg2VWJBblNfRi1oVy1Ib1Z6bUZxY3ZySU9oQUNSUWdZdFFOZGY2R1ZJZlBQdWRheTUyUmc?oc=5",
+    "sumber": "Investing.com Indonesia"
+  },
+  {
+    "judul": "Tesla Integrasikan Model AI Buatan China ke Sistem Kendaraan",
+    "kategori": "AI",
+    "ringkasan": "Tesla dikabarkan akan mengintegrasikan model kecerdasan buatan (AI) Doubao dari China ke dalam sistem kendaraan mereka.",
+    "tanggal": "2026-08-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeXdKbnlGb0wtdF80cVU0ZEdPQXRWV1c4aVQzZHJvdkg4VmlGZC04eG16M2lkMkdDSmo2aTJPSzVKcnhsRnliZC1ERzdjMEFsOXBsTC16bGVSMC0xSkR4TmZDclp2aTVaRjUyZDVZcXd3a1dpVEdBeWFvblEtWmFNTHg0c3ViNlZEbWdWeXVhdy15VlIwZzhmY0F2RGdnNnUxOVh1TEZvZDNLV2xw0gGvAUFVX3lxTFBzYUlhbFY1MWNTOUFiZFlndDRrcHk1UVhIZG1iQ2lreG94djRrZEk4VUlzOUVPWmo5b3Fpb2JjLXpjemQ2QkcwS2o4RDBEbU1kcWswMjM2dXJZNWtnbW5MNmV0dWpsdlVxWHpHQjJaREtqQTZwb3Z5dGRBckw0ZlV5MUU1b0l2eDFaN1MtM1VoaXdpckNVX0JWblRtTENoN25QTjFUdlQ4bDVBVWhsZDg?oc=5",
+    "sumber": "ANTARA News"
+  },
+  {
     "judul": "Muhammadiyah Didorong Percepat Transformasi Digital Berbasis Pengetahuan dan Budaya",
     "kategori": "Startup",
     "ringkasan": "Ketua Umum Muhammadiyah mendorong organisasi untuk mempercepat adopsi teknologi digital yang berlandaskan ilmu pengetahuan dan kearifan lokal.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOd3JrdVpiUFdxcFk1emkyYmtpY3NIOWxRQkw4NWVFM2hSM1hZRlE4QVFFWnJKX0llZGNQRXNjZFoxQkktR3RHbkwyZXl1OXpTZXRvZ1dIOTlBUnVidlk3ZzQxRFRyTnhLX0RkRnJTS2dWcGl1bFVQNjBRTHpUdkwxVHRjMU5ZUQ?oc=5",
     "sumber": "Pluang"
-  },
-  {
-    "judul": "Teknologi Tepat Guna Tingkatkan Budidaya Nilam di Aceh",
-    "kategori": "Startup",
-    "ringkasan": "STIKes Assyifa Aceh menerapkan teknologi tepat guna untuk meningkatkan kualitas dan kuantitas budidaya tanaman nilam melalui program pengabdian masyarakat.",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcXFPVVFZUzIxTHRjN05pZHViZi0yMzhUenp3V0JySnJUWEpkeHQwUHlrVk5XOTVkWkpLaFBpRy04SFBfYU9zV09sWE5BTkpEUWNvc1M1bEl2SGJFSFY0RXduSUFSZFpnOVlOZTk1MnJEU0NDaWV2ZGlxWENoNGgxQkEyNDIzeEJqVlFjMDJ3ZDZnZzUtUjRTcDk0NXE1UHZsMTktZXlQeURPQkRmVzdaSGEtTDlTWHBEMGlLRy15QWx1ZVVSNjRLdGN4dFA3MklvTktFREhfTUQ?oc=5",
-    "sumber": "mediaaceh.co"
-  },
-  {
-    "judul": "BRIN Jalin Kolaborasi Teknologi dengan Tiongkok",
-    "kategori": "Startup",
-    "ringkasan": "Badan Riset dan Inovasi Nasional (BRIN) memperkuat kerja sama transfer teknologi antara Indonesia dan Tiongkok melalui sinergi industri.",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdFFkTURySmZCTG9ya1EzVWlsSUNtYzA4TWhWQmNuVVo5TERWUlQ3SHd0UzYwT3h0cWdqNWFKaTQtZG45Uy1PRmlnRm5TNmwzNUxqN3EyemhyWjAybzE4ZWp5Sk9wcEtpUDBWS2I0clJnd2pwUjF6MmQyeXAtelpEUHNaUDlxdG1wMDFqSURELUc3WlpVWWpEdTQ2X0txRnJ5OHZIVmVVbFNTbGNla01kZUVLTQ?oc=5",
-    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
-  },
-  {
-    "judul": "Stres Orang Tua Pengaruhi Penggunaan Gadget Anak",
-    "kategori": "Gadget",
-    "ringkasan": "Tingkat stres orang tua ternyata berdampak pada durasi dan kualitas anak saat menggunakan perangkat gadget.",
-    "tanggal": "2026-08-19",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jdXhULUhxUUZRc0ZheV82WHVuUkRtSDlEb3lLa2lWdnhUUWdLeXdYWmRvNVRsVW9QYl84dGFJM2FiWlNfUEJiNWxZSFpDZ01zSHAydEJNQktRaDNYYVVsTnRYaHZjSlhVeDB6ZHhEQ0Y3blU?oc=5",
-    "sumber": "achmadnurhidayat.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOb05wZVNneHpnWnp3Q0owa0k4bzNhTllWaGNxNDRucWlMR3NITmVXOC1SbDBPdHo3Q1BWZkhhRGswRU5tNG5YNWdNXzd6RDM1ZE9CWTJBanpSM0VUSFpPUmNvbXJzMEtRSFQtejJPVVFOVzNuZXRqWUJvTTJqMzZSN2pqNGl0RF8wbVJZSnJTdU1NTTFQS0d4RlB5NnlYLXVV?oc=5",
-    "sumber": "vietnam.vn"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYmtFSzQ4YzdWV1RNN1c0OEhPSFVUS0VBTjhaN2xmLU9Oa1hoek00cVJFSDlCS1Jvdl9POTd0MWtUX0RUODRGRVBFTTlCa0ItWW1Pa01HNzUyQktVemhMTFNvUksxaHF0UmtpX0hUTFNxYUZYcHNPQ1lXWHExcUZ2NWNvbndzSGd4R25PbC1mNHFqZlVrX3FNMTVIX1Nacy0yYTNkT1p2VHd6TWlCTXU1MXVDcTNGTC1KZkwxZmRoeXN6SnPSAcMBQVVfeXFMTnh5cllmMUNqOTBfZHU2QkhnQlUzelQxdXA2TUd1bkZNTElrSzUtVkMzWU9MOW5pWi01Nld3V0RYWlpRWEtGWVk3ajBWd0d2cmRfSjJHUFdSQmxMMTM2Q2FtSU8wTGdLS2pXbjlyaF9sUjdzOXV1Y1pfT1E1eTlmWmQ2OVh5LVd6aENfQUpHRjNqaWoxTGs0dDVVbFlRZ2hoZ05mbFdWTHZTR2hCQVdaTW5wR1hCQjV2UGNZSEdiUDJnb1lR?oc=5",
-    "sumber": "Kompas.com"
-  },
-  {
-    "judul": "Xiaomi Luncurkan Kamera Cerdas AI untuk Panggilan Video",
-    "kategori": "AI",
-    "ringkasan": "Xiaomi merilis generasi kedua kamera pintar yang dilengkapi kecerdasan buatan untuk mendukung aktivitas panggilan video.",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vcXdpdlpUNjhwNWtodHNSay16c0N2bTY4TnMyU3pKYUdFZHpIaWg5TzVEV1RIZG5HOHlOOVJEc0dIOVpTdUw2T3F6SmJwVVpOQVl6dE8zeUcyQzNKTHVVR093d29ybVZ4N211dF9FMjBDbDlvSkxhZUZB?oc=5",
-    "sumber": "Readers.id"
-  },
-  {
-    "judul": "Prominence Hadirkan Pemuda.ai Kelola Ekosistem AI",
-    "kategori": "AI",
-    "ringkasan": "Prominence meluncurkan platform Pemuda.ai yang bertujuan mengelola ekosistem kecerdasan buatan di Indonesia.",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxOF9WcDl1eUZ1VWY3SUc3Wm45akNCNll5Rm9yLU9ITkxrTU9lV2lnQk0xZHN6bl9MaGl5ZllHZzAtUkd2MkZuUVZXR1hVdVVJSkljQ1k2ek1MSWY3M1p3Y3BfTi1NTk9GLUMya0F1cVhCcGRIOElia0NZUQ?oc=5",
-    "sumber": "achmadnurhidayat.id"
-  },
-  {
-    "judul": "Kamera Video Call Xiaomi Terbaru Dukung Layar 3,97 Inci dan Video 4K",
-    "kategori": "Gadget",
-    "ringkasan": "Xiaomi Smart Camera Video Call generasi kedua hadir dengan layar sentuh 3,97 inci dan kemampuan perekaman video 4K.",
-    "tanggal": "2026-08-19",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQemp4UzUxZ3VkRkZkb1o1Q2I3a1dYWmd6V3U1M01qbU55M3piYTQ5VzFxYXhSN3BrNDA4dVo4aENubzdvenltck1LUzU5SE0tRUFYa2NMMElVZTd0WVVXbFZXaGsya0w0S2pJU0FCSDNsRzVQaXAzS3pOSVhTanBEejJob0RqRkxONzB1QmdBVDloZXBCUDFCTEt1VXVacjRKVVFLd29YV2pqY0M3ZFFJMVF6R3RMY2R6NGfSAb8BQVVfeXFMUGpFSVJHdllPVWVzZS1iNERmam1yT1dfNGVRTE91dGFha3I4Um0xSWh1YW5KaVk1NnZtN3NBM0V2aVBES3p6YUZudmVBRTh6dnZSU3N5Njh4c1dMMGE5WHFpbml4eENaVnZyZWc2b1ZQTGthaS16c01EWnlGWnVqN3U1UWc5VnJXYktsa3hfWEVKazdpR2d2ZmZkblh3V2xMcXlrblJRb2pXcjhORTNRbmEwRC1pcWREUnQ5ZDg0eVU?oc=5",
-    "sumber": "VIVA Gadget"
   }
 ]
