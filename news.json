@@ -1,5 +1,75 @@
 [
   {
+    "judul": "Teknologi Pelacak Mata Ungkap Kota Liburan Musim Panas Paling Menarik",
+    "kategori": "Gadget",
+    "ringkasan": "Sebuah studi menggunakan teknologi eye-tracking mengidentifikasi kota-kota tujuan liburan musim panas yang paling memikat wisatawan.",
+    "tanggal": "2026-08-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNakZZd3lSNVZqaVhFMHM3THlGMExmME5ZNmU5clBCZnR6Z3Z3Mm8xQVktQlpyRVJpTnVDMjBhNngyYjgyc2hIbk91dHZrR0NIZ2ZPT0g4b1JBSWlyckJpMEtFY28xWUlaUXRMbVc0SW8ya1BJaDV5NUdVUEs1LTBreHF3WFlzUE55R3dzN2toVzNxWk8xdS1EVWt2NU5HX2hCOHA2OGw1TFoySms2aUhWbmZLWlFqYXhIMHBJUmJBekFha3VKSEtKdnJn0gHPAUFVX3lxTE1NeDdMOHYwMnFSM1hUUzhkRlUzdjRpNVR6Z19EZV9FLVUxLUFFWktOcW1VN3BKWDhMbVFxV1poTzlyZWVMRUdSYmV5b0k3TS1tSWViaFJXTHUwbHo4UldzODRabnFqcFJVSnN4dVFhRnFqeVFIbTdQZS1QUkpEQ2NYX21nano3WjZNRjlzZkZhRkZwN2NkN2pib1dhUDVuYWJXQ1VwTk0tWW1mTmNoc1JLWDlDcmE5d0dudElmR1Y4dkRXazZueVoxeFhaMVlaRQ?oc=5",
+    "sumber": "CNN Indonesia"
+  },
+  {
+    "judul": "Potensi Besar AI untuk Tingkatkan Efisiensi Industri Manufaktur Indonesia",
+    "kategori": "AI",
+    "ringkasan": "Penerapan kecerdasan buatan (AI) menawarkan peluang signifikan untuk memajukan sektor manufaktur tanah air.",
+    "tanggal": "2026-08-23",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbjJtN2tKVXc2Zy1NU2J4UEpxRlJwNW9zTFhINEx6QTZka3JWUDRFZlBJLS1LSDlaQ3BTSGU2Tm9QUVVVeTM4bm9jalRyM3JFVm5oeUhKVHVVR1EwMFpKR0ZaRGt1ZG5Ob3V5UTJwb2t3c2dQdlpGN29sTXNRN1BGUE15TlJ3SlphZ0E?oc=5",
+    "sumber": "KONTAN"
+  },
+  {
+    "judul": "Jajal Ponsel Lipat Samsung Galaxy Z Tanpa Perlu ke Gerai Fisik",
+    "kategori": "Gadget",
+    "ringkasan": "Samsung memungkinkan konsumen mencoba ponsel Galaxy Z secara virtual, memberikan pengalaman interaktif dari mana saja.",
+    "tanggal": "2026-08-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYXFjWlRHX2YyRTJPVU9MZFNrNWdiWXBjY2RYcGt5dy1KUUxBbXM1OEdWS3RZZlZzRVVqZUFpUzltOFlDS2x0elZsb2d4ZjBDdUhWMkpsVWhQeVN0aHh0REN2Q0Z2M1cxU005QlNueWlMcVhuUTJyS01WYXFhVnBkTGJMb2Y?oc=5",
+    "sumber": "Qoo Media"
+  },
+  {
+    "judul": "Ancaman AI: Peringatan dari Ekonom Peter Schiff Soal Dampak Pertumbuhan Teknologi",
+    "kategori": "AI",
+    "ringkasan": "Ekonom Peter Schiff menyuarakan kekhawatiran mengenai potensi ancaman yang ditimbulkan oleh pesatnya perkembangan AI.",
+    "tanggal": "2026-08-23",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10c2ZxTkVkMUlRb1hzVnlNWXdJNENWX3BRZC1sMzFpMzBHcE1yN1I2T18wTDlxYnFBUzlPQXJTRlM3d2FmUVlVUEg4QzRqMTA0b3FsUHpqUlAxdUExSUpUM3B3bDFNekZISzU4eVpzaVFpNmVM?oc=5",
+    "sumber": "Pluang"
+  },
+  {
+    "judul": "Platform AI Unsri Bantu Tingkatkan Keterampilan Guru Tuna Rungu",
+    "kategori": "AI",
+    "ringkasan": "Universitas Sriwijaya meluncurkan EL-SIBERUNG, sebuah platform AI yang dirancang untuk memperkuat kompetensi pengajar bagi siswa tuna rungu.",
+    "tanggal": "2026-08-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSHl4a25EWVQ1a2cxRTVydThMT0F3RWpXVzF6d3duM1NTQlFJdlNmUzd5Yk45MHkxaGFoRDRITklYMkNaNjNCYzgwS09USFRtbmJFci1JUjMtVk1Tc0ZDYmZlWi1KUHdmeUs1dTFNMUVKenJ5TV9NcGZUeFFxbGxmYmZIdlhQd2twV2E2cVpjQTBtM0Eta241elUxTVNYR1AzQjdoWVN3N3ladVpQM2Z0N2hiT2xGZ0RiT0ZNTWVkMktQdG1XQ0VZMw?oc=5",
+    "sumber": "republika.co.id"
+  },
+  {
+    "judul": "Nvidia Investasi Rp90 Miliar untuk Saingi Model AI Tiongkok",
+    "kategori": "AI",
+    "ringkasan": "Nvidia mengalokasikan dana besar untuk mengembangkan model AI yang mampu bersaing dengan kemajuan teknologi dari Tiongkok.",
+    "tanggal": "2026-08-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNEZ5SzM5azVDWkZIVS1EcDgzZ0R3M0NNaG9RTHl1WHJ3eXNLWHdGaHotdHBNLXk3bmx1R0V2alNrdjVxcHpoMEMtZ3ozcXZxT2ZoWmlEQ2VobDV6ZGc2SERPR1JERjNxR1o0Nkljam5tbkxOeEtGb1Z5WGF3blV3a1I4N2dtc0drLUdtR2tlR2M1djRHdFhQVy1teDFYVjBlRWZYTFNnZGVubXhtOGRR0gGvAUFVX3lxTFA0RnlLMzlrNUNaRkhVLURwODNnRHczQ01ob1FMeXVYcnd5c0tYd0Zoei10cE0teTdubHVHRXZqU2t2NXFwemgwQy1nejNxdnFPZmhaaURDZWhsNXpkZzZIRE9HUkRGM3FHWjQ2SWNqbm1uTE54S0ZvVnlYYXduVXdrUjg3Z21zR2stR21Ha2VHYzV2NEd0WFBXLW14MVhWMGVFZlhMU2dkZW5teG04ZFE?oc=5",
+    "sumber": "Koran Jakarta ®"
+  },
+  {
+    "judul": "Peter Schiff Ingatkan Potensi Bahaya Kecerdasan Buatan",
+    "kategori": "AI",
+    "ringkasan": "Kekhawatiran Peter Schiff menyoroti risiko yang mungkin timbul akibat kemajuan pesat teknologi kecerdasan buatan.",
+    "tanggal": "2026-08-23",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUXRPQXAtSEM0NzlJQ2UzU0JGbW1KRHNOclI5alpfQTNMREEzWW1BNzZMRzlyanlmNmdmSHlmeHNBcGxtalJCSGdnQ29ORE1GZUk2LVJFdVlGVm9iOGV4WXdDbmR6SjVlT3otRmNYREtIQXdGbFFRckJCMVpwMGhoWGprRTVydw?oc=5",
+    "sumber": "Pluang"
+  },
+  {
     "judul": "AI Tingkatkan Efisiensi Bea Cukai, Kurangi Pemeriksaan Manual",
     "kategori": "AI",
     "ringkasan": "Penerapan kecerdasan buatan dalam undang-undang kepabeanan baru bertujuan mengelola risiko dan meminimalkan inspeksi yang tidak perlu.",
@@ -168,75 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYTJtTmNRZlFwSFZPeTV3WktuZ0FGU1lCeTF4NWMzVlZCdmdLNHVwV3FjSi1DaTBVVjk5YW1NeFNhZ3FWVWJ5QlI0RlFDa0NBM042ZWJ1VTEtM3pJQkxTbHAzWGNGUzBYTWtrdWtnOTc3RUR4TnNzQmlHeEswM1pxQTBlUk0xQWlDUnQzZXBXbVlFRElvVkIxeGVnRFotQ1FiRTRneUtiSU1BU0xtVFcyOUVMSVBURS1vZWJBQlhma29TRjQ?oc=5",
     "sumber": "Medcom.id"
-  },
-  {
-    "judul": "Pengembangan Ekosistem Ekonomi Ruang Angkasa Rendah Bumi Dimulai",
-    "kategori": "Startup",
-    "ringkasan": "Inisiatif baru berfokus pada pengujian drone canggih dan pembangunan fondasi ekonomi di orbit Bumi.",
-    "tanggal": "2026-08-22",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc2ZTOWtMWDAzLVZEV01RbGZVdHJxUHZtejBPRDU0MUFwVlo1Rl9KOWJBYUNxMWl4YUp5SVdiUDk4ZHNYRjc0ckxmclVJTko2R2hoS0hPMFdvS2o4emMxbW1udWVCSEYtN3VlcXhJNTNFeFhjSHZ0NjR3bUZIXzJ3R215Q2ZrNEV4UVpIeDdvcEpXZnJKVF9rMThabHJMQQ?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "BIDV Integrasikan AI dan EI untuk Layanan Pelanggan Unggul",
-    "kategori": "AI",
-    "ringkasan": "Contact Center BIDV kini memanfaatkan kecerdasan buatan dan emosional untuk memberikan pengalaman pelanggan yang lebih baik.",
-    "tanggal": "2026-08-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU2YwajdHSG0xVHVic2VJbkdtR0VaWmhRNDg1WjhmZ3E2cExSVElSTDQtTEJMbF9EazA5Y1IzbXprc3FCbkNVWFMwZDNhZTdYZlBkYTUzWmd2LWoxM1phbENsNE9zUTZxTmx3Wkx6TWdGemRYUnVwN191MFc5MFZiWUFGb2liWnhGa1BTN095UUgzd1NXcDZUaEZVeE9kX3M?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Persiapan Menuju Era 6G Dimulai, Kuasai Dulu Teknologi 5G",
-    "kategori": "Internet",
-    "ringkasan": "Fokus kini beralih pada penguasaan teknologi 5G sembari bersiap menyambut kehadiran standar komunikasi nirkabel generasi berikutnya.",
-    "tanggal": "2026-08-22",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRk9fejRvanN0cDJyODZSeUNjYWt4MmNHU1Z4eEpKT3JYQ1pVS1VUTmh0UlIzdC1jX0w0eFVHdmo0WkhvRXpUQ1IyOURXcFFHUlMwX3RUbkRaRjczZlkwOTBWa0VVVE8zYmIzUFRhaXhlZm9CbWRpS0VkZnVaTHotWjZDWnI?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Indonesia dan Tiongkok Sepakat Perkuat Keamanan Regional",
-    "kategori": "Keamanan",
-    "ringkasan": "Kedua negara berkomitmen untuk meningkatkan kerja sama demi menjaga stabilitas dan keamanan di kawasan.",
-    "tanggal": "2026-08-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd2p3cVdjck5ZMjUxSml6NzhIYnA2YlMyVzlxUVpiaFFZQ0U4dGhqb1JEQ1cwMkh5R2FFQUtyQ3Z4ODhOVU1RWXhwbURTbHpVYUh6Zlc1VVRWMFg0T1hlVjIzaElWUmFvdERJYkxZZ3dBekQ4V012a2ptZE16SG9tZFpKS0MxXzVUaG5lYjNBMUloSl9LVlFDclFn?oc=5",
-    "sumber": "RRI.co.id"
-  },
-  {
-    "judul": "Poco M8x Meluncur dengan Snapdragon 4 Gen 5 dan Baterai Raksasa",
-    "kategori": "Gadget",
-    "ringkasan": "Ponsel baru Poco M8x menawarkan performa solid berkat chipset Snapdragon terbaru dan daya tahan baterai luar biasa.",
-    "tanggal": "2026-08-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZbVYtckYxeDJQbWpFYVVORWRrYkVnc2d4SDA4T25mcDNvUGdibU43Z3hDQV9wUGxGV2REak1JbWh0ZmFmdGlGZktUb09rcmtzOHNVcm9IeDFiYlV6cmI2OVdFenZEQU5KcnRIVU1iQ1hERXdad0duZHczR0d0QQ?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "Poco X8 Power: Baterai 10.000mAh dan Pengisian Daya 100W",
-    "kategori": "Gadget",
-    "ringkasan": "Poco X8 Power bocor dengan spesifikasi baterai masif 10.000mAh dan dukungan pengisian daya super cepat 100W.",
-    "tanggal": "2026-08-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOXzRBV0hpM1hiR0oxNld1Q25mNHlqWWlrbGVQbzMteTJQdXYxNUdQcjh6MnkyYzFjTnBYY1pqTGRaRDRMYldyOXNaRzZjUGRKbFNKRmhBYWVxUmhNODRyVVd4UlN0TjZmYlBOQTNTZ1QwUU1feU5ObGFPemtsMEVQa003YUZtNGg0bHFsZjJOV1huSUNUN1N0VVNybWZNeWFlWUpyOWFaSkJqNkl0dURERHZmYmQxVm5oRngyeFU5RTgtQQ?oc=5",
-    "sumber": "Medcom.id"
-  },
-  {
-    "judul": "Rektor UII: Teknologi Perlu Disertai Kemampuan Berpikir Kritis",
-    "kategori": "AI",
-    "ringkasan": "Penguasaan teknologi harus sejalan dengan pengembangan daya kritis agar manfaatnya optimal bagi masyarakat.",
-    "tanggal": "2026-08-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT1lYbVhFSExUTHR5Rmg3LWlpSGJ3S2ZwSjRxbmV5U1FNSmpkS05IUmthUmpkUGdzeFpwM1c5S19iaHpZRmg1TTR4b3JFZGdLNk5UWjZpU1dxZW1IbjNMQzdxTUduRTVfYVh3Ym5IYkk3SlBWeG5zY2tSdW1lT3hfN0d4YlRwTnJaejQ1VnFLTnR0U2NSWE1yUFliRDZVaGZsb3VTU1k3TldDUlVMT3hmRnNLMFZGbXVWMHfSAb8BQVVfeXFMTUc3cFZaV3EyalViOXFwMkdJUDV5X0xmYnFWX2RyYkZsTVRsR2QwNlJNSy1SVHhwSm5PTWZsWmtXWnJIQkY4bUpXNzdZVkxkMUd6QU1fVmtTa2lpWFEwRzMtdXg4Tm0ydHpuSDRPalFORkJRdllHM1duOHVySFZzcG1YeFZhRE4tbEEtNnRmZGE0bE1QMXJXSGkzbDFBMFlmRWFaZUFjSFQ3M1FfQ2MzVTVKb3lQa2FKVDlJTE5kMVU?oc=5",
-    "sumber": "Suara Merdeka Kedu"
   }
 ]
