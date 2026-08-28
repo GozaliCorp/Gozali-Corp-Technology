@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Sektor Teknologi Digital Vietnam Catat Pertumbuhan Pendapatan Signifikan",
+    "kategori": "Startup",
+    "ringkasan": "Industri teknologi digital di Vietnam menunjukkan peningkatan pendapatan yang mengesankan, mencapai 36% dalam periode terakhir.",
+    "tanggal": "2026-08-28",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1id0czWFYwSWRWZUFJQ0I5SEFVTDdKUFV1SV9pSVZjU1Z0Rll5M3B3enBraHRramZIdG1PM3B5WkNiTXNqLUVYVm90TGZEYUcyenktY1BTNGlwRFNCYUxVY0hDbEpMQmc5WDJDVjQtQXdFLXlfdS04?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "JPMorgan: Produktivitas AI Mendorong Kenaikan Yield Obligasi",
+    "kategori": "AI",
+    "ringkasan": "JPMorgan mengamati bahwa peningkatan produktivitas yang dihasilkan oleh kecerdasan buatan menjadi faktor utama lonjakan yield obligasi.",
+    "tanggal": "2026-08-28",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR2tLZllWaHVWUzVxbXdxV0g1VVZxYVlVUjRMeDFCY2xnMjFzQXY4YTVRSG5YdnBtOUJqM213ZFRxUFFlQzdJYlVUV1Z0a0d4THNGbXlfMUMxVnhDNFVEYmpZZ3NjTjFHMXIyVEt0WmN0YjAyN2tCdTRfdGxtYmpsNTJaOGVIU091NjNYY2o4TDdoSlM4YWJETW8zZGN0cDBWdHlHbXdzYTVsU3BpQW9YdXZicl9ObHRTcERTc2xiN3kybjNjNXJr?oc=5",
+    "sumber": "Investing.com Indonesia"
+  },
+  {
+    "judul": "Riset AI Anthropic: Sistem Perbaiki Diri Lebih Murah dari Tenaga Manusia",
+    "kategori": "AI",
+    "ringkasan": "Anthropic mengembangkan riset AI yang mampu memperbaiki dirinya sendiri dengan biaya jauh lebih rendah dibandingkan mempekerjakan manusia.",
+    "tanggal": "2026-08-28",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSzlXQUhwQ1NhbnA5TUhEcGoyR3ZfZlJQbHZvNmpmcFFIalllQldtdmRoVl9xaHF4bjk1Z3E2UUVKSUl3VWdjNzdoa0hCYUdIN1lXV3k0Qnd5LWZqdkpFRUYza05WUDV1endRT0owWU1odzlzVHdZOG1SNndxV29iSlNMd0FRaWJVckFNTl9PZ0R3cjhIYWM1cXJQMHpaU1BlRkJ6UjBDMVJhUUw4N2NV?oc=5",
+    "sumber": "feedberry.com"
+  },
+  {
+    "judul": "Universitas Perdagangan Luar Negeri Dirikan Laboratorium Teknologi Baru",
+    "kategori": "Startup",
+    "ringkasan": "Sebuah universitas di Vietnam kini memiliki laboratorium teknologi baru untuk mendukung inovasi dan penelitian di bidang terkait.",
+    "tanggal": "2026-08-28",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5kU09ORG1BdkQtN2VKZU04YzFKSjNrMmcyS2wza2JvUmM1V0xhNHBxZ21EcEJLbV83WHlIVnUzaWpoV2tRcGRLRllqQkhNVGdwR2NfT0hwMjlpd0l3WW1CMnFjcWVWT2pUY3lJTXBkb0R4ZTF3MmVJemx0MnY?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Panduan Lengkap OpenAI, ChatGPT, Model GPT, dan Penggunaannya",
+    "kategori": "AI",
+    "ringkasan": "Informasi mendalam mengenai OpenAI, ChatGPT, berbagai model GPT, serta cara efektif untuk menggunakannya telah dirilis.",
+    "tanggal": "2026-08-28",
+    "baca": 5,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVzhFX21kc1VNYk5UaDl4NzNFVXNmS1MtcFctZTE5ZUxwSzJ3dFUyOE0xZG1xTDE1WFdpOWlzYUZYOHhicloxeGpTRFlXaGhaZjlkeEttZXJnZHZYOEtCeHh1d2VrWHVtaTZoOGRsWFFzbTZIUlh3ZmRma2ZIMEUtSC12RnRZQUExZzlwSGg1WQ?oc=5",
+    "sumber": "Pasquale Pillitteri"
+  },
+  {
+    "judul": "Geely Hadirkan Teknologi Off-Road Canggih Berbasis AI",
+    "kategori": "AI",
+    "ringkasan": "Produsen otomotif Geely meluncurkan teknologi off-road terbaru yang ditenagai kecerdasan buatan, dimulai dengan model Zhanjian 700.",
+    "tanggal": "2026-08-28",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaXJFQlVLUEV4b0tmOGRYYXJsRkhKUUhBZEFuUVNNcW96M1pPUC1tby1UMWlGRl9OTXdsZTlTSG5zQ1VyamJKamdfSXRYMGpHMDdiNnJHMFF0QnRNLVZjQUgzRnlyTkV3UW1HSmpwYmdjN2Z6UVRxM0x0TjhnY2YtRmxxQ0RoVWgta2J0bFB5aVBzQWZPci1LOGdhX2JZNzdnQ0NETTRFaUFOdnNtUGtreldFUQ?oc=5",
+    "sumber": "topik.id"
+  },
+  {
+    "judul": "Google Ungkap 50 Kisah Inovasi AI di Vietnam",
+    "kategori": "AI",
+    "ringkasan": "Google menyoroti 50 cerita inspiratif mengenai perkembangan dan penerapan kecerdasan buatan di berbagai sektor di Vietnam.",
+    "tanggal": "2026-08-28",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaF9OTDNJS3hXY0Y0djIyVTlGOVdKZEs4ZFprV2FmaVh3X0xHdTd6NUJZS2hDZk5Vb0Rad2llSEY4M240UEVHa3R1T0poS2ZrQ2R6ZURVWGJLWl82WjF4b3k5Q2MwaUtXelNiR2FJSGhwNzFBdXJhLWdPZU5xV0lBXzRzclJxdm50VXNhTmtJeXNuRjNUeUEtSHhWaw?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Pemerintah Siapkan Teknologi Canggih Atasi Pemalsuan Pita Cukai",
+    "kategori": "Keamanan",
+    "ringkasan": "Untuk memberantas pemalsuan pita cukai, pemerintah akan menerapkan solusi teknologi mutakhir guna meningkatkan pengawasan.",
+    "tanggal": "2026-08-28",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcDBNX0lJSmZmN2lidTBjX3FNNGhaUmRQcmhmQ2lwSzRsZzZxcld3a0NBT1hrVnYxRk1acWhzY2ppR3RjY1ktLTNFMVdWWW1CbEp1NkY4dlZHV3pZVk1McnNtUlN4eThzUWhuY010dmFZNDE3bzJ0d2gtSEEwQzRJV0pIekFVdURRUmR1cm0xeFRmbXd3SU1pbGUtMmlGdnFvMGtaY2hUONIBpwFBVV95cUxNcDBNX0lJSmZmN2lidTBjX3FNNGhaUmRQcmhmQ2lwSzRsZzZxcld3a0NBT1hrVnYxRk1acWhzY2ppR3RjY1ktLTNFMVdWWW1CbEp1NkY4dlZHV3pZVk1McnNtUlN4eThzUWhuY010dmFZNDE3bzJ0d2gtSEEwQzRJV0pIekFVdURRUmR1cm0xeFRmbXd3SU1pbGUtMmlGdnFvMGtaY2hUOA?oc=5",
+    "sumber": "JPNN.com"
+  },
+  {
     "judul": "Era Ponsel Android Terjangkau Terancam Berakhir Akibat Kenaikan Harga",
     "kategori": "Gadget",
     "ringkasan": "Harga ponsel Android diprediksi akan naik permanen. Hal ini mengindikasikan berakhirnya masa kejayaan ponsel Android dengan harga terjangkau.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTjZKdHpxaVNlaHlGV3ppUnNmRngxeE5PWExlMUxXcE9peDNaQzQzUEVBS0paMUpCRXhscDFHemZnM0xCU2VyZHhSRUJJRThnSnFIOWFVQ21BOE93LTBzNlZadUtydlBxOFNzcGpMZWY0RjJubzZiVm5Udkx0QXJtTlJ4RDczMDRtaDBGN19MTHBOemk5am1QendSQlFyNHVSUUtuRS1temlaUzR2XzRDZzBWVk1WbTdfcGliQjlR?oc=5",
     "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Indosat dan Huawei Hadirkan Panggilan Cerdas Berbasis AI",
-    "kategori": "AI",
-    "ringkasan": "Kolaborasi Indosat dan Huawei memperkenalkan layanan AI New Calling, membawa kecerdasan buatan untuk pengalaman panggilan yang lebih baik.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50UzRuTWVlZElOVzF4aU9aT0tQR0xBMVFUV01MTUhIaUU5SElfM1FDY25YZWpRZUU3aWU3MVE5a29SQ053QnRVblltSXctV1pRZEljRU9xVHRwMFZYLTl0MUNSeTFMV0xlZWxHcU5zeVZ6Rk9QNVE?oc=5",
-    "sumber": "achmadnurhidayat.id"
-  },
-  {
-    "judul": "Sinergi Bisnis Digital Kampus dan Industri: Siapa Mengikuti Siapa?",
-    "kategori": "Startup",
-    "ringkasan": "Diskusi mengenai hubungan antara pengembangan bisnis digital di lingkungan kampus dan industri, serta bagaimana keduanya saling memengaruhi.",
-    "tanggal": "2026-08-27",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2pISEVLOUtjeDlwQjlkODZBeHI4TGZkOWhGTm9vOHh1TlgyZjJoN3Nmb3h0dFE5T25SUXR2QWNQZEEtU1RISmxCMUFVZklJaWlMeGRsbXFWYVAwSFFTOWdYM1hiZ3FHcFM5MEQ5SFJrRmhjSWZTUEY5U3RyS211OFRlMGhnTGY1bktNUEFjaDdJOFRXc3ZxTklLRG10UHJjbGxYUV93RmpvWWpjNE92bENuaw?oc=5",
-    "sumber": "cyber-univ.ac.id"
-  },
-  {
-    "judul": "Indosat dan Huawei Luncurkan AI New Calling untuk Panggilan Lebih Pintar",
-    "kategori": "AI",
-    "ringkasan": "Indosat dan Huawei meluncurkan fitur AI New Calling, sebuah inovasi yang membuat panggilan telepon menjadi lebih cerdas.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBBay0yYzJ0S1B5RWkyekZLTlgzSFJ0REs4ejJkWnEzSnRLTlZrczZSS3BPLXRNX1l5SGpkaGdqNGFhUHBkOEd4TkJwcjZTYWdCT2FhVHB3U253OWtQQmJVdTNpanBCOVlkRFpRckl3?oc=5",
-    "sumber": "SuaraGarut.ID"
-  },
-  {
-    "judul": "Amazon Siap Akuisisi 2 Juta Chip Nvidia untuk Tingkatkan Kapasitas",
-    "kategori": "AI",
-    "ringkasan": "Amazon dikabarkan akan membeli dua juta unit chip dari Nvidia, menandakan kebutuhan besar akan daya komputasi.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVXozLWNKOG9kSDJjd3I4OTdzOWh1R1hLamRLYlczRVNNZWo0OHRsX3A3TDhXRGlIbi15S2tpemlZSUJlRF9zcFdCeXJOLUVnVEU1ZGRQVVV2ZkRKWTNCTFQ2Vm1xaEtZZTRnbVZPMzU1S1UxVUNrRE9YQXFLN0x6TEI3ZDk5NEdFOWFyNDROdEFHR2lxRlE?oc=5",
-    "sumber": "Bloomberg Technoz"
-  },
-  {
-    "judul": "Fitur Telepon AI Kolaborasi Indosat-Huawei Mulai Diperkenalkan",
-    "kategori": "AI",
-    "ringkasan": "Memahami lebih dalam fitur telepon berbasis kecerdasan buatan hasil kerja sama antara Indosat dan Huawei yang baru saja diluncurkan.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQU8xVUxJeEVUS1BmUjNsWG14M24yYXhuQzNpYWk1MFFKQ3VQSXZnZThoLVdMZTFscUthWWdkT2hMckdwYmFSaXl1Nk41dFh1VE93VER5NEFCZTVwSGhCMHUxYVhFNWFLZC1JaWVwNFF6ZUcteFhNbVlfVkQxQU1fNVpJX0M3S3RrY1Q1LTg2LTQyc3JKMXdDd0Ricl9xckJfSTZGanVlWDFqWkhzRDBLNE5B0gG3AUFVX3lxTE1iUV9GOGZDQ0lHb1l1Rkw2RE9BNEpWREgwalRDMmk2Tm5YX3hLZktuNHlXaXAzdHNKeDZNUE95S1dMUC1JTlRfQm9sQUc3LXVEREhWN3ZWeFN0ZlNINENRdTN3T2JYYVBtZ3pwTDdYdmRqSmc1MEpCUGV1UDl3U25IMldYdEZYWHpsOElVZDAwZm1wUENCTVYyS2lEU3pIY2JndWhWQ1ZnMEpySlotU3BaMHhhWmUxQQ?oc=5",
-    "sumber": "detikInet"
-  },
-  {
-    "judul": "Cilegon Ingatkan Warga Bijak Gunakan AI, Hindari Konten Digital Ilegal",
-    "kategori": "AI",
-    "ringkasan": "Pemerintah Kota Cilegon mengimbau masyarakat untuk berhati-hati dalam menggunakan kecerdasan buatan dan mewaspadai potensi penyalahgunaan.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMlFkRFJfZU03dl9nQkRick5vb2JlNkNVMkNrLXdCNDNneHdkWndfUm5RaDZhQ2tmQWg2N3lUZjNUSXhna0xpOGVrWjViTGFtTHpfNm9Yb1AtZXBESzI2WFB6UUhNYWFCbGtQNk9VempuTXRyTHZvR2FJWEZRUW9rd0VoRWJ2QUVuaV90eGt2VlJCSUh5dDZpQjFsUnVveVhKUG4tYlM5bnF5YzhwSHBtMXlMMFJ1TUotUDNnbnB0bGpQUkN1QnlpOEJTZzBCTmxveHhORkM5dnNjNWhEc3gtQUs5QXFWenM?oc=5",
-    "sumber": "Berita Cilegon"
-  },
-  {
-    "judul": "Tips Aman Demo: Lindungi Ponsel dan Hindari Penangkapan Semena-mena",
-    "kategori": "Keamanan",
-    "ringkasan": "Panduan keselamatan bagi peserta demonstrasi, termasuk cara mengamankan perangkat seluler dan antisipasi tindakan represif.",
-    "tanggal": "2026-08-27",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOM1oxQ3hJN1VwWUl1bUVMU0V3T2xDeHlEX1lzaHdlVVhsVXFMN0FCVC1UajUwcXJYcVhzUEVLNWpVYUFkTWlCSk92bWU2WC1tOVdkRjQ2MjlKOEhqQzNrV3FPU1VIaW5aTTZkcGszcnJ1dlg1VEMzRGgxN0pTejNYTVBwVDVsa2M3ekswY0VBV2pFM1hrQjVQT3FLQi1ESldHeWZrODhJWDFuSFBBdFl6dGg4RkhfcU1OY2RMampUV0RzYk8tUHVUN01XbWV4ckVN?oc=5",
-    "sumber": "Tribunnews.com"
-  },
-  {
-    "judul": "Saham Teknologi Asia Naik, Kinerja Nvidia Dongkrak Bursa",
-    "kategori": "Startup",
-    "ringkasan": "Performa saham Nvidia mendorong kenaikan bursa Asia selama tiga hari berturut-turut, terutama sektor teknologi.",
-    "tanggal": "2026-08-27",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONUlXVkhVNDVnUHh5YUJYTWNTdWE4VHdEMkFMUnZDNjRuSWctd2VLU1VoYUpzLWJDcExWdUV0WHV2NUJjclBxdTFpbWJyeU5QVkF1U1NBY2RjMC1sM0hmS2ZRaVFsb2JqMTJDckxmTEh3M2FhVzRmVkpGbTFLTVBMdkFfRFRZMzkxNGNWYkZqUHRGUnF3bkZHSzM4ajJsOUNBWmZXa0JYVVd4Ym9TOC05eFY3bVN5ZjhrZVM4atIBrwFBVV95cUxOQVVUdmhCWDk5MTlNU2dYekUzQ3hwZUFtYWJhR3VSOGo0NDNwRE5kN181bjB4VGdaVDVlM05wZURlSEJFMmM0SVpWVG94clVGYTlUdWhiRzJwOWtoVHNYdnZaSHV2VW0zSUQ2OGRpb3ZYcnI1eEllVjJZUmJwV3VOVzJSZEVkMjVHbVJZNkQtZjNmTi1LUnZkRzl5Wk04X1FaWXJneGNqWHZnbnh4YkIw?oc=5",
-    "sumber": "kontan.co.id"
   }
 ]
