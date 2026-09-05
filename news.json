@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Uji Coba Teknologi Baru Tingkatkan Keamanan Lalu Lintas",
+    "kategori": "Internet",
+    "ringkasan": "Sebuah negara menguji coba solusi teknologi baru untuk memperkaya opsi guna menjamin keselamatan di jalan raya.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMkJSa3BMakJNbmJyVFN1WjFEd0Etbl9YTzVYbVk3UGFVYUxuSk9mdnBqTG9VZ0MxVGFVcjJBM0NPTUtqeDNkcU5RZzY5cUI1cy1DWndUenJjWm9mZWFiVHY4WlhZTFQyTThTaERVbXFCR3Bad3h5dnRNRWhzdTMwdWYwSnllY0ZzbDNLVl9TQ2V2YWd3NG1GY2M5VG5TUQ?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Media AS Tuntut OpenAI dan Microsoft Atas Penggunaan Materi Berhak Cipta",
+    "kategori": "AI",
+    "ringkasan": "Dua media terkemuka di Amerika Serikat melayangkan gugatan terhadap OpenAI dan Microsoft terkait pemanfaatan konten mereka untuk pelatihan AI.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMGhNaDI4cTlQZGFWUGdaa3JtdC1xREZ3RG9YaC13VjhJcXJFX3NQLVN3MUdMQ0FFRlljNjc1WHEyM1Q0YWpXdzZIVFhCZXgtaDYxbEJqNHk1Xy00b2Nfa3lfWWotYzB2N2lNVTF6YWlpRmZ0dG9xZXR5eVhpc3k5QzBaTGV2UUJUOGpscHh6em9CSW5TbWc?oc=5",
+    "sumber": "Telset.id"
+  },
+  {
+    "judul": "POCO X8 Power Hadir dengan Baterai Raksasa dan Pengisian Daya Super Cepat",
+    "kategori": "Gadget",
+    "ringkasan": "Ponsel terbaru POCO X8 Power resmi diluncurkan, menawarkan kapasitas baterai 10.000 mAh dan kemampuan isi daya 100W.",
+    "tanggal": "2026-09-05",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1WQzN0YjVCcDY5SHhyTFIxY2JrMHdObjFoaUFXU2lOMzZxLWtQWm5HMjRsNnNGRjNMSGZDQnF6bGpoajJfM1JaWWcweXFrUFFzZmhiRlZUVzhLSkd1S2Vacm9B?oc=5",
+    "sumber": "WowKeren"
+  },
+  {
+    "judul": "Gugatan Hak Cipta AI: OpenAI dan Microsoft Hadapi Tuntutan Media AS",
+    "kategori": "AI",
+    "ringkasan": "Seattle Times dan Newsday menggugat OpenAI serta Microsoft, menuding penggunaan materi berhak cipta dalam pengembangan kecerdasan buatan mereka.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVG9wenNrRXBWN2hWeHh2OENzQW1fX0hWdGdHYnE2eGQ5NE02TnBqdEFIVVJwdVRZV1FRaXU2aFlyek5GNG5yS2lpUlVMdmdPNExCTWMzamlFYUhwcGpRMGRZaS1YRExrdjkyS2pCZFoybkZiblZ3OHMxZmFUY1B4RWMyNmJjVXNCeVdWeXlTdXQ3MFRtazZGWEJWWTBBYkMtcnM5cGNyb2VyLTdhNDVTeW52VC3SAboBQVVfeXFMT25felYwSmtOOVBXVGRwalRSMjdBRjlkZGx6QWFUWUFQQ2dNRmd6OVJ6M2NWOUtyaEhuMnp3U2ZlWUlzRlVFSjZ4X3JfNk83M2FsaUpickc2Y1NRLUFBRkNxUVRXQlk5OWs3NUo2dWIxaFdiNmtRdVc1ZWNuMkdWdzQwWHBadWFDbF8ya0tocTd4UnRIV3pSM0xpRXNoRkJNRUk4cE5jUTdrOGlVVWhzX1AzeXZJczNNMk93?oc=5",
+    "sumber": "Indragirione.com"
+  },
+  {
+    "judul": "Perkembangan AI Mendesak Pentingnya Menjaga Nilai Kemanusiaan",
+    "kategori": "AI",
+    "ringkasan": "Di tengah kemajuan pesat teknologi AI, muncul pengingat pentingnya untuk tetap memegang teguh nilai-nilai kemanusiaan.",
+    "tanggal": "2026-09-05",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2Zaa1I3eGV1UGtqdlgxeXRfYVNzbDhzMXl2QURXdnNDMFN2d1hBdk9HR1Fob1V2S01KMUM1ZjVQOEhyV204ZFZhcURxdU1jV0Z3Z0xOMzhhYzVTNTRWTXdBXzVCLXpSNTVfaTNYQThnRTZmSlNCUHBjZHdBN1JDSC1FSW5TVUpWWWJGYW5jaGhWUmdhMGUtbndLVXBhYkdnUlVLVy1fTFFpTzR5YTgzV182c2RWRVI3cy0wZjZ1elVHdw?oc=5",
+    "sumber": "Cahaya Kompas"
+  },
+  {
+    "judul": "UMKM Didorong Berinovasi dan Manfaatkan Teknologi untuk Berkembang",
+    "kategori": "Startup",
+    "ringkasan": "Pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) diajak untuk terus berinovasi dan memanfaatkan kemajuan teknologi demi pertumbuhan bisnis.",
+    "tanggal": "2026-09-05",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT1FhTEVFdWhreUpLaF9hdFFzQ040dy1ucTQzblJZTjlKb0pTb0stV3BEX3h5ZlU3UkQ2TDJRZUR3Q25qMm9lRWVZM255c2hFdVlIWnNCRndvaTl1VWpaNlBHczBfVVVldlpzZDJ1Rkp4VWIwNGoyd1Rrd3lybWpwQUF6VmhGTHNVdGluMnZNRUZKd1hyWl9tTFpsNHF3LXJoU2V4d0dhWmRYYThxeTFwa3lSOUZlZEFQOWZUOUZ4blN0dw?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
+    "judul": "Warga Cilegon Diimbau Bijak Gunakan AI dan Waspadai Konten Digital",
+    "kategori": "AI",
+    "ringkasan": "Pemerintah Kota Cilegon mengingatkan masyarakat agar berhati-hati dan bijak dalam menggunakan kecerdasan buatan serta mewaspadai penyalahgunaan konten digital.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdUJfbm9DeHhPb2JOT0Rmck42UjFxTXZIRUlhakdQVG1uU21BUGdqOWE3QlU3TjAwa1c0N29DYklKaGIxRmM2R2pqczBSV0JLZlJZMGNsOVVkakJBdmFjOUlWT2FvWUF2aUlIWEs1blFQRzQybjhHeHFHbHJ5VkktTm9tOVBNMWlpVUNLa0sySzkwLVJiVzQtTGtSaUplX3JISmpqMTVxbkJSZ2FyVFJSQy1VWjF5SnNMYmgwd0FwemNsMHhYb1VUb01OUElfUDBwZDhBd1pDTXhhS0g4dVVuWUFLUWpZcFk?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
+    "judul": "Benarkah AI Mengancam Lapangan Pekerjaan Manusia?",
+    "kategori": "AI",
+    "ringkasan": "Muncul pertanyaan mengenai dampak kecerdasan buatan terhadap ketersediaan lapangan kerja bagi manusia di masa depan.",
+    "tanggal": "2026-09-05",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYzZqOUcxSkZ0UHBNeVlOSEFYalgzNUpJVDluNjhMYW1Fck5lU3M2TEowUFMwSHlkbVJCUlloSUtRVUtlZ0dYVXZmdFZtUTJtQXhnUnVqb3hlak1QSzZtZkd4NVdjQ2dFRURDdWRJcnBpLWQ4SGV2RmwyYmZCVTNoX1NDcER1NDNvUWFweHdqMldWaDN3MEFBUm8zcV9yajBJ?oc=5",
+    "sumber": "Kompasiana.com"
+  },
+  {
     "judul": "AI OpenAI dan Google Bisa Deteksi dan Perbaiki Celah Keamanan Software",
     "kategori": "AI",
     "ringkasan": "OpenAI dan Google mengembangkan kecerdasan buatan yang mampu menemukan serta memperbaiki kerentanan dalam perangkat lunak secara otomatis.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ3Z1ZmhkYTlzSDVRbmFHTVcydEs0UzgyTF9DVzdnbnJkbHRNZzBmZWplQlNxblpCM05qMTlEVGtjRGk3bGhFRDR1TWRoVlZnWVFmd3NPWGExUzI5elVCZlQxRmpsWjNDR19oY05TcXhEeWoyclp4UVV1RkNQS1pnTmxzX0FxVUpSR0pDb1dWM2piOHJqaUp5UlplTTRITVpFOEpCeXIxajRGcDdDRnNiQkgwWVZGUEtaMFZjdHpFWjVyZ0txcElhSTNHZlk?oc=5",
     "sumber": "Jawa Pos"
-  },
-  {
-    "judul": "Hak Cipta Desain Canva AI: Siapa yang Sebenarnya Memiliki Karya?",
-    "kategori": "AI",
-    "ringkasan": "Penggunaan kecerdasan buatan Canva untuk desain memunculkan pertanyaan penting mengenai kepemilikan hak cipta atas karya yang dihasilkan.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTXR4c3FLbjJoWTVudVRTMzZEN2tka09ZblR3WHZPelR5eHhYcnVOUmZsTlh1VFgxX3BHekZBMXU3YU5pbVpoOVV1REwxNjMyeTl4aEY3NXdfa0FzTHlycHJHZ2JGWnV4YzZuT2pUN3BxNFZacTJIUFE1aEdyc0pRTkJBQ0U0LTJKVHNYQmRiZW5oZmUwMm9SYnhpTkIxX3l2bWJCZ2VvbVlpb2dwRm03b3B3?oc=5",
-    "sumber": "Bloomberg Technoz"
-  },
-  {
-    "judul": "OpenAI Berikan Bantuan Dana AI Senilai 1 Miliar Dolar untuk Keamanan Siber",
-    "kategori": "AI",
-    "ringkasan": "OpenAI menyalurkan dana bantuan sebesar 1 miliar dolar AS untuk memperkuat sektor keamanan siber melalui pemanfaatan kecerdasan buatan.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1M0otQUdZTHZMeHlSNXhfSk9HNngwYnJnRDBpU0hCby1Hcng0Y1R1VVNQRXgxdXJmSmRfTmtEbnY2azBjX1ZIVkc4b29ZVzZOYjNCb0F6TEVGRjBmV3ZNeEZQTXJCOWVQckxrSjhqUjE?oc=5",
-    "sumber": "Readers.id"
-  },
-  {
-    "judul": "Garudayaksa FC Didukung Zentara dengan Teknologi Latihan Canggih",
-    "kategori": "Startup",
-    "ringkasan": "Zentara menjadi sponsor utama Garudayaksa FC, mengintegrasikan teknologi canggih 'Planet Training' untuk meningkatkan performa tim.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdEZRVkJ4QklqR0tsTExsYW5zZHZteXMtZzBkbGp2MDdOSnE3ZkZDUUdQTEtIcHltc2dHTl82bmxSSV92bjFmU0tJVkV5T21UWnBUVlg1NzJ5VFZGSTR5TUpINU9aUUZmeGlwdG9vbkRDakFWT0ZRWnBVLXBqWVp2TUp0RklRQjhSRktqeEoyOWFLWGlQWHphdGREXzk5V2I2YlRVSUQ3a2huMU5h?oc=5",
-    "sumber": "SWA.co.id"
-  },
-  {
-    "judul": "Intip Pabrik BYD di Subang: Teknologi Manufaktur Mobil Listrik Terkini",
-    "kategori": "Gadget",
-    "ringkasan": "Mengintip lebih dalam teknologi manufaktur yang digunakan BYD di fasilitas produksinya yang berlokasi di Subang.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MNnh4MEJ3RURlY0pGX1NhSmp0c21WT2huMzBIYkF1d0hHdWo5T0d2LUhYLUNjOUl5SDJ0QTlNYmNTMjdqSmNXZ3RPNkJFOFg3Ymg2UHFLd0Z1TFUtaVRwUVF4ck1fd1Z3U29sbHpGX1ZQaWFPMEZqOThZNFduXzg?oc=5",
-    "sumber": "SWA.co.id"
-  },
-  {
-    "judul": "Perguruan Tinggi Dorong Penguatan Teknologi dan Pasar Produk Aceh",
-    "kategori": "Startup",
-    "ringkasan": "Kunjungan universitas ke Nilam Aceh bertujuan memperkuat adopsi teknologi dan membuka akses pasar bagi produk lokal.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNTVFWW5tSTBEXzlaVTQ0blR3alM2Y1haeTYtT1pyNy1ycGQtMENqUlJFSDNYM1ZIMl9HQTJfeFRCM3ctM0JGazRndHlNQThMR1ptX2tqTGo1MWxuTW5EMWFreDlpWWE2cDFoN25tTXRIUG92UmVUUE9HUHlrM2hhZGthbFRTTGp4eWVBWU9UOGpGaHkwWTJpdg?oc=5",
-    "sumber": "usk.ac.id"
-  },
-  {
-    "judul": "Ekosistem AI Berkembang: DOOH Bidik Data Center Hingga Energi Hijau",
-    "kategori": "AI",
-    "ringkasan": "Sektor DOOH bergerak menuju ekosistem AI, menargetkan peluang bisnis di bidang data center dan energi terbarukan.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOU1hHeWsyVUlOWHZDeUV0NnJ6Q0tSbWpfRlBQaHpyTmszcGVmVmJRZmlJUnY0UGc2QzVCVDMtd3FFWjVORjJ1S0tBT09aNnJsNVp5OGh1SXVOMDNxUGdtcFd2UTZfTkt6N0pTanRrS0NJQ19yclNSc0dnZGcxbmtwSnprNTduRzJFUVN0STczZE5JaUw4MzNucU1qd1NmYWZFeE9qVXVxdldlTkNDRlBhNzZB0gG3AUFVX3lxTE5KdXllY0lyRXBlQzByV3MydVMwcnpIOEtDMFhzdXBENzVQOTZ5VVFNQnlvTEY2d2pzWi1WWmJ6YUV0eVF4ckNrWkRtRFF2OGFSa2NhT1BtQUhXQy1uNWZoSEU0Y1ZxbEtjU044elM3c3owYkEtbHRMMHR1WFdIUEd3TEE2dG5BMHZlelI4eko0bTFxNFkzMk51R2VuTVNndDMwSDl4al80dnhWQ2VnZ2g2SHRqeEs3UQ?oc=5",
-    "sumber": "Warta Ekonomi"
-  },
-  {
-    "judul": "New York Jeda AI, Mengapa Dunia Justru Semakin Cepat Bergerak?",
-    "kategori": "AI",
-    "ringkasan": "Saat New York mengambil langkah hati-hati dengan AI, negara lain justru mempercepat pengembangan dan adopsi teknologi tersebut.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRmNUUGdmRmRUbWNFNXhyNWFGaFBBaEJTRUtpcXljLVA2UmptbTZjaXQyR1BaVU14bFpRaVR0ODcxY0FyQUVCMlFlZjg2a0YyLUZrRm5PbWc1THpiU3pibWJUZG5pZk9PWTBSZ0owd0ZaQnFaRXNxNFVBbEx5c21mOTVMYlJJTDVWaUZ3eGxBWGlyRjNNaFNDdFBGR21CT3Z3cXo0bmNnUzkzdHlsUmpnYm4yUTdDSGpiRC1pVWtzMndhQjhSODNtV2RSSWEwOW5OaVE?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Larangan Penggunaan AI untuk Siswa di New York: Apa Alasannya?",
-    "kategori": "AI",
-    "ringkasan": "Seorang pejabat melarang siswa menggunakan AI dalam tugas sekolah, menimbulkan pertanyaan tentang dampaknya pada pendidikan.",
-    "tanggal": "2026-09-04",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdHU2eHdZN2NQVnYyV3oyWUdURFN3U3dLUDNWY05HU01tV1V5VURSb0hFUlRSZkVXRWtXQ2QtclhwbFZlNm9jSkFtUXpmU0R1a0sxOU13QmFJVURTRHU5UU5nQ1Y2YXIwTTJ5eXpEQzNCVkpSRHpYdV8wQ3AwR0xLY3JJYUZQYVVST2U5TW8yY2Q4QnZYWXpZVVlaWTJ2XzJINnc?oc=5",
-    "sumber": "jurnas.com"
   }
 ]
