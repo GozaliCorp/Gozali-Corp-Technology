@@ -1,5 +1,85 @@
 [
   {
+    "judul": "AI OpenAI dan Google Bisa Deteksi dan Perbaiki Celah Keamanan Software",
+    "kategori": "AI",
+    "ringkasan": "OpenAI dan Google mengembangkan kecerdasan buatan yang mampu menemukan serta memperbaiki kerentanan dalam perangkat lunak secara otomatis.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSVk2REVrTmpJRmZTdmdrcDEwSkc0bU05VWFYUmVnMWRETGVKQjg3XzJkbW43TmJELWxsZWNDM2N1UmdBNmt2dWJZSm1IMjJ0SFVRT1NET1l4cWpvNHhYMzlpUFprSWpvYVZ0QTQzYVlJWjBudDJSS05EdmtCSVVxUmJ5TW1DSk1XblBVdFNnay1GdF9MRW5lVzF0aVhTZ2oy?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Lima Pilar AI Indonesia: Produktivitas hingga Ketahanan Nasional",
+    "kategori": "AI",
+    "ringkasan": "Meutya Hafid memaparkan lima arah pengembangan kecerdasan buatan di Indonesia, mencakup peningkatan produktivitas hingga penguatan ketahanan.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTzEtVFh6NWxjVFRGcDRseE9EdnpVa2lMS3BZRjJjWTJ4NVp2cUVfazlhU0NoVWk2SnNUZ3VyWjJtNUtIbWMwLUZ3UHZtdW82c3pzTnkzYWNZeElaaG5WZWgxX2luUU5JeGZ1bEZCbTBnTUNQRmhFYTNBbGlldjZEb0RQeDZDR0xnTS00RHJyZnVtQUZTUHgzZFBwREhMakhPd2VZSi0xVHJ0MDhRUWpOYU1tTdIBuAFBVV95cUxNeFV5TzF4dTRZRHlvMFdhRC1TNG1SVkRTc01FRUQ5Nl8zS2FzMkZKMnNxUU5zZXZuZS10RkNfaVppcGFKZGNUc1N3N3daWlpWY29IbFc3OEFNd2NYS0VoeUpVcG9tcXlRcm5SMUFGQk9kdzVlMmpfSVpTaDZENkNhVHhuQm4tbnVmSFBBSTFuSTNWV1VsT1h2a2plak1qbkRHUGZ0eUUtYXZJX2xhdkx2dzB5dXFfZThO?oc=5",
+    "sumber": "wartaekonomi.co.id"
+  },
+  {
+    "judul": "ASUS ExpertBook Ultra: Laptop Ringan 0,99 Kg dengan AI Lokal",
+    "kategori": "Gadget",
+    "ringkasan": "ASUS meluncurkan ExpertBook Ultra, laptop super ringan dengan daya tahan baterai 26 jam dan fitur kecerdasan buatan lokal.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSGVEV2dOOUwzdnNjVjk2S1dCZEQzOExQeG9jenBrYWxhbThEOTYzRl8wMTR1T2gzY1hLV0M0a1dKdUtvenRrQ2t3b0xjUjMxdUhWclBTVHl2UnlFdGlhVE83RC1leENEN2RaYl9pM0lsMU5XSzRMcjNqX29tSm5QWWx4U2NpVkFqLUs1TjFSOTBkR3RyWFRfc3UzVFZVdHRqSnhHa2RrOVQzcXpjZ09wMHBic0tKWWp1Qzl4eEVVQUhoTUYxOUoxendjdHRvZ2s?oc=5",
+    "sumber": "Media Indonesia"
+  },
+  {
+    "judul": "Bali Jadi Tuan Rumah Diskusi AI dan Kemanusiaan Tingkat Dunia",
+    "kategori": "AI",
+    "ringkasan": "Para pemimpin dunia, cendekiawan, dan pemuda berkumpul di Bali untuk membahas peran kecerdasan buatan dan maknanya bagi kemanusiaan.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX2ZnLUlSUTZsUjRuQnlEZGN0eloxNzdIVmprTlppWkVuVjJocTRVUEU0WldTejdVNmhsb0FVay1OZ2pfZFZubTlqVkRMSlFCUlJ2TG1fdnNDcm1VMF92bWduNkhaNktRZ19rTC1xbmMxX1NEZ09PajlhelcxTHE2Z2FGUWdZckJmNjE5S0tWOUxIczM2Rm5CbmJ2WlZvTU1IYjBxTzFTdWVMNGwzeVhuYXdPVWlENF9adXJmbGIxdVAwenNEaFYwUA?oc=5",
+    "sumber": "IndoAviation Plus"
+  },
+  {
+    "judul": "Serangan Siber Guncang Berlin, Data Penting Bocor",
+    "kategori": "Keamanan",
+    "ringkasan": "Berlin menghadapi serangan siber yang menyebabkan kebocoran data penting terkait keamanan dan infrastruktur vital kota tersebut.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdGdhZEsweVAza0FvR0FSMlpqSlR2SVgzY0U3cVRfN3NSTzI0QzJvR3JhVHFxR0NxU0VPSm1jZzloZk1JejBDcjlxcm94OVRtRVJ1NHJoSmhRejhJZFZBMTd3SkhLbEVlNDZBM3laQWNuSllPR213UEJKLV9rS2tlOUlVdWRnTUcxZDhOR2xTazEzTTJ3aTNN?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Teknologi Militer China Kuno Terungkap dari Ukiran Kereta Perang",
+    "kategori": "Startup",
+    "ringkasan": "Penemuan ukiran kereta perang berusia 2.000 tahun mengungkap kecanggihan teknologi militer yang digunakan oleh peradaban China kuno.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWFxWmx3UXljNHlnVjd0SWpkdEwtR2RhQVVhc0xrUVlXTVhLQ2RkTDVWVTBKOXlzOHQ3cjYxbF82eHR3dmw0cVlQSXJRbkJkc2lNdGpMc0h6SXpzNVgtRFhYei1yOEh6SU9LRS1WRGRaalBGcjZkZ0ZYakJMRXp0eWE0aVZGUnFNZ0pyVHVVeWxudGJqWmdMRE9nSExjY003dW8w0gGoAUFVX3lxTE9OTHFqUmlYbEdlYmt5UWNMVzVBb0FVTVk2RVZGYVA1eTU4UGZLamNZYWhSWVNXY3FER1VmZVBGWm1PQUhRVlpLZEVYeXQ5T0pJdV85TVdfYWdHVGw3SEs3MEZQT0hDeVhfajBxM19fdEp6eHBKeWY0YkpDdmtkdThwb0JCQlFudk5HOWhjbXlQZjFqVVBMOXQyT1AtUk5PdlUta1hMM1ZSZg?oc=5",
+    "sumber": "detikInet"
+  },
+  {
+    "judul": "Jurnalis Diingatkan Agar Tidak Terlena oleh Kecerdasan Buatan",
+    "kategori": "AI",
+    "ringkasan": "Ketua SMSI Bali mengingatkan para jurnalis untuk tetap kritis dan tidak menjadi 'budak mesin' di tengah perkembangan pesat era AI.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdTA2Y3BUZ0ZiSWc5ZWczN1RZWVBXVTJKdmRBQmxCaDlxeV9BWTAyYjhGWktnZUFXT0NqZUlfZDlDN2xSNVlTZk5LRV9tSTBQRkhKQ1ZJVkcwRGtRcDBQUVVVT0xTLUFFaWJtVzkxMmsydW5nY3J6MTRjZWtPYmFGTFNLb1pfWFNmdDJxbC0ySTdxT1JHNnJid09hZXppVEcwcmxUU0dpd1liNGpDc3c3YTJ0VQ?oc=5",
+    "sumber": "Barometer Bali"
+  },
+  {
+    "judul": "AI Tingkatkan Presisi Cita Rasa Kopi di Dapur Roasting Kroesel",
+    "kategori": "AI",
+    "ringkasan": "Perusahaan kopi Kroesel memanfaatkan kecerdasan buatan untuk menciptakan sistem yang menghasilkan cita rasa kopi lebih presisi.",
+    "tanggal": "2026-09-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVVJMcy1HVlZDTGF6V2ROWmhzeU84LXFwb2psRVlpTDVDOEZpWkJuMDRwVF9UVllGNHB4RDRmU243ZklNZkl3QmdLVVc4TDY2YzUweTBMZi1JYVlVeXM0T3E2SFgyRk15UVduNFBZek03ZVZySkVDb0JEV0VpeThTR2hucGsyTENheXRYY2dnOUh2eFhxdjJiZWNrV3pleGM4Znpna3pRSjZtT015WVR2RVFJVUl0akRBLW9zQkdUcUhGUDVR?oc=5",
+    "sumber": "kabarbisnis.com"
+  },
+  {
     "judul": "Sekolah di Vietnam Ajarkan Siswa Transformasi Digital dan AI",
     "kategori": "AI",
     "ringkasan": "Sebuah sekolah di Vietnam kini membekali siswanya dengan pemahaman transformasi digital dan penerapan kecerdasan buatan.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdHU2eHdZN2NQVnYyV3oyWUdURFN3U3dLUDNWY05HU01tV1V5VURSb0hFUlRSZkVXRWtXQ2QtclhwbFZlNm9jSkFtUXpmU0R1a0sxOU13QmFJVURTRHU5UU5nQ1Y2YXIwTTJ5eXpEQzNCVkpSRHpYdV8wQ3AwR0xLY3JJYUZQYVVST2U5TW8yY2Q4QnZYWXpZVVlaWTJ2XzJINnc?oc=5",
     "sumber": "jurnas.com"
-  },
-  {
-    "judul": "NVIDIA Akuisisi Hugging Face, GPT-6 Astra Muncul, Adopsi AI Indonesia Tinggi",
-    "kategori": "AI",
-    "ringkasan": "Berita AI global terbaru mencakup akuisisi Hugging Face oleh NVIDIA, kemunculan GPT-6 Astra, dan tingginya adopsi AI di Indonesia.",
-    "tanggal": "2026-09-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLW1OcTI4TFFnbGxTd3FpY0M3Vi1qajR0bUJzTUJ3Nl9LYVZ3RHk3bjMyOGM0MndJbFlHRzFaR0NscENHcGh5MUN4Vm9xUlRZMGtYX3pvWExLSXU2Ni1Ec3BNLU8zd25EeTRXX2U3VC1YQ0F5NjdSc2JvWTR3ZFpVU0ZUVVZoNllqYjFQa3hqRF9KOEN0c3R5UEFaenFodE5uTE9JSVBldXIxV3JKYURUY2thdmVueV82a3J3UV8xMXM1RUVPLVUwalFUVVR1RnBTbUlfblJodER5MTk5U1E?oc=5",
-    "sumber": "Industry.co.id"
-  },
-  {
-    "judul": "Teknologi Baru Bebaskan Penumpang Pesawat dari KTP Fisik di Bandara",
-    "kategori": "Gadget",
-    "ringkasan": "Penumpang pesawat kini tidak perlu lagi membawa KTP fisik saat check-in berkat penerapan teknologi identifikasi baru di bandara.",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQV3cwaGVQc25od2dTLUhPalVrLTduSDZqLTZBLUg4ay1rUWN2Mm5aRWNPUEg0M3JPbzVqQXBid2hKNkM5eHlvb3Y5RjdhSkw4X000T3kza0xMUnRqSHhnaXVOekpGakNyRWJINmJYLWVDZF9vRnhpSGZEem1BcmNGb1MycXV5eHpNYk5CSjg1UzBGMjNvUEVYS1RYTkFJTkNHcEVNcFZ0NExVc0RsM1hGQ3l0RXZ4S2s1TzBaV2hzUVN0UGN2Q3hwOGN3Qm1WcGc?oc=5",
-    "sumber": "Infokini.id"
-  },
-  {
-    "judul": "Kemenkumham Sulbar Gunakan AI untuk Tingkatkan Layanan Penyuluhan Hukum",
-    "kategori": "AI",
-    "ringkasan": "Kementerian Hukum dan HAM Sulawesi Barat memanfaatkan kecerdasan buatan untuk mempermudah dan memperluas jangkauan penyuluhan hukum digital.",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUEwxWURnb0Y2VHlZWUlNcDNFYW5iLWk1TWtnalFEc3o0N1pHV0N6T0xucmFtVVlLR0RrcG9uU09STWhNRzZyclYwYVBRcHU3Z0hpbzFCa0V5dkJYLTZZQzR5QUprQUlaM3ZOcmVOUFBfNlE5eUxjS3Zub2tLRTlOa290UUtManh2VjZzR0UzSTJRWWRLMjFGQURnZ1hFZE9nOE1OOWZOOHJnbGRLeWpv?oc=5",
-    "sumber": "RRI.co.id"
-  },
-  {
-    "judul": "Bawaslu Latih Jajaran Gunakan AI untuk Cegah Penyalahgunaan di Pemilu",
-    "kategori": "AI",
-    "ringkasan": "Badan Pengawas Pemilu membekali petugasnya dengan pemahaman AI untuk mengantisipasi potensi penyalahgunaan teknologi dalam proses pemilu.",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUU9iSmYzYmFESmhYZ1ItSS0xenFJeDBoalB0WDRpMzRqRFVkeWRBdFlWMXlKcVFUNkxpV3BBbWpjYklsOEFMU1BUM0QxYWNOUDY2Ti1OWWJhYzQ1NTBmQl80cjhQUEJnOENwMUx5ejk0dEtMUmpFYUtMRXZ0V2E3ejNsSjNtTkgxU2NkcTAxU3NTRVU5NnZkX1BEUDhINXdrd0p0T1Q2REMtbTMtQ2Mw0gGyAUFVX3lxTFBDWHlHV3h4WDJ1Z1psT2dqQnhoSHYwM0oyTmdxMjR6aVdlajhBQmVNSHozSFk3ZlhCcVdlMGJiTlByWHBvYXZzVXk3N1JBOWR5UnhzX0ktbzkxS3ZBc1VTVmNINzhzT1dlYVlhX3VPbFdrRndYWm45YkdMRmxXSzhSMU9fRmYxcHlYRHVNNlN2QlNvQ2hPMHQ3c3RidnVPUWNKaDE0ZUFIb3lkZDhZYXlfeEE?oc=5",
-    "sumber": "ANTARA News"
-  },
-  {
-    "judul": "Santri di Gresik Diberi Edukasi Penggunaan AI yang Bertanggung Jawab",
-    "kategori": "AI",
-    "ringkasan": "Para santri di Pondok Pesantren MBS Al-Birru Gresik mendapatkan pemahaman mengenai cara bijak dan bertanggung jawab dalam memanfaatkan teknologi AI.",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1nTkRFWEpyUzZPTlZ0ZkdiS0dDS3dVVU0zTmtRWTBZZWJkcGlLY2FNUFhmYmhZRHREMFZyRXdRQjdxaGVhVHNlSmNVdE1hTnZlUFFQZzdlSzFlcGRzdVI4YU5mME9TbUtnVU1FVUpnWkxaT0R1VWM2c1hSeURwQQ?oc=5",
-    "sumber": "PWMU.CO"
-  },
-  {
-    "judul": "UPI Kembangkan Tes Kesehatan Mental Migran Pakai Teknologi VR",
-    "kategori": "AI",
-    "ringkasan": "Universitas Pendidikan Indonesia menciptakan metode asesmen kesehatan mental bagi para migran menggunakan teknologi Virtual Reality (VR).",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOS3lNbHc5NW83TFkzNHFxMV9IODJrLU0wOFpHYWx5VWRVSktieTd0ZGVYVnpYYWZOTnlNVTB4ZVlKT2xneVpyM2dYbDFSY21GQlJoZG5xTVBiRnBrQTlNZHdqUEZMRF93alRERWljRXdHV3RxcmVUTW9RM0x6YVA5QkJGZ2dfaExDWElqMk5aQ2VEelpSNGJTLXprRWRreGFnY1BHcHpHcmljWWZqTTA1TXA4ak94bHhyeGZhVjRXNlc5aC1lMGZVS1VSOWRlbGJFWFhuVQ?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Pemerintah Buka Blok Migas, Undang Rusia Bawa Teknologi Energi Terkini",
-    "kategori": "Startup",
-    "ringkasan": "Pemerintah membuka 138 blok migas dan mengundang investor Rusia untuk membawa teknologi energi terbaru ke Indonesia.",
-    "tanggal": "2026-09-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNnhnTGNoSnYyRXRrYmtPQU1EQXlXNzV0LXBFbTRNYTdzb3RMRk1IVGJuZDZUVDR6Z0g0SWJUV2tzOWgydXpvM2I0aGhtMFc0Q3k4dlhfc0tkd1pabkt1SmNHTi1IblpTbE9UV1M5LV9Za2tuR2p6RmVuSGRwOXdHU2c1RTBpWWdJZjUxZVpsVVJFRUpGekJqNEdsYnRhWlVDOGx0cUpXNHg3cVU?oc=5",
-    "sumber": "Papuanewsonline.com"
-  },
-  {
-    "judul": "Mivi One 5G Meluncur di India dengan Chipset Snapdragon Terbaru",
-    "kategori": "Gadget",
-    "ringkasan": "Ponsel Mivi One 5G resmi diluncurkan di India, ditenagai oleh chipset Snapdragon 4 Gen 2 yang menawarkan performa efisien.",
-    "tanggal": "2026-09-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GT3FnZW80cW5FM28tZDNUVFYwVnhPYXVlVV90OE5iY3lRMHhRaFZjZjVicG45SkoxU1BUSEJQeWhmc3BoYUJZSTRWWDBpdjZ4dlF2QzI1VEpOSE5JTlpaeWQtdXlycVNwdmlfZ3dhUHl5OHo2TDZkaFJfMlVYT2M?oc=5",
-    "sumber": "Qoo Media"
   }
 ]
