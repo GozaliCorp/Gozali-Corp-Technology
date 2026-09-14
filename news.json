@@ -1,5 +1,85 @@
 [
   {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMk52dm9ja1BuMVNXS0lrMDBmc2pHSWpWaHRLOE4yUFlkQmhXZGQtRVAwR3A1OEM2anJaSHBPSTVfNmozOE1HUk85bXprTkl5Wk41WHF0eXdVTUlDSXhELUJaWTI2eFVUUlB0T3k3OWxDdmZ1OE1oU0NzOWV6bFllM1lSMEEwSU5VV2FQaF9nMWdNQVdrcGtDUGFLd2NXSWtlVWFkaDVPcDQ2cl9odjRz?oc=5",
+    "sumber": "MEDIA GESER"
+  },
+  {
+    "judul": "Eropa Perlu Kuasai Produksi Teknologi Kecerdasan Buatan",
+    "kategori": "AI",
+    "ringkasan": "Presiden Bank Sentral Eropa menekankan pentingnya benua itu menjadi pemain utama dalam pengembangan dan produksi teknologi AI.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOckwwb0pCTEJZWmY0ZUhZUGk2NGxON3lla1hWcFU0S0paZ3RzRy1YOTk2VGJKZTIxdjBJX2dEeWZETHExTkdfNFhsaHpnSzNSYTdmblQyREk2eWs1eDQwbnZnLW1TVDBiM2Fpa25kZ1VIZUNpUXBwbWxfalgtNHdtVm1LUkd2WjNOWFNwd0dJdTRlSTFJR0hEcnQxYlE4WVBUdllNcHhTaGNPNUNPMVdj?oc=5",
+    "sumber": "Investing.com Indonesia"
+  },
+  {
+    "judul": "Fitur Baru iOS 27 yang Harus Segera Anda Coba",
+    "kategori": "Software",
+    "ringkasan": "Setelah pembaruan sistem operasi terbaru, ada beberapa fitur menarik di iOS 27 yang patut dicoba pengguna iPhone.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV0pNakhaekV0S2dmTjFMQ2J2NnFEVmluS0tJS2JwbFVpcE40cTU4Z2l5cTJqS3BmZHdELTRnS3Foak9JVVVxeERtQ215T2RhSVpZSTltRl9vNVQ3OVFTUnI0MGRLTC1zX0U3WlZfM2RLUC1BT1R1d0tULTNvLS1TaEZMWGF6TElC?oc=5",
+    "sumber": "topik.id"
+  },
+  {
+    "judul": "Saham Perusahaan Keamanan Siber Mengalami Lonjakan Signifikan",
+    "kategori": "Keamanan",
+    "ringkasan": "Sektor keamanan siber menunjukkan performa positif di pasar saham, dengan kenaikan lebih dari 11% dalam periode singkat.",
+    "tanggal": "2026-09-14",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSEhTdFF6ZmZ4TG9sY1FWcmxXdG51bWxMUVhRTEVpeFpqeWZ4Uy1FMm9nS2dtbExjc3Z1Z3FUTUllX21RZ082dkVvdkJxXzdQbjBiUGVlZWE5dzdtRFlwamV0T05fVnlwZnBaNE5pVzlQcFcwQWVidWxNcTBwZGE0ZjAwYzF1bWpsT3FNOGp5UndpdXJ1d1k3OGpTN1dVamlmYk1kQ3hB?oc=5",
+    "sumber": "Pluang"
+  },
+  {
+    "judul": "Xiaomi Incar Generasi Z untuk Pertahankan Dominasi Pasar Ponsel",
+    "kategori": "Gadget",
+    "ringkasan": "Untuk mempertahankan posisi teratasnya, Xiaomi berupaya menarik minat kaum muda sebagai target utama pengguna smartphone mereka.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2FrdzF5THVTMkRoaDh1VDIwcFdUMkpzcFBnUVR1N2I4YjJOVi1NenVtenl0SFFqOXI4SHUtRWFnUnZsTk1RdG9VZjJjRlYwTm1QdV9ZNG9ib3phWFNqNk5zUUwzUEt2ZmVJYkNNRjhfb2M0amJYV2VRSnZKOE96R19Fek44ZUhNb09RQmd0aXA0c1BFLWpOeVFVUzcxYzdR?oc=5",
+    "sumber": "Infobanknews"
+  },
+  {
+    "judul": "Honor Magic9 Hadir dengan Kamera Selfie Unik 55 MP",
+    "kategori": "Gadget",
+    "ringkasan": "Ponsel Android terbaru dari Honor, Magic9, diklaim sebagai perangkat pertama yang mengusung kamera depan berbentuk persegi beresolusi 55 MP.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBqdzJDb0lycDJTZDdTWmZwa2lrWGZHQW14YzN5ZDNxTHZCT3JBM29PaTBJelhQdmZzZ3NlWHp6R1Mtb080QXBtaTJXZ2NGTjV2ZVByZFNZSndXbllOck5GUnBpTC0tSHVOckp3U3BjLTVqWWY3dnRZLQ?oc=5",
+    "sumber": "GadgetDIVA"
+  },
+  {
+    "judul": "Elon Musk Akui Sudah Lama Waspadai Potensi Bahaya AI",
+    "kategori": "AI",
+    "ringkasan": "Tokoh teknologi ternama, Elon Musk, mengungkapkan bahwa ia telah lama menyadari dan memperingatkan tentang risiko yang ditimbulkan oleh kecerdasan buatan.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcnl4MXBURUZhYlZyb2JjNDhweEQwUWRlMHp1Z3AtUnJPZVNVYUU1ZENvTFlsTzhiVnlpdVRZSEZBTVBsejBuN1ZiSjJqV2ozTkpNd0NxeDVRSTA2TGVzWFhRQ09RQ3ExaGE1U1J3MjZIRE9aeUk5ems1MlJ5Yk9KSG5oZFlhcmN1a2pKV0NOVUZsSVJlS3dySlZqeW9EcElU?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "UMKM Dibekali Strategi Digital dan Kecerdasan Buatan",
+    "kategori": "AI",
+    "ringkasan": "Sebanyak 1.400 Usaha Mikro, Kecil, dan Menengah (UMKM) mendapatkan pelatihan strategi digitalisasi dan pemanfaatan teknologi AI.",
+    "tanggal": "2026-09-14",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT2hldENwZ1JsSFRha0xfbkpMUWVVZlFYNFJFX181c0E0WkFGMG8xamZVRVQ4YlpVYmJjTS1vZmZ5RGw2YVRBZE9hd2ppOUdBb2ZtZUhjaHZ3VW5DRU4yNXQzVFNQN1hOQlhTcjNTNGJMelJnWkRESDgwM1pGN2dQdmxQSThLdVFjV2dnQ0VjX3ItejdXUjZEcDdR?oc=5",
+    "sumber": "Media Indonesia"
+  },
+  {
     "judul": "Hitachi Vantara Hadirkan Solusi Infrastruktur Canggih untuk AI di Indonesia",
     "kategori": "AI",
     "ringkasan": "Hitachi Vantara memperkenalkan VSP One Block untuk memperkuat infrastruktur krusial dan mendukung kebutuhan kecerdasan buatan di Indonesia.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMlJ3Ri1vU3FZajVyMDBPei1uQzR5X003ZUxHTFZwUjVTckx5THN3emd2Z3Zub2JxTmFaU25mTXBDX2ZoaWs0UlpaM3V4dVFUd0lab3hVaU0yemxxYXVfckpkZUgzenJ1eF8xODlESXlKZUVHYXFLOEVBVFRTMHpYZ1VJTHhybWJ6b1BCR3plRnBDeGloWS1SdlluOXRjRk1Ua0NrRnlFMUJ1V01YZXhlc0VsZnBsY03SAbwBQVVfeXFMTjNhSHNQTHE3YTRRRmE3b24zeHdyQjFkTEMzalJ4TFYwX2I2LUtiTzFibzNBeXdrcGRHREd0ZGdfNl9SdlRLUkh5T1pYbzJDWFUxeWpfS1FjaE1tdEYtRWlQOWN0OVU4R0ZVekRNYnI3ZDMxWXNCeTJ1WHNUNjlHTVkwbTRndmFUZmduS08xSGMtal9tSkFMczNPellVV0tUWXdSTXpiZE1SZUQwUDdPRmFObnhuMTdmbnloOTM?oc=5",
     "sumber": "KlikJatim"
-  },
-  {
-    "judul": "Investasi AI Dongkrak Obligasi Malaysia, Raih Dana Asing Rp 68,6 Triliun",
-    "kategori": "AI",
-    "ringkasan": "Obligasi Malaysia mencatat rekor aliran dana asing tertinggi berkat dorongan investasi di sektor kecerdasan buatan.",
-    "tanggal": "2026-09-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaHFYUWZsaVlnbVhRQlZRUU1aY1lDTkZzSVhFR3BSdjJLNDdDOVE3Ql9QZWZLMS16OGV1Ujdkd1NpZnBlQzZIOVZ6MU9uRi1FVG1NNHRfOHZYUWJablJseHg0R1lpXzBMWXpseS1IdHgzWmJ5eHg5OFdRTENZZ3hEMkJkY1VYbDZXMXVHelZkUmdVNHlScjFqMlZXX1hHb0FXckNVRWpBMjlTZGg3dVhZNGtpOXdLa3dPQVRJVzhCUHA3RUl3N1HSAc4BQVVfeXFMTWJ3YlZvd2pBTlAxLVpJVG1ET1RLeG44Umd0VldXUFZjVzBULWxlX3NGVUNORGFuY0tUM21tV3VmYVhaM2hUdUktMTVwcWwxLXN2cUluYU1jOVFlT1l2Vk15VWxsWXJHeTQ0a1BGQU1pX28wVEhBTUFCWTBiYll5Z0NYZ3FCbUxUeFdWclZIWUJjUlRBVUpjREswNE5DS1hHc09rSDJuOTh1RE9zZzJ3Q05GbzM3OFYycEdVRjVzUkk3NTBJLVRFNGFTb3VZUmc?oc=5",
-    "sumber": "Kumparan.com"
-  },
-  {
-    "judul": "Asian Games Aichi-Nagoya 2026 Padukan Olahraga, Budaya, dan Teknologi Jepang",
-    "kategori": "Startup",
-    "ringkasan": "Asian Games 2026 di Aichi-Nagoya akan menampilkan perpaduan unik antara olahraga, budaya, serta kemajuan teknologi Jepang.",
-    "tanggal": "2026-09-12",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQclBsZDZaNmh0MW1YYnd1bzFvbUh4UkllRTFmdFlJRlFwRjJacUd0RmFraG0wTUJ1UXd5N3BNUnVQSTdicGtfM1VPMXFDVHlXRWJOVE05Zkk0Y2FRY3EySFV3NVBmdTZobXJTTTlLT043YU53ZzVvalJHTDkxVGp5aTVvaFdqd2dpa3J0a05UaWtRdVVXQ3pyRlNCNXBtUktZWkE?oc=5",
-    "sumber": "iMSPORT TV"
-  },
-  {
-    "judul": "Bank Tingkatkan Pemanfaatan Teknologi Kecerdasan Buatan untuk Layanan",
-    "kategori": "AI",
-    "ringkasan": "Sektor perbankan semakin gencar mengadopsi teknologi kecerdasan buatan untuk berbagai keperluan operasional dan layanan nasabah.",
-    "tanggal": "2026-09-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOM0ViQ0hkV1M4RDNCY2Y1S2JRTG83OHNvYnp3VUxqNVBhOHNxSWdYMjljTjlyMmtXd1lZZjBxTU1pZDROLXNNLUVvS0dmLVJHZFVOeXNIdWNhZ0NfbkVyWTdLRlFVZTFqVzZzdlVYcnBzbXMyamVGOVQ0ems5UDFVZGR4b19nRHdSX250SHZB?oc=5",
-    "sumber": "KONTAN"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-09-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVWQxOUotWjg0cU5qMWJHbVhxU2VtT09Vb2I5OTdFZG1peVV5UGx4cjJRSUhwRThxZXJNLUF2QTZUd0k1bU5ORVVXaHJRR1NrTG53U2FYMGc3dTV6cm96WE9GbVpNUGU3ZExTdE5RWG1Jay1pRjN3RWZXZ2lnTld4d0VnY1BGMlF6UWhFaC1NZzdlcUtVcHV1N2MyZkJNYkZSNGVod0dKREZNYjdrcXBDMjU4MjZhU1VDaVZWOGNhX0jSAcYBQVVfeXFMUEhvLXZxZXJwbS1Vam1BUUcxTF91YW5Lam9objNjMmZ3Wm9DMjN4dGxkWVJCMEJYRk01MVhnUlhpZGVHSzlrR2gxWE1yRWZhcFdadnh4bDB4RWF6M2VyaTdYLVNJYndRQ3AxN0RnWkVxRVBTR0l1SHcwWVJYN0g1c1B4QmEzNHNEZkZiU2NkVVNYV0o3TVhJSXJwVTF3YS1pZHAxdFd3YUVXSGNHLXIzS1hQN1JxOXFVREh6Rlh0SE96TXluQ2FR?oc=5",
-    "sumber": "CNBC Indonesia"
-  },
-  {
-    "judul": "Tips Jaga Kesehatan Baterai Smartphone Agar Tahan Lebih Lama",
-    "kategori": "Gadget",
-    "ringkasan": "Enam cara praktis untuk merawat kesehatan baterai ponsel pintar Anda agar performanya tetap optimal dalam jangka panjang.",
-    "tanggal": "2026-09-12",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPLVZnZUJ4T2ZydTlleHpnR0psNVhDTzVvRnRZSl84R1pVRzU3SllSaktwQXR0UmZ0b3gtY2VQUkViR1ZIZVoyLV9mUFdDZjF4dDNfX3BCSXRpWTVZbW8zQ2F3bWNVb0xrRmFVdWVMX3BpaDMzNFBFRUNZWkZ5TENIdE5hWVUtV21zck5IN0txN2p1UEJJdDY0eS1FWDnSAZsBQVVfeXFMUGd2T1B5eW9nR1lncFRCaXhXTDBPWFdUQWJnWkNnenphUHJmUWp6QUJFM0hQLWNUcF9NRThqY2VGYXFidXpQSElaTVExallFNG96eUd6WV81QUpST0RjZmJZRWFJeGs5aXkwbzM4RkpDN3c0Ti1kY2Q2TFZ1cnVTYW9IUjBhQTMwT0VPUFNOUWlYOEFlT3c5RmswMzQ?oc=5",
-    "sumber": "HARIAN DISWAY"
-  },
-  {
-    "judul": "Tren Digitalisasi UMKM 2026: QRIS dan AI Bantu Kembangkan Bisnis",
-    "kategori": "AI",
-    "ringkasan": "UMKM akan menghadapi tren digitalisasi pada 2026, termasuk pemanfaatan QRIS dan AI untuk mendukung pertumbuhan bisnis.",
-    "tanggal": "2026-09-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRUxMRmtPUXJ2MVhJSG9XaEk4SV94SmF6aUs0UWNtd1l6aHU0YkJseUZTWjRqaExULUZsV3JwQzBhVkFWa3czMHA3YjBmTmdnM2QzM1hBcGZGSkNWNWlPQ3J1VVJwN1d5YndrNEM4Q2JTelR0eU1UZ3otT1FQN2ZHZDlERzk1VVdhdk5yR2xJZmVLamtKTGJwbURXeDRSNXJjRExFNEgyR2stV2NpME9EaXV0dHZzQmdCc2VUT9IBswFBVV95cUxOeklXa3FkczFoanRjR2l1MS1PRkdyS1dOeXlxSnZkOTNaOGQ3WnBkWE90Rnc2N0hXY2dJZ0NLNDllOExBNnNPMVRXRkYxdjEtWHZxaVNGbWIxbG5ObkRja1kxZXRGZHgtbkFjVlJoNmxoeFVxV3pyUUdYeHVtWGVmQWlFNWF5V1I4NG5hd0NRN2dfNXN5NHctQ0szOEozWWlld0taTERxMmdZSmx1R212UkdrRQ?oc=5",
-    "sumber": "Radar Cirebon"
-  },
-  {
-    "judul": "Penguasaan Teknologi Strategis untuk Pengembangan Sumber Daya Manusia",
-    "kategori": "Software",
-    "ringkasan": "Pentingnya menguasai teknologi strategis guna mendukung pelatihan dan pengembangan kualitas sumber daya manusia.",
-    "tanggal": "2026-09-12",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZnBHM1Z4NklGazNFSEF3elVXbzM4cGlzMnYtTWFld2JmWWx5ZDk1Z1NCTEU4a04yZ3FTMWRkNjhGdTFuZUNrckVNX05MOXFDb21Pdll5THRVbGVlUWJEVVFhOS1ycG9iX0szXzgxWC0yc1JGdzNibUxjX0gyZXpiSHNpRTQ?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Changan Hadirkan Teknologi Mengemudi Cerdas di Mobil Listrik Nevo Q06",
-    "kategori": "Gadget",
-    "ringkasan": "Changan memperkenalkan teknologi mengemudi cerdas yang pertama kali hadir pada model mobil listrik terbarunya, Nevo Q06.",
-    "tanggal": "2026-09-12",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcW1xRlo4VW5Ra3FsOU1CSnhHbGd1VkU4XzhFUE50WmdPQ1k4N19JNmktRm1McXBsa1YtMTFYSWpWTU45Q1F3c2tVZ0p4Y0toMmo4Tmg0VHFYaEtWajZvVW5Jbzgwcl82bHY3Vkpia0lmTENCbmRQZ0tIVDBDRW5YRUJHQkdsWDhVNU90cEhkZDM1ZTdsMEVLM3JRdXAzM3ZqVFln0gGmAUFVX3lxTE93cE02eXR1TjllNDU3RTZtQ09DZGJ1X3RLY0lQWVc5bXhxY1Q5Y0J5S3lLZnJGeVBObzhqalNteU1UWVlFLU1BZUowNzltYkpFS3RxUTZGVHlaT09MbFB4Smp2SW9GSkFGZGVCRE04cmU4NFlINEVCVkVjWGdVWTdXT1gwbl9QM3oyWndFT0pUZEVzTHRwb1dKNEFtbWdldTl6aDJtMVE?oc=5",
-    "sumber": "JPNN.com"
   }
 ]
