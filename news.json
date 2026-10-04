@@ -1,5 +1,85 @@
 [
   {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-10-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcjNzaEhZXzIxUF9lVklYS3RrQTAyZGZScWF1OWpMRDF1UTI3RzdlRE53dnZtYnQ1dEwtQWRPUFBOc2tDWE1fcTFwX3RPTG1PaFlSWWtjcUhmSG4xSlpZNmFaV1ZZU1FUcjBZcUtCbGhERmxCSUJ5cjVHYnF0dDdBd1VIakQ1cE9mZjlRUC03VndHcHRKRkJoc2N2RHpLYWpad1V2UU1NSDVFNF9ncHdrNXg1cmp4WTI1SEhlbW5qTFNwN0NpamI5cXVfSTJWcjM5TE9XZnZ4YWo?oc=5",
+    "sumber": "jatim.tribunnews.com"
+  },
+  {
+    "judul": "Keamanan OpenAI Mundur, Soroti Risiko Tak Terkendali dari Pengembangan AI",
+    "kategori": "AI",
+    "ringkasan": "Seorang karyawan keamanan OpenAI mengundurkan diri, menyuarakan keprihatinan mendalam tentang pendekatan perusahaan terhadap potensi bahaya AI.",
+    "tanggal": "2026-10-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTEdCSjlLUjh4NzhXQmVxRG5ScWF4LUpicWF3ZnJFcmRnRzRmREV0NFU1ZXR4Z3V0NUJueHY2bzY0UmZuYUFJSTdXMFFWUlFWS2FVZGRkTmEweGxiZG1ZTEx1bFV5OU9XNjlVSGxoLWZfSVlEZUtMTWpUZVlPR2NyaXpxdWUycWhMeXNfSW1ibHZoWEU2dHVuVmJiVExzQnlCTG5YeE1pbXhHYm1wZzFpa3k4aUZVelRxVUN3UkxVaGNvZDhN?oc=5",
+    "sumber": "Investing.com Indonesia"
+  },
+  {
+    "judul": "Bisakah Kita Hidup Tanpa Kecerdasan Buatan di Masa Depan?",
+    "kategori": "AI",
+    "ringkasan": "Muncul pertanyaan mendasar mengenai kelangsungan hidup manusia tanpa kehadiran teknologi kecerdasan buatan yang semakin meresap.",
+    "tanggal": "2026-10-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSHFKdkF4S0JWUnNvS0I1a2FlbTN1SmRWdFBOSlBaenZmVE55d3pmSnMxV2ozRnRPcHAwc0JHdE1nT0tmWDNfa0NMVGYtU0tITVdGMENOT0Rob2ZCSFNZdzFrMzJxYkQ5cTJVeU1CaHpqaFo1b2JyUHV2VHZYVVZwdkFEcEVxOHlxTm1zYnVGa0lIU0RmekJ0ZkFxRQ?oc=5",
+    "sumber": "Kompasiana.com"
+  },
+  {
+    "judul": "AI Mempermudah Produksi Drama China Tanpa Aktor dan Kru Berlimpah",
+    "kategori": "AI",
+    "ringkasan": "Kecerdasan buatan kini mampu memproduksi drama China secara efisien, mengurangi kebutuhan akan banyak aktor, peralatan, dan kru produksi.",
+    "tanggal": "2026-10-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQLUhUX2NPT19RT3ZEOUJnM1c3bkZiXzV4cjVtSkp3TG9aeWJzOHk3VlZjMWJVMWdBX2E2Zzl5cTN2ZDFMVWZaa01DSWdaZm5uZjN3WWVELWRHd0xtZkRtMEpuU1ZHY1J0N0hTYlpmUmZnS2dRdWFhSXk2bXFWWHFCN3hzLTlQd1Jldml3ejR5QTJxaHh3cmUtRGc0OU1HeExOcWdmUjNmbE1CWDdUMmRNcU43VTdMT0hMYmZYOFJUdGdpclRocTluTlVpTEhFRnM?oc=5",
+    "sumber": "Kompas.id"
+  },
+  {
+    "judul": "Proyek Data Center AI Rp3,5 T Dihentikan, Konsultan Diduga Lalai",
+    "kategori": "AI",
+    "ringkasan": "Pembangunan pusat data AI senilai Rp3,5 triliun terhenti. Diduga, kelalaian konsultan menjadi penyebab utama penghentian proyek tersebut.",
+    "tanggal": "2026-10-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZHdOcVd1ZGdsRkhQbFBYZFliSWxKQ0JieURTOXFRWk00eU5JY0RpazM5RVhCLXJuVzVOSkJIN05qRWg1Q0NaeEc1cGFqRl9mWHF1cXRjRjB2eEVMWE9WdzNnWFo4aEFvYmU0MEpRMk5DenFLRVRfcFphaUZMcXVjVXdqdXBoRmNMOWNESktZdVBVeElfamF5QnlDVVN3c0R4eXNJWk1IVWdOUHhMb3ZEeGRwbU5OZE1YTjZZNVFYRTdPdjVr?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Bisnis Vietnam Hadapi Tantangan Investasi di Sektor Kecerdasan Buatan",
+    "kategori": "AI",
+    "ringkasan": "Para pelaku bisnis di Vietnam tengah menghadapi berbagai kendala dalam upaya menginvestasikan sumber daya pada pengembangan teknologi kecerdasan buatan.",
+    "tanggal": "2026-10-03",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNZ1JCaTNXekR5NjhrZkNveEYwU2J3UTdXUDBtWVBZay1ZZTBTcmYtNHBpRU1JVy1sYzdhVDh0SmNxUVZ3dGJfZG9KOGdwSURLcThXM3FrbklGTUtZWnM0bjc3RjhWa3BYQnBLUzc4eHBXdXlG?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-10-03",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRFk2NTFoVEhPSmNwU0MxT0pUT242SDVUNkVZOGtvd24tbE0wNG1lRjBCeTlqdUJvNnRYZ09pM3JWT21NVkdyT3RNWHNMejY1S25hMlNIVEU3MElSMVhmbEtuVXlOMGpPWUxhMGxKS1hXSmZXVVMtc2Y2dGlEdHBESGl0aG1HS256SlJfbTJ0eHBBVThnQXNDZXIweWl6b2ZaN1I4M1JmWUdQNmY5blHSAbMBQVVfeXFMUGhHQldNT2xCSjRUeC1zb0VjSVJ5REc2aXoyTTU3dEhvOHdqUHRSR3MyMWlLYmg1VUU1ejhZeU9kaGNPTEY4TTJzQlg2SWVNc0hlMGtKSjJ6NnhySXcwbk40d0JBa2NmYjgzM1NIWVZTb1NFelppLS1ELXoyMFRjSkFLbTRlRnIzTmgxam42SEtpd2hKYUYtVUU2ZEFaV2VrMjZXQWFZcHdiR2RPWWdwVHM5WlE?oc=5",
+    "sumber": "detikcom"
+  },
+  {
+    "judul": "Di Era AI, Sekolah Dorong Siswa dan Guru Tetap Kritis Berpikir",
+    "kategori": "AI",
+    "ringkasan": "Menghadapi era kecerdasan buatan, sebuah sekolah menengah mendorong para guru dan siswa untuk terus mengutamakan proses berpikir kritis.",
+    "tanggal": "2026-10-03",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU3QyT1I3aURDcjNxUWEyb3FRVk16S09uNERzZ1RtanM4LVg0NUxXUFlZaU41MVF3OUx1c1E5eWlwcTdQdzh1clN5eUVwS1VVLWFiMkM0dnFYVVFuMmJkLW90b19HbnZhRjM1MjBncmV1YTBxdzJPUloyVUVReTZ0VG5STkVlRVEyU2tRRHBEMkpQOUJWRjBjUkpzdU5qN3N3dGF4enZleGhyODlZNmdCckxJdEU?oc=5",
+    "sumber": "RRI.co.id"
+  },
+  {
     "judul": "AI Otonom Tingkatkan Ancaman Keamanan Siber Global, Akamai Peringatkan Risiko Baru",
     "kategori": "AI",
     "ringkasan": "Penggunaan agen AI otonom dalam serangan siber memunculkan tantangan baru bagi keamanan digital. Akamai mengidentifikasi pergeseran risiko yang perlu diwaspadai.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVEY0SmhGbzFxZzdmaGdHQzNJVG9EWXFVWnpkYWNFYkI5a0RGY2tpdGpONVpyT05Bc3hEMllvSjIyaURGNm9XTVVuVkdMcGNIcE1URExPT3ZSdE1KX2hjd1dKMHNiYlVTVk9EVzA5VWEtMlNuQ2RjRzh1VnQyZDUxeDFWNFFtMTcwSjRyQXBnTjN2NEJOUkZEaW52ZnVCYW9JV2Z6WWZocFR0WjNUNE8wQg?oc=5",
     "sumber": "Indonesiadaily.net"
-  },
-  {
-    "judul": "Guru Tingkatkan Kemampuan Digital Siswa di Era Teknologi",
-    "kategori": "Internet",
-    "ringkasan": "Guru berupaya membekali siswa dengan literasi digital yang memadai untuk menghadapi perkembangan teknologi saat ini.",
-    "tanggal": "2026-10-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNjd3bUpJNGZ3SElRMEhaTkJ6aGY3M0RUdFBHUWtnOTNqY3hxa0t5dmZxd1BsamdvMklvS0h3Nkl3cGlLRVFlbE9mRldJMTZTcWdJWTlXeEdZZDM5VUUyVzI1M2JBdWN3cXBxM2hqQ1ctRzN4VWRqQVB2TTR0WEV4aWtLN0p3UGs4NEVKOFhTSExYWEx2VnBwRGlDcEFTbmNtdHczb2xfMjlTQWlDTzlPLTMzb2Jsd2ZzbUc1SGdtZlJUWnpjbXFXeUR5WHBkRFI4eUg5aUVqaFM2Smc?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Proyek Pusat Data AI Rp3,5 T Terkendala Izin Lingkungan",
-    "kategori": "AI",
-    "ringkasan": "Pembangunan pusat data AI senilai Rp3,5 triliun di Purwakarta terpaksa dihentikan sementara akibat masalah perizinan lingkungan dan bangunan.",
-    "tanggal": "2026-10-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeHhTWEJ3V3BtZ3BjSGJsUWlDb09HVkR6cHBSVjlCWUdCRXlhNW5uZ2lwaEQxOTh0bFJsX2oxTHRuVDBWQ1BBcHJjaExzRllJOFZFajFRUTVvMUVoeXpMM3JXT1ZUM3FtLTFwZGxfMFpVQXFOeFo2OTdoWUYtMGQ5UnR1UkJSNE45SEY3YUhwVm9XOEZCRUs0WThXZWJqMDkyekVzSHZxQ09yZzFmd0lsVWxzMGNGUXdOTTBTU3VTX1hFTVdlLXpjSlFncmd1TDA?oc=5",
-    "sumber": "ruang.id"
-  },
-  {
-    "judul": "Kepala Bakom Bentuk Tim Khusus untuk Pelajari AI dan Algoritma",
-    "kategori": "AI",
-    "ringkasan": "Kepala Bakom membentuk tim khusus guna mendalami teknologi Kecerdasan Buatan (AI) dan algoritma yang semakin berkembang pesat.",
-    "tanggal": "2026-10-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUmNkRTFVUXJZekxLQU5OZWlwendremEwRjJrSU9rd2VMamJiYUEtTFRqUjNOZU1nRGlmU0tRV25yclpNcFNiM0NOU3Q2akY5UU1FcWdsMXNHU3d0VktvbTVJdzVYcHlaVjZvbElnS1NOTS1qOEd4NkYySFBHbEd1b3l3Wlk1NGpqTUNxMUxKQjNHUndnN1BiOFFkbXRPMnEtekhHS3lIRkVBV1p4SkViTlN0eFJ3X2M0T3lSMQ?oc=5",
-    "sumber": "MetroTVNews.com"
-  },
-  {
-    "judul": "Dosen UGM Ciptakan Tempat Sampah Pintar Berbasis AI",
-    "kategori": "AI",
-    "ringkasan": "Seorang dosen UGM berhasil mengembangkan inovasi tempat sampah cerdas yang memanfaatkan Kecerdasan Buatan (AI) dan data.",
-    "tanggal": "2026-10-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWHRoU0tQcjBDcDVlOTduRURpdXRoRUZ6dkxHN0trcC1vTmNNcThoa25ENURLWldzbHFQNXJ6NW1FYzhFZmE5dklFbUR5aFdXYjcySld4YlhXX2QzZnltMHo5Y1Jnd0libTg3VU1yeVQzVHRsRl84WGhmY21KVHN0LTB3RmgtOWp5QThuRkVpNXhncU1IUVA0T1FlVjNHVTlJbm5jRm15YzZJVG1GQV9CbF96Zw?oc=5",
-    "sumber": "rri.co.id"
-  },
-  {
-    "judul": "DPR Ingatkan Pentingnya Ketahanan Siber di Tengah Ancaman Digital",
-    "kategori": "Keamanan",
-    "ringkasan": "Dewan Perwakilan Rakyat (DPR) menyoroti maraknya ancaman siber dan menekankan pentingnya penguatan ketahanan digital bangsa.",
-    "tanggal": "2026-10-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS0htdUZDZ09QUkQxWGlEVkFhRzF0WWh0Qng0eVpPWHFBeHdDY2dTck1Od05KWXNaWnhVWTlaNWFGWDg2cXZKc3VkVDE2ejcza01rdTVnajE2dzY4d1NwMFNpSDVrbmcyWk5Mek82NllBRGVEMDBWd2dESkhjdGs5Y3ZVVEs1azg1N21SWUprVnpNNWJHZmU5Vi00LVU?oc=5",
-    "sumber": "TEROPONGSENAYAN.com"
-  },
-  {
-    "judul": "PANDI Luncurkan AI SIRT Atasi Penyalahgunaan AI",
-    "kategori": "AI",
-    "ringkasan": "PANDI menginisiasi AI SIRT untuk mengatasi potensi penyalahgunaan Kecerdasan Buatan (AI) dengan dukungan analitik data.",
-    "tanggal": "2026-10-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s2Wm5ITDFZQ3BuT2VJTlNGdnFPenowaGJzS2R1dWFRakROVUhCTkYxcVJsbjJ1T05XbTJUTlRtX0dXZVg1U0ZwbDRZOEJ6SVozNUUzTHh2NGV2Qy0yelZQbFAtb0wzQXU5Q3FGZGlfcktqT25qN0RsMjZBMU9ieHppcDU4UkM4djZDOWdpSElXWHBHamRNQmItRjI1dVE?oc=5",
-    "sumber": "beritajatim.com"
-  },
-  {
-    "judul": "Edukasi Penggunaan Gawai Bijak di Sekolah Dasar",
-    "kategori": "Gadget",
-    "ringkasan": "Sekolah dasar memberikan edukasi kepada siswa mengenai pentingnya menggunakan perangkat gawai secara bijak dan bertanggung jawab.",
-    "tanggal": "2026-10-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVWJIWGhvejhxT1BKYjItTjFrX2tWekNZT3pjYkMtcmlyTnlReXc5RmZINldZa2ZMSjNNbGdybzd5dTNLUURScTZyQ2VLNEJhbVJzbThkLWdDbm1GSm9oaXBqcTNldnFNblh4UjhTQUU3VWZrcEhlVjBPdlhwSkFjU1RkOEQ4WkYzTElBQjRsQUw1VUU5YmxKelNldDRsRVlFT081VGt0ZnRldUNkTWNlOVZrWlZQNnl0bHJnVkh4VTVwU0tU?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Vietnam dan Jepang Perkuat Kolaborasi Teknologi Digital",
-    "kategori": "Internet",
-    "ringkasan": "Vietnam dan Jepang sepakat memperluas kerja sama digital, mencakup modernisasi sistem hingga pengembangan teknologi mutakhir.",
-    "tanggal": "2026-10-02",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdVpPajBDLTRFRmN1YkdUMEFjTXlaa25jdWRkNl9zd2hQOVQzTzUzaTNpbV9rM1hsLXJkUDlXZ1BJOTBpWkQ0VFJzV1B4S244b1NvS1RuZUtnZDRQaHlucjliemV6ZE9oczZVMWlJZU9hVkRGMkcwVTFua2pJYmVUUXQ1WjktWGJMNWZmSzJMTVA0VlpHcTktQ2xrbDlOLUlWX1J0dm41bEFmQQ?oc=5",
-    "sumber": "Vietnam.vn"
   }
 ]
