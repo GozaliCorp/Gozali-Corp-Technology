@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Kepercayaan Diri Teknologi Rendah, Pengguna Merasa Stres Pasca-Kerja",
+    "kategori": "AI",
+    "ringkasan": "Mayoritas pengguna merasa kurang percaya diri dengan kemampuan teknologi mereka. Pengalaman ini bahkan memperburuk suasana hati setelah jam kerja usai.",
+    "tanggal": "2026-10-10",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ29ScXRsUG1yVjdSeWc3N1lBZ0twWlZacGVOSFVsZElCcWlJbEhFaWxIVlJKMnFVTll5bU81QmozSkwwbTU0YTZqb3Z1NkNlQ3BpOEkwcENIT2Y0U3FKWDBXODNkNk52SDlLd0NBWDJ1U1FneENBRlJHOEVqdEdKMFlCb0FNUHd6c1ZmLWZLWmEzR1NoT1RmRFVWZ1hCcGxzNm1Ya21XSG04Zw?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Gemini Agent for Work: AI Google Kelola Gmail dan Kalender Anda",
+    "kategori": "AI",
+    "ringkasan": "Google meluncurkan Gemini Agent for Work, sebuah kecerdasan buatan yang mampu mengelola email dan jadwal pribadi pengguna.",
+    "tanggal": "2026-10-10",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSDJMZzExdkptR0ttZ0daVDBEWk5JUk1jVmJDWUVFMkhEdXpDQ195b1ZkdHRiV0dZLXZJNENRZHA2YUlPVDF3bk83QUZHRF9ET083d3k3T0RINS1kVVN6QW0yRnBaQm9MUndxTjd5TlV6eE02Rm1vMEhzX2IwNlZ0QXpVMzlwX3lPQ3VtM0hzLW9MMXhoSFZCU01OdlNiREpzWVJPTGgyX0xtRHZhQjk5MXdxMjhTSDFsSnAwbHhEMnBiY28?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Hanoi Jadi Pusat Inovasi Sains dan Teknologi Global",
+    "kategori": "Startup",
+    "ringkasan": "Kota Hanoi kini bertransformasi menjadi pusat riset dan pengembangan teknologi terdepan. Berbagai terobosan ilmiah diharapkan lahir dari sana.",
+    "tanggal": "2026-10-10",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjBTWDQ0Tll3djVjSXhpOWYxaG9WU3pJbVdSRU9YdU9oSUtJZUhnNEFSYTNMVXFSZzlaZ2l0Mm1QbjZjTXdKZklGbEtuTHRrMHl1cjNqWHFXdE83WUpaelgtUm9kVjBsdUFGeFFBSnBKSzlreWJzQ2lNb3NqcG94VE1UeHAxbHY0QUc0SWtXeU5Fbjg3dlcw?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "AI Analisis Retina 'Dr. Noon' Deteksi Dini Penyakit Jantung",
+    "kategori": "AI",
+    "ringkasan": "Teknologi kecerdasan buatan bernama 'Dr. Noon' mampu menganalisis retina mata untuk mendeteksi risiko penyakit jantung secara dini.",
+    "tanggal": "2026-10-10",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYmlTdkhNZkNHdE1QY2FzZVVRd1pLdjEtVTdhRE5YcXg0RktZcmpDeVRKLVMxYkZoelg5S0p3aF9XdFdFTXdmdEJiMEdHMWQ5THlUSGx6N3dWZV9KRUtRYjVzZzFBaHk4SUdWdlpieDFma3NZY1d2UFhCanItWXhEWTlBNW1GWTFyVWRKa3JCNksyMVVvMUdOM3paRUd2RGh1bGhsSXNqSThQWTlGZExfVzZJM2xsV3ZuM29Ib0txOHA1VDRzV08xcHJhTzF4LU01RkM1U3B3?oc=5",
+    "sumber": "Kompasiana.com"
+  },
+  {
+    "judul": "Mahasiswa UIN Gusdur Dibekali Etika Penggunaan AI",
+    "kategori": "AI",
+    "ringkasan": "Universitas Islam Negeri Gus Dur memberikan pelatihan kepada mahasiswanya agar dapat menggunakan teknologi AI secara kritis dan bertanggung jawab.",
+    "tanggal": "2026-10-10",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbnRSbzZOY21kTjBOVllkbzAxYk1sUDhaa3cxdm0wNndURjZGaTdXMVlpZVN4bHVkNVl4UjJ1Y3QtWVpVQlpNM2lmdXBFdTNpMWNsd05oNDA3Rm1uMlFieDRwc3FMM1E2Q3ExS2pSbGN5ODM3VE1RalFwTGY2dkt1cjVmNXlIUFFkTWV4WFlIY2x0cWt1Z1NCOFFDLWFDVWx5MXc?oc=5",
+    "sumber": "RRI.co.id"
+  },
+  {
+    "judul": "ASEAN Bahas Perlindungan Hak Cipta Jurnalistik dari Ancaman AI",
+    "kategori": "AI",
+    "ringkasan": "Negara-negara ASEAN berdiskusi mencari solusi untuk melindungi karya jurnalistik dari potensi pelanggaran hak cipta oleh kecerdasan buatan.",
+    "tanggal": "2026-10-10",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRUhSd3d6cEt2SWhvdk5zWjdHYnl2WEFiWkgyWFJLTmdXNHhZbkt6cUlVUVBoUlU3aVlKQjIwaV96TjJLQi1NRlpPbkRuNDBnZElIbklObnI1UEgzOXZUcWRER3JzcjA1VlppbmYwSXhteDFYREhoby1Bc2F5bktjbFNJeVNWMzFqeEJuVTVpMHhhSHg5cUpkNkVhbG5xR3MwWGpNd2JkbXdVUEFMRUNYYk9UX2M?oc=5",
+    "sumber": "Media Indonesia"
+  },
+  {
+    "judul": "Investasi Teknologi Modern untuk Peningkatan Pelayanan Publik",
+    "kategori": "Startup",
+    "ringkasan": "Pemerintah berencana mengalokasikan dana besar untuk teknologi modern. Tujuannya adalah meningkatkan kualitas layanan yang diberikan kepada masyarakat.",
+    "tanggal": "2026-10-10",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVDZzRDZfVGdXZWFJdzJlQ0Rzb3E5djFmTUVwaW5kY2p5ZTlNRnZxV2t4aS02bndOVlVTc2tkQ1NFbk90enl2enpsYjROcTdsaFQtSjNKOEx1ZjFQNUdQdTRMYjJ3bTdSMnJMV1hOTVZnMC1malo0aFhBc1BYUWRoT2F5dVY?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Kebijakan Pendidikan Tinggi Diperkuat Melalui Kolaborasi",
+    "kategori": "Startup",
+    "ringkasan": "Kementerian Pendidikan dan Komisi X DPR membahas penguatan kebijakan di sektor pendidikan tinggi. Kolaborasi menjadi kunci utama.",
+    "tanggal": "2026-10-10",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbFJmUHNvM183NWt0NldZR1FkOUo4ajNuUEs5eW1lNTVhRGd1em9hT0Ztb1Boc01oRXdDNHRNR3gxYTJ5QjZWZ0tuSUVrTjYzLWMwZGhjUzRQOVppS0hUSURZOXprWU1ETlVqa2xIblJiaVhsNmVaWGZzX0p1WDZHRVZCdnV1NlNuN3NiT1poN2FzMXl0NnNnTjEzZlJhcDNaLTBXaUhnRWtocHBDMmc1MXJSbkxwdw?oc=5",
+    "sumber": "Kemdiktisaintek"
+  },
+  {
     "judul": "Solusi Transformasi Digital Tepat Sasaran untuk Kebutuhan Komunitas Lokal",
     "kategori": "Startup",
     "ringkasan": "Pentingnya menemukan solusi transformasi digital yang sesuai dengan kebutuhan spesifik setiap komunitas.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObUN1WjhJZ0pYdV83M3NYaFR5Y1RpbVplYzlpWElvRndnT05CUmdIMV8xRFEwQ3dUWktSS0Y4TXdFRXpIbXd3bzJfdjRWNnQtZjhoTjNqak5fQkpGVUVnQzVhZV9JV29fTFNQODJGMTZLbDE2U2ppakZfZExjZEtYOXUxWlFQMUhNSS1jVXBCWk1XZU41QW1HdzFVRk5Pa2V0NDUxY0hlc0NTa0FqOVR5QU1yTQ?oc=5",
     "sumber": "Investing.com Indonesia"
-  },
-  {
-    "judul": "Avian Manfaatkan AI untuk Tingkatkan Manajemen Sumber Daya Manusia",
-    "kategori": "AI",
-    "ringkasan": "Perusahaan Avian mengintegrasikan kecerdasan buatan dalam manajemen talenta untuk memperkuat transformasi sumber daya manusia dan bisnis.",
-    "tanggal": "2026-10-08",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWU1GQl9wODNFd3prZjRXR3pGRzRVUmZNSmVJVjJYMHUxeGh3Q1BrU2k4Zlh1N1BtNE1xdzc3NzJ2VXBEbUtLVl9GY2kxZUgtMVJEbXkxSkVvZzJjc1RHV2VNMlB5VmhBdkU4TGNTLW54ZEtLcXJoYUlLYVNUaW9lMlZ1ZklvekVESUNRRTJNQWthczI3VGJ4TXpVS2pDUUZmSUhCLUFXNG9DZk1odHZ2dTBGbnNYXzAwTlBYakgzNFM4YjhuX0RqNzFMTTlfQmxVYjVTZnFsRENjYVZJR3c?oc=5",
-    "sumber": "TopBusiness.id"
-  },
-  {
-    "judul": "Saham Asia Tertekan Utang AI, Pasar Obligasi Mengalami Tekanan",
-    "kategori": "AI",
-    "ringkasan": "Perlambatan bursa saham Asia terjadi akibat beban utang yang terkait dengan kecerdasan buatan, berdampak pada pasar obligasi.",
-    "tanggal": "2026-10-08",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE10MWJEWEJpeVF2ckswcDJ5TGlXUzVNd1R6R05BN0M2LWJwMmo5NncwbUFMYXB1WlRFUUVoNGdDTTFlbTJ1dXFqdEkwMkREdHB2TjV2QlozNGhSeXlZajRIUmtn?oc=5",
-    "sumber": "Demokratis.co.id"
-  },
-  {
-    "judul": "OpenAI Ungkap Model AI Selesaikan 722 Soal Matematika Kompleks",
-    "kategori": "AI",
-    "ringkasan": "OpenAI berhasil menunjukkan kemampuan model AI-nya dalam menyelesaikan 722 soal matematika yang rumit, menandai kemajuan signifikan.",
-    "tanggal": "2026-10-08",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMW9vRkxoTmJFYjVIRTFranQyNm52Q2dxVkI4X0xBemVJaklZbjAyLVhVeDFxSmNBcnJKOVd6UU5meDNfenhHdkFma3BjU3doSjVpZmxyZFl4eTNlSlpiZW1DQ2pFUlB6X2l2cEhWYUNDLVpQX3VNcmpCUUs4R3JjM0ZwXzJfbGNoODlremVycHRySHFVclpZQXhkWng3NVVjUUxsWUFSRU02eVdFYzJRT3VKeVNjX0ZkaVg5eGdhTm5kMWo2bUFqYWZONlA?oc=5",
-    "sumber": "TIMES Indonesia"
-  },
-  {
-    "judul": "Yamaha MT-07 Versi Lokal Siap Dominasi Pasar Ekspor Eropa",
-    "kategori": "Gadget",
-    "ringkasan": "Motor besar Yamaha MT-07 produksi dalam negeri dirancang dengan desain menarik dan keunggulan untuk bersaing di pasar Eropa.",
-    "tanggal": "2026-10-08",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUWdqcWM3WER4TWpsZm43VE1PRXlYMHJfTHF0M3JpVm9GVF9tcUVhQWFhMGQyZ0ZlcVZfTTBldmpGN0w5Q2ptTmZMRWdVMWF0Smo0N25iZ3NjU3ZJZWVqb3NORFpzYUhxaU1lbzRJd3M3cTFabTlzZ0haVi0xQjhZbUhOS3FoalVxb2sxYUVZSmZRWC1uMkhfTUhfVmQwT19mQmRpenp6Q0h2ckZCcExMLUZkOXl1WHRNQkpv?oc=5",
-    "sumber": "Otoinfo.id"
-  },
-  {
-    "judul": "Samsung Raih Laba Rekor Berkat Bisnis Chip Memori yang Kuat",
-    "kategori": "Startup",
-    "ringkasan": "Pendapatan besar Samsung kembali tercatat berkat performa impresif dari lini bisnis chip memori mereka.",
-    "tanggal": "2026-10-08",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZDBqbHo0REMwZ1J4RlhCQVgyQXV3LUstc2c1UTlSNExKS19hcWJMcVNBRW9oRHlOcDVVZWFFQ2pHTnIzekZtWXRGblBYQU4teGRoTGFSMWZrdk1tc1A4TkQxTW5VMnZqems1Rm5Ec0pDeEJwc1Q5WWZ1UnFKYkQ2ZDY5T3gwa0RiMklfRjNWcGFRLS1kVlhBS3kxRjBNdVE2Y1NkVnF2SEtVZlZDZ2lrX3Zmdw?oc=5",
-    "sumber": "Bloomberg Technoz"
-  },
-  {
-    "judul": "Mitos Teknologi Ramah Lingkungan dan Pentingnya Efisiensi Energi",
-    "kategori": "Internet",
-    "ringkasan": "Diskusi mengenai anggapan bahwa teknologi selalu bebas polusi dan pentingnya fokus pada efisiensi dalam penggunaannya.",
-    "tanggal": "2026-10-08",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQnRBdGF4UHhvUnlwVk9pYzBuNmFySXVQQzU1RG8taXdIa2h1V2VIODNuUDVCNTVTbUdKeURPVHZUeXE0MlYzaHlvYkc2NDY3R1FSclJiMlBndnVTUFprMzJ6MkdTcktUclBmdW4zTHVhcWZxU2VpODRzY0ZjU3NxR2g1YVc3bW45eGNOSGlxdzhib1hZaHBPXzJ1bG4ySXNZd1pvZDllX2tyRHlJcXFBTzVaQkYwWTMwbkNfV3NR?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "IMF Peringatkan Risiko Ekonomi Global Akibat AI, Minyak, dan Utang",
-    "kategori": "AI",
-    "ringkasan": "Dana Moneter Internasional menyoroti potensi ancaman terhadap ekonomi dunia dari perkembangan kecerdasan buatan, harga minyak, dan utang negara.",
-    "tanggal": "2026-10-08",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWXJzNHVXSnV1d0M4cWtRUkp1bUNoVHhHUUtzeGxjZDAyZzVJYXpaZ1ZCSG02RjMtWmtsUGp0X1Boel82amd6Z2wzVG5qWGZLQmVoU1BVMDlnV0c0dURBeXJXdnpESEhaWlVLdkJ4aXpUakZ3bDZINXNndTB3UGlRTUdrTnFNMzZZY2cxQ1FlSzZIVXhnOVFZU0lPelc?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Cilegon Jajaki Kolaborasi Teknologi dan Ketenagakerjaan dengan Perusahaan Jepang",
-    "kategori": "Startup",
-    "ringkasan": "Pemerintah Kota Cilegon menjajaki potensi kerja sama di bidang teknologi dan ketenagakerjaan dengan perusahaan asal Jepang, Kyotsu.",
-    "tanggal": "2026-10-07",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVXRPMWFvd1loRjROWGpJTEt2X3I4NnYyeXl4NTZRTXlfcG5HVE1IbDZURjlJTlFWWW45YUZFUXRDQzM2ZHQ5NTVDbFZaZ0F0OUNTTE9JWmRvdk51VDg4aV81cFJmR1ZJdlBwb2ItV2Y2eVFMR3FpNlQ0RllFcHdUVmhDemlzS3hZTFNaOHpBTElDUXIwbEZRdndXb0pzMS1VTlllNUJnbkZ0ZmE5eHFUa1BaT3pYSHR5VlRzTm5vZlJmYkM4eXZOZkQ2dlRtWXl5cjNSZ0JwLVFwd1RGUlBj?oc=5",
-    "sumber": "Berita Cilegon"
   }
 ]
