@@ -1,5 +1,45 @@
 [
   {
+    "judul": "Perdebatan Kesenjangan Kemampuan Model Bahasa Besar: Perspektif Karpathy",
+    "kategori": "AI",
+    "ringkasan": "Diskusi mendalam mengenai perbedaan kapabilitas Large Language Models (LLMs) dan pandangan Andrej Karpathy menjadi sorotan utama.",
+    "tanggal": "2026-10-12",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaXJjdVZuVW1MWnQ2OVRBdE5wN3B6TFhRcHJ6YVV6bUdzZkFPVXQtZEJDZWQ5UDB4djc1MDk1dUtNQXJ1MUpsVzFLaU1Ubko5VWZHTHdDVGhhaUZqX0ZodFRHN3Y5YkRNX3R5Qm9TZTZ5ZTZsUnpoQVdzdlU3bUxZUk9tMjk?oc=5",
+    "sumber": "Pasquale Pillitteri"
+  },
+  {
+    "judul": "Saham Keamanan Siber Meroket, Lampaui Kinerja Pasar",
+    "kategori": "Keamanan",
+    "ringkasan": "Sektor keamanan siber menunjukkan pertumbuhan impresif, dengan saham-sahamnya melonjak lebih dari 120 persen.",
+    "tanggal": "2026-10-12",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObXdaNWtyTUQ0QmRiLWdiSDJkdE5qdUJvMGt4dk5Eckl2bU1WZFR0NGRPTVdsd3hseVRscDE4WjB2TldxZ0pFamNHc1IzTWc4Zm5Fbi12ZVFoazFnZ05IMzMxTk1sbDVtU2lGcUVNSmtTZkdkQmZmZzR3QUJKYktoY2hUZVFDRTBDUEdMbFhKYlBHWHFNb2dxdTZndUdqbWlmb0RZY05BVC1oSHRJYWc?oc=5",
+    "sumber": "Pluang"
+  },
+  {
+    "judul": "Runway Perkenalkan Project Continuum: Komputasi Tanpa Instalasi Aplikasi",
+    "kategori": "Software",
+    "ringkasan": "Runway berinovasi dengan Project Continuum, sebuah konsep komputasi yang memungkinkan pengguna mengakses program tanpa perlu menginstalnya.",
+    "tanggal": "2026-10-12",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUDRFbHZBczh0UmdFQVFlQ0tYNTI5N2NQZHh4MDYtYnNwX3hOZ3NsTU9KYjduaHlGUE14dVBadl9BU0prcXlaSlZIeFlwTUgtQWNNbmdxNFZLTE1zdjljOTBsNmI4dHBZUVIySGRaamFELU41XzRqVjRTc2s5VVNvNFgzbGlOa0diS0VQNjN4UzBmQlpBcDZlWkRDNm9WaE5GNl9RZnFzaw?oc=5",
+    "sumber": "Pasquale Pillitteri"
+  },
+  {
+    "judul": "Perangkat Fire TV Cube Generasi Ketiga Terdeteksi Rentan Diretas",
+    "kategori": "Keamanan",
+    "ringkasan": "Kerentanan keamanan ditemukan pada Fire TV Cube 3, memungkinkan peretas mengakses bootloader dan firmware perangkat.",
+    "tanggal": "2026-10-12",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNmRTWndZaXVzOFpRYlc4cEw2TnpDU0dKZ1ZJQVNDdWw0RG5ZUjJIZ0J1bzJwTHMwN0hpSnVXNnR1WE5LdXNkalV0a3BDTDA2NkRzX2lERU5DQ21UTzd4UVI3ZllLR1VkZ0xIUTg2cFZBLTd2aV9LUVNmSTc5by1ES3BnYl80NDJTV040Zg?oc=5",
+    "sumber": "Pasquale Pillitteri"
+  },
+  {
     "judul": "India dan Bali Jajaki Kolaborasi Teknologi Prostetik Canggih",
     "kategori": "Gadget",
     "ringkasan": "India dan Bali menjajaki kerja sama transfer teknologi untuk pengembangan kaki palsu. Kolaborasi ini diharapkan meningkatkan kualitas prostetik.",
@@ -198,45 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdUduOEF0VUd6MnZzNUJiVWo1d0l6Szd0TzJJRXh6X0ViVy1lamZXUXJkUmZIQTRrSG8tUEtHR3VONFlhOFpTUm4yeVN6NjN4Nnl5SDhvblVhQnJaLUFnVXJjXzVEb0JCbTVQaHRmSS1qS3ZwdDNWc2tQVzk0bWk0eUJnODdYaDdZOEFOLTJmWjdNOFRaajdYLWkzekk?oc=5",
     "sumber": "Kompas.id"
-  },
-  {
-    "judul": "Sekolah Baru di Indramayu Gabungkan Lingkungan dan Teknologi",
-    "kategori": "Startup",
-    "ringkasan": "EST School hadir di Indramayu dengan konsep pendidikan inovatif yang mengintegrasikan kesadaran lingkungan dan pemanfaatan teknologi.",
-    "tanggal": "2026-10-10",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeW1uOGU1Z0h3YllGQ0dobjRSVUhQa2lMbXZtWjVBd2FZUUQ5WGNYWE4tWnBabkF6SmxNbFd6Mlp0aFlxM1cxM1BNUGh1RHUyTVpKYkxERTFqcXlxWk9NeVhZX2dCN3RZdDY4MGluaERQeGdUYWdCYWU4ZjF0TmMzY2UxQ1NIVmdvMEhYZVlsRkNZaGJBT0g3ZGpaZmhzTzFUT0JSRkZ5dW5jc2hsV3ZPYURmNmVJUHdGVWxlcGF3VWF0WUJLNTdFS2w2RFVESnVxZmc?oc=5",
-    "sumber": "indramayunews.id"
-  },
-  {
-    "judul": "Rem Motor Maextro V800 Gagal Uji Coba Meski Lolos Standar",
-    "kategori": "Gadget",
-    "ringkasan": "Uji pengereman motor Maextro V800 pada kecepatan 100 km/jam mengalami kegagalan pada braket pedal rem sebanyak tiga kali.",
-    "tanggal": "2026-10-10",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQkZrbzUxeFQzQkN2UVBMVG9Od29nRlZLWnFvN0dmOGRVQzZpXzJWSW14TnFNd2daeXpLam90dHF0alVFSEh5YWM1dmFPUGI2ZEpBMnVfVEhfdDRMQnVGRDVLUVdSLTRBVGxldktfZXcwRTUyeGNDdE8xaXBDdUZSbUdpSU5vdnJXZzJGLURGWnV2eFJibkE?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-10",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSWhMUWtnblR2ZlFvSXEta0wyWXRyczZpY0pvUDA2TDVCTVpNQ0FIWmluS19KdWpSQms3NExFVUhlU24xOVhlU2EwclhFOVFseE5lWnlwZnBGTEdWaTNaal9YVFZHbGtIeWltY1lNMjZMZU9samUtUEV4cFJyQWJYeXo2YW9nWktKbkJkYlBxOUJDMGpNQ1dFTg?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-10",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOHh6MXBwUlBiNDZ1QXdTeUo1c19NWDYyYmJHQWVLMVZFZGRUZjFnN2EteTZpN3ZHN0JBMFFTYU5DNXNCVVVnT1lCd19XNU51SEpfZ3h5YkdBVTFFcVFwSm1xaFFwaUZUSmVhRHRtUUJYZGo5VVRvVktnNk9CcVFYTktCcmxjbjNNNDg1WA?oc=5",
-    "sumber": "Qoo Media"
   }
 ]
