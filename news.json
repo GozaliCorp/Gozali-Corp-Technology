@@ -1,5 +1,55 @@
 [
   {
+    "judul": "AI Kini Merambah Perangkat Rumah Tangga Cerdas",
+    "kategori": "AI",
+    "ringkasan": "Kecerdasan buatan mulai hadir di televisi dan kulkas, menandakan perluasan adopsinya ke berbagai perangkat elektronik rumah tangga.",
+    "tanggal": "2026-10-13",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxOWxjQmlvWlkwWkR0YW45NElLM2VlUHNJRTAwdzE0ejNHcmVYVzY1RXpjeTZmMlVRTGdlM1VDeklTR2d3NTFwZEQ5dlZlRndEaTlJUThMdVdaVU9hak9pMkdnNVdwcXptc1d5dURQeU1yRlRDV0VnTlM1QXpFRlE?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "ASEAN Tetapkan Arah Kerja Sama Sains dan Teknologi Hingga 2035",
+    "kategori": "Startup",
+    "ringkasan": "Negara-negara ASEAN sepakat untuk memfokuskan kolaborasi ilmiah dan teknologi hingga 20 tahun ke depan.",
+    "tanggal": "2026-10-13",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZVowNmc3WGMzYU51azVxdXNkZmtxN3U0YzRzN1FkYk1aZXZDZFRiUUZvMGczN01FZ1hZTU05RXlSZjA0UzVaRXVMWnB2SVF0bDNJLXN1U1dObnZTeWZKWEcwZUxwTWZpVkY5Z1VMYlRqT0psbmtrbl9tcldGRE16WHJ5OGFjVDVSa1RJY2hvYmt3X1k1ZHc?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Bali Tech Week 2026 Targetkan Investasi Teknologi Besar",
+    "kategori": "Startup",
+    "ringkasan": "Kementerian Komunikasi dan Informatika menargetkan gelaran Bali Tech Week 2026 sebagai ajang menarik investasi teknologi.",
+    "tanggal": "2026-10-13",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcS1JeHhScFBaRWtvVWtKWUpCc2tiRFVfam9sUGpLenB5U0U5YkhPd2pyRUxSSVdpa3BRaDc4Y2pWaWRGaWM5TFFHUGNRaXh1YmVOY3k5T1phTV9xbVlSVWMxcWZvUEpCYVhJcDkxR1hodU9DUlFTaFY4MnZIWDRtTlYxOTdHeXlJQ1ROREJ2bmliUFMtRlNsOW5YcTJ3ZWpuNDJaT1N3VDEwcGh2emtWeGhJTEpzTEw5?oc=5",
+    "sumber": "20detik"
+  },
+  {
+    "judul": "Apple HomeView Batal Hadir di Eropa Akibat Keterbatasan Siri",
+    "kategori": "AI",
+    "ringkasan": "Peluncuran Apple HomeView di Uni Eropa tertunda karena fitur Siri AI belum siap untuk pasar tersebut.",
+    "tanggal": "2026-10-13",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTUFXUWJtYk5yYnZUTktncnREQUVRY0RIeWFtUXlSbnIwSGp6M0pSeWRwV3ByRlFnbW5lLWZmMUloT2pNanpiQkNXNk9hTDZKaU1fb2VoeXFHcS1WeTlvTS1kRnlDcmprU2JsWUN4S1ZuZ2staDM0Tl9fcXhrZ0JabzJaR0c3c0lWRUxiSg?oc=5",
+    "sumber": "Pasquale Pillitteri"
+  },
+  {
+    "judul": "Apple HomeView Memungkinkan Kontrol Rumah Pintar via Siri",
+    "kategori": "Gadget",
+    "ringkasan": "Fitur Apple HomeView kini dapat dimanfaatkan untuk mengontrol perangkat rumah pintar, terintegrasi dengan asisten suara Siri.",
+    "tanggal": "2026-10-13",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOVBTamRLbE41dXQ5NzBvSzJ5UjJpSnhnb0trTndjNGtkSm5aRVFLZ1RkY3NueWowUldwNndYcXJMTElYSEVyWlNsc2gyQmhUTWJCRGJQeER2LXozaXRpQUl6eXU4ODE4aFhTTEFqVEtVR3NnQ0FfRmF4ZHk2SFJnS19Fb0NwcG1qQlpoNWw0YUs2RXV4VVQ0YXd2VWk1N0YyQ2ZNYXhmcXB4cFBJNGxndEdEOXRJOGVaeGptZHZVTQ?oc=5",
+    "sumber": "Sindonews Tekno"
+  },
+  {
     "judul": "Amazon Dikabarkan Tertarik Akuisisi Startup AI Decart Senilai Miliaran Dolar",
     "kategori": "AI",
     "ringkasan": "Amazon dilaporkan sedang menjajaki kemungkinan mengakuisisi startup kecerdasan buatan bernama Decart. Nilai transaksi diperkirakan mencapai 7 miliar dolar AS.",
@@ -188,55 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOFpXTnM4RWd3UEV3WkJ0TjZxXy13bU8xckZuMXl1RF91dWtpRjktRlhOZVJWX2lmNTBHd0hyTnZFR00xQjRKSkZ1cTRTWHFzeG1KM1BTc1BnaUdqODFIbHZaVHdTdFdLdzlUZnVIX0JQN09vT21NS3p3OEJzOTQ4OE1DNjNlSmppcE5JN05DVU12NURVQWZKUmZ5RXd2cGVaNGU1OUQ1dTZOMElkb2x4a0o4YXd6SE16WkZpRdIBwgFBVV95cUxPZWwzRUhWUWlGelQ3eUZNd2h6Yzc0WkNGVk9pV1hndGx1QzFoMEU1b1dEVFJwRVNXSWRPaEoyeENBRUtob1ZZQjF0SmlVSHFsclhNOWhrYTROOWoxMWotWGRxUHRjYVNDWllKaG5KU0w4aTVTZnpCbHVzSjhLd3VsWGw0Q01mRVBSaG1rRklvLUMyV21TMVc5ZEwzRU54M3h2eGktWVp6Q2QtMzZMamZRZ2xvNEdLbTRHR3daRHRaUW12dw?oc=5",
     "sumber": "Pontianak Post"
-  },
-  {
-    "judul": "Ancaman Siber Meningkat, DPR Minta Intelijen Perkuat Deteksi Dini",
-    "kategori": "Keamanan",
-    "ringkasan": "Anggota Komisi I DPR menyoroti pentingnya penguatan deteksi dini terhadap ancaman siber oleh badan intelijen.",
-    "tanggal": "2026-10-11",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWXF0R3ktampwckd2eTVONkZmdE1lQUJjWk1xQXNhYWY2MG8tZHcwSndvUHZ2Z3Z6RUtMcUcxN2dLTzlYajNfZmFrbC1EWWxrSF9rU0JVQWN5QUFhZzQ0QThwNWU5bms3UVdNeGRQYnI0Ym82b2JJV2E1Nm9UcVY3Z3FCM3lKaHdDQWJmd0dCZm5ybHJLaXhRVVJ0b21pd1o1Vm5ORGloSzJ1ZE5tNmUwcVZnRDJLb3NISkFDbVk1elJXLXcySGFVR2dzaXVwbXowNXdj?oc=5",
-    "sumber": "tarungnews"
-  },
-  {
-    "judul": "Menjelajahi Dunia Mikroskopis di Laboratorium Bersih Caltech",
-    "kategori": "Software",
-    "ringkasan": "Caltech membuka pandangan ke dunia mikroskopis melalui laboratorium bersihnya, mengungkap detail yang tak terlihat.",
-    "tanggal": "2026-10-11",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOXU4YjZpeEpaTUVYNEI5U3NZQTB6aThnZ0pYS3pKYUFtNERPV195ZHhmQl9Yd3lGVjNnT0hFbTIyQ3BjU2tPYXF2YWZta01lY051SWFxby1MZkVJSWJYRjI3dWhXdXhRYjBqZGRFNlp0TzJ1dElLc2VzWkFkaldpRzYyYnpmUDdJdWJPVjFn?oc=5",
-    "sumber": "MetroTVNews.com"
-  },
-  {
-    "judul": "Nokia Raih Kenaikan Nilai Saham Berkat Pesanan AI dan Cloud",
-    "kategori": "AI",
-    "ringkasan": "Nokia mengalami lonjakan nilai saham signifikan setelah menerima pesanan besar untuk teknologi AI dan cloud.",
-    "tanggal": "2026-10-11",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5wZVhyaHlWbDBMcFNGeGJ3NlJHTExYNWdfa3JlRTl0NnFEdFFrRFF5SDdDNjVGb04xaC04RkdoenJMa3Q1c29UZTU2Y3JHQ1pmM0VrdTZ2dTc1SWtGZHl0TjgxeXo3MThnY0lRVVpoamU1V04yNDZpNFhTSlk?oc=5",
-    "sumber": "Qoo Media"
-  },
-  {
-    "judul": "Jam Atom Kuantum Baru untuk Pengukuran Presisi Dikembangkan NIST",
-    "kategori": "Software",
-    "ringkasan": "NIST berhasil mengembangkan jam atom berbasis teknologi kuantum yang menawarkan tingkat presisi pengukuran sangat tinggi.",
-    "tanggal": "2026-10-11",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZzJsdXVhVzZKNzJEWDI0ZFo4eWJTSkxGalpZOWRaUC1ISDhpYi1qR3IyQ0VqU2JNbGFNLVl2UXB5VGdGemh2REVtUTZ6VFJnNkFKZFBTaFJuUTVOczdqR0ljeS0yUk1kOG00eHZHekpuYzlDalJ6Y2huVHlJWVl4eVZVM1VwY1hYU0NGaFBFVno0TTZ5RUphOE85dHhiVEtSZzgzUHRfUFJWVGZx?oc=5",
-    "sumber": "MetroTVNews.com"
-  },
-  {
-    "judul": "DPR Ajak Masyarakat Tingkatkan Kemampuan Digital Era Modern",
-    "kategori": "Internet",
-    "ringkasan": "Komisi I DPR RI mengajak masyarakat untuk lebih cakap dalam menggunakan teknologi digital guna meningkatkan literasi di era modern ini.",
-    "tanggal": "2026-10-11",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcC1XS2JPY24zbktaQlJHRWZjcXlGV20yaXhxYXVpOGlTaVJCdHg3QXZBLXRiMHlpaFhfUWpTWVRiUmtQeGdZWXh6S0N5cktMZEo2ZXk3WGF5SkVCRDdmM3JWVVUyUkltVV9BNWd3NVlob2RkSGI5a1JrTEdFdnlXNlViVm1vY1VZX0FGQmNLNV8yZEN0TUZGalVuUHdITGgyd012dVIzdC13eklHam9UNUYxQU84bEpNTHc?oc=5",
-    "sumber": "RRI.co.id"
   }
 ]
