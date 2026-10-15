@@ -1,5 +1,55 @@
 [
   {
+    "judul": "OPPO Luncurkan ColorOS 17 Terbaru dengan Kecerdasan Buatan dan Tampilan Segar",
+    "kategori": "Software",
+    "ringkasan": "OPPO memperkenalkan ColorOS 17, membawa peningkatan signifikan pada fitur AI dan menyajikan desain antarmuka yang lebih modern.",
+    "tanggal": "2026-10-15",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9KYnJYMDcyOUd0QUhFa19HYUdrbTV3UnpwdkZ3T183VEF5am94ZWNRaHVTOGpfSWc3YUE0dEZWZ1h1eHBHNEF0dHBRdnM5MnFXWUNEMEdfMlVrYTVhSVE?oc=5",
+    "sumber": "bsinews.id"
+  },
+  {
+    "judul": "Korea Selatan: Inovasi Teknologi Jadi Pilar Utama Kemajuan Negara",
+    "kategori": "Startup",
+    "ringkasan": "Studi kasus Korea Selatan menunjukkan bagaimana kemajuan teknologi menjadi faktor krusial dalam mendorong pertumbuhan dan pembangunan bangsa.",
+    "tanggal": "2026-10-15",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQN2pPWTVmVWx6LWd0OTlyZFBTWVIyYUNLejJZbEptTTNSNHJGSkxnX1R4aGlrRmFXQXpqSEk3UWFXYWs1aVFzUEpGZ3JjZkNiZlNuY1BaOEpEbDlKdXc3aktaU3lXSGlralVBY2trbDUxWXlmUlJRU2VEVXBuQnZsXzg2bkRxMHB1VjF0QnI5Nkh6VXZhTE84cm5Oby0tUGdjZHZYMDNvdGtGbm9mRjJzOW9nN19SNzJUZGtUMXdLVnN4MTFaTTR0V2ZVMkNIRndYLUE?oc=5",
+    "sumber": "Kompasiana.com"
+  },
+  {
+    "judul": "CEO Teknologi Beri Wejangan Kaum Muda: Inovasi dan AI Bentuk Masa Depan",
+    "kategori": "AI",
+    "ringkasan": "Para pemimpin perusahaan teknologi berbagi pandangan tentang pentingnya inovasi dan peran AI dalam membentuk masa depan bagi generasi muda.",
+    "tanggal": "2026-10-15",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbmRyYnZOcmhRZ3pQaU92MHRpQ0FlVGdrWUk2Q090WkFBbmVpMi1hZV80LV9MYmNxQUVDTkdGOUEta3gzSmNjT2N5NjNuWEh5dFhYbmQyWl9pZWpKQ2VPb2Z3WHA4TFE5ZkFJUTVQT1ZucXY0VlA3cnU1SC03a0xVcWxnQzFZWjl0RDhPQWcxTDJnWE1UOU9KOERkdmVWVElaSTRuR281bjFhbjUxYS1sZnVJMA?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Duel Kamera Samsung S26 Ultra vs iPhone 18 Pro Max: Adu Canggih 200MP",
+    "kategori": "Gadget",
+    "ringkasan": "Perbandingan spek kamera 200 MP, kemampuan zoom, dan layar 6,9 inci antara calon flagship Samsung Galaxy S26 Ultra dan iPhone 18 Pro Max.",
+    "tanggal": "2026-10-15",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcTZrblpWY203U1Mxc3hOSFE5RTBBSFk3bnotYmZLX2V5aGM0MndXT2N1MG1Lc0RFRmM3U3ktRzBkTGdIZzNfMzhHVzc0Y0VGTGFyU2VncXlLN2I2NGV6SE5mN3BmbUxfQkVJQ0V5NDZRTlE5MkJBYVM5LVlDMVB4MVVNUnB2SHc?oc=5",
+    "sumber": "Qoo Media"
+  },
+  {
+    "judul": "Strategi Organisasi Hadapi Ancaman Keamanan Siber Berbasis AI",
+    "kategori": "Keamanan",
+    "ringkasan": "Organisasi perlu menyusun strategi jitu untuk mengatasi tantangan keamanan siber yang kian kompleks akibat perkembangan pesat kecerdasan buatan.",
+    "tanggal": "2026-10-15",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMTNIajl6eGNDZEFsNXEtT2RUb2JqRkZiQllKQUtZMWpOb190OTQ3NHVuckJWQldKSVBkcGVLVlJQTnBiV3l3LTQ2NXE2T0FvTnBwZVpodWZtMllXa0liLTZLZFVrU3R0NmpETmxpMjdUZ0N4b09wZEVfdFk5Y0w0YXVfalBjZVhXdTJtX0N4dHZvalZNSDlFV2lR?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
     "judul": "skip",
     "kategori": "AI",
     "ringkasan": "skip",
@@ -188,55 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcS1JeHhScFBaRWtvVWtKWUpCc2tiRFVfam9sUGpLenB5U0U5YkhPd2pyRUxSSVdpa3BRaDc4Y2pWaWRGaWM5TFFHUGNRaXh1YmVOY3k5T1phTV9xbVlSVWMxcWZvUEpCYVhJcDkxR1hodU9DUlFTaFY4MnZIWDRtTlYxOTdHeXlJQ1ROREJ2bmliUFMtRlNsOW5YcTJ3ZWpuNDJaT1N3VDEwcGh2emtWeGhJTEpzTEw5?oc=5",
     "sumber": "20detik"
-  },
-  {
-    "judul": "Apple HomeView Batal Hadir di Eropa Akibat Keterbatasan Siri",
-    "kategori": "AI",
-    "ringkasan": "Peluncuran Apple HomeView di Uni Eropa tertunda karena fitur Siri AI belum siap untuk pasar tersebut.",
-    "tanggal": "2026-10-13",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTUFXUWJtYk5yYnZUTktncnREQUVRY0RIeWFtUXlSbnIwSGp6M0pSeWRwV3ByRlFnbW5lLWZmMUloT2pNanpiQkNXNk9hTDZKaU1fb2VoeXFHcS1WeTlvTS1kRnlDcmprU2JsWUN4S1ZuZ2staDM0Tl9fcXhrZ0JabzJaR0c3c0lWRUxiSg?oc=5",
-    "sumber": "Pasquale Pillitteri"
-  },
-  {
-    "judul": "Apple HomeView Memungkinkan Kontrol Rumah Pintar via Siri",
-    "kategori": "Gadget",
-    "ringkasan": "Fitur Apple HomeView kini dapat dimanfaatkan untuk mengontrol perangkat rumah pintar, terintegrasi dengan asisten suara Siri.",
-    "tanggal": "2026-10-13",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOVBTamRLbE41dXQ5NzBvSzJ5UjJpSnhnb0trTndjNGtkSm5aRVFLZ1RkY3NueWowUldwNndYcXJMTElYSEVyWlNsc2gyQmhUTWJCRGJQeER2LXozaXRpQUl6eXU4ODE4aFhTTEFqVEtVR3NnQ0FfRmF4ZHk2SFJnS19Fb0NwcG1qQlpoNWw0YUs2RXV4VVQ0YXd2VWk1N0YyQ2ZNYXhmcXB4cFBJNGxndEdEOXRJOGVaeGptZHZVTQ?oc=5",
-    "sumber": "Sindonews Tekno"
-  },
-  {
-    "judul": "Amazon Dikabarkan Tertarik Akuisisi Startup AI Decart Senilai Miliaran Dolar",
-    "kategori": "AI",
-    "ringkasan": "Amazon dilaporkan sedang menjajaki kemungkinan mengakuisisi startup kecerdasan buatan bernama Decart. Nilai transaksi diperkirakan mencapai 7 miliar dolar AS.",
-    "tanggal": "2026-10-13",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE02MjYzWHVrVS04cGJ3UVI2ZnlnMlkteEowTEhyT3QtWXpYaWd6LUgxUUVvelNuR1I5V1drR3Q1UG5IVDhVX0FOTDBDeEN0LTAyOGZKRDUzcUdjNjQ3QkdjZHNUeTVpbEtMNzdjd0VGclNjOUhleHc?oc=5",
-    "sumber": "Ajaib"
-  },
-  {
-    "judul": "Vietnam Tingkatkan Nilai Teknologi untuk Perkuat Indeks GII",
-    "kategori": "Startup",
-    "ringkasan": "Vietnam berupaya meningkatkan nilai sektor teknologinya. Langkah ini diambil sebagai strategi untuk memperkuat posisi negara dalam indeks GII.",
-    "tanggal": "2026-10-13",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM0hhNlc1LUlROWlUS1JmcUNvY2h0S05KYXNac2pOLWE0czhCLWtYUWpZTmpHT04zbld4UDRRZkswRzA0eVNoclVQMERVdm1iVUNJcEIxUlAzdjNzVVEwUnVCMGtCSjVYdWZRMVZ6bnd6ekoybTR0S2ZjVzJjTGphSlRpUWwzdVUy?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Reformasi Pendidikan Kejuruan Hadapi Ancaman Otomatisasi AI",
-    "kategori": "AI",
-    "ringkasan": "Pendidikan kejuruan perlu direformasi agar tenaga kerja tetap relevan. Tujuannya adalah mencegah para pekerja tertinggal akibat perkembangan kecerdasan buatan.",
-    "tanggal": "2026-10-13",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ0FzMFVBQlNGUEhUbTFaeUdzR1owZG9NTTdzazlKT0JFRGp4WXpBdlIxcXdFVmI0Q1V6WllpVnZwLU9uQkxjZGlrbVJUbGc2VmZodnRNVzJ5MlN0UWtwN0ptbGFvUVhwNkFsbzNBS3piZUsweXJkNHdRZWdqMzRzOVBWbkQtTlFSWjQwZXNRTTlCNXJDX3VsV3RKVWo?oc=5",
-    "sumber": "Vietnam.vn"
   }
 ]
