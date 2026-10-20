@@ -1,5 +1,55 @@
 [
   {
+    "judul": "Hyundai Elantra N Monochrome Baru Hadir dengan Velg Ringan dan Transmisi Manual",
+    "kategori": "Gadget",
+    "ringkasan": "Hyundai meluncurkan Elantra N Monochrome dengan velg forged yang lebih ringan dan pilihan transmisi manual 6 percepatan.",
+    "tanggal": "2026-10-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSlRvZW9jM3pyTnFtczRPb05YU1Y4OUQyUGN3VC1XTjlQZFpqLVNNZWx4LUtSWjQ0TWg2THRyWXpveFNJenVJclNVRS0wM29MT0dQTUk5Q0RtMkRfeEM1bEtlNjFyZ2xGUXFKTFhzNE15c1lrMUJwaFFRWVQzc0FoOXZBbw?oc=5",
+    "sumber": "gadget.qoo10.co.id"
+  },
+  {
+    "judul": "Jumlah Akun Aset Digital Capai 23 Juta, OJK Uji Perlindungan Konsumen",
+    "kategori": "Startup",
+    "ringkasan": "Otoritas Jasa Keuangan menguji perlindungan konsumen seiring lonjakan akun aset digital di Indonesia yang telah mencapai 23,21 juta.",
+    "tanggal": "2026-10-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrWU52TEZFbUs0ZVAzd0JLdzFSRS00dlUzYlA4Z1RRTTNfQ2JJZzlvcGNaakNyOWhSem5UWUNqVjR5emQwZTd1c3F2WjRua1dUVjMySUVudGk1aGhBMlFjT0ZFSHNRUjBBTDZjYjZFZjJlZzNaTC1kVjJ4LWN3Zw?oc=5",
+    "sumber": "gadget.qoo10.co.id"
+  },
+  {
+    "judul": "Kolaborasi Bisnis dan Pendidikan STEM: Kapan Kemitraan Strategis Terwujud?",
+    "kategori": "Startup",
+    "ringkasan": "Artikel ini membahas tantangan dan potensi kemitraan antara dunia bisnis dan program pendidikan sains, teknologi, teknik, dan matematika (STEM).",
+    "tanggal": "2026-10-20",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFp1Q3kwbjFXNHd0cGJQQVhxdEhITzVBc1kzZHlmVXAwenlqRG9URGFlTWZodEl5ZkNEaW02c0tpb1c3ci03WFRTVU5uWmVJalVXZEY4bDRDeXhhZXpDaFB4bnpKMEdyMXpUbHZUV0VDSm5MWHUtcjg3SEhseTdXTHhHd0x6VGUtYmZYOFQ0dlBTLUpsTnBya3AxTW5lZGFpbTRlcTJraDFYNUpCekx0a1hoZnVucmNXQTBJ?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Indonesia Segera Terbitkan Perpres AI, Jamin Inovasi Tetap Berkembang",
+    "kategori": "AI",
+    "ringkasan": "Pemerintah Indonesia tengah menyiapkan peraturan presiden (Perpres) tentang kecerdasan buatan (AI) yang dipastikan tidak akan menghambat inovasi.",
+    "tanggal": "2026-10-20",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVFpLbDlVc25sdVhIOEJIQkdTdUVWQ1BPUXNFYVlfODU5LTl2X2phZ21VQmh1bFgwbWh2M18xbHVLUEc2cTZ0cU1kX2t0N20xWEVzUi1QMlU4NDVGMjBTbXVaeG9LMGlOd0lvX2dRek1IVEFFbXMtZ09HenlpRXpmQ2pQXzltVG9GMDBYdi1LajBEV3ZkdmsxQTRadWw3ZS0waVZRc1VYblNJYjJGek1hVklDM1NsaGtELWRGcg?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Tiongkok Balas AS dengan Menargetkan Sumber Pendapatan Elon Musk",
+    "kategori": "Startup",
+    "ringkasan": "Tiongkok mengambil langkah balasan terhadap Amerika Serikat dengan menargetkan sumber pendapatan yang terkait dengan miliarder teknologi Elon Musk.",
+    "tanggal": "2026-10-20",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeE9oNlMxdF9WQUs4d3FiazhtYm1FcjR3RXZ2Z0F2REx4WnhabzFOY29YQTQtdDJQUE5YdEJiUF9nTHB5bHpaWndPYTFxZWdweTM3V3liVXJ1RkJCZG9IN3h1d3dyc19COTFPVElObHJEZ3hvN0NLR3FhT3VOc0g0Wnp3U1pwT2hlS05qaUJIbVlQa1M2TkQtLXNobm15TWpqVFdCUWxJbVZQTjg?oc=5",
+    "sumber": "CNBC Indonesia"
+  },
+  {
     "judul": "Amazon Permudah Pengembangan AI dengan Alat Baru untuk Chip Khusus",
     "kategori": "AI",
     "ringkasan": "Amazon memperkenalkan perangkat lunak baru yang dirancang untuk memudahkan pengembang menjalankan model kecerdasan buatan pada perangkat keras khusus.",
@@ -188,55 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMzFwRVkxUnloY0UwbGtzZHVFS2JoVTBfUXRhZ3Fnb1Z1SWctd1ZuQ0xtOWRydUFvMUhtbnBFWXVNRW10MGh5N2hUS1p5STVBVnRlbWxWcVNoUk1nVzJtUDFFaEZwYmhtaV83WmkxUkVSZktLcXZCeXRjLVlzVkg1WXFZUllCNWF0d19oclZESVAyd2lOZl9MWmdmTjJUTUZUWVF5VzJGbw?oc=5",
     "sumber": "Jawa Pos"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-17",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFQ3c3hGYmRsMGlUWk9YY3NoQmZzYmZiMFBPUlM0N3ZtaFE5RnNHMlpTdzY0Q1ZJWTNCTW1jem43bk4tNHFwa0lDdU5QaDJWY3FMb1R4UWZNeDY4OXVNRTBBN1haSWFpSXlwMUR4V0FqUjBURDlMSUphQzN5X3p2aW5SaHJJTGh4?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "Fitur Keamanan Canggih pada Uang Rupiah Sulit Dipalsukan",
-    "kategori": "Keamanan",
-    "ringkasan": "Uang rupiah kini dilengkapi berbagai fitur teknologi canggih yang membuatnya sangat sulit untuk dipalsukan.",
-    "tanggal": "2026-10-17",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVThpSktwUFZzNGdJcXFfRmM1UWQ0LUhocmJhS3dwUm1UbXNLRnRaM2hDOG9wQmFkS2hnVzQ0WkxEOVB2Q3ZZRGhYWjk1ZjNsZXFmczlueDhyQWdmdkY2bjVaNEp0clVtdWExZ285aEdBOW9kWVFJRGNBVnM1LXVtTXY1bTVlQTFyWHA2YWdBZF9oNDB6Uml0M1ZtZWVjdmlHYy1Zam0zMUsyd000WGNUYUM4d0pYT2swTWc?oc=5",
-    "sumber": "MetroTVNews.com"
-  },
-  {
-    "judul": "Inovasi Teknologi Dibutuhkan untuk Atasi Pembangunan Kepulauan",
-    "kategori": "AI",
-    "ringkasan": "Gubernur Maluku menekankan pentingnya inovasi teknologi untuk menghadapi tantangan pembangunan di wilayah kepulauan.",
-    "tanggal": "2026-10-17",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZWdhOEZZSFhtYXhLaWRDdzRka0kxMklXb3NmR21TTnlMS0RjN0MxZ2Y4bDJxY3MzTU9zRXlwMlZXZjB1RDVPVFJTeEtjVDJZNTdWSlRCdEtDOUZOZ3k0dU9heTBRY29lVS1KMVE4dTBZaFpDX3lkUjZJd0VtazcxU1JLTmg4TXZ4N2czTWx4VVUta3F6Slh4bEpKNm0wYmdySWRPeFRqdTBiUnRSNEwtWlNuOW9YQ1dZbEtB?oc=5",
-    "sumber": "RRI.co.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-17",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPT3pWNVRuTE5MRGp1VW1oS1pseDE3cU9YdlowNnNSUjJkTWJyQnBRVWRsdmw3WVdTdTlkelVQcW43ekU0emprR254ZXFIUTdMSmdHMmNkVF85UWZuYXVKWWtmYXF3eUQtc1M2R3RoRmVQeVZSVG8zeDFFRmtnTXc?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-17",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSkVxUy1lb0RjQkY2Mzk3R3JkT0Y1V2lTcmpYcGhIYkcxQjFiemk3NzZsMk04bEkxbm4zUG1SYzlzT2hiQ0h1YVlaVzducVd6NlpLZkdFdUFVWmlwLU1BTlZTZE1pQ2pTM3NSbnBGc3NyZ05zbFk0a1k1Z3YzMjFHQUc5RQ?oc=5",
-    "sumber": "gadget.qoo10.co.id"
   }
 ]
