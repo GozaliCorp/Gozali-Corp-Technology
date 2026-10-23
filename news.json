@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Saham Teknologi Anjlok, Wall Street Mengalami Pelemahan Signifikan",
+    "kategori": "Startup",
+    "ringkasan": "Pasar saham Wall Street dilaporkan melemah akibat penurunan drastis pada saham-saham perusahaan teknologi.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM3JwVHBLMTd0TlN1OUxPeC1QTHVmNWc5dkdLMXVlZjB1SS0yYjRZNm1ibXlOaGRMQWlsVTZwRzQ0OC14YXZTeGttVUxBbnhSR3NNWUhTWTJjdG5NR3A4UWh6dmhweFNSM0ozd1pJNFVlSGYySTlfNEhsY0ZzRW5xbk03NGtxejlXT3U1N1Y5YmtUaWZ2RE80?oc=5",
+    "sumber": "Pasardana"
+  },
+  {
+    "judul": "Celah Keamanan PHP Mengancam 70 Persen Situs Internet Global",
+    "kategori": "Keamanan",
+    "ringkasan": "Kerentanan kritis pada PHP mengancam mayoritas situs web di seluruh dunia, memicu kekhawatiran krisis siber.",
+    "tanggal": "2026-10-23",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa1k4UFlEOG5MRk1EZkpUd21VOFlKby12bE1hOWoxY1UtSW04RTlvLXpVNW01cGtJZGxLdkFrbWFfZjJvR1BQTmJ2TFFuWTd4a0Zxb2ViXzcwZjE0dXRaSUVPQ2owWUVwU1NvTjZtQkdWSnFJTHB0Nnp6SWxjYjJ4R0t6dlJhUnIwem1pWnphWUp5aHdjcHBudTRpZFFIeEFTanN1OTNYY3Y1dw?oc=5",
+    "sumber": "TINTAHIJAU.com"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTm5mUm5BNkp2am01ZTh1R2hETW10OWVYOUFmUHAxTFJhc0ZaOWtTY2FkZnlmeXBqRnZabUZLRldDcXpzWFBURldvd2FsWEVPUEdVMDV5T3NodUxrRVp5ODItTHNYTTJtc3NOd3BlUVpNWjBzRVhIbkxHLUFoZTBhcHIxblZ4X0ZTdm1tMEJud1N3ZmIzRkpEOGI1bXR2LVROYjB1STR0eTVBYkpWNWdJQUNha212SThmbjNjRUpjOUJPQQ?oc=5",
+    "sumber": "SumselMedia.com"
+  },
+  {
+    "judul": "Konten AI Berpotensi Membentuk Ingatan Palsu pada Manusia",
+    "kategori": "AI",
+    "ringkasan": "Penelitian menunjukkan bahwa konten yang dihasilkan oleh kecerdasan buatan dapat memengaruhi ingatan manusia.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqNEVpMnpIWG9HMG1YZHI4NVhKNmlZd2NudGx0OUYzcnhQZVJOb3VJWUlHVWQ0WUZaMV9TeTM2M2l1dm1SNmU2QmdqckpiS0dTN0gxbjJBcHU5dnFWdmhaUzRPNVhCNWs?oc=5",
+    "sumber": "Demokratis.co.id"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUV9EY1lUVEVqc1dndkpRSzlHQmJfSmtXLVdVYXEybXRPZFY5dlhTR3pzRHVjNzdaRi02ZmMtTzcxTlVNcEF3TW9CN1Y1MGNnS3I4YVZCbzFOb2ViQ0I1OFpKaWcwcmxRUlZPRlgzZFgwU2Z6MkJ3NTBZVWg2TUpBeXdIaTd2aU1BeGVTaHYyS0lQYXQwV09oWWMtTXltbWFNOFhpZXFYRWxYM1QtWUpIZDlGY1c0dDQ?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OUmJoWmtYdFg4dmoxNFFqU29yUFR2NUYxMnpXbEp3OG5ydERoTXpveXJ1WVU1NmQ4Y0JQdW1NbXpaV2Izd09XcXZPVXZfWWpnSk9tazlqUi1mX215WHR5Q1hiNTAyd0ZCc3E4RV9IRktTZlk?oc=5",
+    "sumber": "Jatimnet.com"
+  },
+  {
+    "judul": "Investasi Perusahaan Besar pada AI Kini Semakin Selektif",
+    "kategori": "AI",
+    "ringkasan": "Perusahaan-perusahaan besar kini menunjukkan sikap lebih hati-hati dalam mengalokasikan pendanaan untuk pengembangan kecerdasan buatan.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPME1hZTVZQjY3VHEwb2lhdnVKUllkS0hKZHhnR28zeU5wRWg0TnBaUzNhMGN1eWI0YmFEemItaFJDbmdYdWI5VGpiR3FHVUhELU4zeDV3Qm5BaUZMRkZWMDlZeFFqa25ZVnlWeHdnVTFKNTRMMmJHVlE1Q3I5N1Nlc3F0SzRZTXZHWlBxSnRzNWUtZmhUUGNyTG52TjJIelRYUTFWYWRTaFZ6d09wY0RnY1ViMUdmUVA2?oc=5",
+    "sumber": "Kompas.com"
+  },
+  {
+    "judul": "Kekhawatiran AI Picu Anjloknya Harga Bitcoin",
+    "kategori": "AI",
+    "ringkasan": "Harga Bitcoin mengalami penurunan tajam, diduga dipicu oleh kekhawatiran terkait perkembangan kecerdasan buatan.",
+    "tanggal": "2026-10-22",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONEE1ZzRpNmphWXpwc3ZCNnVtN05aZEk4VXVGZVVCWWJ0MGNNNC1RR0JDekFqdFVRcnBMbUNjZlNMTU90OEdMUW9ZcHBUcGJfMjlTbFVJd1U4eDItSXhFTXQ4OU10ektJam9jdjFPVGxDclFDRXF3bmNGYnRyMXdsMFN5S0VwR0ludDd6WEwxa2Nia0lRVXA4VXQ3M2UxRHBF?oc=5",
+    "sumber": "investor.id"
+  },
+  {
     "judul": "Danantara Kembangkan Investasi Digital dan AI di Bali",
     "kategori": "AI",
     "ringkasan": "Danantara berencana mengucurkan investasi signifikan untuk pengembangan sektor digital dan kecerdasan buatan di Bali.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaVlxcWl1WU9ZbTJVTVJBYTNZWV9SbFFWWExFUnQzYXNUa1ZBcFliVHN6Wl9JdWl2WXF5MzUzLVp5YTROOVE1NGI3MjgtTkt0djlIcVJfelB2LXR4TXhnaXpvU1dWeGNHMHFUekZHYzlSS2p2VUJFSVdIQUVjcldIWmNaSll3a0h4bkhsSjFobVR4MjJ1?oc=5",
     "sumber": "pasardana.id"
-  },
-  {
-    "judul": "AWS Tingkatkan Kinerja Pusat Data dengan Teknologi Optik Canggih 3M",
-    "kategori": "Internet",
-    "ringkasan": "Amazon Web Services mengadopsi solusi optik dari 3M untuk mempercepat transfer data di pusat datanya, meningkatkan efisiensi operasional.",
-    "tanggal": "2026-10-21",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQmF4b2huR0FNN2tMWTZjeHlVS3hvLS1zWVhGU29UNV9RZGJyTHJFNGQtYkNIeVpwOGVkWEhldkhkaE92X1RRWTZUN1ExYWJnVzAtdVFXWFkyM1ppb0xpRDZOZlhyUUtNUzVYNkExRERlQlpXY2pia1FWTGJOQWpFNko2aU9CamZqSDZMdDE4WQ?oc=5",
-    "sumber": "Pluang"
-  },
-  {
-    "judul": "Jarang Restart, HP Android Berisiko Alami Perlambatan Performa",
-    "kategori": "Gadget",
-    "ringkasan": "Kebiasaan tidak melakukan restart rutin pada ponsel Android dapat menumpuk masalah tersembunyi yang memperlambat kinerja perangkat.",
-    "tanggal": "2026-10-21",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBWeU05VFY3VGt1QnNldHo2NlVzRjdqLUtud2lhZjh6S2xxNU9uS0hwYTl2cEl2ZWtpd3ozMGxFaGExb2ZKNk5JMU9LM0pVNjVsamRpUkFoNGVTR0EtVDlKempPQUtkUzVTYWliam5Kenh6MngxbDVQUDVR?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "Direktur Baru LPDS Soroti Tantangan AI dan Kepercayaan Publik pada Media",
-    "kategori": "AI",
-    "ringkasan": "Kepemimpinan baru di LPDS menyoroti isu krusial seputar perkembangan kecerdasan buatan dan dampaknya terhadap kepercayaan masyarakat pada jurnalisme.",
-    "tanggal": "2026-10-21",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVy1UOHlMWk5pVUNjb1p5RVExQXp6TElRRFNkWGtNb1c3aXlnN0RHcHZhYVlvSC1ya251RUxkQWxXLUtGaGRuTEVBXzF5ZjlSUDlLSXdMeWdQX0FOQnN0dmc3dTZJb3ppcUktX0pHeEN5MlFLNEgzY2tWeGYwZXlMZ1RDeFhIU3kxWTJPaTZBcHRLOUFmZGNDVFU2WmFzMEZGWGc?oc=5",
-    "sumber": "Waspada Aceh"
-  },
-  {
-    "judul": "CapCut Tawarkan Kelas Mastery Editing Video untuk Tingkatkan Engagement",
-    "kategori": "Software",
-    "ringkasan": "CapCut menggelar kelas khusus untuk mengajarkan teknik editing video yang efektif guna meningkatkan interaksi audiens tanpa memerlukan perangkat mahal.",
-    "tanggal": "2026-10-21",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRQWlXaDQ0OXdQbzVZSFlQcUo5NWdZUWU4N295Sjl5WmhaT2J2R2dIY1Jtd1B2aURmZUIxMy1qSTBUbWxIMlh2emktMHhuOTEtR1VWS2Z3ZVFoUmdOd0NxSmR4eGVTMUcxU0NqN0xoSUg5algxd1lKNUZmT1A?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "BSI International Expo Hadirkan Promo Menarik untuk Gadget dan Liburan",
-    "kategori": "Gadget",
-    "ringkasan": "Pameran BSI International Expo pada Oktober 2026 akan menawarkan berbagai diskon menarik, mulai dari perangkat elektronik hingga paket liburan.",
-    "tanggal": "2026-10-21",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPckVOeWVDTUYxbjhOaVNSdTItamI2czFjSnU2dnZEUTJXcE4xRkZqbEY2ck5SQUpPSnZuN0M1X3dObm1DbFhyT1A0ZzhDMG8taGwyQlVKRFRrN2hnX2NrMzhjZFBCY0dBNURnaWxoQVZ3bUdma1UyQkRSbWFSQXpnR2RUT2dHNUpfcENEWmplTGRvZlFWcEdtei1GUEo2cFgwY1dRd2JuTXJUT3E1ZGNHRzRhZ1Z3X0nSAbcBQVVfeXFMT3hNQkw2a1pQa0ZqVUNrVTA3cTNpVVJfNWJGOHJtZVZGXzJnQ0NNaHV5cFFzenZxbXhEbTlvejFmaHh3NlZzaVhqY25DMko2b1R2cnVxWnlHUXgzMU51cXd1ZW55aEFvYzJKNzZxMkJKYzFFc3IxMHE0eDNNZFZVZkZvdXhyN0NNdmZKRjFCOG8yVTlua1pDT1VDLTJpbVFqdEF4c2d6dzVucEZ0eGg4M0dnVWt1RV8w?oc=5",
-    "sumber": "dialeksis.com"
-  },
-  {
-    "judul": "Teknologi DNA Canggih Bantu Identifikasi Jenazah Prajurit Gugur",
-    "kategori": "Software",
-    "ringkasan": "Kemajuan teknologi identifikasi DNA kini dimanfaatkan untuk mengenali jasad para prajurit yang telah gugur dalam tugas demi kepastian identitas.",
-    "tanggal": "2026-10-21",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQM2NhN1N5NU9lWlkzOGpZN0ZYNHNGY1RoMzVKbmh6RWxaOVZZS0tPc2VvWWRSUzRNVkkxd19aZ2NnWnViQTlYaElUNEpmRzJqd1hUcjNsNVlYbzlHeUNXTkZuakZibnZfdG5XNTBaRk91Nnd4cE1oM19qaU11RjJqWlp2eEVjMGs4d0NPRVUxbTM0WkdsQm5qMW9nZDFYV19CVTRv?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "Xiaomi 18 Pro Ungguli Baterai Besar, Galaxy S26 Fokus Pembaruan Android",
-    "kategori": "Gadget",
-    "ringkasan": "Ponsel terbaru Xiaomi menonjol dengan baterai 7.000mAh dan kamera superior, sementara Samsung Galaxy S26 mengandalkan peningkatan sistem operasi Android.",
-    "tanggal": "2026-10-21",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56ZklVSVJkV0FILU1hRTlHWDBxM1pXazNIbjBFTFNlU0pJNjJ4bm9HNTVSeWlaUS1vT3EyUGxmUjVXLUl2QXVlYmttZUJtcTRYNzdaM1VRc09sYzRyUEF0VmZSeGViT0xWNGtTenZibw?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-10-20",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WTGFhYmd0b3Q3VDlkc2FEQldBa1B0dk1xNm9aTkhQSGpmNGhjMk55T1JULXMybThYcVo4c1gtb3hwUlYtSVFvZ2dWa254WDN6dHpjLWVRcTdKSXBvX2c?oc=5",
-    "sumber": "gadget.qoo10.co.id"
   }
 ]
