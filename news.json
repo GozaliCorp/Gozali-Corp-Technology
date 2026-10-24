@@ -1,5 +1,85 @@
 [
   {
+    "judul": "RSUD Abdul Moeloek Lampung Tingkatkan Layanan Kesehatan dengan Teknologi Neurointervensi DSA",
+    "kategori": "Software",
+    "ringkasan": "Rumah sakit daerah ini kini memiliki teknologi canggih untuk penanganan masalah saraf, memperkuat kualitas layanan medis bagi pasien.",
+    "tanggal": "2026-10-24",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdThuYzJpY0prbldFVVFFVXB4NlEyZVlLZWM4cU5QLVd4Tk8wTGJSem5wemZsNkI3ODNWNkczU3VhUXRBdkNhYzFqWWIyZEtCNzRnXzZvTGlnYWk5UjVYYXZPb1FXT3k1a1oybi1KM1pFalNpQmVHdUVaYTNMd1Q2aUVReV9nbnlhSXRFdUN5OGd4aVFZT1JOU1lYNU5yb1RzX0dEeDR1b3l3d3VYektLM19LUlFTUUNVbkxzU3NONlgwM1NwOVJMQU9yYS1UX0N5SW1lM09B?oc=5",
+    "sumber": "News Lampung Terkini"
+  },
+  {
+    "judul": "Edukasi Mengenal Hoax Sejak Dini Penting untuk Literasi Digital",
+    "kategori": "Internet",
+    "ringkasan": "Pentingnya mengajarkan anak-anak sejak usia dini untuk mengenali dan memahami berita bohong demi membangun kesadaran literasi digital.",
+    "tanggal": "2026-10-24",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYURiSzdmTDdMZVVCUTl5U0hwOW9JMXk5c1lSaDVuV3ZxYUpHeXV1SGJad200bjhnekNTS1g4bTN4cFRYazQ2UDJCMUFvdkVGQWhjNkZYM2o2TTAzNlQ3LUIwa1VBX0hEdWRaMnM2U3JsNTJmSENPM0ltanFOS2RpbFdCbGdERnNWRktPTGRDdGFPTURf?oc=5",
+    "sumber": "Kompas.id"
+  },
+  {
+    "judul": "Tekanan dari Sektor AI Picu Anjloknya Bursa Saham Wall Street",
+    "kategori": "AI",
+    "ringkasan": "Indeks Dow Jones mengalami penurunan signifikan akibat kekhawatiran investor terhadap dampak kecerdasan buatan pada pasar saham.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOczhqd1MtN3RRRVVyMHZFeUhoci1GMlVYVVUxR1VyWUE3ZzM4OVQ4by1wMS1XWWwwX29KeS1UTmxWRmY3WHlYYlhnNGVVWURjcEdaQWhBMlN2R2lZc3UzMnhZeHMwMnlaVU1Nc1hZdW9wUFlRaXdobnB3ZjU2bTN2ejJpRm9ZYTdIZUYxOFpKd3lGQWJHNmV6RkxVNnI4aTg?oc=5",
+    "sumber": "KabarBursa.com"
+  },
+  {
+    "judul": "JETOUR Perkuat Ekosistem Travel Melalui Inovasi Teknologi",
+    "kategori": "Startup",
+    "ringkasan": "Perusahaan ini mengintegrasikan teknologi baru untuk memperkuat strategi dalam ekosistem perjalanan, menawarkan pengalaman yang lebih baik.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQY2cwTUc0b2NndjJCLVBoUmxkbkJJMlVWa3VyZlc2eVZlcHBRQnpsYzBXVnRGcmdXNlNoTE1UQnUta3FobFN1ekJoQjVuU0lyaHhBMEtlS0ZCODZuZ2NsQmoweXN0SFdabTR6ZkxPc3NuazRFM3d0WE9kUlFGQlJrUk9PQTJqYmc?oc=5",
+    "sumber": "Motoresto.id"
+  },
+  {
+    "judul": "AI dan ERP Bangun Pabrik Cerdas Era Industri 4.0",
+    "kategori": "AI",
+    "ringkasan": "Integrasi kecerdasan buatan (AI) dan sistem ERP menjadi fondasi penting untuk menciptakan pabrik pintar di era revolusi industri keempat.",
+    "tanggal": "2026-10-23",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbzRNbnh6R0s2VTJQcFk3YUU1aDRVc19JN0dQbm1tVklSZ1NCSjNnT0tEM2Rpem9Bd1BDX1Y0MFRKOVFVYjZXbUFlTGdkTm9ka3hranFmaVFyenJncXNndUhQRDNKMHZ3YmdzemZKVmtaZ3JvTmsweE1qTjRGU00yZzZpVVBTQ1J0N2J2ZHloUk45VElVc2tLeXBtZkJFSWxvRF93MVpLZl96ZmUzMklmc2g5VUIyOXVubHdPU1ptalJ4ZXZFUlotQlM3TWVyMThCUEtUTURSbXA?oc=5",
+    "sumber": "Kompasiana.com"
+  },
+  {
+    "judul": "Celah Keamanan PHP Lumpuhkan Situs Pemerintah dan Rumah Sakit",
+    "kategori": "Keamanan",
+    "ringkasan": "Kerentanan kritis pada PHP menyebabkan gangguan luas, mempengaruhi operasional website instansi pemerintah hingga fasilitas kesehatan.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZTZ6UXNnMjFyeC1EQlgwelJkX09BR3k3c01Zc29FNDVZaEY0blZkRmd0SHNzUWFIYVBpck5JWXg3OVpYaFVNOWkwWHpOQ2dZUkt4UDlkTERsdjZzLXdXdHl6VXM5RG51cjQ3RU9qUWI4WWo5LWlzVUZHRFA4UWdWMlM2RldfNng3bi1IUXF1Mk5MYVV3RjJva0MtUlhVeXAyc09KWlNKNHMwUTZBNXViRzVGdw?oc=5",
+    "sumber": "Gresik Satu"
+  },
+  {
+    "judul": "Berita Otomotif: Tren Modifikasi Lampu Mobil dan Toyota Innova Zenix",
+    "kategori": "Gadget",
+    "ringkasan": "Perkembangan terbaru di dunia otomotif mencakup tren modifikasi lampu mobil serta peluncuran lima model Toyota Innova Zenix.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5IQWxTbnRYeW1fMW1uSEhBX3daVk5EeWk0bTU0VUVMVm44M1E2dVNmX2stMmNsMjRIVG5feUgybGdCeXhfTjk5eVZKMHc0VTJiLVBlZnpBSjc0ZUU2OVVBVzZkLTg2LTFUZEFRLUtualRvRk1KQmdkdmNXcw?oc=5",
+    "sumber": "gadget.qoo10.co.id"
+  },
+  {
+    "judul": "Warren Buffett Bagikan Tiga Strategi Investasi di Tengah Fenomena AI",
+    "kategori": "AI",
+    "ringkasan": "Seorang investor ternama memaparkan tiga prinsip investasi yang relevan dalam menghadapi tren perkembangan kecerdasan buatan saat ini.",
+    "tanggal": "2026-10-23",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwQ1pWU2Y1d0FXaldBc194bWZWQ0tmdzB3bzZqT011OEhFMV9XR1B1dmltR0hrdmg1Yl8xQWxhMnJmby1qdkNtYm42WW1nck0yZ3FkTkNFSTdnYUJlWG13WFhPWlVxcFpuUTJ6WG1n?oc=5",
+    "sumber": "Demokratis.co.id"
+  },
+  {
     "judul": "71 Situs Pemerintah Terancam Serangan Siber Akibat Celah Keamanan PHP2Shell",
     "kategori": "Keamanan",
     "ringkasan": "Sebanyak 71 situs web milik pemerintah Indonesia terdeteksi memiliki kerentanan serius yang dapat dieksploitasi oleh peretas melalui celah keamanan PHP2Shell.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONEE1ZzRpNmphWXpwc3ZCNnVtN05aZEk4VXVGZVVCWWJ0MGNNNC1RR0JDekFqdFVRcnBMbUNjZlNMTU90OEdMUW9ZcHBUcGJfMjlTbFVJd1U4eDItSXhFTXQ4OU10ektJam9jdjFPVGxDclFDRXF3bmNGYnRyMXdsMFN5S0VwR0ludDd6WEwxa2Nia0lRVXA4VXQ3M2UxRHBF?oc=5",
     "sumber": "investor.id"
-  },
-  {
-    "judul": "Danantara Kembangkan Investasi Digital dan AI di Bali",
-    "kategori": "AI",
-    "ringkasan": "Danantara berencana mengucurkan investasi signifikan untuk pengembangan sektor digital dan kecerdasan buatan di Bali.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xVFh2bF9sTnUwQ2xsN0pmZHJTTVNtMUFYaEVqeFZXRWdUM0tEQWF5SGtKSTZhMmxqWk15YmZVUkxxSzFMX3R6WlI2NFFQR1FVNG9iMmlHeW02MmlGSDF6OWdnUzhoODA2U0xFaA?oc=5",
-    "sumber": "Demokratis.co.id"
-  },
-  {
-    "judul": "Danantara Siapkan Pusat Data dan AI di Bali",
-    "kategori": "AI",
-    "ringkasan": "Fokus investasi Danantara di Bali mencakup pembangunan pusat data modern yang terintegrasi dengan teknologi kecerdasan buatan.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBqNmMtd0hCaUlxM19tYkVOWF9MTjZKODY3R3V6WkNYNU1UakF3QjBPaVlVMzBvQmNjM0QyOEVwZktGbjFkWGN2Q0NCTElteklmVVJOMkUybW9hME5kNEpjV1R1S3FDci1udUg3Zkl6LUVyRUhRaDlWMQ?oc=5",
-    "sumber": "Suara Independent News"
-  },
-  {
-    "judul": "Kemenag Sabang Ajak Santri Kuasai Teknologi dan Akhlak Mulia",
-    "kategori": "AI",
-    "ringkasan": "Kementerian Agama Sabang mendorong para santri untuk menguasai teknologi terkini sembari memperkuat pondasi akhlak.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdXNlQnNRRTNOeEFVTFhfYlFkcV96TGhEa001dVFuVldZNVRSY2ZOeUZ3SUNiTXUwbmplVnpJdlRwQUc4d3FKdDgxV2UxOVVaTXVsT3dWTWpXUWdmX1BMM2otVlNkQ094c2xrQVYyVE0wNzhldjdQT3Ftd21WZ203ZmVYcTVZRkNjdE1MaVg4Wnp5LS02ei0ySFRWSHREUVVpSmUxTUlpQjBhdw?oc=5",
-    "sumber": "RRI.co.id"
-  },
-  {
-    "judul": "Santri Bertransformasi: Dari Kitab Kuning ke Era Kecerdasan Buatan",
-    "kategori": "AI",
-    "ringkasan": "Berita ini mengulas bagaimana santri beradaptasi dengan kemajuan zaman, beralih dari studi tradisional ke penguasaan kecerdasan buatan.",
-    "tanggal": "2026-10-22",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZVhkTVhDb2Y0R09kQ0tmTlZQRnFpblRfV3pyeE5fbTRhMUpoR1ZYRlhKOFlTRE1MT0E2Rk1iTHFMQlZkZ2xwZFBGWmNFWkdxMGFuWjl4di14M0w3ZE0wcGczT3U3cjF6djg1ODdVT0VZcjlUemNaNnVSQTY2RWlBamxxUVJKNWt4ejZUSDZOY0o5OXpPTmpXQVZ0QU84a1pvN2VIN2hzX2VDYmRjRl9paHhYbnFLMEFnbjNWYdIBwgFBVV95cUxOOFJDckNrSDhjUWVfcjFrQ0JmbUsyR2M0QTRQLWkwNUluOEZyS3A0Sks5U3NyajVmNnpEMjFUeURDQkhOSG9iV3N4TDFpNnJpZzFTTlN5YzdhZkV6dVBmUDZUY3hHYWtyQ2hfVEJlNWk4bEZzN3hFLUhVeG5nRXpVcURTSGFLLTFKSUtvai1HOHdqdXlFVlZFUmJ0cXR4WllJMk84MllZbHkwOHVKdElzNDYtc1FrMVJydzE3RUJnSzVvQQ?oc=5",
-    "sumber": "VIVA.co.id"
-  },
-  {
-    "judul": "Investor Khawatir Utang Proyek AI Membengkak",
-    "kategori": "AI",
-    "ringkasan": "Kekhawatiran investor meningkat seiring membengkaknya biaya dan utang yang terkait dengan pengembangan proyek kecerdasan buatan.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOWNMVjNBdUdFc1lZZFFYdzRLcExuQV9zeXo2bDlOUEU5SnBRcTkyczRJUEo4cEJQUzZpSXdyY0tQWHdZdjc4cW5SWmhGbFQ0TnJ1ZHRGSXBnRGJ1OFk2S3ZyOGRicDZyMkdYbmF6b25IVVJvaEo1T1ZzZTduRl9iYVJWSTJ2Tk5penNZX2N6ejhWNFdCLVp2a0cybk56bjkxalB3bWVGcDJlSzZCTmxEd1g3bUo?oc=5",
-    "sumber": "CNBC Indonesia"
-  },
-  {
-    "judul": "Pentingnya Ilmu dan Adaptasi Teknologi untuk Masa Depan Santri",
-    "kategori": "AI",
-    "ringkasan": "Dalam peringatan Hari Santri, ditekankan pentingnya menuntut ilmu dan beradaptasi dengan perkembangan teknologi.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd25YREo1c3AzRHJoQ0c5ZUtOSlRLTHBZU2FuVXhsODF1TS1Eb3FyRTVzeDgyY1o2NlBlR1Y5SWNRbkZvdU82V3JUWGl0Q2l5LW5taW1ZMURiancwOEU1MVMyUXQ0Qng5NXRTY3RkaURxNExYcFVjYmMzZDNaQmI1cW1kanU1aF9hemZ2NWJER3M0b3ZwNUx4ZlRUZ1FpM2lfN3ByXzRBNnVjV2M?oc=5",
-    "sumber": "SERGAP"
-  },
-  {
-    "judul": "Wabup Seruyan Ajak Santri Berkontribusi Lewat Teknologi",
-    "kategori": "AI",
-    "ringkasan": "Wakil Bupati Seruyan mengajak santri untuk menguasai teknologi dan berkontribusi dalam mewujudkan Indonesia Emas 2045.",
-    "tanggal": "2026-10-22",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTEh3Q3VaaFNxRGZVOXBST2J5NXVfTTl4WFM3SjhnTEdjUWxwMy1SQThBWTZDa2lxcHE3WUNHMmJRM3dlSWI5NEJ6M0F5Q19NcW1PNmd4d2V4U1FzeHQ1ZTdYYWZlcXltd1lHX1ZwVGNhbWRvOGFkaUlmWXJKVGRCeThtV1NsYXQxS29hcmxXNzdJSnFoRmNyQmNoZi0yUGVhTTZxZDE4Wk1QZlB5cHQzT2k4WWsza1RoTHJFekhKczFQbVdMMlVFQ2JXYXhWVFVSckV6bE5tN1c?oc=5",
-    "sumber": "Mata Kalteng"
-  },
-  {
-    "judul": "Keseimbangan Teknologi, AI, dan Adab Manusia",
-    "kategori": "AI",
-    "ringkasan": "Artikel ini membahas hubungan antara kemajuan teknologi, kecerdasan buatan, dan pentingnya menjaga adab manusia.",
-    "tanggal": "2026-10-22",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RS19SWVUzeFJmLW83Y1BsdlhiNzByTHl0TmlYY3ZEa2J6djR6UmNPU0lSTG9GTnBoT0lpby0wamlnVUttbWRvRVhmOWNGMFpfU0xlcFRHcS01V3NBUnJj?oc=5",
-    "sumber": "Arusbawah.co"
   }
 ]
