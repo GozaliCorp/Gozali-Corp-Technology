@@ -30,7 +30,8 @@
     "note": "",
     "aksi": "Beli",
     "emoji": "",
-    "img": ""
+    "img": "",
+    "checkout_url": ""
   },
   {
     "kat": "Ebook",
@@ -41,7 +42,8 @@
     "note": "",
     "aksi": "Beli",
     "emoji": "",
-    "img": ""
+    "img": "",
+    "checkout_url": ""
   },
   {
     "kat": "Ebook",
@@ -52,6 +54,7 @@
     "note": "",
     "aksi": "Beli",
     "emoji": "",
-    "img": ""
+    "img": "",
+    "checkout_url": ""
   }
 ]
