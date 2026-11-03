@@ -290,6 +290,11 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
           </label>
         </div>
 
+        <label class="fld"><span class="t">Link Checkout Otomatis <small>(opsional, misalnya link produk Mayar)</small></span>
+          <input class="inp" id="f_checkout" type="url" placeholder="https://namatoko.myr.id/pl/nama-produk">
+          <small style="display:block;margin-top:6px;opacity:.75">Diisi: tombol membuka halaman bayar otomatis. Kosong: tetap pakai formulir WhatsApp.</small>
+        </label>
+
         <label class="fld"><span class="t">Emoji Ikon <small>(dipakai bila tanpa gambar)</small></span>
           <input class="inp" id="f_emoji" placeholder="🧠" maxlength="4" oninput="syncPreview()">
         </label>
@@ -662,6 +667,7 @@ function fillForm(p){
   document.getElementById('f_note').value=p.note||'';
   document.getElementById('f_aksi').value=p.aksi||'';
   document.getElementById('f_emoji').value=p.emoji||'';
+  document.getElementById('f_checkout').value=p.checkout_url||'';
   pendingImg=p.img||'';
   paintImgPrev();
 }
@@ -675,6 +681,7 @@ function readForm(){
     note:document.getElementById('f_note').value.trim(),
     aksi:document.getElementById('f_aksi').value.trim()||'Beli',
     emoji:document.getElementById('f_emoji').value.trim(),
+    checkout_url:document.getElementById('f_checkout').value.trim(),
     img:pendingImg||''
   };
 }
@@ -682,7 +689,7 @@ function resetForm(){
   editIndex=-1; pendingImg="";
   document.getElementById('f_kat').value='Ebook';
   document.getElementById('f_kat_custom').value='';
-  ['f_nama','f_desk','f_harga','f_coret','f_note','f_emoji'].forEach(id=>document.getElementById(id).value='');
+  ['f_nama','f_desk','f_harga','f_coret','f_note','f_emoji','f_checkout'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('f_aksi').value='Beli';
   document.getElementById('katCustomWrap').style.display='none';
   document.getElementById('formTitle').innerHTML='<span class="tag">BARU</span> Tambah Produk';
@@ -702,6 +709,8 @@ function saveProduct(){
   const p=readForm();
   if(!p.nama){ toast('Nama produk wajib diisi',false); return; }
   if(!p.harga){ toast('Harga wajib diisi',false); return; }
+  if(p.checkout_url && !/^https:\/\/[^\s"'<>]+$/i.test(p.checkout_url)){ toast('Link checkout harus diawali https://',false); return; }
+  if(!p.checkout_url) delete p.checkout_url;
   if(editIndex>=0){ products[editIndex]=p; toast('Perubahan disimpan'); }
   else { products.push(p); toast('Produk ditambahkan'); }
   save(); renderList(); resetForm();
