@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikin AI Agent Pertamamu — Gozali Corp Technology</title>
+<meta name="description" content="Langkah praktis merancang chatbot dan AI agent tanpa harus jago coding: dari memilih tugas, menyusun FAQ, menulis instruksi, sampai menguji.">
+<meta name="theme-color" content="#0E1A40">
+<meta property="og:title" content="Bikin AI Agent Pertamamu">
+<meta property="og:description" content="Materi gratis: rancang AI agent pertama Anda dalam 6 langkah, tanpa coding.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://gozalicorp.my.id/edukasi/ai-agent-pertama.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="materi.css">
+</head>
+<body>
+
+<header class="top"><div class="in">
+  <a class="brand" href="../#home"><span class="dot">G</span><span><span class="g">GOZALI</span> CORP</span></a>
+  <a class="back" href="../#edukasi">← <span>Semua materi</span></a>
+</div></header>
+
+<section class="hero"><div class="in">
+  <div class="crumb"><a href="../#edukasi">Materi edukasi</a> / Menengah</div>
+  <span class="lvl lvl-menengah">Menengah</span>
+  <h1>Bikin AI Agent Pertamamu</h1>
+  <p>Langkah praktis merancang chatbot dan AI agent tanpa harus jago coding. Contoh kasus: agen yang menjawab pertanyaan pelanggan toko online.</p>
+  <div class="meta"><span>⏱ Baca 10 menit</span><span>🛠 Praktik 1 jam</span></div>
+</div></section>
+
+<main><article class="card">
+
+  <nav class="toc"><b>Isi materi</b><ol>
+    <li><a href="#beda">Chatbot vs AI agent</a></li>
+    <li><a href="#komponen">4 komponen AI agent</a></li>
+    <li><a href="#langkah">6 langkah membuat agen pertama</a></li>
+    <li><a href="#template">Template instruksi siap pakai</a></li>
+    <li><a href="#salah">Kesalahan yang sering terjadi</a></li>
+  </ol></nav>
+
+  <h2 id="beda">1. Chatbot vs AI agent</h2>
+  <p><strong>Chatbot</strong> menjawab pertanyaan. <strong>AI agent</strong> selangkah lebih jauh: ia punya tujuan, bisa memakai alat, dan bisa mengambil tindakan. Misalnya mengecek stok, mencatat pesanan, atau mengirim notifikasi ke Anda.</p>
+  <div class="tbl"><table>
+    <tr><th></th><th>Chatbot biasa</th><th>AI agent</th></tr>
+    <tr><td><strong>Tugas</strong></td><td>Menjawab pertanyaan</td><td>Menyelesaikan pekerjaan</td></tr>
+    <tr><td><strong>Contoh</strong></td><td>"Jam buka toko jam berapa?"</td><td>Menerima pesanan, mencatat ke spreadsheet, lalu mengabari pemilik</td></tr>
+    <tr><td><strong>Alat</strong></td><td>Tidak ada</td><td>Spreadsheet, kalender, email, atau sistem lain</td></tr>
+  </table></div>
+  <p>Saran saya: <strong>mulai dari chatbot yang menjawab FAQ dulu</strong>. Kalau sudah stabil, baru tambahkan alat dan tindakan.</p>
+
+  <h2 id="komponen">2. Empat komponen AI agent</h2>
+  <ol>
+    <li><strong>Instruksi</strong>: siapa dia, apa tugasnya, dan bagaimana gaya bicaranya.</li>
+    <li><strong>Pengetahuan</strong>: data yang boleh ia pakai, misalnya daftar produk, harga, FAQ, dan kebijakan toko.</li>
+    <li><strong>Alat</strong>: aksi yang boleh ia lakukan, seperti mencatat pesanan atau membuat jadwal.</li>
+    <li><strong>Batasan</strong>: apa yang tidak boleh ia lakukan, dan kapan harus menyerahkan ke manusia.</li>
+  </ol>
+
+  <h2 id="langkah">3. Enam langkah membuat agen pertama</h2>
+  <ol class="steps">
+    <li><strong>Pilih satu tugas yang sempit.</strong> Contoh: "menjawab pertanyaan seputar produk dan cara pesan". Jangan langsung "mengurus seluruh toko".</li>
+    <li><strong>Kumpulkan 20 pertanyaan yang paling sering masuk</strong> beserta jawabannya. Ambil dari riwayat chat WhatsApp atau DM Anda.</li>
+    <li><strong>Tulis instruksi</strong> memakai template di bawah. Masukkan daftar produk, harga, dan 20 FAQ tadi sebagai pengetahuan.</li>
+    <li><strong>Buat agennya di platform tanpa coding.</strong> Untuk dipakai sendiri atau oleh tim, cukup pakai fitur asisten khusus yang ada di ChatGPT, Gemini, atau Claude. Untuk melayani pelanggan di WhatsApp, Anda perlu WhatsApp Business API lewat penyedia resmi.</li>
+    <li><strong>Uji dengan 20 percakapan</strong>, termasuk pertanyaan iseng, pelanggan marah, dan pertanyaan di luar topik. Catat jawaban yang salah, lalu perbaiki instruksinya.</li>
+    <li><strong>Pasang "pintu darurat".</strong> Kalau agen tidak yakin atau pelanggan minta bicara dengan manusia, agen harus menyerahkan percakapan ke Anda.</li>
+  </ol>
+
+  <h2 id="template">4. Template instruksi siap pakai</h2>
+  <p>Salin template ini, lalu ganti bagian dalam kurung siku dengan data usaha Anda.</p>
+<pre class="prompt">Kamu adalah "[Nama Agen]", asisten layanan pelanggan [Nama Toko].
+
+TUGAS
+- Menjawab pertanyaan tentang produk, harga, stok, dan cara pesan.
+- Membantu pelanggan memilih produk yang sesuai kebutuhannya.
+
+GAYA BICARA
+- Ramah, singkat (maksimal 3 kalimat), pakai bahasa Indonesia santai.
+- Sapa pelanggan dengan "Kak".
+
+PENGETAHUAN
+- Hanya gunakan informasi di bagian DATA TOKO di bawah ini.
+- Kalau informasinya tidak ada, jangan menebak. Jawab:
+  "Sebentar ya Kak, saya cek dulu ke admin."
+
+BATASAN
+- Jangan memberi diskon atau janji di luar DATA TOKO.
+- Jangan meminta data sensitif (PIN, password, kode OTP).
+- Kalau pelanggan marah, komplain, atau minta bicara dengan
+  manusia, jawab: "Baik Kak, saya sambungkan ke admin ya."
+
+DATA TOKO
+- Produk dan harga: [daftar produk]
+- Jam operasional: [jam]
+- Cara pesan dan pembayaran: [langkah]
+- Pengiriman: [kurir, estimasi]
+- FAQ: [20 pertanyaan dan jawaban]</pre>
+
+  <h2 id="salah">5. Kesalahan yang sering terjadi</h2>
+  <ul>
+    <li><strong>Instruksi terlalu umum.</strong> "Jadilah asisten yang membantu" tidak cukup. Tulis tugas, gaya, dan batasan secara rinci.</li>
+    <li><strong>Data tidak diperbarui.</strong> Harga atau stok berubah, tapi data agen tidak. Jadwalkan pembaruan setiap minggu.</li>
+    <li><strong>Tidak diuji dengan pertanyaan sulit.</strong> Pelanggan sungguhan sering bertanya hal yang tidak terduga.</li>
+    <li><strong>Tidak ada pintu darurat.</strong> Agen yang terus menjawab saat ia tidak tahu bisa merusak kepercayaan pelanggan.</li>
+  </ul>
+  <div class="box tip"><span class="t">Ukuran sukses</span>Agen pertama dianggap berhasil kalau ia bisa menjawab sekitar 7 dari 10 pertanyaan pelanggan dengan benar tanpa bantuan Anda, dan sisanya diserahkan dengan sopan.</div>
+
+  <div class="cta">
+    <span class="k">Lanjut belajar</span>
+    <h3>E-book "Jualan Laris dengan AI"</h3>
+    <p>Pakai AI untuk copywriting produk, membalas chat, dan closing penjualan. Harga: <b data-price>Rp 49.000</b>.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="../#shop" data-product="Jualan Laris dengan AI">Dapatkan e-book-nya</a>
+      <a class="btn btn-line" href="https://wa.me/6281399899954?text=Halo%20Gozali%20Corp%2C%20saya%20tertarik%20jasa%20AI%20Agent%20Auto-Reply%20WhatsApp" target="_blank" rel="noopener">Mau dibuatkan? Konsultasi gratis</a>
+    </div>
+  </div>
+
+  <div class="next">
+    <a href="dasar-ai-pemula.html"><small>Sebelumnya · Pemula</small><b>← Dasar-dasar AI untuk Pemula</b></a>
+    <a href="ai-automation-bisnis.html"><small>Materi berikutnya · Lanjut</small><b>AI Automation untuk Bisnis →</b></a>
+  </div>
+
+</article></main>
+
+<footer>© Gozali Corp Technology · <a href="../">gozalicorp.my.id</a></footer>
+<script src="materi.js"></script>
+</body>
+</html>

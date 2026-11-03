@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation untuk Bisnis — Gozali Corp Technology</title>
+<meta name="description" content="Rancang alur otomasi yang menghemat waktu, dari lead masuk sampai laporan. Cara memilih proses, alat yang dipakai, dan langkah membangun automasi pertama.">
+<meta name="theme-color" content="#0E1A40">
+<meta property="og:title" content="AI Automation untuk Bisnis">
+<meta property="og:description" content="Materi gratis: rancang alur otomasi bisnis dari lead sampai laporan.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://gozalicorp.my.id/edukasi/ai-automation-bisnis.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="materi.css">
+</head>
+<body>
+
+<header class="top"><div class="in">
+  <a class="brand" href="../#home"><span class="dot">G</span><span><span class="g">GOZALI</span> CORP</span></a>
+  <a class="back" href="../#edukasi">← <span>Semua materi</span></a>
+</div></header>
+
+<section class="hero"><div class="in">
+  <div class="crumb"><a href="../#edukasi">Materi edukasi</a> / Lanjut</div>
+  <span class="lvl lvl-lanjut">Lanjut</span>
+  <h1>AI Automation untuk Bisnis</h1>
+  <p>Rancang alur otomasi yang menghemat waktu, dari lead pertama masuk sampai laporan mingguan, tanpa harus menambah karyawan.</p>
+  <div class="meta"><span>⏱ Baca 12 menit</span><span>🛠 Praktik 2 jam</span></div>
+</div></section>
+
+<main><article class="card">
+
+  <nav class="toc"><b>Isi materi</b><ol>
+    <li><a href="#konsep">Konsep dasar automasi</a></li>
+    <li><a href="#alur">Contoh alur: dari lead sampai laporan</a></li>
+    <li><a href="#pilih">Proses mana yang layak diotomasi?</a></li>
+    <li><a href="#alat">Alat yang bisa dipakai</a></li>
+    <li><a href="#bangun">5 langkah membangun automasi pertama</a></li>
+    <li><a href="#kontrol">Supaya automasi tidak bermasalah</a></li>
+  </ol></nav>
+
+  <h2 id="konsep">1. Konsep dasar automasi</h2>
+  <p>Setiap automasi punya tiga bagian:</p>
+  <ul>
+    <li><strong>Pemicu</strong>: kejadian yang memulai alur. Contoh: ada formulir baru masuk, atau setiap Senin pukul 08.00.</li>
+    <li><strong>Langkah</strong>: pekerjaan yang dilakukan berurutan. Contoh: menyalin data, mengirim email, membuat ringkasan.</li>
+    <li><strong>Hasil</strong>: keluaran akhirnya. Contoh: data tercatat, pelanggan mendapat balasan, laporan terkirim.</li>
+  </ul>
+  <p>Automasi biasa hanya bisa mengikuti aturan yang pasti. <strong>AI masuk di langkah yang butuh "membaca" atau "menulis"</strong>: memahami isi pesan, menilai prioritas lead, atau menulis balasan dan ringkasan.</p>
+
+  <h2 id="alur">2. Contoh alur: dari lead sampai laporan</h2>
+  <div class="flow">
+    <span>Lead mengisi formulir</span><i>→</i>
+    <span>AI menilai &amp; mengelompokkan</span><i>→</i>
+    <span>Balasan pertama otomatis</span><i>→</i>
+    <span>Tercatat di spreadsheet</span><i>→</i>
+    <span>Pengingat follow-up</span><i>→</i>
+    <span>Laporan mingguan</span>
+  </div>
+  <ol>
+    <li><strong>Lead masuk</strong> lewat formulir di situs atau Google Form.</li>
+    <li><strong>AI membaca isinya</strong>, lalu memberi label: "siap beli", "masih tanya-tanya", atau "bukan target".</li>
+    <li><strong>Balasan pertama dikirim otomatis</strong> dalam hitungan menit, disesuaikan dengan labelnya.</li>
+    <li><strong>Data dicatat</strong> ke Google Sheets atau CRM, lengkap dengan label dan tanggalnya.</li>
+    <li><strong>Pengingat follow-up</strong> dikirim ke Anda untuk lead "siap beli" yang belum dihubungi dalam 1 hari.</li>
+    <li><strong>Setiap Senin</strong>, AI merangkum jumlah lead, asal lead, dan tingkat closing, lalu mengirimkannya ke email Anda.</li>
+  </ol>
+  <div class="box tip"><span class="t">Contoh nyata di situs ini</span>Bagian "Berita" di gozalicorp.my.id berjalan otomatis dua kali sehari: sistem mengambil berita teknologi terbaru, menyaring yang dobel, meringkasnya dengan AI, lalu menampilkannya di situs, tanpa diketik manual.</div>
+
+  <h2 id="pilih">3. Proses mana yang layak diotomasi?</h2>
+  <p>Pilih proses yang memenuhi minimal 3 dari 4 ciri ini:</p>
+  <div class="tbl"><table>
+    <tr><th>Ciri</th><th>Pertanyaan pengecek</th></tr>
+    <tr><td><strong>Sering berulang</strong></td><td>Dikerjakan setiap hari atau setiap minggu?</td></tr>
+    <tr><td><strong>Langkahnya jelas</strong></td><td>Bisa ditulis sebagai urutan langkah yang sama?</td></tr>
+    <tr><td><strong>Memakan waktu</strong></td><td>Menghabiskan lebih dari 2 jam per minggu?</td></tr>
+    <tr><td><strong>Risiko salah kecil</strong></td><td>Kalau sesekali keliru, akibatnya tidak fatal?</td></tr>
+  </table></div>
+  <p>Hitung manfaatnya dengan sederhana: <strong>jam yang dihemat per minggu × nilai waktu Anda per jam</strong>. Mulai dari proses dengan angka terbesar.</p>
+  <div class="box warn"><span class="t">Jangan diotomasi penuh</span>Keputusan yang menyangkut uang, kontrak, atau keluhan serius pelanggan tetap butuh persetujuan manusia. Biarkan automasi menyiapkan, dan Anda yang memutuskan.</div>
+
+  <h2 id="alat">4. Alat yang bisa dipakai</h2>
+  <div class="tbl"><table>
+    <tr><th>Alat</th><th>Cocok untuk</th><th>Tingkat kesulitan</th></tr>
+    <tr><td><strong>Zapier / Make</strong></td><td>Menyambungkan aplikasi populer tanpa coding, dengan tampilan seret-dan-lepas</td><td>Mudah</td></tr>
+    <tr><td><strong>n8n</strong></td><td>Alur yang lebih rumit, bisa dipasang di server sendiri</td><td>Menengah</td></tr>
+    <tr><td><strong>Google Apps Script</strong></td><td>Automasi di Google Sheets, Gmail, dan Google Form</td><td>Menengah</td></tr>
+    <tr><td><strong>GitHub Actions</strong></td><td>Tugas terjadwal untuk situs, seperti pembaruan konten otomatis</td><td>Lanjut</td></tr>
+  </table></div>
+  <p>Untuk bagian AI-nya, alat-alat di atas umumnya bisa disambungkan ke layanan model AI seperti OpenAI, Gemini, atau Claude lewat API.</p>
+
+  <h2 id="bangun">5. Lima langkah membangun automasi pertama</h2>
+  <ol class="steps">
+    <li><strong>Tulis alur manualnya dulu</strong> di kertas: apa pemicunya, langkah apa saja, dan hasil akhirnya.</li>
+    <li><strong>Tandai langkah yang butuh AI</strong>, yaitu yang perlu membaca, menilai, atau menulis.</li>
+    <li><strong>Bangun versi paling sederhana</strong>: cukup pemicu, satu langkah AI, dan pencatatan ke spreadsheet.</li>
+    <li><strong>Jalankan berdampingan dengan cara lama selama 1–2 minggu.</strong> Bandingkan hasilnya dan perbaiki prompt AI-nya.</li>
+    <li><strong>Lepas pelan-pelan.</strong> Setelah hasilnya konsisten, hentikan cara manual dan tambahkan langkah berikutnya.</li>
+  </ol>
+
+  <h2 id="kontrol">6. Supaya automasi tidak bermasalah</h2>
+  <ul>
+    <li><strong>Pasang notifikasi gagal</strong> ke email atau Telegram, supaya Anda tahu saat ada langkah yang berhenti.</li>
+    <li><strong>Simpan log</strong>: setiap data yang diproses tercatat, sehingga mudah ditelusuri.</li>
+    <li><strong>Cek seminggu sekali</strong>, terutama setelah ada perubahan di aplikasi atau layanan AI yang dipakai.</li>
+    <li><strong>Jaga data pelanggan</strong>: kirim ke layanan AI hanya data yang memang dibutuhkan.</li>
+  </ul>
+
+  <div class="cta">
+    <span class="k">Lanjut belajar</span>
+    <h3>E-book "Cuan dari AI"</h3>
+    <p>15 cara menghasilkan uang dari AI, termasuk peluang jasa automasi untuk UMKM. Harga: <b data-price>Rp 49.000</b>.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="../#shop" data-product="Cuan dari AI">Dapatkan e-book-nya</a>
+      <a class="btn btn-line" href="https://wa.me/6281399899954?text=Halo%20Gozali%20Corp%2C%20saya%20ingin%20konsultasi%20automasi%20bisnis" target="_blank" rel="noopener">Konsultasi automasi gratis</a>
+    </div>
+  </div>
+
+  <div class="next">
+    <a href="ai-agent-pertama.html"><small>Sebelumnya · Menengah</small><b>← Bikin AI Agent Pertamamu</b></a>
+    <a href="dasar-ai-pemula.html"><small>Mulai dari awal · Pemula</small><b>Dasar-dasar AI untuk Pemula</b></a>
+  </div>
+
+</article></main>
+
+<footer>© Gozali Corp Technology · <a href="../">gozalicorp.my.id</a></footer>
+<script src="materi.js"></script>
+</body>
+</html>
