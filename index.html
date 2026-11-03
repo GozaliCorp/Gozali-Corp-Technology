@@ -913,6 +913,8 @@ function angka(v){ const d=String(v==null?'':v).replace(/[^0-9]/g,''); return d?
 function fmtRp(v){ const t=String(v==null?'':v).trim(); if(/^\d+$/.test(t)) return 'Rp ' + (+t).toLocaleString('id-ID'); return t; }
 function hitungHemat(h,c){ const a=angka(h), b=angka(c); return (a&&b&&b>a) ? Math.round((1-a/b)*100) : 0; }
 function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+/* Link checkout otomatis (Mayar dll). Hanya https:// yang diterima. */
+function safeCheckout(u){ const t=String(u==null?'':u).trim(); return /^https:\/\/[^\s"'<>]+$/i.test(t) ? t : ''; }
 
 async function loadProducts(){
   try{ const ls=localStorage.getItem('gct_products'); if(ls){ const a=JSON.parse(ls); if(Array.isArray(a)&&a.length) return a; } }catch(e){}
@@ -931,6 +933,7 @@ function renderProducts(list){
     const coret=fmtRp(p.coret||'');
     const note=p.note||'';
     const aksi=p.aksi||p.action||'Beli';
+    const checkout=safeCheckout(p.checkout_url||p.checkout||'');
     const img=p.img||'';
     const emoji=p.emoji||EMOJI_BY_KAT[kind]||'🛍️';
     const isBook=/^e-?book$/i.test(kind);
@@ -948,10 +951,14 @@ function renderProducts(list){
         <p>${esc(desc)}</p>
         <div class="prod-foot">
           <div class="price">${coret?`<span class="coret">${esc(coret)}</span>`:''}${esc(price)}${hemat?`<span class="save">-${hemat}%</span>`:''}${note?`<small>${esc(note)}</small>`:''}</div>
-          <button class="buy">${esc(aksi)}</button>
+          <button class="buy"${checkout?' title="Bayar otomatis, file langsung dikirim ke email"':''}>${esc(aksi)}</button>
         </div>
       </div>`;
-    card.querySelector('.buy').addEventListener('click',()=>openModal(title, price));
+    card.querySelector('.buy').addEventListener('click',()=>{
+      // Ada link checkout otomatis → buka halaman pembayaran; kalau tidak, pakai formulir WhatsApp lama
+      if(checkout){ const w=window.open(checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else { location.href=checkout; } }
+      else openModal(title, price);
+    });
     card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',(e.clientX-r.left)+'px');card.style.setProperty('--my',(e.clientY-r.top)+'px');});
     grid.appendChild(card);
   });
