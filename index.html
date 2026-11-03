@@ -416,6 +416,21 @@ footer .pay b{color:#fff;font-weight:600}
 .aic-foot{font-size:11.5px;color:var(--muted);text-align:center;padding:0 12px 10px;background:#fff}
 .aic-foot a{color:var(--ink-3);font-weight:700}
 @media (max-width:560px){.aic{right:8px;left:8px;bottom:8px;width:auto;height:calc(100dvh - 16px);max-height:none}}
+/* ---- Email penawaran resmi (RFQ) ---- */
+.rfq{position:fixed;inset:0;z-index:130;background:rgba(14,26,64,.55);display:none;align-items:center;justify-content:center;padding:16px}
+.rfq.open{display:flex}
+.rfq-card{background:#fff;border-radius:20px;width:min(480px,100%);max-height:calc(100vh - 32px);overflow-y:auto;padding:26px;position:relative}
+.rfq-card h3{font-size:21px;color:var(--ink);margin:0 0 4px}
+.rfq-card .sub{font-size:14px;color:var(--muted);margin:0 0 16px}
+.rfq-card .x{position:absolute;top:12px;right:14px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--muted)}
+.rfq-card label{display:block;font-size:13px;font-weight:700;color:var(--ink);margin:10px 0 5px}
+.rfq-card input,.rfq-card select,.rfq-card textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:15px var(--font);background:#fff;color:var(--text);box-sizing:border-box}
+.rfq-card textarea{min-height:90px;resize:vertical}
+.rfq-card input:focus,.rfq-card select:focus,.rfq-card textarea:focus{outline:none;border-color:var(--ink)}
+.rfq-acts{display:grid;gap:8px;margin-top:18px}
+.rfq-acts .btn{width:100%;justify-content:center}
+.rfq-alt{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;font-size:13px;color:var(--muted);margin-top:10px}
+.rfq-alt button,.rfq-alt a{background:none;border:0;padding:0;font:700 13px var(--font);color:var(--ink-3);cursor:pointer;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -748,6 +763,36 @@ footer .pay b{color:#fff;font-weight:600}
     <button type="submit" id="aicSend" aria-label="Kirim">➤</button>
   </form>
   <div class="aic-foot">Dijawab oleh AI, bisa saja keliru. Butuh bantuan manusia? <a href="#" id="aicAdmin">Chat admin via WhatsApp</a></div>
+</div>
+
+<!-- ================= EMAIL PENAWARAN (RFQ) ================= -->
+<div class="rfq" id="rfqModal" role="dialog" aria-modal="true" aria-labelledby="rfqTitle">
+  <form class="rfq-card" id="rfqForm" novalidate>
+    <button class="x" type="button" aria-label="Tutup" onclick="rfqClose()">×</button>
+    <h3 id="rfqTitle">Minta penawaran resmi</h3>
+    <p class="sub">Isi singkat kebutuhan Anda. Email akan disiapkan otomatis ke <b id="rfqTo">gozalitechnology@gmail.com</b>.</p>
+    <label for="rfqNama">Nama lengkap *</label>
+    <input id="rfqNama" autocomplete="name" placeholder="Nama Anda">
+    <label for="rfqUsaha">Perusahaan / instansi</label>
+    <input id="rfqUsaha" autocomplete="organization" placeholder="Opsional">
+    <label for="rfqLayanan">Layanan yang dibutuhkan</label>
+    <select id="rfqLayanan">
+      <option>Website custom</option>
+      <option>Aplikasi mobile</option>
+      <option>Chatbot / AI Agent WhatsApp</option>
+      <option>Otomasi bisnis</option>
+      <option>Produksi konten / video</option>
+      <option>Pengelolaan cloud</option>
+      <option>Lainnya</option>
+    </select>
+    <label for="rfqDetail">Kebutuhan, target waktu, dan kisaran budget *</label>
+    <textarea id="rfqDetail" placeholder="Contoh: website company profile 5 halaman, selesai bulan depan, budget sekitar Rp 5 juta."></textarea>
+    <div class="rfq-acts">
+      <button class="btn btn-gold" type="submit" data-via="gmail">Kirim lewat Gmail</button>
+      <button class="btn btn-line" type="button" data-via="app" style="color:var(--ink);border-color:var(--line)">Buka aplikasi email lain</button>
+    </div>
+    <div class="rfq-alt"><span>Atau</span><button type="button" id="rfqCopy">salin alamat email</button><span>·</span><a href="https://wa.me/6281399899954" target="_blank" rel="noopener">chat WhatsApp</a></div>
+  </form>
 </div>
 
 <!-- ================= ORDER MODAL ================= -->
@@ -1297,6 +1342,58 @@ loadEdukasi().then(renderEdukasi);
     const u = d && String(d.api || '').trim();
     if(u && /^https:\/\/[^\s"'<>]+$/i.test(u)) CHAT_API = u;
   }).catch(() => {});
+})();
+</script>
+<script>
+/* ---- Email penawaran resmi: tautan mailto diganti formulir yang membuka Gmail ---- */
+(function(){
+  const EMAIL = 'gozalitechnology@gmail.com';
+  const m = document.getElementById('rfqModal');
+  const f = document.getElementById('rfqForm');
+  const v = id => document.getElementById(id).value.trim();
+  function build(){
+    const nama = v('rfqNama'), usaha = v('rfqUsaha'), lay = v('rfqLayanan'), det = v('rfqDetail');
+    const subject = 'Permintaan Penawaran: ' + lay + (usaha ? ' - ' + usaha : '');
+    const body = 'Halo Gozali Corp Technology,\n\nSaya ingin meminta penawaran resmi dengan rincian berikut:\n\n'
+      + 'Nama: ' + nama + '\n' + (usaha ? 'Perusahaan/instansi: ' + usaha + '\n' : '')
+      + 'Layanan: ' + lay + '\n\nKebutuhan:\n' + det + '\n\nTerima kasih.';
+    return {subject, body};
+  }
+  function valid(){
+    if(!v('rfqNama')){ alert('Mohon isi nama Anda.'); document.getElementById('rfqNama').focus(); return false; }
+    if(!v('rfqDetail')){ alert('Mohon tuliskan kebutuhan Anda.'); document.getElementById('rfqDetail').focus(); return false; }
+    return true;
+  }
+  window.rfqOpen = function(){ m.classList.add('open'); document.body.style.overflow='hidden'; setTimeout(()=>document.getElementById('rfqNama').focus(),50); };
+  window.rfqClose = function(){ m.classList.remove('open'); document.body.style.overflow=''; };
+  f.addEventListener('submit', e => {
+    e.preventDefault(); if(!valid()) return;
+    const {subject, body} = build();
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(EMAIL) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body), '_blank');
+    rfqClose();
+  });
+  f.querySelector('[data-via="app"]').addEventListener('click', () => {
+    if(!valid()) return;
+    const {subject, body} = build();
+    location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+  document.getElementById('rfqCopy').addEventListener('click', e => {
+    const b = e.currentTarget;
+    (navigator.clipboard ? navigator.clipboard.writeText(EMAIL) : Promise.reject()).then(()=>{ b.textContent='tersalin ✓'; }).catch(()=>{ b.textContent=EMAIL; });
+    setTimeout(()=>{ b.textContent='salin alamat email'; }, 2000);
+  });
+  m.addEventListener('click', e => { if(e.target === m) rfqClose(); });
+  document.addEventListener('keydown', e => { if(e.key === 'Escape' && m.classList.contains('open')) rfqClose(); });
+  // tombol "Email penawaran resmi" dan "Minta penawaran resmi (RFQ)" membuka formulir
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if(!a || m.contains(a)) return;
+    const isMail = /^mailto:/i.test(a.getAttribute('href') || '');
+    const isRfq = /penawaran resmi/i.test(a.textContent || '');
+    if(!isMail && !isRfq) return;
+    e.preventDefault(); e.stopPropagation();
+    rfqOpen();
+  }, true);
 })();
 </script>
 </body>
