@@ -947,6 +947,11 @@ ${payLine}
 Saya akan segera melakukan pembayaran. Mohon konfirmasi dan tautan unduhannya. Terima kasih!`;
 
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  // laporan pesanan ke email resmi (lewat Worker; tidak menghambat pembeli kalau gagal)
+  try{
+    if(window.GCT_API) fetch(window.GCT_API + '/order', { method:'POST', keepalive:true, headers:{'Content-Type':'text/plain'},
+      body: JSON.stringify({ produk: currentProduct, harga: currentPrice, nama: name, email: email, metode: payMethod }) }).catch(()=>{});
+  }catch(e){}
   window.open(url, '_blank');
   closeModal();
 }
@@ -1340,7 +1345,7 @@ loadEdukasi().then(renderEdukasi);
 
   fetch('chat.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).then(d => {
     const u = d && String(d.api || '').trim();
-    if(u && /^https:\/\/[^\s"'<>]+$/i.test(u)) CHAT_API = u;
+    if(u && /^https:\/\/[^\s"'<>]+$/i.test(u)){ CHAT_API = u; window.GCT_API = u.replace(/\/+$/, ''); }
   }).catch(() => {});
 })();
 </script>
