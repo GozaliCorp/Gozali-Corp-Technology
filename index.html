@@ -384,6 +384,38 @@ footer .pay b{color:#fff;font-weight:600}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+/* ---- AI Konsultasi (chat) ---- */
+.aic{position:fixed;right:20px;bottom:90px;z-index:120;width:min(380px,calc(100vw - 32px));height:min(560px,calc(100vh - 120px));background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 30px 70px -20px rgba(14,26,64,.45);display:none;flex-direction:column;overflow:hidden}
+.aic.open{display:flex}
+.aic-head{background:var(--ink);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.aic-av{width:38px;height:38px;border-radius:12px;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:16px;flex:none}
+.aic-head b{display:block;font-size:15px}
+.aic-head small{display:block;font-size:12px;color:#A9B5D3}
+.aic-head small::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#22C55E;margin-right:6px;vertical-align:middle}
+.aic-x{margin-left:auto;background:none;border:0;color:#fff;font-size:24px;line-height:1;cursor:pointer;padding:4px 6px;opacity:.8}
+.aic-x:hover{opacity:1}
+.aic-body{flex:1;overflow-y:auto;padding:16px;background:var(--paper);display:flex;flex-direction:column;gap:10px}
+.aic-msg{max-width:85%;padding:10px 14px;border-radius:16px;font-size:14.5px;line-height:1.55;word-wrap:break-word;white-space:normal}
+.aic-msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:6px;align-self:flex-start;color:var(--text)}
+.aic-msg.me{background:var(--ink);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.aic-msg a{color:var(--ink-3);font-weight:700;word-break:break-all}
+.aic-msg.me a{color:var(--gold)}
+.aic-msg .wa-btn{display:inline-block;margin-top:8px;background:#25D366;color:#fff;padding:7px 12px;border-radius:999px;text-decoration:none;font-size:13.5px;word-break:normal}
+.aic-typing{display:inline-flex;gap:4px;align-items:center}
+.aic-typing i{width:7px;height:7px;border-radius:50%;background:#9AA4BF;animation:aicb 1s infinite}
+.aic-typing i:nth-child(2){animation-delay:.15s}.aic-typing i:nth-child(3){animation-delay:.3s}
+@keyframes aicb{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.aic-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px;background:var(--paper)}
+.aic-chips button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:7px 12px;font:600 13px var(--font);cursor:pointer}
+.aic-chips button:hover{border-color:var(--ink)}
+.aic-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#fff}
+.aic-form textarea{flex:1;resize:none;border:1px solid var(--line);border-radius:14px;padding:10px 12px;font:15px var(--font);max-height:96px;min-height:42px;outline:none}
+.aic-form textarea:focus{border-color:var(--ink)}
+.aic-form button{border:0;background:var(--gold);color:var(--ink);border-radius:14px;width:46px;font-size:18px;font-weight:800;cursor:pointer;flex:none}
+.aic-form button:disabled{opacity:.5;cursor:default}
+.aic-foot{font-size:11.5px;color:var(--muted);text-align:center;padding:0 12px 10px;background:#fff}
+.aic-foot a{color:var(--ink-3);font-weight:700}
+@media (max-width:560px){.aic{right:8px;left:8px;bottom:8px;width:auto;height:calc(100dvh - 16px);max-height:none}}
 </style>
 </head>
 <body>
@@ -701,6 +733,22 @@ footer .pay b{color:#fff;font-weight:600}
 <a class="wa-float" href="https://wa.me/6281399899954" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.65.15s-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49h-.56c-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.05-1.32A10 10 0 1 0 12 2z"/></svg>
 </a>
+
+<!-- ================= AI KONSULTASI ================= -->
+<div class="aic" id="aiChat" role="dialog" aria-label="Konsultasi dengan Asisten Gozali">
+  <div class="aic-head">
+    <div class="aic-av">G</div>
+    <div><b>Asisten Gozali</b><small>Asisten AI · online 24 jam</small></div>
+    <button class="aic-x" type="button" aria-label="Tutup chat" onclick="aiChatClose()">×</button>
+  </div>
+  <div class="aic-body" id="aicBody" aria-live="polite"></div>
+  <div class="aic-chips" id="aicChips"></div>
+  <form class="aic-form" id="aicForm" autocomplete="off">
+    <textarea id="aicInput" rows="1" maxlength="800" placeholder="Tulis pertanyaan Kakak..." aria-label="Pesan"></textarea>
+    <button type="submit" id="aicSend" aria-label="Kirim">➤</button>
+  </form>
+  <div class="aic-foot">Dijawab oleh AI, bisa saja keliru. Butuh bantuan manusia? <a href="#" id="aicAdmin">Chat admin via WhatsApp</a></div>
+</div>
 
 <!-- ================= ORDER MODAL ================= -->
 <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -1131,6 +1179,124 @@ loadEdukasi().then(renderEdukasi);
   setH(); window.addEventListener('resize',setH); window.addEventListener('load',setH);
   // pilihan pembayaran bisa dipilih dengan keyboard
   document.querySelectorAll('.pay-opt').forEach(o=>o.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); o.click(); } }));
+})();
+</script>
+<script>
+/* ---- AI Konsultasi: tombol "Konsultasi" membuka chat AI ----
+   Alamat AI diatur di chat.json → {"api":"https://....workers.dev"}.
+   Kalau kosong / gagal dimuat, tombol Konsultasi tetap membuka WhatsApp seperti biasa. */
+(function(){
+  let CHAT_API = '';
+  const GREETING = 'Halo Kak! 👋 Saya **Asisten Gozali**, asisten AI dari Gozali Corp Technology.\n\nAda yang bisa saya bantu? Kakak bisa tanya soal e-book, jasa website, konten media sosial, atau chatbot WhatsApp.';
+  const CHIPS = ['Lihat e-book yang tersedia','Mau bikin website','Bikin chatbot WhatsApp','Paket konten medsos'];
+  const KEY = 'gct_ai_chat';
+  const box = document.getElementById('aiChat');
+  const body = document.getElementById('aicBody');
+  const chips = document.getElementById('aicChips');
+  const form = document.getElementById('aicForm');
+  const input = document.getElementById('aicInput');
+  const send = document.getElementById('aicSend');
+  let history = [];
+  let busy = false;
+
+  try{ const s = JSON.parse(sessionStorage.getItem(KEY) || '[]'); if(Array.isArray(s)) history = s; }catch(e){}
+  function persist(){ try{ sessionStorage.setItem(KEY, JSON.stringify(history.slice(-30))); }catch(e){} }
+
+  function waNumber(){ try{ return (typeof WA_NUMBER !== 'undefined' && WA_NUMBER) || '6281399899954'; }catch(e){ return '6281399899954'; } }
+  function waLink(text){ return 'https://wa.me/' + waNumber() + (text ? '?text=' + encodeURIComponent(text) : ''); }
+  function waFromChat(){
+    const last = [...history].reverse().find(m => m.role === 'user');
+    return waLink('Halo Gozali Corp, saya ingin konsultasi.' + (last ? '\n\nPertanyaan saya: ' + last.content : ''));
+  }
+
+  function fmt(t){
+    let h = String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    h = h.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+    h = h.replace(/(^|[\s(])(https:\/\/[^\s<)]+)/g, (m, a, u) => {
+      const clean = u.replace(/[.,!?]+$/, ''); const tail = u.slice(clean.length);
+      return a + '<a href="' + clean + '" target="_blank" rel="noopener">' + clean.replace(/^https:\/\//,'') + '</a>' + tail;
+    });
+    h = h.replace(/^\s*[-•*]\s+/gm, '• ');
+    return h.replace(/\n/g, '<br>');
+  }
+  function bubble(role, text, extraHtml){
+    const d = document.createElement('div');
+    d.className = 'aic-msg ' + (role === 'user' ? 'me' : 'bot');
+    d.innerHTML = fmt(text) + (extraHtml || '');
+    body.appendChild(d); body.scrollTop = body.scrollHeight;
+    return d;
+  }
+  function renderAll(){
+    body.innerHTML = '';
+    bubble('assistant', GREETING);
+    history.forEach(m => bubble(m.role, m.content));
+    chips.innerHTML = '';
+    if(!history.length){
+      CHIPS.forEach(c => { const b = document.createElement('button'); b.type = 'button'; b.textContent = c; b.onclick = () => ask(c); chips.appendChild(b); });
+    }
+  }
+
+  async function ask(text){
+    text = String(text || '').trim();
+    if(!text || busy) return;
+    busy = true; send.disabled = true; chips.innerHTML = '';
+    history.push({role:'user', content:text}); persist();
+    bubble('user', text);
+    const typing = document.createElement('div');
+    typing.className = 'aic-msg bot'; typing.innerHTML = '<span class="aic-typing"><i></i><i></i><i></i></span>';
+    body.appendChild(typing); body.scrollTop = body.scrollHeight;
+    try{
+      const ctrl = new AbortController(); const to = setTimeout(() => ctrl.abort(), 30000);
+      const r = await fetch(CHAT_API, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ messages: history.slice(-12) }), signal: ctrl.signal });
+      clearTimeout(to);
+      const d = await r.json().catch(() => ({}));
+      typing.remove();
+      if(d && d.reply){
+        history.push({role:'assistant', content:d.reply}); persist();
+        bubble('assistant', d.reply);
+      } else {
+        throw new Error(d && d.error || 'gagal');
+      }
+    }catch(e){
+      typing.remove();
+      bubble('assistant', 'Maaf Kak, asisten AI sedang sibuk 🙏 Kakak bisa langsung lanjut dengan admin kami di WhatsApp.',
+        '<br><a class="wa-btn" href="' + waFromChat() + '" target="_blank" rel="noopener">Lanjut ke WhatsApp</a>');
+    }finally{
+      busy = false; send.disabled = false; input.focus();
+    }
+  }
+
+  window.aiChatOpen = function(prefill){
+    if(!CHAT_API){ window.open(waLink(prefill ? 'Halo Gozali Corp, saya ingin konsultasi tentang ' + prefill : ''), '_blank'); return; }
+    renderAll();
+    box.classList.add('open');
+    if(prefill) ask('Saya tertarik dengan ' + prefill + '. Bisa jelaskan?');
+    else setTimeout(() => input.focus(), 50);
+  };
+  window.aiChatClose = function(){ box.classList.remove('open'); };
+
+  form.addEventListener('submit', e => { e.preventDefault(); const t = input.value; input.value = ''; input.style.height = ''; ask(t); });
+  input.addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit')); } });
+  input.addEventListener('input', () => { input.style.height = 'auto'; input.style.height = Math.min(input.scrollHeight, 96) + 'px'; });
+  document.getElementById('aicAdmin').addEventListener('click', e => { e.preventDefault(); window.open(waFromChat(), '_blank'); });
+  document.addEventListener('keydown', e => { if(e.key === 'Escape' && box.classList.contains('open')) aiChatClose(); });
+
+  // Semua tombol/tautan bertuliskan "Konsultasi" → buka chat AI (kecuali tombol WhatsApp melayang)
+  document.addEventListener('click', e => {
+    if(!CHAT_API) return;
+    const el = e.target.closest('a[href*="wa.me/"], button.buy');
+    if(!el || el.classList.contains('wa-float') || box.contains(el)) return;
+    if(!/konsultasi/i.test(el.textContent || '')) return;
+    e.preventDefault(); e.stopPropagation();
+    let prefill = '';
+    if(el.matches('button.buy')){ const card = el.closest('.prod'); const h = card && card.querySelector('h3'); prefill = h ? h.textContent.trim() : ''; }
+    aiChatOpen(prefill);
+  }, true);
+
+  fetch('chat.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).then(d => {
+    const u = d && String(d.api || '').trim();
+    if(u && /^https:\/\/[^\s"'<>]+$/i.test(u)) CHAT_API = u;
+  }).catch(() => {});
 })();
 </script>
 </body>
