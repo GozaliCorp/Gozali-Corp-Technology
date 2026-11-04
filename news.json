@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Cilegon Perkuat Industri Hadapi Ancaman Bencana Teknologi",
+    "kategori": "Keamanan",
+    "ringkasan": "Pemerintah Kota Cilegon berupaya meningkatkan ketahanan industri lokal guna mengantisipasi potensi risiko bencana yang disebabkan oleh teknologi.",
+    "tanggal": "2026-11-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUHBiYjI1Q1ExVmQyeWdRU0psbUZQRVoyTDh3emRySXNSN0RzcDJZM3plZU5OUWw1RXh3ZmpXXzdSYnZQRmw4RW1OdjhvM2F4dWhoOURmTS1Xdkd6eWRFSXFpZUxiZFZyY3RzMlBIZE84WWFneWpyc3JrSmZKVFhjM0hlME4tMWhFRjhpSEFZQ1lEa0RJbjl1anpYRVJhVkVzUWRtMzVtbG5WSlRGLWFHQnhiQUljR0xqeDBmV0wyRmQzLXk2Z0dSbktrV1Z6SkRhRld6WGJNSWJWcnZFOFAw?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
+    "judul": "Pengembang Aplikasi Kini Bisa Akses Siri AI di iOS Terbaru",
+    "kategori": "AI",
+    "ringkasan": "Apple membuka akses Siri AI bagi pengembang aplikasi pada pembaruan iOS 27.3, memungkinkan integrasi fitur cerdas yang lebih luas.",
+    "tanggal": "2026-11-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FalE3a05RS0R3VUsycnF0SDJHQVhULVU3STM2VmlaX0dBS0FUdUxFM29hbVRxWk1aRnduaHFqVkRwaXU2d2l4ckVLY2JxZGZOQ3ViSUR3WDVudm5IZDVN?oc=5",
+    "sumber": "Inilah.com"
+  },
+  {
+    "judul": "Serangan Siber Gemparkan Bank Darah Prancis, Data Terancam",
+    "kategori": "Keamanan",
+    "ringkasan": "Infrastruktur vital bank darah di Prancis menjadi sasaran serangan siber, menimbulkan kekhawatiran akan keamanan data pasien.",
+    "tanggal": "2026-11-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUG5LMlBiNkQzTndHdElEaklRUHlpMTdFSHJIdWVFaGlqUTVtYWlzWEd3RUVuMXNtSkJ6SlBGbHFhcGJsZ2ZqRjdVVkxOYmt5LTZ5d1JYWVZIVU9CTE5sU3A1QjNpNWZMU3NuT2MxUmVmazdTVTBZREtHSm5FelNONQ?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Keuntungan Membeli Gadget Samsung di Toko Resmi",
+    "kategori": "Gadget",
+    "ringkasan": "Terdapat beberapa alasan kuat mengapa konsumen disarankan membeli produk gadget Samsung melalui official store mereka.",
+    "tanggal": "2026-11-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS0pHS3RuR0YtZ0MtRWIwTE9PNXQ4LWJIQ2pKbGZiYk5sc0xvaUJ0VV8zQjVPR2F3NXFIRWhHOE0yN0luNjhkMUpNMzIzbVBWdDdmRVBxV1AxQmM1aEd0Q1JDXzYta0NkRmhpaXR6RGktWkhES1pOa09vbVRDczRvLU94cjR5Qmw0VE16a09GZkJMU2xoX0VLQ1piODVCOXBaSDJWYlYtM3R3a28?oc=5",
+    "sumber": "Jawa Pos"
+  },
+  {
+    "judul": "ChatGPT Tantang Dominasi Google dalam Pencarian Internet",
+    "kategori": "AI",
+    "ringkasan": "Penggunaan ChatGPT untuk pencarian menembus 20% volume Google, menandai era baru persaingan mesin pencari yang inovatif.",
+    "tanggal": "2026-11-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMDFuRzNiMGMzV3NTa3hYMGl0Q2dkWXk0NWU0VkZnSVM2SjMwMEtDNnZvRXBfc0RmUVFjN2M5MDdDWGNEbENpRk5iQzNDWFdtajhES0pDU1FlS0JxOTdFc0dZUWhGUFVLWUQyLTM0NGxFVHF2eXVKWFpiWjBvMWEtTUQ5VQ?oc=5",
+    "sumber": "Aktualita.co"
+  },
+  {
+    "judul": "Kemenaker: AI Tidak Akan Menggantikan Peran Pengantar Kerja",
+    "kategori": "AI",
+    "ringkasan": "Kementerian Ketenagakerjaan menegaskan bahwa kecerdasan buatan (AI) tidak akan menggantikan posisi pengantar kerja di masa depan.",
+    "tanggal": "2026-11-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdTFqWlVQY0VnUFJNNjBUb3pfdVQtQUpHd1ZuSlFVUkNybjZHQnk5ZkVmcW9ZNHo1aEdiakFmOFVQQi1mSEI1dC1qSGRVak11RzVOcU9SSFVubTdTREVXYWJudzVGSEliQVJrRjJZTWZxVXhyRWc0ZWxFNUFGZkwyajRybXdSZXhu?oc=5",
+    "sumber": "Berita Borneo"
+  },
+  {
+    "judul": "New York Atur Chatbot Lindungi Anak dari Bahaya AI",
+    "kategori": "AI",
+    "ringkasan": "Pemerintah New York menerapkan regulasi ketat untuk chatbot guna melindungi anak-anak dari potensi risiko yang ditimbulkan oleh AI.",
+    "tanggal": "2026-11-04",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeXdPZWcwcHNwT1BzXzkwR3Y5T2FxUkdUZ0swV19uZFRpbC0yN1NCc2wyZkFqeXB1YU83b3ZWUXpWSC0xQ0lDcjgtLVFXOWo5YjV2YUJyeU1Dbkk5TUZ5dWJWWWZiTEs4c1dLZXp1ckNYWnFfNEp1cGFPUlNwTWZEZjVxWk1aU29WYVp3RzdR?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Cilegon Kolaborasi Atasi Sampah dengan Teknologi Ramah Lingkungan",
+    "kategori": "Startup",
+    "ringkasan": "Pemerintah Kota Cilegon menjalin kerja sama dengan PT Green Eco Teknologi untuk mengatasi volume sampah melalui solusi inovatif.",
+    "tanggal": "2026-11-04",
+    "baca": 2,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVDNiYnhiUnVUVXBxUjY3NVRMYXRjQ240ZnJfcG5fQ3JNdnJDXzBkRFRubm1HVlptY2FDd3VVeUhZd2w0YjR1UWlpTF9JMFdZSXRTRkh2WEhzSGNaTTlSNkpVaGpZWUc0VjJYTEtrQjZHME9VWlRZVEVDTjg4ZmNnR0pJX3pMeE8yN1BrNC1VU1dLU2JVNDJBV3VTdUUzTWwyZHQtMDRCel9iYzBaeE9qdm5XRmtpdnF0NUtNM3hqRHhzbjA2cmhqR3FsMVg2T3ZfMGhSb0RQTXUyaXJKcnRSbUR3?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
     "judul": "AI Cadence Tingkatkan Efisiensi Desain Chip Lima Kali Lipat",
     "kategori": "AI",
     "ringkasan": "Cadence memperkenalkan teknologi AI yang diklaim mampu meningkatkan efisiensi desain chip hingga lima kali lipat.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBJUlptVkpYQ1RYSmdBNG1PbVBmajhITVl6Q05Ld3FQUGN0R3lxQ3hkNkxVQVlaRjgzY0Fyc0xIRG1sUmlGZW50MGtHaUZ4RUtsb3lz?oc=5",
     "sumber": "شبكة تواصل الإخبارية"
-  },
-  {
-    "judul": "Jet Tempur Otonom AS X-BAT Canggih, Tak Perlu Awak atau Kapal Induk",
-    "kategori": "AI",
-    "ringkasan": "Amerika Serikat mengembangkan jet tempur canggih bertenaga AI yang mampu terbang tanpa pilot dan tidak memerlukan kapal induk.",
-    "tanggal": "2026-11-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOU54VkVwNElIbHlRUHNUWDhSTHp0NXVJN0FmampZRmVCa3M2clJuUEtTYkFPM1ZmTVlRamJmNFdMZjhycGV1RExsS3BpdkJ6NkF1VHNWOWY3V2QyV0RQSGNYaDZtSGVsdmFudFUxZGhqWlJ2UmZqR1l0dVRraENFM3Ywam0xWGw1SnlwTWlzbzZ3bVAwdUx2VDRtZjl0d01rRXB3SEJyTlVqVjFKeHNNWWwtQUtJR3NxYjVLdFlRZ3QwSDdlMm54MVc2RF9QUGNGT0JpUmphNmhoRlAwNWZYdmllQdIB6AFBVV95cUxQT0sySGw4b0xLeHpYdkF0VUJrS2YzQjl2amZ0MUxJSkFaVWQ3YXVOQVNIU05uNndNRDRuMTNkMURISUhVTEk2bU9yR29mVzVpSnZpcUVITjdTbXh1UE41WGFya2NvM2ZIY2lRS2owdWFaU2ljSGo0bFN6X0J5NHNwUUFHbmYtWHZCbVlVNmRBXzliV1U3emJwR3pZcWtuT2U0dEtEU3g2clFod3B1bXlpbHlDRXpCV3ZQVFdod09GWklWZDQ2Mm5pa0RGZWlWV2pHVmprOXZSRnpfamNiSEhjVF9TWFJJeHhD?oc=5",
-    "sumber": "Pontianak Post"
-  },
-  {
-    "judul": "Binus Sediakan Akses Gratis AWS AI Kiro untuk Mahasiswa",
-    "kategori": "AI",
-    "ringkasan": "Universitas Binus memberikan akses gratis ke platform kecerdasan buatan AWS Kiro bagi para mahasiswanya.",
-    "tanggal": "2026-11-03",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPM0o1N1R2SkozNExFZllaZXVvaW9xSE5ocGZ5bnByeG1FMFAzbDlyRUxMR1pRdVNITzZoY01iYkxld3VZTXhJQVgtVVFhUWJObng1Tm83WERnS3hRQ2xEWTlVUXczSmVNbW8yRlZMLVZnWjhWX2d0OXRTSTVUUUhrRHVmTFoxQmNrTEpmVy1vU1VzLWJOR0NUZHd30gGfAUFVX3lxTFBwUTAtTnI2LTNSRDAwTTM3RGZ1enBnVzNtY085bUhTSHVDeWNZWTQwRFlUbFVBd2VTbDYteGV5bm5LbVZiVzJWMjdDWFcyTXVCTUJ1czdSZ3B1OTFpTjA2bjVXczY2OXp5WldjdlVFUFY5eWV0N3ZwRnduTXVMdF9RUldKQUZwYjJDMThGQ3FicHZoSlZkVElOcG52bmRfbw?oc=5",
-    "sumber": "detikInet"
-  },
-  {
-    "judul": "Realme Tawarkan Diskon Besar untuk Smartphone di Promo 11.11",
-    "kategori": "Gadget",
-    "ringkasan": "Realme menggelar promo besar-besaran 11.11 dengan memberikan potongan harga hingga 30% untuk berbagai model smartphone.",
-    "tanggal": "2026-11-03",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZjNPbG1VSEQtVEJSczB2Q2l6cTl6QUNJU0U5QkhVS01SZS1mdHljRXVHek53ZmtldU9ubGROekVqQzFoaVQ5eE5oZW9UQk40OGd3aWJfRFFKVDBlVUVQd3JaM2hoaXRGTDNFSVFmbnR5WnhzUGloSEphMGlHQVVfSHFzbVNFX1Z3SlpsSg?oc=5",
-    "sumber": "Selular.ID"
-  },
-  {
-    "judul": "Italia Minta Industri Pangan Perketat Keamanan Siber",
-    "kategori": "Keamanan",
-    "ringkasan": "Pemerintah Italia mendesak sektor industri pangan untuk meningkatkan langkah-langkah keamanan siber guna melindungi data dan operasional.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVzVUY2RTZURFVU5odmxiVVpIbHhYSDNTSWVObHd5aTh4am5kTWx1bzhUcHBfeWhxODNzdXp5dmNvVlBTN2NMUm5UZVFVbVloV0JiR0loYmxJeE9iQ3doNnI5S2R4cnBFb1EzVWVkZ3VWeUV0YzJBTWZ6Sjl0VGNlWHlHMk1jeEpWQXREZ0cxekNIbF8wZUlUcNIBmwFBVV95cUxORlJGbXFqeFFBR3J0NzdFc0lPRElaeWs2eG1IWkQ0eGJubHJ6LTlKTWhiTTZfbnNzeHc5WTZaZGhHM0xKcUZaS25CS09lcGsybXpVaks0d3ZQLTAxcGpscDlGN2xsbDFnd0Mwd05Dam0tdW02Y3ZndHNyRkdfZUN3RlUwem1xVXA1RlRudVJOTU9Yb3pxNmJadXVPcw?oc=5",
-    "sumber": "ANTARA News"
-  },
-  {
-    "judul": "Google, OpenAI, Dukung Aturan Blokir Crawler AI",
-    "kategori": "AI",
-    "ringkasan": "Perusahaan teknologi besar seperti Google dan OpenAI sepakat mendukung standar baru untuk membatasi akses crawler AI ke konten web.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVktLTXVfTWVlcW1BOWlXMkN2aDItUlZ2SHpoclZJYV9ULU1JdXY0TmY4QlNjODFQTHZEV2RIOWI1eDFCOERVcnpNblBBcENSSTh6VDBzQVp0a3JaWTkwRi1QQVo3QzRIMmgwdjh2RFlaUUZfMFN2RnRienJOSHQ1T3YzMkM3NGNEM2J2Tmtlekd6bXBxYnVuX2FDVEYyejBUa1d0bm9KX28xQXQ10gGrAUFVX3lxTE92MkF2TmhHcXNSRG1yUF9lOVZwdU1vRXRUaktWRUNvUWVvREp2dzZVaHdqdFE3LXZNODAtRlgtc1UycE81S1lDbXpuRVFmSENTcFFHWWVybk1UMVFLNmtFaEI0N1UxLXRJc21oZzAxOG5IN0Vfa0RKYXJvVi1OdUhNU3pjMUt0VzFjMUxvVjZiNnhrbVB1M1VzZjNyOWs5ZFV4UWwxZXhfNk9vZw?oc=5",
-    "sumber": "HARIAN DISWAY"
-  },
-  {
-    "judul": "BRIN Gunakan VR untuk Pembelajaran Geologi Interaktif",
-    "kategori": "Software",
-    "ringkasan": "Badan Riset dan Inovasi Nasional (BRIN) memanfaatkan teknologi Virtual Reality untuk menciptakan pengalaman belajar geologi yang lebih menarik.",
-    "tanggal": "2026-11-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRXBsdUpvVkNQT01vYXJ0SXRXdk1tZ2tJWUZiWkpxaHNRODNfLU9sRWFUY2NLM19jTXd3VEhSNXd5a3FRcWtsZTRYeThrU3BoM1BtZUJxcmhvSVJqclA2YUNKY01Sb3c4dUoyVVg3blNLUTIxdlhkU1NfM0YtMmc1ZmVhQjduUnVDU3pKczk5ZE03T01UMFl6VVdWWTMzcmo5dU1fMVh2N0NHQ3l2RlJrQXVpMGZjcEwtbGdQenM3M1dSWXlBeGpj?oc=5",
-    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
-  },
-  {
-    "judul": "Anthropic Ungkap AI Berpotensi Percepat Riset Mandiri dalam Dokumen IPO",
-    "kategori": "AI",
-    "ringkasan": "Prospektus penawaran umum perdana Anthropic mengindikasikan bahwa kecerdasan buatan mereka hampir mampu melakukan riset secara mandiri.",
-    "tanggal": "2026-11-02",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQTNiemdVTzVnSkczLXdfcHl3cVNhZFNMUWZNRkliMzJJSTEzYWN3dnIyVUxuZFFTVEEyaFRMYXhHYnVlazF4REQxVlJHOHZidkllRWlWQWxrVkp2b1QxZDNwSlhVS3hXLXZMdWxLaDhpXzVFVHVoWEQ2Y3NWTHpNeFhUWQ?oc=5",
-    "sumber": "Pasquale Pillitteri"
-  },
-  {
-    "judul": "Serangan Siber Ganggu Operasional Freezer Supermarket di Tujuh Negara Eropa",
-    "kategori": "Keamanan",
-    "ringkasan": "Sistem komputer freezer di sejumlah supermarket Eropa menjadi sasaran serangan siber, menyebabkan gangguan operasional di tujuh negara.",
-    "tanggal": "2026-11-02",
-    "baca": 2,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPXzRRdzBtcmhPUS1nM0psVlVlVlRUS3E3YWRhZ29HdU5SX1o5bVFMaDJpMW0wejVqa1M2cHJDWUVCdFlESE4yTktvdndJN0VLQjBLYUVtSVNSeHY0UjQyTjdJTHEtODBMMmtuSUtENEpaTzlFZFpOT1NfWXRwZU95dnJueGNRbDZMb2IwUVhWb3EwSVo3bUVJZWY1V285Yzg?oc=5",
-    "sumber": "Pasquale Pillitteri"
   }
 ]
