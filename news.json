@@ -1,5 +1,85 @@
 [
   {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaTZ3TllzNXFqSl9FX1pXM1o5bjNxanpGNjMzRWl4UkJTbGxwU3VBQ1o5NGVENXhvQjV5dDVFZTlkU3RqNEJfNjJwVU1yR2Y3Q2tvSzN6WW1OVFdycFR2S3R5UjVfMVZhNy0zRHhFUU1oenRTa1NTNzlmZ0tnTDM1VVkzWk9sd09DdThPWm8ycGhtTjg5ckI4V25BNnlpbU90Zl9ZNGVrcUE4QmkwVE5CWHhucnA2S0ZPdXl6Wjk0c2o1OEFPOUt1dHdEaGZBc2dzOUpUY1MyLW16dUxHZ2k4REQ2aTRNUUZwdGc?oc=5",
+    "sumber": "Universitas Islam Negeri Sulthan Thaha Saifuddin Jambi"
+  },
+  {
+    "judul": "Pakar Siber Ungkap Ancaman Penyadapan LIMS yang Sulit Dideteksi",
+    "kategori": "Keamanan",
+    "ringkasan": "Penyadapan melalui LIMS terdeteksi sebagai ancaman siber baru yang beroperasi tanpa jejak di perangkat korban.",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeDRySGlXbFZVQ2NFejlYeklLRUw0YVNTUDZHRFEwR3VrakxRd1ZwUUxtVmtPQXY1UHZQd2I2eEVDSDluQmx1cy1LVWxnc3Yybk9zcXJNakpFR0tqb0FxWlE5RDhjMDVvRXNwT1h4M2VzLXE4WjN2U25xMENmRWdVMU9MM0lkREFqZ1R0RjlUOVRpZjdFQUNsTU15X2tSZEFXUUVQVE5tUVY4YW9ULUhSNkxJaHlZbDjSAa4BQVVfeXFMUFJzMkN0Mjdhdk1UT1hvMUwwb3ExZjlFTjFTUVhpNUNoaEZkQ2dZR25hREMzeWJkSUxxMW5iZVFtck5Td25hX1ZTYldSMU1yR2hwd1BLbUh2b1NCQVZmV3VMMW1QdWVqZ084bmlnczFkekVaNkZWU1ltdmxTek95ZXZ1eUJaZU1HZzJCS3dTSWxxdElLZjFHMEYtbGgtbHJHeDlfZnhtakt1RWZST1lB?oc=5",
+    "sumber": "Liputan6.com"
+  },
+  {
+    "judul": "Celah Kritis Xen Ditemukan, Ancaman Keamanan Virtual Machine Meningkat",
+    "kategori": "Keamanan",
+    "ringkasan": "Dua kerentanan serius pada Xen ditemukan, memungkinkan mesin virtual jahat menguasai sistem host.",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb0ZoM1N2NHVvcFRsWlZDN2d1YjBUWGdVY2tYanp6S1k2NEEyelUtSG00UGFkcDZCOFNxaTFNamhacm13LXJEWXoxYVpqZUJCTGhqbzQ4bEQyZ3g3eWxxdFhqUGlYMXZPT0FBX0U4MXluclMwNlVZVkFCQVJFbE1FNWRncHBzN1JJZzhKeUF1VlJMNGtxbFllZmJGbW40SmE1c0E?oc=5",
+    "sumber": "Industry.co.id"
+  },
+  {
+    "judul": "Anthropic Sisipkan Tanda Air Tersembunyi pada Model AI Claude Versi Lama",
+    "kategori": "AI",
+    "ringkasan": "Anthropic kini menyematkan watermark tak terlihat pada model AI Claude versi sebelumnya untuk identifikasi.",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVU1xeVg2LTJpaDZEWEk0eG9GVWR6TDhER3JEeENOOGhLRUs5ZXo3Slp0Z0VRX09QQXhaQXYzYy1DazJwWm4yWGlscUtuU09pUGw3a3liSFdMWVhFX3RyTWRuS0J5SmhyaTVuN1ZjSVdZTTY4dEJUVUZQQWg4SllvT2tEUUhPNlRjWmxaLS11OTZzUHIwRWYxNjdrVVJkSkVLRkE?oc=5",
+    "sumber": "Industry.co.id"
+  },
+  {
+    "judul": "Moonshot Luncurkan Kimi K3.1 Pro, Model AI Terbuka Raksasa 2,8 Triliun Parameter",
+    "kategori": "AI",
+    "ringkasan": "Moonshot memperkenalkan Kimi K3.1 Pro, sebuah model kecerdasan buatan terbuka dengan 2,8 triliun parameter.",
+    "tanggal": "2026-11-05",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZFhCenR3b0xNeVVOb1BMd21ucXVSemp0Y1J6d1VLaVJPOXRfMkp5VHN5RUg5OVNvbjJEcmxsdUdzXzJEZ3RDcjJTRlBMdW5MUzRCOEFIcE5DMEtwQ21sTjgzTVZ2bjJoeC01QnpjaGg1OGRZdTA2cXdtbUFGVUg1bWdieVhrRF9kYUJVOG12X29lc28wX21FQk5xbGhrR1JBQXRZ?oc=5",
+    "sumber": "Industry.co.id"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVUF6VG9tbzNZZEMxbzlwNHBtcXpTeF9KcVNnNjN3bkFGanhPdjJXX01SVjFzNUpYcm0zNG55anpoYzBCUXBJd2hOVnNUT0VyQU5FZlJucGNQeDdfVDk2ME5ZOFZjc1FWcUhPZjBqSGlXMzdBMVg1Q25EWDFoMEhJaWJoSHdwUGJBRFNPS29aWENfUkFPbnctWmpVcjVSM2l1a1MwVmIxbi1qZm5pYzVfdllURmEwMVFwRXdZ?oc=5",
+    "sumber": "Pemerintah Kabupaten Ponorogo"
+  },
+  {
+    "judul": "skip",
+    "kategori": "AI",
+    "ringkasan": "skip",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZktPaWZ1RmgxMVpVVHV0S1k0Z3dOR2xoYjhBOTZWUkVhLXM1Tm9HcWVCYVBLS0UtVTBpY2M4VlBBM2JUcmNmR1dtcEZRemUyd1JsUkNvOEQ1RDJtU0Y2cnh5UmtYS3lRSWppbUhKeWxLZWZWeE9iTlhVSXUtdEFFQVM2eFJVOVBNMFVPMGM0a1ZoZkpOV2NKRml3TDNrNFozbkRiS3hjaw?oc=5",
+    "sumber": "Motomobi News"
+  },
+  {
+    "judul": "Lansia di China Antusias Pelajari AI dan Teknologi Drone",
+    "kategori": "AI",
+    "ringkasan": "Masyarakat lanjut usia di Tiongkok menunjukkan minat tinggi dalam mempelajari kecerdasan buatan dan fotografi drone.",
+    "tanggal": "2026-11-05",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOWdNT0x2d1o2cjZvaWlfLUVSbXVycEE5eFRJaFp6OW5ZVWlUZ21jZXBJVnFQdW5VbFBiR2kxQnlyZ0hZTFByWW9jdi1VdmliR3pZUldqeWxsSUZnekpZcDQtbDlscU1Fa1JEQ0pGOVhCZkwtX2tOWGlQUWZGWWdYbnRjdU5nT1JIMjdKMElQazduMUZrd3BRRk9BM2U2TmR6MUpuM1lWU3ljaWV6WWpEQVY3VUtTLWlmR2NfUVVlLUs5ZTg?oc=5",
+    "sumber": "BBPMP Jatim"
+  },
+  {
     "judul": "Cilegon Perkuat Industri Hadapi Ancaman Bencana Teknologi",
     "kategori": "Keamanan",
     "ringkasan": "Pemerintah Kota Cilegon berupaya meningkatkan ketahanan industri lokal guna mengantisipasi potensi risiko bencana yang disebabkan oleh teknologi.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQUENmTlZxcnNkLXdJd3Ffa1ZUb1V0WjNHb28tYkl5eHF2aXMyMktXLWVXcEt1LVlfWmZYNUthRHpGNFVZQ0tTSzJsWk5xRWl2M01ZcFFjclNlMlh3UEpLRHZDRksyQ0NCbW5xVmw5Qm96Vmc3bERjY0dPT3N3YVFTUEZPMEJmYlBFYy05Vjg1OHVwWW1zRzhYdllzOVRVRFlUTWNlUDJtcC1BZjhPZFc5dTA2OUhfcnFlV1NZakctWkZUYmx5TVpsalREMkVoaG93RVdjc2dVY1paRjBDVFp6Zmc5aVlUT1piMmx2MGlTbUs3ZC1uc3Y4TnFjcm0wUl9nWU9abQ?oc=5",
     "sumber": "ANTARA News Jateng"
-  },
-  {
-    "judul": "Secure Parking Tingkatkan Bisnis Parkir dengan Inovasi Teknologi",
-    "kategori": "Startup",
-    "ringkasan": "Secure Parking Indonesia berupaya memperkuat operasional bisnis parkir mereka melalui penerapan teknologi terkini.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wWENCeFk3eFQ0eWI1TVQ3UGowY25LVWVWT1M1QTJHYVU3eVJuWklEZ0VnZUJEWDhBS1RRbGxJQW9FLUFla3pnM0ZRc0pvY0F4YjlveVNVNXAwM3VqVVdjR0JqbUlaVVlpUlNZMk5mWC0?oc=5",
-    "sumber": "Demokratis.co.id"
-  },
-  {
-    "judul": "Gadget Terbaru Oktober 2026: Deretan Ponsel, Laptop, Kamera, dan Audio Canggih",
-    "kategori": "Gadget",
-    "ringkasan": "Oktober 2026 akan hadirkan 48 perangkat baru mulai dari ponsel, laptop, kamera, hingga perangkat audio.",
-    "tanggal": "2026-11-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1naF9IZElESHhINFEyZHByUlJLVm5CTFgtNk1Ba0JoQzROOE1RTXgyelVXV185WlZWSndQY3JyYlB6QUJfdE1KUFNDRko0WTdPbmJPdDNGcDNZY2hPODBFc1lJS1NNR19XUmRHU3FjUEtmZw?oc=5",
-    "sumber": "yangcanggih.com"
-  },
-  {
-    "judul": "HyperOS 4 Global Hadir untuk 80 Perangkat Xiaomi dan Poco Hingga Akhir 2026",
-    "kategori": "Software",
-    "ringkasan": "Xiaomi dan Poco merilis jadwal pembaruan HyperOS 4 global untuk 80 model perangkat hingga Desember 2026.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zVjhQbWZNXzNGQ2ZoMzVMTDIwbUNaWGMyVnR1QmpLMDY3TmREWVRaUnZQSm9FZmZqRXhNTFRUTFNCbzFoU2dQOFEyTzMwYmtIMTJzaEN1YUpDbzFZc3JUeFJ1RHM3ZHE2LWVTR3BmS2VEWUdiYVI5NQ?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "Samsung Galaxy S27 Ultra Hadir dengan Modul Kamera Baru, Sensor Lebih Sedikit",
-    "kategori": "Gadget",
-    "ringkasan": "Samsung Galaxy S27 Ultra diprediksi akan mengusung modul kamera yang berbeda dengan pengurangan jumlah sensor.",
-    "tanggal": "2026-11-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcDJ4VFNkZmswUEVlaVhUZGhHcWw3X1EyeWowYmpHUXBzWW9KbldSOFpsamlGWm4yb0VHUkc3ZnJrY1ZBZHI3aDBqWUMzMW9rNng2bmMyMzJ3UDYyeVhXRTgwTFU4T0xhTTFld01nVExuZWFDeG5uVEZiNzZyM192akJxbzBrbUk?oc=5",
-    "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "Mahasiswa Edukasi Penggunaan Gadget Bijak di Program KKN",
-    "kategori": "Gadget",
-    "ringkasan": "Mahasiswa KKN menginisiasi kampanye edukasi untuk mendorong penggunaan gadget yang lebih bertanggung jawab di masyarakat.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUFd0VmI1ZVdELWxLRmxHNkZEOUpJa0RiVUNJMWpGUWVjTkYxUDBvNnp0RUx0ZDloZE1XU0pPZlY1OWFjOUtYem5XakQ5SVRieXNLclJpc2c1dHRtNHhYZGptNEh3Y1RDQVNzQzFvaWgxTHNueDBvRzRucXhvdXVkWjY4ZVRWeDEtVlBOSXpRN19Yd0RrbTBBaGRiOE1WaGlkV1RiejJQdGh5TEkzUUZQM3hSVldoZWlPN3hFcnJqLTE1MTJEaGlsRWxUc1FWVkZtR2hOQy10cHlSUVJOMEtjZ2xPRS1MS1BjT2s4?oc=5",
-    "sumber": "Kompasiana.com"
-  },
-  {
-    "judul": "Korea Selatan Pertimbangkan Czar Keamanan Siber Pasca Peretasan Binance",
-    "kategori": "Keamanan",
-    "ringkasan": "Menyusul insiden peretasan Binance, Korea Selatan mengkaji pembentukan pejabat khusus keamanan siber untuk sektor keuangan.",
-    "tanggal": "2026-11-03",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQmo0OXBuajF5eVMyelBNckhHcGdsRnJwQmF4eFVla2lHajJFTU4xQTNjQkFJem9uaHNCN0lsZVQ3czlsNV82ZmNBdmk0TXQwbzQ4UzEzWlpXSVZoNjdnWW9sVzRwVVBsbS1NY3hfRl91SWxGbi1JeTh5a2g0NnVwMFI3aFpWTlBXR0ZfYjA1bTJqVk5zancwZ1F1TU1lZUxfdEFJckdpeGhGVG45bUhxZlo0UEZBc0pCZUVKY3dYTUxVVkVaelNnek5NX2RsbGYwekdZRnpqVkxRc1E0MXc?oc=5",
-    "sumber": "CoinDesk"
-  },
-  {
-    "judul": "Microsoft Ignite 2026 Fokus pada AI dan Peningkatan Keamanan Siber",
-    "kategori": "AI",
-    "ringkasan": "Microsoft Ignite 2026 akan menyoroti perkembangan terbaru dalam kecerdasan buatan dan penguatan keamanan siber.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTjJmTzhadnBTbDMyalJpLTFNS21xUGdiMExOMFp3SURBWm5FbmRDYjhLOUVkdXk3aVdSOGppbE5XbHFXdUNHODgyeGdVcjdOUTlsbjBRRTFabXlUbHpxdldCUi1rcUI0TlNfbHFxbXB6YXkwS05pQWp1c0pBaXZNa01VN0JpMDZjTUlaUFdkX1k2RVdPamREbWVHWDU?oc=5",
-    "sumber": "BANGSAONLINE.com"
-  },
-  {
-    "judul": "Serangan Siber Lumpuhkan Sistem Pendingin Supermarket Eropa",
-    "kategori": "Keamanan",
-    "ringkasan": "Serangan siber dilaporkan telah mengganggu operasional sistem pendingin di sejumlah supermarket di Eropa, menimbulkan kekhawatiran keamanan.",
-    "tanggal": "2026-11-03",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBJUlptVkpYQ1RYSmdBNG1PbVBmajhITVl6Q05Ld3FQUGN0R3lxQ3hkNkxVQVlaRjgzY0Fyc0xIRG1sUmlGZW50MGtHaUZ4RUtsb3lz?oc=5",
-    "sumber": "شبكة تواصل الإخبارية"
   }
 ]
