@@ -1461,7 +1461,7 @@ loadEdukasi().then(renderEdukasi);
 @media (prefers-reduced-motion:reduce){.csw.open{animation:none}.csw-typing i{animation:none}}
 </style>
 
-<div class="wa-teaser" id="cswTeaser" role="button" tabindex="0">Halo Kak 👋 Ada yang bisa kami bantu? Tanya produk, harga, atau pesan langsung di sini.<button type="button" aria-label="Tutup sapaan" id="cswTeaserX">×</button></div>
+<div class="wa-teaser" id="cswTeaser" role="button" tabindex="0">Halo Kak 👋 Ada yang bisa kami bantu? Tanya produk, harga, atau sampaikan kebutuhan Kakak di sini.<button type="button" aria-label="Tutup sapaan" id="cswTeaserX">×</button></div>
 
 <div class="csw" id="csw" role="dialog" aria-label="Customer Service Gozali Corp">
   <div class="csw-head">
@@ -1478,17 +1478,17 @@ loadEdukasi().then(renderEdukasi);
     <textarea id="cswInput" rows="1" maxlength="800" placeholder="Ketik pesan..." aria-label="Pesan"></textarea>
     <button type="submit" id="cswSend" aria-label="Kirim">➤</button>
   </form>
-  <div class="csw-foot">Asisten virtual, bisa keliru. Admin manusia siap lanjut via WhatsApp.</div>
+  <div class="csw-foot">Asisten virtual · CS manusia melanjutkan setelah kebutuhan dicatat.</div>
 </div>
 
 <script>
 /* ======================================================================
    CS WHATSAPP — Gozali Corp Technology
-   Tombol WA melayang membuka customer service virtual:
-   • menjawab pertanyaan (FAQ lokal + AI Worker dari chat.json bila aktif)
-   • menampilkan katalog & mengarahkan ke link pesanan (checkout_url / form order)
-   • mencatat kebutuhan pelanggan → nomor tiket → dikirim ke WhatsApp admin
-   Isi produk otomatis dari products.json (panel admin). FAQ bisa diedit di CS_FAQ.
+   Alur: pelanggan → ASISTEN VIRTUAL (jawab pertanyaan + WAJIB isi kebutuhan)
+         → asisten merangkum & mengirim ringkasan ke tim CS (email via Worker)
+         → baru pelanggan disambungkan ke CS MANUSIA di WhatsApp (ringkasan ikut).
+   Semua tautan wa.me di halaman diarahkan ke asisten ini dulu.
+   Produk otomatis dari products.json. FAQ bisa diedit di CS_FAQ.
    ====================================================================== */
 (function(){
   /* ---------- EDIT DI SINI ---------- */
@@ -1501,9 +1501,9 @@ loadEdukasi().then(renderEdukasi);
     { k:['lama','berapa hari','durasi','pengerjaan','estimasi','kapan selesai','deadline'],
       a:'Waktu pengerjaan jasa tergantung skala proyek. Ceritakan kebutuhan Kakak, nanti saya catat dan tim kami kirim estimasi waktu + penawaran yang pas.',
       act:'intake' },
-    { k:['refund','garansi','uang kembali','komplain','keluhan','rusak','tidak bisa dibuka','error','gagal'],
-      a:'Mohon maaf atas kendalanya, Kak 🙏 Untuk komplain/garansi saya sambungkan langsung ke admin agar segera ditangani. Sertakan nama & produk yang dibeli ya.',
-      act:'admin' },
+    { k:['refund','garansi','uang kembali','komplain','keluhan','rusak','tidak bisa dibuka','error','gagal','belum terima','belum dapat'],
+      a:'Mohon maaf atas kendalanya, Kak 🙏 Supaya CS kami bisa langsung menangani, saya catat dulu detail kendalanya ya.',
+      act:'komplain' },
     { k:['alamat','lokasi','kantor','dimana','di mana'],
       a:'Kami melayani **online ke seluruh Indonesia** — konsultasi, pengerjaan, dan support semuanya via WhatsApp & email (gozalitechnology@gmail.com).' },
     { k:['gozali corp','siapa kalian','tentang','profil','perusahaan'],
@@ -1512,10 +1512,10 @@ loadEdukasi().then(renderEdukasi);
       a:'Beberapa e-book sedang **harga promo** (lihat harga coret di katalog). Untuk jasa, harga bisa disesuaikan dengan kebutuhan & budget — ceritakan dulu, nanti kami buatkan penawaran.',
       act:'katalog' }
   ];
+  const KEPERLUAN = ['Pesan produk','Jasa / proyek custom','Tanya informasi','Komplain / kendala'];
   const LAYANAN = ['Website custom','Chatbot / AI Agent WhatsApp','Otomasi bisnis','Konten medsos / video','Aplikasi mobile','E-book / produk digital','Lainnya'];
   const BUDGET  = ['< Rp 1 juta','Rp 1–5 juta','Rp 5–15 juta','> Rp 15 juta','Belum tahu'];
   const WAKTU   = ['Secepatnya (≤ 1 minggu)','2–4 minggu','1–3 bulan','Fleksibel'];
-  /* layanan → kata kunci produk terkait di katalog */
   const LAYANAN_PRODUK = {'Chatbot / AI Agent WhatsApp':['chatbot','agent','whatsapp'],'Konten medsos / video':['konten','medsos'],'E-book / produk digital':['ebook']};
   /* ---------------------------------- */
 
@@ -1523,12 +1523,15 @@ loadEdukasi().then(renderEdukasi);
   const box=$('csw'), body=$('cswBody'), chips=$('cswChips'), form=$('cswForm'), input=$('cswInput'), send=$('cswSend');
   const floatBtn = document.querySelector('.wa-float');
   const teaser = $('cswTeaser');
-  const KEY='gct_cs_chat', LEADS='gct_cs_leads';
-  let log=[], mode=null, lead={}, busy=false, products=null, opened=false;
+  const KEY='gct_cs_chat', LEADS='gct_cs_leads', LKEY='gct_cs_lead', QKEY='gct_cs_q';
+  let mode=null, busy=false, products=null, opened=false, lastOpen=0;
 
   const ss = {get(k,d){try{const v=JSON.parse(sessionStorage.getItem(k));return v==null?d:v;}catch(e){return d;}}, set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
   const ls = {get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v;}catch(e){return d;}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
-  log = ss.get(KEY, []); if(!Array.isArray(log)) log=[];
+  let log = ss.get(KEY, []); if(!Array.isArray(log)) log=[];
+  let lead = ss.get(LKEY, {}); if(!lead || typeof lead!=='object') lead={};
+  let qlog = ss.get(QKEY, []); if(!Array.isArray(qlog)) qlog=[];   // pertanyaan bebas pelanggan → ikut ringkasan
+  const saveLeadState = () => ss.set(LKEY, lead);
 
   const E = s => (s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const waNum = () => { try{ return (typeof WA_NUMBER!=='undefined' && WA_NUMBER) || '6281399899954'; }catch(e){ return '6281399899954'; } };
@@ -1537,6 +1540,7 @@ loadEdukasi().then(renderEdukasi);
   const safeUrl = u => { const t=String(u==null?'':u).trim(); return /^https:\/\/[^\s"'<>]+$/i.test(t)?t:''; };
   const jam = () => new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});
   const norm = s => String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+  const first = n => String(n||'').trim().split(' ')[0];
 
   function fmt(t){
     let h=E(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
@@ -1564,7 +1568,7 @@ loadEdukasi().then(renderEdukasi);
       node(t); setTimeout(()=>{ t.remove(); res(); }, ms||550);
     });
   }
-  async function say(text, extra){ await typing(Math.min(1100, 350 + String(text).length*4)); return bubble('assistant', text, extra); }
+  async function say(text, extra){ await typing(Math.min(1000, 300 + String(text).length*3)); return bubble('assistant', text, extra); }
 
   /* ---------- Produk ---------- */
   async function getProducts(){
@@ -1582,42 +1586,41 @@ loadEdukasi().then(renderEdukasi);
   const STOP = new Set(['dan','untuk','dengan','yang','dari','ke','di','pakai','cara','paket','hari','ai','saya','mau','ingin','kak','min','bisa','ada','apa','the','buku','beli','pesan','harga','berapa']);
   function matchProducts(text, list){
     const q=' '+norm(text).replace(/e book/g,'ebook')+' ';
-    const scored=list.map(p=>{
+    return list.map(p=>{
       let s=0;
       norm(p.nama).split(' ').forEach(w=>{ if(w.length>2 && !STOP.has(w) && q.includes(' '+w+' ')) s+=2; });
       norm(p.desk).split(' ').forEach(w=>{ if(w.length>4 && !STOP.has(w) && q.includes(' '+w+' ')) s+=0.5; });
       const k=norm(p.kat); if(k && q.includes(' '+k.replace(/ /g,'')+' ')) s+=1;
       if(/ebook/.test(q) && /^e ?book$/.test(k)) s+=1;
       return {p,s};
-    }).filter(x=>x.s>=2).sort((a,b)=>b.s-a.s);
-    return scored.map(x=>x.p);
+    }).filter(x=>x.s>=2).sort((a,b)=>b.s-a.s).map(x=>x.p);
   }
   function order(p){
-    const ticket = mkTicket('ORD');
-    saveLead({tiket:ticket, tipe:'Pesanan', produk:p.nama, harga:p.harga, nama:lead.nama||'', via:p.checkout?'checkout':'form'});
     if(p.checkout){
-      bubble('assistant','Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak. Kode pesanan: **'+ticket+'**');
+      bubble('assistant','Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak.');
       const w=window.open(p.checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else location.href=p.checkout;
     } else if(typeof openModal==='function'){
-      bubble('assistant','Siap Kak! Formulir pesanan **'+p.nama+'** sudah terbuka. Isi nama, pilih metode bayar, lalu klik **Lanjutkan pembayaran via WhatsApp**. Kode: **'+ticket+'**');
+      bubble('assistant','Siap Kak! Formulir pesanan **'+p.nama+'** sudah terbuka. Isi nama, pilih metode bayar, lalu klik **Lanjutkan pembayaran via WhatsApp**.');
       close(); openModal(p.nama, p.harga);
       setTimeout(()=>{ const n=$('clientName'); if(n && lead.nama && !n.value) n.value=lead.nama; }, 30);
     } else {
-      window.open(waLink('Halo Gozali Corp, saya ingin memesan *'+p.nama+'* ('+p.harga+').\nKode: '+ticket),'_blank');
+      startIntake({keperluan:'Pesan produk', produk:p.nama});
     }
   }
+  function isJasaProd(p){ return /konsultasi|pesan/i.test(p.aksi) && !p.checkout && !/^e ?-?book|digital$/i.test(p.kat); }
   function cardsEl(list){
     const wrap=document.createElement('div'); wrap.className='csw-cards';
     list.forEach(p=>{
-      const isJasa=/konsultasi|pesan/i.test(p.aksi) && !p.checkout && !/^e ?-?book|digital$/i.test(p.kat);
+      const jasa=isJasaProd(p);
       const c=document.createElement('div'); c.className='csw-card';
       const icon=p.img?'<img src="'+E(p.img)+'" alt="">':(p.emoji||(/book/i.test(p.kat)?'📘':'🛍️'));
       c.innerHTML='<div class="em">'+icon+'</div><div style="flex:1;min-width:0"><h5>'+E(p.nama)+'</h5><p>'+E(p.desk)+'</p>'
         +'<div class="pr">'+(p.coret?'<s>'+E(p.coret)+'</s>':'')+E(p.harga)+'</div>'
-        +'<div class="ac"><button type="button" class="csw-btn go">'+(p.checkout?'Bayar sekarang':(isJasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button>'
-        +(isJasa?'<button type="button" class="csw-btn ln">Catat kebutuhan</button>':'')+'</div></div>';
-      c.querySelector('.go').onclick=()=>{ if(isJasa && /konsultasi/i.test(p.aksi)){ startIntake(guessLayanan(p.nama+' '+p.desk), p.nama); } else order(p); };
-      const ln=c.querySelector('.ln'); if(ln) ln.onclick=()=>startIntake(guessLayanan(p.nama+' '+p.desk), p.nama);
+        +'<div class="ac"><button type="button" class="csw-btn go">'+(p.checkout?'Bayar sekarang':(jasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button></div></div>';
+      c.querySelector('.go').onclick=()=>{
+        if(jasa) startIntake({keperluan:'Jasa / proyek custom', layanan:guessLayanan(p.nama+' '+p.desk)||'Lainnya', produk:p.nama});
+        else order(p);
+      };
       wrap.appendChild(c);
     });
     return wrap;
@@ -1632,21 +1635,13 @@ loadEdukasi().then(renderEdukasi);
     }
     if(!show.length) show=list;
     if(!show.length){ await say('Katalog sedang dimuat ulang, Kak. Sementara itu, saya bisa catat kebutuhan Kakak dulu.'); setChips(menu()); return; }
-    await say(intro || 'Ini pilihan produk & layanan kami. Klik tombol untuk langsung memesan 👇');
+    await say(intro || 'Ini pilihan produk & layanan kami. Produk siap pakai bisa langsung dipesan; untuk jasa, saya catat kebutuhannya dulu 👇');
     node(cardsEl(show));
     bubble('assistant','Ada yang ingin ditanyakan soal produknya, Kak?',null,false);
-    setChips([{l:'💳 Cara bayar'},{l:'📝 Catat kebutuhan saya',f:()=>startIntake()},{l:'👤 Chat admin',f:handoff},{l:'☰ Menu',f:showMenu}]);
+    setChips([{l:'💳 Cara bayar'},{l:'📝 Catat kebutuhan saya',f:()=>startIntake()},{l:'👤 Hubungi CS manusia',f:handoff},{l:'☰ Menu',f:showMenu}]);
   }
 
-  /* ---------- Pencatatan kebutuhan (intake) ---------- */
-  const STEPS=[
-    {k:'nama', q:'Boleh tahu nama Kakak?', ph:'Nama Kakak'},
-    {k:'layanan', q:'Layanan apa yang Kakak butuhkan?', ch:LAYANAN},
-    {k:'detail', q:'Ceritakan singkat kebutuhannya, Kak. Misal: jenis usaha, fitur yang diinginkan, atau masalah yang ingin diselesaikan.', ph:'Contoh: website toko kue 5 halaman + tombol order WA'},
-    {k:'budget', q:'Kisaran budget-nya berapa, Kak?', ch:BUDGET},
-    {k:'waktu', q:'Targetnya kapan harus selesai?', ch:WAKTU},
-    {k:'kontak', q:'Terakhir, nomor WhatsApp atau email yang bisa kami hubungi? (ketik **lewati** kalau mau lanjut chat WA saja)', ph:'08xx / email', ch:['Lewati']}
-  ];
+  /* ---------- Pencatatan kebutuhan (WAJIB sebelum ke CS manusia) ---------- */
   function guessLayanan(t){
     const q=norm(t);
     if(/chatbot|bot|agent|auto reply|balas otomatis/.test(q)) return 'Chatbot / AI Agent WhatsApp';
@@ -1657,89 +1652,179 @@ loadEdukasi().then(renderEdukasi);
     if(/ebook|e book|buku/.test(q)) return 'E-book / produk digital';
     return '';
   }
-  let step=0;
-  async function startIntake(layanan, produk){
-    mode='intake'; step=0;
-    lead={nama:lead.nama||'', layanan:layanan||'', produk:produk||''};
-    await say('Baik Kak, saya bantu catat kebutuhannya supaya tim kami bisa kasih solusi & penawaran yang pas 📝\n(Ketik **batal** kapan saja untuk berhenti.)');
+  function guessKeperluan(t){
+    const q=' '+norm(t)+' ';
+    if(/ (komplain|kendala|masalah|rusak|error|gagal|refund|keluhan|belum terima|belum dapat) /.test(q)) return 'Komplain / kendala';
+    if(/ (jasa|proyek|project|custom|bikin|buat|website|aplikasi|chatbot|otomasi|konten) /.test(q)) return 'Jasa / proyek custom';
+    if(/ (pesan|beli|order|produk|ebook) /.test(q)) return 'Pesan produk';
+    if(/ (tanya|info|informasi|pertanyaan) /.test(q)) return 'Tanya informasi';
+    return '';
+  }
+  const LABEL = {nama:'Nama',keperluan:'Keperluan',layanan:'Layanan',produk:'Produk',detail:'Detail',budget:'Budget',waktu:'Target selesai',kontak:'Kontak'};
+  function steps(){
+    const s=[
+      {k:'nama', q:'Boleh tahu **nama lengkap** Kakak?', ph:'Nama lengkap', min:2},
+      {k:'keperluan', q:'Apa **keperluan** Kakak hari ini?', ch:KEPERLUAN}
+    ];
+    const kp=lead.keperluan;
+    if(kp==='Jasa / proyek custom') s.push(
+      {k:'layanan', q:'Layanan apa yang Kakak butuhkan?', ch:LAYANAN},
+      {k:'detail', q:'Ceritakan **kebutuhannya**, Kak: jenis usaha, fitur yang diinginkan, atau masalah yang ingin diselesaikan.', ph:'Contoh: website toko kue 5 halaman + tombol order WA', min:10},
+      {k:'budget', q:'Kisaran **budget**-nya berapa, Kak?', ch:BUDGET},
+      {k:'waktu', q:'Targetnya **kapan harus selesai**?', ch:WAKTU});
+    else if(kp==='Pesan produk') s.push(
+      {k:'produk', q:'Produk mana yang ingin Kakak pesan?', ch:'@produk'},
+      {k:'detail', q:'Ada pertanyaan atau catatan untuk pesanan ini? (misal jumlah, untuk siapa, atau pertanyaan sebelum bayar)', ph:'Catatan pesanan', ch:['Tidak ada'], min:2});
+    else if(kp==='Komplain / kendala') s.push(
+      {k:'produk', q:'Produk/layanan apa yang bermasalah? Sertakan **tanggal beli / kode pesanan** kalau ada.', ph:'Contoh: e-book Cuan dari AI, beli 5 Nov', ch:'@produk'},
+      {k:'detail', q:'Jelaskan **kendalanya** sedetail mungkin, Kak.', ph:'Contoh: link unduhan tidak bisa dibuka', min:10});
+    else if(kp==='Tanya informasi') s.push(
+      {k:'detail', q:'Silakan tulis **pertanyaan lengkap** Kakak.', ph:'Pertanyaan Kakak', min:8});
+    s.push({k:'kontak', q:'Terakhir, **nomor WhatsApp atau email aktif** Kakak? (wajib, untuk tindak lanjut CS)', ph:'08xx / nama@email.com'});
+    return s;
+  }
+  let curStep=null;
+  async function startIntake(pre){
+    pre=pre||{};
+    mode='intake';
+    const keep={nama:lead.nama||'', kontak:lead.kontak||''};
+    lead=Object.assign(keep, pre, {done:false}); saveLeadState();
+    await say('Supaya CS kami bisa langsung membantu tanpa tanya ulang, saya catat dulu kebutuhan Kakak ya 📝\nSemua pertanyaan **wajib dijawab** — setelah itu ringkasannya saya kirim ke CS manusia.\n(Ketik **batal** untuk berhenti.)');
     nextStep();
   }
   async function nextStep(){
-    while(step<STEPS.length && lead[STEPS[step].k]) step++;
-    if(step>=STEPS.length) return finishIntake();
-    const s=STEPS[step];
+    const s=steps().find(x=>!lead[x.k]);
+    if(!s) return confirmLead();
+    curStep=s;
     await say(s.q);
     input.placeholder=s.ph||'Ketik jawaban...';
-    setChips((s.ch||[]).map(c=>({l:c,f:()=>answer(c)})));
-    if(!s.ch || s.k==='kontak') input.focus();
+    let ch=[];
+    if(s.ch==='@produk'){
+      const list=await getProducts();
+      ch=list.map(p=>({l:p.nama,f:()=>answer(p.nama)}));
+      ch.push({l:'Lainnya (ketik)',f:()=>input.focus()});
+    } else if(s.ch){ ch=s.ch.map(c=>({l:c,f:()=>answer(c)})); }
+    setChips(ch);
+    if(!s.ch || s.ch==='@produk' || s.k==='detail') setTimeout(()=>input.focus(),30);
   }
   function answer(v){
-    v=String(v||'').trim(); if(!v) return;
+    v=String(v||'').trim(); if(!v || !curStep) return;
     bubble('user', v);
-    if(/^(batal|cancel|stop)$/i.test(v)){ mode=null; input.placeholder='Ketik pesan...'; say('Oke Kak, pencatatan dibatalkan. Ada yang bisa saya bantu lagi?').then(()=>setChips(menu())); return; }
-    const s=STEPS[step];
-    if(s.k==='nama' && v.length<2){ say('Namanya minimal 2 huruf ya, Kak 🙂'); return; }
-    if(s.k==='detail' && v.length<8){ say('Boleh diceritakan sedikit lebih detail, Kak? Biar penawarannya tepat.'); return; }
-    if(s.k==='kontak' && /^lewati$/i.test(v)) v='-';
-    else if(s.k==='kontak'){
-      const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || /^(\+?62|0)8[0-9\s-]{7,14}$/.test(v.replace(/\s/g,''));
-      if(!ok){ say('Formatnya belum pas, Kak. Contoh: **0812xxxxxxx** atau **nama@email.com** — atau ketik **lewati**.'); return; }
+    if(/^(batal|cancel|stop)$/i.test(v)) return cancelIntake();
+    const s=curStep;
+    if(s.k==='keperluan' && !KEPERLUAN.includes(v)){
+      const g=guessKeperluan(v);
+      if(!g){ say('Mohon pilih salah satu keperluan di bawah ya, Kak 🙏').then(()=>setChips(KEPERLUAN.map(c=>({l:c,f:()=>answer(c)})))); return; }
+      if(!lead.detail && v.length>12) lead.detail=v;
+      v=g;
     }
-    lead[s.k]=v; step++;
-    if(s.k==='nama'){ say('Salam kenal, Kak **'+v.split(' ')[0]+'** 🙌').then(nextStep); return; }
+    if(s.k==='layanan' && !LAYANAN.includes(v)){ const g=guessLayanan(v); if(!lead.detail && v.length>12) lead.detail=v; v=g||'Lainnya: '+v; }
+    if(s.k==='budget' && !BUDGET.includes(v) && !/\d|juta|ribu|rb|jt/i.test(v)){ say('Mohon pilih kisaran budget, atau tulis angkanya ya, Kak (misal: 3 juta).'); return; }
+    if(s.min && v.length<s.min){ say(s.k==='nama'?'Mohon tulis nama lengkap Kakak ya 🙂':'Mohon jelaskan sedikit lebih detail ya, Kak, supaya CS bisa langsung menindaklanjuti.'); return; }
+    if(s.k==='kontak'){
+      const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || /^(\+?62|0)8[0-9]{7,13}$/.test(v.replace(/[\s-]/g,''));
+      if(!ok){ say('Formatnya belum pas, Kak. Contoh: **0812xxxxxxx** atau **nama@email.com**'); return; }
+    }
+    lead[s.k]=v; curStep=null; saveLeadState();
+    if(s.k==='nama'){ say('Salam kenal, Kak **'+first(v)+'** 🙌').then(nextStep); return; }
     nextStep();
   }
-  function mkTicket(prefix){
-    const d=new Date(), p=n=>String(n).padStart(2,'0');
-    return 'GCT-'+(prefix?prefix+'-':'')+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+  async function cancelIntake(){
+    mode=null; curStep=null; input.placeholder='Ketik pesan...';
+    await say('Oke Kak, pencatatan dihentikan. Perlu diingat, untuk disambungkan ke **CS manusia** kebutuhan Kakak perlu dicatat dulu ya. Ada yang bisa saya bantu?');
+    setChips(menu());
   }
-  function saveLead(rec){
-    rec.waktu=new Date().toISOString();
-    const all=ls.get(LEADS,[]); all.push(rec); ls.set(LEADS, all.slice(-20));
-    // laporan ke email admin lewat Worker yang sama dengan formulir pesanan (tidak menghambat bila gagal)
-    try{
-      if(window.GCT_API) fetch(window.GCT_API+'/order',{method:'POST',keepalive:true,headers:{'Content-Type':'text/plain'},
-        body:JSON.stringify({produk:'[CS '+rec.tipe+'] '+(rec.produk||rec.layanan||'-'),harga:rec.harga||rec.budget||'-',nama:rec.nama||'-',email:rec.kontak||'-',
-          metode:'Chat CS · '+rec.tiket, detail:rec.detail||'', waktu_target:rec.waktu_target||'', tiket:rec.tiket})}).catch(()=>{});
-    }catch(e){}
+  function rows(){
+    return steps().map(s=>[LABEL[s.k],lead[s.k]]).filter(r=>r[1]);
   }
-  async function finishIntake(){
-    mode=null; input.placeholder='Ketik pesan...'; setChips([]);
-    const tiket=mkTicket();
-    lead.tiket=tiket;
-    saveLead({tiket, tipe:'Kebutuhan', nama:lead.nama, layanan:lead.layanan, produk:lead.produk, detail:lead.detail, budget:lead.budget, waktu_target:lead.waktu, kontak:lead.kontak});
-    const msg='Halo Gozali Corp, saya sudah mengisi catatan kebutuhan di website.\n\n'
-      +'*No. Tiket:* '+tiket+'\n*Nama:* '+lead.nama+'\n*Layanan:* '+lead.layanan+(lead.produk?'\n*Produk diminati:* '+lead.produk:'')
-      +'\n*Kebutuhan:* '+lead.detail+'\n*Budget:* '+lead.budget+'\n*Target selesai:* '+lead.waktu+'\n*Kontak:* '+(lead.kontak||'-')
-      +'\n\nMohon info solusi & penawarannya. Terima kasih!';
-    await say('Terima kasih Kak **'+lead.nama.split(' ')[0]+'**! Kebutuhan Kakak sudah saya catat ✅');
+  async function confirmLead(){
+    mode='confirm'; curStep=null; input.placeholder='Ketik "ya" untuk kirim, atau "ubah"';
+    await say('Terima kasih, Kak **'+first(lead.nama)+'**! Ini ringkasan yang akan saya kirim ke CS. Sudah benar?');
     const sum=document.createElement('div'); sum.className='csw-sum';
-    sum.innerHTML='<span class="id">🎫 '+E(tiket)+'</span><dl>'
-      +[['Layanan',lead.layanan],['Produk',lead.produk],['Kebutuhan',lead.detail],['Budget',lead.budget],['Target',lead.waktu],['Kontak',lead.kontak]]
-        .filter(r=>r[1]).map(r=>'<dt>'+r[0]+'</dt><dd>'+E(r[1])+'</dd>').join('')+'</dl>'
-      +'<div class="ac" style="display:flex;gap:6px;flex-wrap:wrap"><a class="csw-btn wa" target="_blank" rel="noopener" href="'+E(waLink(msg))+'">Kirim ke CS via WhatsApp</a>'
-      +(typeof rfqOpen==='function'?'<button type="button" class="csw-btn ln" data-rfq>Minta penawaran via email</button>':'')+'</div>';
+    sum.innerHTML='<b style="display:block;margin-bottom:4px;color:var(--ink,#0E1A40)">📋 Ringkasan kebutuhan</b><dl>'
+      +rows().map(r=>'<dt>'+r[0]+'</dt><dd>'+E(r[1])+'</dd>').join('')+'</dl>'
+      +(qlog.length?'<div style="font-size:12px;color:#7A8399">+ '+qlog.length+' pertanyaan sebelumnya ikut dilampirkan</div>':'');
     node(sum);
-    const rq=sum.querySelector('[data-rfq]');
-    if(rq) rq.onclick=()=>{ close(); rfqOpen(); setTimeout(()=>{ const f=(i,v)=>{const el=$(i); if(el && v) el.value=v;}; f('rfqNama',lead.nama); f('rfqDetail',lead.detail+'\n\nBudget: '+lead.budget+'\nTarget: '+lead.waktu+'\nTiket: '+tiket);
+    setChips([{l:'✅ Benar, kirim ke CS',f:()=>{bubble('user','Benar, kirim ke CS');submitLead();}},{l:'✏️ Ubah data',f:()=>{bubble('user','Ubah data');editLead();}}]);
+  }
+  async function editLead(){
+    mode='edit';
+    await say('Bagian mana yang mau diubah, Kak?');
+    setChips(steps().map(s=>({l:LABEL[s.k],f:()=>{
+      bubble('user','Ubah '+LABEL[s.k]);
+      if(s.k==='keperluan'){ ['layanan','produk','detail','budget','waktu'].forEach(k=>delete lead[k]); }
+      delete lead[s.k]; saveLeadState(); mode='intake'; nextStep();
+    }})).concat([{l:'↩ Kembali',f:confirmLead}]));
+  }
+  function mkTicket(){
+    const d=new Date(), p=n=>String(n).padStart(2,'0');
+    return 'GCT-'+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+  }
+  function summaryText(){
+    return '*RINGKASAN DARI ASISTEN VIRTUAL*\n'
+      +'No. Tiket: '+lead.tiket+'\n'
+      +rows().map(r=>r[0]+': '+r[1]).join('\n')
+      +(qlog.length?'\n\nPertanyaan pelanggan sebelumnya:\n'+qlog.slice(-5).map(q=>'• '+q).join('\n'):'');
+  }
+  async function postToCS(){
+    // Ringkasan dikirim asisten ke tim CS (email lewat Worker yang sama dengan laporan pesanan)
+    if(!window.GCT_API) return false;
+    try{
+      const ctrl=new AbortController(); const to=setTimeout(()=>ctrl.abort(),9000);
+      const r=await fetch(window.GCT_API+'/order',{method:'POST',keepalive:true,headers:{'Content-Type':'text/plain'},signal:ctrl.signal,
+        body:JSON.stringify({
+          produk:'[TIKET CS '+lead.tiket+'] '+lead.keperluan+(lead.layanan||lead.produk?' · '+(lead.layanan||lead.produk):''),
+          harga:lead.budget||'-', nama:lead.nama, email:lead.kontak,
+          metode:'Asisten virtual — '+String(lead.detail||'').slice(0,400),
+          tiket:lead.tiket, keperluan:lead.keperluan, layanan:lead.layanan||'', detail:lead.detail||'', budget:lead.budget||'', target:lead.waktu||'', kontak:lead.kontak,
+          ringkasan:summaryText(), sumber:'CS virtual gozalicorp.my.id'})});
+      clearTimeout(to);
+      return r.ok;
+    }catch(e){ return false; }
+  }
+  async function submitLead(){
+    if(busy) return; busy=true; send.disabled=true;
+    try{ await doSubmit(); } finally { busy=false; send.disabled=false; }
+  }
+  async function doSubmit(){
+    mode=null; setChips([]); input.placeholder='Ketik pesan...';
+    lead.tiket=lead.tiket||mkTicket();
+    const t=document.createElement('div'); t.className='csw-msg bot'; t.innerHTML='<span class="csw-typing"><i></i><i></i><i></i></span> Mengirim ringkasan ke tim CS…'; node(t);
+    const sent=await postToCS(); t.remove();
+    lead.done=true; lead.terkirim=sent; lead.waktuKirim=new Date().toISOString(); saveLeadState();
+    const all=ls.get(LEADS,[]); all.push(Object.assign({},lead,{pertanyaan:qlog.slice(-5)})); ls.set(LEADS, all.slice(-20));
+    await say(sent
+      ? '✅ Ringkasan kebutuhan Kakak sudah saya **kirim ke tim CS** dengan nomor tiket **'+lead.tiket+'**. CS manusia akan menindaklanjuti.'
+      : '✅ Kebutuhan Kakak sudah tercatat dengan nomor tiket **'+lead.tiket+'**.');
+    showHandoffButton(true);
+    // tawarkan produk siap pesan yang relevan
+    const list=await getProducts();
+    let rel=[];
+    if(lead.keperluan==='Pesan produk'){ rel=list.filter(p=>p.nama===lead.produk && !isJasaProd(p)); }
+    else { const kw=LAYANAN_PRODUK[lead.layanan]; if(kw) rel=list.filter(p=>kw.some(k=>norm(p.nama+' '+p.kat).replace(/ /g,'').includes(k))); }
+    if(rel.length){ await say(lead.keperluan==='Pesan produk'?'Kalau mau langsung bayar sekarang juga bisa, Kak:':'Ini produk kami yang sesuai kebutuhan Kakak:'); node(cardsEl(rel.slice(0,3))); }
+    afterChips();
+  }
+  function afterChips(){ setChips([{l:'👤 Lanjut ke CS manusia',f:()=>showHandoffButton(false)},{l:'❓ Tanya lagi',f:()=>input.focus()},{l:'📝 Kebutuhan baru',f:()=>startIntake()},{l:'☰ Menu',f:showMenu}]); }
+  function showHandoffButton(withNote){
+    const msg='Halo CS Gozali Corp, saya sudah mengisi data di asisten virtual website.\n\n'+summaryText()+'\n\nMohon ditindaklanjuti. Terima kasih!';
+    let extra='<br><a class="csw-btn wa" style="margin-top:8px" target="_blank" rel="noopener" href="'+E(waLink(msg))+'">Lanjut chat dengan CS manusia</a>';
+    if(lead.keperluan==='Jasa / proyek custom' && typeof rfqOpen==='function') extra+=' <button type="button" class="csw-btn ln" style="margin-top:8px" data-rfq>Minta penawaran via email</button>';
+    const b=bubble('assistant', withNote
+      ? 'Klik tombol di bawah untuk lanjut chat dengan **CS manusia** di WhatsApp. Ringkasan tiket sudah otomatis tertulis — Kakak tinggal tekan **Kirim**, tidak perlu menjelaskan ulang 🙌'
+      : 'Silakan, Kak. Tiket **'+lead.tiket+'** ikut terlampir di pesan WhatsApp.', extra);
+    const rq=b.querySelector('[data-rfq]');
+    if(rq) rq.onclick=()=>{ close(); rfqOpen(); setTimeout(()=>{ const f=(i,v)=>{const el=$(i); if(el && v) el.value=v;}; f('rfqNama',lead.nama);
+      f('rfqDetail',(lead.detail||'')+'\n\nBudget: '+(lead.budget||'-')+'\nTarget: '+(lead.waktu||'-')+'\nKontak: '+lead.kontak+'\nTiket: '+lead.tiket);
       const sel=$('rfqLayanan'); if(sel){ const o=[...sel.options].find(o=>norm(o.text).split(' ')[0]===norm(lead.layanan).split(' ')[0]); if(o) sel.value=o.value; } },60); };
-    await say('Klik **Kirim ke CS via WhatsApp** supaya admin langsung menindaklanjuti. Biasanya kami balas di jam kerja, Kak.');
-    // tawarkan produk siap pesan yang sesuai
-    const kw=LAYANAN_PRODUK[lead.layanan];
-    if(kw){
-      const list=await getProducts();
-      const rel=list.filter(p=>kw.some(k=>norm(p.nama+' '+p.kat).replace(/ /g,'').includes(k)));
-      if(rel.length){ await say('Oh ya, ini produk kami yang sesuai dengan kebutuhan Kakak, bisa langsung dipesan:'); node(cardsEl(rel.slice(0,3))); }
-    }
-    setChips([{l:'🛒 Lihat katalog',f:()=>showCatalog()},{l:'❓ Tanya lagi',f:()=>{ input.focus(); }},{l:'☰ Menu',f:showMenu}]);
   }
 
-  /* ---------- Admin / handoff ---------- */
-  function handoff(){
-    const q=log.filter(m=>m.r==='user').slice(-3).map(m=>'• '+m.t).join('\n');
-    const t='Halo Gozali Corp, saya ingin dibantu admin.'+(lead.tiket?'\nNo. Tiket: '+lead.tiket:'')+(q?'\n\nPertanyaan saya:\n'+q:'');
-    bubble('assistant','Siap, saya sambungkan ke admin manusia ya Kak 🙌 Ringkasan pertanyaan Kakak sudah saya siapkan di pesan WhatsApp.','<br><a class="csw-btn wa" style="margin-top:8px" target="_blank" rel="noopener" href="'+E(waLink(t))+'">Buka WhatsApp admin</a>');
-    setChips(menu());
+  /* ---------- Gerbang ke CS manusia ---------- */
+  async function handoff(pre){
+    if(mode==='intake' || mode==='confirm' || mode==='edit'){ await say('Kita selesaikan pencatatannya dulu ya, Kak — sebentar lagi tersambung ke CS 🙏'); if(mode==='intake') nextStep(); else confirmLead(); return; }
+    if(lead.done && lead.tiket){ showHandoffButton(false); return afterChips(); }
+    await say('Tentu, Kak! Sebelum disambungkan ke **CS manusia**, saya catat dulu kebutuhan Kakak (wajib) supaya CS bisa langsung membantu.');
+    startIntake(pre && pre.keperluan ? pre : {});
   }
 
   /* ---------- Menu ---------- */
@@ -1749,18 +1834,18 @@ loadEdukasi().then(renderEdukasi);
       {l:'📘 E-book',f:()=>{bubble('user','E-book');showCatalog('ebook','Ini e-book yang tersedia 📘');}},
       {l:'📝 Konsultasi / catat kebutuhan',f:()=>{bubble('user','Konsultasi kebutuhan');startIntake();}},
       {l:'💳 Cara bayar'},
-      {l:'👤 Chat admin',f:()=>{bubble('user','Chat admin');handoff();}}
+      {l:'👤 Hubungi CS manusia',f:()=>{bubble('user','Hubungi CS manusia');handoff();}}
     ];
   }
-  async function showMenu(){ mode=null; input.placeholder='Ketik pesan...'; await say('Silakan pilih menu, atau ketik pertanyaan Kakak langsung 👇'); setChips(menu()); }
+  async function showMenu(){ mode=null; curStep=null; input.placeholder='Ketik pesan...'; await say('Silakan pilih menu, atau ketik pertanyaan Kakak langsung 👇'); setChips(menu()); }
 
-  /* ---------- Otak CS ---------- */
+  /* ---------- Otak asisten ---------- */
   function faq(q){
     let best=null, bs=0;
     CS_FAQ.forEach(f=>{ const s=f.k.reduce((n,k)=>n+(q.includes(k)?(k.includes(' ')?2:1):0),0); if(s>bs){bs=s;best=f;} });
     return best;
   }
-  async function askAI(text){
+  async function askAI(){
     if(!window.GCT_API) return '';
     try{
       const ctrl=new AbortController(); const to=setTimeout(()=>ctrl.abort(),25000);
@@ -1774,10 +1859,18 @@ loadEdukasi().then(renderEdukasi);
   async function handle(raw){
     const text=String(raw||'').trim(); if(!text || busy) return;
     if(mode==='intake'){ answer(text); return; }
+    if(mode==='confirm'){
+      bubble('user', text);
+      if(/^(ya|y|iya|benar|betul|ok|oke|kirim|sudah)\b/i.test(text)) return submitLead();
+      if(/ubah|ganti|edit|salah|koreksi/i.test(text)) return editLead();
+      await say('Ketik **ya** untuk kirim ke CS, atau **ubah** untuk memperbaiki data.'); return;
+    }
+    if(mode==='edit'){ bubble('user', text); await say('Silakan pilih bagian yang mau diubah di bawah ya, Kak.'); return; }
     busy=true; send.disabled=true; setChips([]);
     try{
       bubble('user', text);
       const q=' '+norm(text)+' ';
+      const isChip=/^[^\w]/.test(text);  // tombol menu diawali emoji
       if(/^ ?(menu|mulai|start) ?$/.test(q)) return showMenu();
       if(/ (halo|hai|hi|hello|pagi|siang|sore|malam|assalamualaikum|permisi|p) /.test(q) && q.trim().split(' ').length<=4){
         await say('Halo Kak! 👋 Terima kasih sudah menghubungi **Gozali Corp Technology**. Ada yang bisa saya bantu?'); setChips(menu()); return;
@@ -1785,7 +1878,8 @@ loadEdukasi().then(renderEdukasi);
       if(/ (terima kasih|makasih|thanks|thank you|tq|oke siap|sip) /.test(q)){
         await say('Sama-sama, Kak! 🙏 Kalau ada yang ingin ditanyakan lagi, saya siap bantu kapan saja.'); setChips(menu()); return;
       }
-      if(/ (admin|manusia|orang|cs asli|telepon|telpon|call) /.test(q)) return handoff();
+      if(!isChip){ qlog.push(text.slice(0,300)); qlog=qlog.slice(-10); ss.set(QKEY,qlog); }
+      if(/ (admin|manusia|orang asli|cs asli|operator|telepon|telpon|call|wa admin) /.test(q)) return handoff({keperluan:guessKeperluan(text)});
 
       const list=await getProducts();
       const hit=matchProducts(text,list);
@@ -1793,46 +1887,47 @@ loadEdukasi().then(renderEdukasi);
       const wantsList=/ (produk|katalog|harga|price|pricelist|daftar harga|ebook|e book|jual apa|ada apa saja|list) /.test(q);
       const needs=/ (butuh|bikin|buat|membuat|jasa|konsultasi|website|aplikasi|chatbot|otomasi|custom|penawaran|proyek|project) /.test(q);
 
-      if(wantsOrder && hit.length===1){ await say('Pilihan bagus, Kak! 👍 Ini detail **'+hit[0].nama+'**:'); node(cardsEl(hit)); setChips([{l:'💳 Cara bayar'},{l:'☰ Menu',f:showMenu}]); return; }
+      const f=faq(q);
+      if(f && f.act==='komplain'){ await say(f.a); return startIntake({keperluan:'Komplain / kendala', detail:text.length>=10?text:''}); }
+      if(wantsOrder && hit.length===1){ await say('Pilihan bagus, Kak! 👍 Ini detail **'+hit[0].nama+'**:'); node(cardsEl(hit)); setChips([{l:'💳 Cara bayar'},{l:'👤 Hubungi CS manusia',f:handoff},{l:'☰ Menu',f:showMenu}]); return; }
       if(hit.length && (wantsOrder||wantsList||hit.length<=2)){
-        const f=faq(q);
         await say(f && !f.act ? f.a : (hit.length===1?'Ini info **'+hit[0].nama+'**:':'Ini produk yang cocok dengan pertanyaan Kakak:'));
         node(cardsEl(hit.slice(0,4)));
-        setChips([{l:'🛒 Semua produk',f:()=>showCatalog()},{l:'💳 Cara bayar'},{l:'👤 Chat admin',f:handoff}]); return;
+        setChips([{l:'🛒 Semua produk',f:()=>showCatalog()},{l:'💳 Cara bayar'},{l:'👤 Hubungi CS manusia',f:handoff}]); return;
       }
-      const f=faq(q);
       if(f){
         await say(f.a);
-        if(f.act==='katalog') setChips([{l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Chat admin',f:handoff},{l:'☰ Menu',f:showMenu}]);
-        else if(f.act==='intake') setChips([{l:'📝 Catat kebutuhan saya',f:()=>startIntake(guessLayanan(text))},{l:'☰ Menu',f:showMenu}]);
-        else if(f.act==='admin'){ handoff(); }
+        if(f.act==='katalog') setChips([{l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Hubungi CS manusia',f:handoff},{l:'☰ Menu',f:showMenu}]);
+        else if(f.act==='intake') setChips([{l:'📝 Catat kebutuhan saya',f:()=>startIntake({keperluan:'Jasa / proyek custom',layanan:guessLayanan(text)})},{l:'☰ Menu',f:showMenu}]);
         else setChips(menu());
         return;
       }
       if(wantsList) return showCatalog(text);
-      if(needs && (guessLayanan(text) || !window.GCT_API)){ return startIntake(guessLayanan(text)); }
+      const lay=guessLayanan(text);
+      if(needs && (lay || !window.GCT_API)) return startIntake({keperluan:'Jasa / proyek custom', layanan:lay, detail:text.length>=25?text:''});
 
       // pertanyaan bebas → AI Worker (bila aktif)
       const t=document.createElement('div'); t.className='csw-msg bot'; t.innerHTML='<span class="csw-typing"><i></i><i></i><i></i></span>'; node(t);
-      const reply=await askAI(text); t.remove();
+      const reply=await askAI(); t.remove();
       if(reply){
         bubble('assistant', reply);
         const ch=[];
-        if(needs) ch.push({l:'📝 Catat kebutuhan saya',f:()=>startIntake(guessLayanan(text))});
-        ch.push({l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Chat admin',f:handoff});
+        if(needs) ch.push({l:'📝 Catat kebutuhan saya',f:()=>startIntake({keperluan:'Jasa / proyek custom'})});
+        ch.push({l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Hubungi CS manusia',f:handoff});
         setChips(ch); return;
       }
-      if(needs) return startIntake(guessLayanan(text));
-      await say('Pertanyaan Kakak sudah saya catat 📝 Untuk jawaban paling tepat, saya teruskan ke admin kami ya.');
-      handoff();
+      await say('Pertanyaan ini sebaiknya dijawab langsung oleh **CS manusia** kami. Saya catat dulu ya, Kak 📝');
+      return startIntake({keperluan:'Tanya informasi', detail:text.length>=8?text:''});
     } finally { busy=false; send.disabled=false; }
   }
 
   /* ---------- Buka / tutup ---------- */
   function hideTeaser(){ teaser.classList.remove('show'); if(floatBtn) floatBtn.classList.remove('has-badge'); ss.set('gct_cs_teased',1); }
-  async function open(){
+  async function open(opt){
+    opt=opt||{};
+    const now=Date.now(); if(now-lastOpen<500) return; lastOpen=now;
     hideTeaser();
-    if(typeof aiChatClose==='function') try{ aiChatClose(); }catch(e){}
+    const ai=$('aiChat'); if(ai) ai.classList.remove('open');
     box.classList.add('open');
     if(floatBtn) floatBtn.setAttribute('aria-expanded','true');
     if(!opened){
@@ -1841,16 +1936,36 @@ loadEdukasi().then(renderEdukasi);
       if(log.length){
         bubble('assistant', salam+' Kak! 👋 Selamat datang kembali.', null, false);
         log.forEach(m=>bubble(m.r, m.t, null, false));
+        if(mode==null && lead.done && lead.tiket) showHandoffButton(false);
         setChips(menu());
       } else {
-        await say(salam+' Kak! 👋 Saya **CS virtual Gozali Corp Technology**.\n\nSaya bisa bantu:\n• info produk, harga & cara pesan\n• mencatat kebutuhan jasa (website, chatbot, otomasi, konten)\n• menjawab pertanyaan seputar layanan kami');
-        setChips(menu());
+        await say(salam+' Kak! 👋 Saya **asisten virtual Gozali Corp Technology**.\n\nSaya bisa bantu:\n• info produk, harga & cara pesan\n• menjawab pertanyaan seputar layanan kami\n• mencatat kebutuhan Kakak lalu meneruskannya ke **CS manusia**');
+        if(!opt.intake) setChips(menu());
       }
+      // sesi lama yang belum selesai mencatat → lanjutkan
+      if(!opt.intake && lead.keperluan && !lead.done){ mode='intake'; await say('Kita lanjutkan pencatatan yang tadi ya, Kak.'); nextStep(); }
     }
+    if(opt.intake && mode!=='intake' && mode!=='confirm') startIntake(opt.intake);
     setTimeout(()=>input.focus(),60);
   }
   function close(){ box.classList.remove('open'); if(floatBtn) floatBtn.setAttribute('aria-expanded','false'); }
   window.csOpen=open; window.csClose=close;
+
+  // tombol "Konsultasi" lama (chat AI) → diarahkan ke asisten ini
+  window.aiChatOpen = function(prefill){
+    open(prefill ? {intake:{keperluan:'Jasa / proyek custom', layanan:guessLayanan(prefill)||'Lainnya', produk:prefill}} : {intake:{keperluan:'Jasa / proyek custom'}});
+  };
+  // SEMUA tautan WhatsApp di halaman → wajib lewat asisten dulu
+  document.addEventListener('click', e=>{
+    const a=e.target.closest && e.target.closest('a[href*="wa.me/"]');
+    if(!a || box.contains(a) || a.classList.contains('wa-float')) return;
+    if(/penawaran resmi/i.test(a.textContent||'')) return;  // ditangani formulir RFQ
+    e.preventDefault(); e.stopPropagation();
+    const rfq=$('rfqModal'); if(rfq && rfq.contains(a) && typeof rfqClose==='function') rfqClose();
+    const nav=$('navLinks'); if(nav) nav.classList.remove('show');
+    if(/konsultasi/i.test(a.textContent||'')) open({intake:{keperluan:'Jasa / proyek custom'}});
+    else open();
+  }, true);
 
   if(floatBtn){
     floatBtn.setAttribute('aria-haspopup','dialog');
@@ -1858,15 +1973,18 @@ loadEdukasi().then(renderEdukasi);
     floatBtn.addEventListener('click', e=>{ e.preventDefault(); box.classList.contains('open')?close():open(); });
   }
   $('cswClose').onclick=close;
-  $('cswMenuBtn').onclick=()=>{ if(mode==='intake'){ mode=null; } showMenu(); };
+  $('cswMenuBtn').onclick=()=>{ if(mode==='intake'||mode==='confirm'||mode==='edit'){ say('Pencatatan dijeda. Ketik **lanjut** atau pilih **Hubungi CS manusia** untuk meneruskan.'); } showMenu(); };
   teaser.addEventListener('click', e=>{ if(e.target.id==='cswTeaserX'){ e.stopPropagation(); hideTeaser(); return; } open(); });
   teaser.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
-  form.addEventListener('submit', e=>{ e.preventDefault(); const t=input.value; input.value=''; input.style.height=''; handle(t); });
+  form.addEventListener('submit', e=>{
+    e.preventDefault(); if(busy) return; const t=input.value; input.value=''; input.style.height='';
+    if(/^lanjut$/i.test(t.trim()) && mode==null && lead.keperluan && !lead.done){ bubble('user',t); mode='intake'; nextStep(); return; }
+    handle(t);
+  });
   input.addEventListener('keydown', e=>{ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); form.requestSubmit?form.requestSubmit():form.dispatchEvent(new Event('submit',{cancelable:true})); } });
   input.addEventListener('input', ()=>{ input.style.height='auto'; input.style.height=Math.min(input.scrollHeight,96)+'px'; });
   document.addEventListener('keydown', e=>{ if(e.key==='Escape' && box.classList.contains('open')) close(); });
 
-  // sapaan otomatis sekali per sesi
   if(!ss.get('gct_cs_teased',0)) setTimeout(()=>{ if(!box.classList.contains('open')){ teaser.classList.add('show'); if(floatBtn) floatBtn.classList.add('has-badge'); } }, 7000);
 })();
 </script>
