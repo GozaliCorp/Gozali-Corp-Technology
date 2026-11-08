@@ -745,7 +745,7 @@ footer .pay b{color:#fff;font-weight:600}
 </footer>
 
 <!-- Tombol WhatsApp melayang -->
-<a class="wa-float" href="https://wa.me/6281399899954" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+<a class="wa-float" href="https://wa.me/6281399899954" target="_blank" rel="noopener" aria-label="Chat dengan Customer Service">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.65.15s-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49h-.56c-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.05-1.32A10 10 0 1 0 12 2z"/></svg>
 </a>
 
@@ -1401,5 +1401,475 @@ loadEdukasi().then(renderEdukasi);
   }, true);
 })();
 </script>
+<!-- ================= CS WHATSAPP (tombol WA → customer service virtual) ================= -->
+<style>
+.wa-float{border:0;cursor:pointer}
+.wa-float .wa-badge{position:absolute;top:-2px;right:-2px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#EF4444;color:#fff;font:700 12px/20px var(--font,Poppins,sans-serif);text-align:center;border:2px solid #fff;display:none}
+.wa-float.has-badge .wa-badge{display:block}
+.wa-teaser{position:fixed;right:88px;bottom:30px;z-index:89;max-width:240px;background:#fff;color:var(--ink,#0E1A40);border:1px solid var(--line,#E6E1D6);border-radius:16px 16px 4px 16px;padding:10px 30px 10px 14px;font:500 13.5px/1.45 var(--font,Poppins,sans-serif);box-shadow:0 14px 34px -12px rgba(14,26,64,.4);cursor:pointer;opacity:0;transform:translateY(8px);pointer-events:none;transition:.25s}
+.wa-teaser.show{opacity:1;transform:none;pointer-events:auto}
+.wa-teaser button{position:absolute;top:4px;right:6px;border:0;background:none;color:#9AA4BF;font-size:16px;cursor:pointer;line-height:1}
+.csw{position:fixed;right:20px;bottom:90px;z-index:130;width:min(390px,calc(100vw - 32px));height:min(600px,calc(100vh - 120px));background:#fff;border-radius:20px;box-shadow:0 30px 70px -20px rgba(14,26,64,.5);display:none;flex-direction:column;overflow:hidden;font-family:var(--font,Poppins,sans-serif)}
+.csw.open{display:flex;animation:cswIn .22s ease}
+@keyframes cswIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.csw-head{background:#075E54;color:#fff;padding:12px 14px;display:flex;align-items:center;gap:11px}
+.csw-av{width:40px;height:40px;border-radius:50%;background:var(--gold,#F4B63E);color:var(--ink,#0E1A40);display:grid;place-items:center;font-weight:800;font-size:17px;flex:none}
+.csw-head b{display:block;font-size:15px}
+.csw-head small{display:block;font-size:12px;color:#CFE9E4}
+.csw-head small::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#25D366;margin-right:6px;vertical-align:middle}
+.csw-hb{margin-left:auto;display:flex;gap:2px}
+.csw-hb button{background:none;border:0;color:#fff;cursor:pointer;opacity:.85;font-size:13px;padding:6px 7px;border-radius:8px}
+.csw-hb button:hover{opacity:1;background:rgba(255,255,255,.12)}
+.csw-hb .x{font-size:24px;line-height:1;padding:2px 8px}
+.csw-body{flex:1;overflow-y:auto;padding:14px 12px;background:#ECE5DD;display:flex;flex-direction:column;gap:8px}
+.csw-msg{max-width:86%;padding:8px 12px 9px;border-radius:12px;font-size:14px;line-height:1.5;color:#1F2A44;word-wrap:break-word;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.csw-msg.bot{background:#fff;align-self:flex-start;border-top-left-radius:3px}
+.csw-msg.me{background:#DCF8C6;align-self:flex-end;border-top-right-radius:3px}
+.csw-msg a{color:#0B6E5F;font-weight:700;word-break:break-all}
+.csw-msg .t{display:block;text-align:right;font-size:10.5px;color:#8A94A6;margin-top:2px}
+.csw-typing{display:inline-flex;gap:4px}
+.csw-typing i{width:7px;height:7px;border-radius:50%;background:#9AA4BF;animation:cswB 1s infinite}
+.csw-typing i:nth-child(2){animation-delay:.15s}.csw-typing i:nth-child(3){animation-delay:.3s}
+@keyframes cswB{0%,60%,100%{opacity:.35;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+.csw-cards{display:flex;flex-direction:column;gap:8px;align-self:stretch}
+.csw-card{background:#fff;border-radius:12px;padding:11px 12px;display:flex;gap:10px;align-items:flex-start;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.csw-card .em{width:40px;height:40px;border-radius:10px;background:#FBF6EC;display:grid;place-items:center;font-size:20px;flex:none}
+.csw-card .em img{width:40px;height:40px;object-fit:cover;border-radius:10px}
+.csw-card h5{margin:0;font-size:14px;color:var(--ink,#0E1A40);line-height:1.3}
+.csw-card p{margin:3px 0 6px;font-size:12.5px;color:#5B6478;line-height:1.4}
+.csw-card .pr{font-weight:800;color:var(--ink,#0E1A40);font-size:13.5px}
+.csw-card .pr s{color:#9AA4BF;font-weight:500;margin-right:5px;font-size:12px}
+.csw-card .ac{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
+.csw-btn{border:0;border-radius:999px;padding:7px 12px;font:700 12.5px var(--font,Poppins,sans-serif);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.csw-btn.go{background:var(--gold,#F4B63E);color:var(--ink,#0E1A40)}
+.csw-btn.wa{background:#25D366;color:#fff}
+.csw-btn.ln{background:#fff;color:var(--ink,#0E1A40);border:1px solid #D5DAE5}
+.csw-sum{background:#fff;border-radius:12px;padding:12px 13px;font-size:13px;line-height:1.55;color:#1F2A44;box-shadow:0 1px 1px rgba(0,0,0,.08);align-self:stretch}
+.csw-sum .id{display:inline-block;background:#FBF6EC;border:1px dashed var(--gold,#F4B63E);border-radius:8px;padding:2px 8px;font-weight:800;color:var(--ink,#0E1A40);margin-bottom:6px}
+.csw-sum dl{margin:4px 0 8px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
+.csw-sum dt{color:#7A8399}.csw-sum dd{margin:0;font-weight:600;word-break:break-word}
+.csw-chips{display:flex;flex-wrap:wrap;gap:6px;padding:8px 12px;background:#F6F2EA;border-top:1px solid #E4DED2;max-height:118px;overflow-y:auto}
+.csw-chips:empty{display:none}
+.csw-chips button{border:1px solid #CFE3DE;background:#fff;color:#075E54;border-radius:999px;padding:7px 12px;font:600 12.5px var(--font,Poppins,sans-serif);cursor:pointer}
+.csw-chips button:hover{border-color:#075E54}
+.csw-form{display:flex;gap:8px;padding:10px;background:#F0F0F0}
+.csw-form textarea{flex:1;resize:none;border:0;border-radius:20px;padding:10px 14px;font:14.5px var(--font,Poppins,sans-serif);max-height:96px;min-height:42px;outline:none;background:#fff}
+.csw-form button{border:0;background:#25D366;color:#fff;border-radius:50%;width:44px;height:44px;font-size:17px;cursor:pointer;flex:none;align-self:flex-end}
+.csw-form button:disabled{opacity:.5;cursor:default}
+.csw-foot{font-size:11px;color:#7A8399;text-align:center;padding:0 12px 8px;background:#F0F0F0}
+@media (max-width:560px){.csw{right:0;left:0;bottom:0;width:auto;height:100dvh;max-height:none;border-radius:0}.wa-teaser{right:84px;bottom:28px;max-width:200px}}
+@media (prefers-reduced-motion:reduce){.csw.open{animation:none}.csw-typing i{animation:none}}
+</style>
+
+<div class="wa-teaser" id="cswTeaser" role="button" tabindex="0">Halo Kak 👋 Ada yang bisa kami bantu? Tanya produk, harga, atau pesan langsung di sini.<button type="button" aria-label="Tutup sapaan" id="cswTeaserX">×</button></div>
+
+<div class="csw" id="csw" role="dialog" aria-label="Customer Service Gozali Corp">
+  <div class="csw-head">
+    <div class="csw-av">G</div>
+    <div><b>CS Gozali Corp</b><small>Asisten virtual · balas instan</small></div>
+    <div class="csw-hb">
+      <button type="button" id="cswMenuBtn" title="Menu utama">☰ Menu</button>
+      <button type="button" class="x" id="cswClose" aria-label="Tutup chat">×</button>
+    </div>
+  </div>
+  <div class="csw-body" id="cswBody" aria-live="polite"></div>
+  <div class="csw-chips" id="cswChips"></div>
+  <form class="csw-form" id="cswForm" autocomplete="off">
+    <textarea id="cswInput" rows="1" maxlength="800" placeholder="Ketik pesan..." aria-label="Pesan"></textarea>
+    <button type="submit" id="cswSend" aria-label="Kirim">➤</button>
+  </form>
+  <div class="csw-foot">Asisten virtual, bisa keliru. Admin manusia siap lanjut via WhatsApp.</div>
+</div>
+
+<script>
+/* ======================================================================
+   CS WHATSAPP — Gozali Corp Technology
+   Tombol WA melayang membuka customer service virtual:
+   • menjawab pertanyaan (FAQ lokal + AI Worker dari chat.json bila aktif)
+   • menampilkan katalog & mengarahkan ke link pesanan (checkout_url / form order)
+   • mencatat kebutuhan pelanggan → nomor tiket → dikirim ke WhatsApp admin
+   Isi produk otomatis dari products.json (panel admin). FAQ bisa diedit di CS_FAQ.
+   ====================================================================== */
+(function(){
+  /* ---------- EDIT DI SINI ---------- */
+  const CS_FAQ = [
+    { k:['bayar','pembayaran','transfer','qris','dana','ovo','gopay','linkaja','mandiri','rekening','metode'],
+      a:'Pembayaran bisa lewat **QRIS**, **DANA / OVO / GoPay / LinkAja**, atau **transfer Bank Mandiri** a.n. M Gozali Salim.\n\nCaranya: pilih produk → klik tombol pesan → isi nama → pilih metode. Nomor tujuan muncul di formulir pesanan, lalu konfirmasi otomatis terkirim ke WhatsApp kami.',
+      act:'katalog' },
+    { k:['kirim','dikirim','unduh','download','file','pdf','akses','link ebook','terima ebook','dapat ebook'],
+      a:'Untuk e-book: kalau produk punya **checkout otomatis**, file langsung dikirim ke email setelah bayar. Kalau pesan lewat formulir WhatsApp, tautan unduhan dikirim admin setelah pembayaran dikonfirmasi.' },
+    { k:['lama','berapa hari','durasi','pengerjaan','estimasi','kapan selesai','deadline'],
+      a:'Waktu pengerjaan jasa tergantung skala proyek. Ceritakan kebutuhan Kakak, nanti saya catat dan tim kami kirim estimasi waktu + penawaran yang pas.',
+      act:'intake' },
+    { k:['refund','garansi','uang kembali','komplain','keluhan','rusak','tidak bisa dibuka','error','gagal'],
+      a:'Mohon maaf atas kendalanya, Kak 🙏 Untuk komplain/garansi saya sambungkan langsung ke admin agar segera ditangani. Sertakan nama & produk yang dibeli ya.',
+      act:'admin' },
+    { k:['alamat','lokasi','kantor','dimana','di mana'],
+      a:'Kami melayani **online ke seluruh Indonesia** — konsultasi, pengerjaan, dan support semuanya via WhatsApp & email (gozalitechnology@gmail.com).' },
+    { k:['gozali corp','siapa kalian','tentang','profil','perusahaan'],
+      a:'**Gozali Corp Technology** membantu UMKM & bisnis lewat teknologi: website, chatbot/AI agent WhatsApp, otomasi bisnis, konten media sosial, plus e-book & produk digital seputar AI.' },
+    { k:['diskon','promo','voucher','murah','nego'],
+      a:'Beberapa e-book sedang **harga promo** (lihat harga coret di katalog). Untuk jasa, harga bisa disesuaikan dengan kebutuhan & budget — ceritakan dulu, nanti kami buatkan penawaran.',
+      act:'katalog' }
+  ];
+  const LAYANAN = ['Website custom','Chatbot / AI Agent WhatsApp','Otomasi bisnis','Konten medsos / video','Aplikasi mobile','E-book / produk digital','Lainnya'];
+  const BUDGET  = ['< Rp 1 juta','Rp 1–5 juta','Rp 5–15 juta','> Rp 15 juta','Belum tahu'];
+  const WAKTU   = ['Secepatnya (≤ 1 minggu)','2–4 minggu','1–3 bulan','Fleksibel'];
+  /* layanan → kata kunci produk terkait di katalog */
+  const LAYANAN_PRODUK = {'Chatbot / AI Agent WhatsApp':['chatbot','agent','whatsapp'],'Konten medsos / video':['konten','medsos'],'E-book / produk digital':['ebook']};
+  /* ---------------------------------- */
+
+  const $ = id => document.getElementById(id);
+  const box=$('csw'), body=$('cswBody'), chips=$('cswChips'), form=$('cswForm'), input=$('cswInput'), send=$('cswSend');
+  const floatBtn = document.querySelector('.wa-float');
+  const teaser = $('cswTeaser');
+  const KEY='gct_cs_chat', LEADS='gct_cs_leads';
+  let log=[], mode=null, lead={}, busy=false, products=null, opened=false;
+
+  const ss = {get(k,d){try{const v=JSON.parse(sessionStorage.getItem(k));return v==null?d:v;}catch(e){return d;}}, set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+  const ls = {get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v;}catch(e){return d;}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+  log = ss.get(KEY, []); if(!Array.isArray(log)) log=[];
+
+  const E = s => (s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const waNum = () => { try{ return (typeof WA_NUMBER!=='undefined' && WA_NUMBER) || '6281399899954'; }catch(e){ return '6281399899954'; } };
+  const waLink = t => 'https://wa.me/' + waNum() + (t ? '?text=' + encodeURIComponent(t) : '');
+  const rp = v => { try{ if(typeof fmtRp==='function') return fmtRp(v); }catch(e){} const t=String(v==null?'':v).trim(); return /^\d+$/.test(t)?'Rp '+(+t).toLocaleString('id-ID'):t; };
+  const safeUrl = u => { const t=String(u==null?'':u).trim(); return /^https:\/\/[^\s"'<>]+$/i.test(t)?t:''; };
+  const jam = () => new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});
+  const norm = s => String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+
+  function fmt(t){
+    let h=E(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+    h=h.replace(/(^|[\s(])(https:\/\/[^\s<)]+)/g,(m,a,u)=>{const c=u.replace(/[.,!?]+$/,'');return a+'<a href="'+c+'" target="_blank" rel="noopener">'+c.replace(/^https:\/\//,'')+'</a>'+u.slice(c.length);});
+    h=h.replace(/^\s*[-•*]\s+/gm,'• ');
+    return h.replace(/\n/g,'<br>');
+  }
+  function scroll(){ body.scrollTop = body.scrollHeight; }
+  function bubble(role, text, extra, save){
+    const d=document.createElement('div');
+    d.className='csw-msg '+(role==='user'?'me':'bot');
+    d.innerHTML=fmt(text)+(extra||'')+'<span class="t">'+jam()+'</span>';
+    body.appendChild(d); scroll();
+    if(save!==false){ log.push({r:role,t:text}); log=log.slice(-40); ss.set(KEY,log); }
+    return d;
+  }
+  function node(el){ body.appendChild(el); scroll(); return el; }
+  function setChips(list){
+    chips.innerHTML='';
+    (list||[]).forEach(c=>{ const b=document.createElement('button'); b.type='button'; b.textContent=c.l||c; b.onclick=()=>{ if(c.f) c.f(); else handle(c.l||c); }; chips.appendChild(b); });
+  }
+  function typing(ms){
+    return new Promise(res=>{
+      const t=document.createElement('div'); t.className='csw-msg bot'; t.innerHTML='<span class="csw-typing"><i></i><i></i><i></i></span>';
+      node(t); setTimeout(()=>{ t.remove(); res(); }, ms||550);
+    });
+  }
+  async function say(text, extra){ await typing(Math.min(1100, 350 + String(text).length*4)); return bubble('assistant', text, extra); }
+
+  /* ---------- Produk ---------- */
+  async function getProducts(){
+    if(products) return products;
+    let list=[];
+    try{ if(typeof loadProducts==='function') list = await loadProducts(); }catch(e){}
+    if(!Array.isArray(list) || !list.length){ try{ const r=await fetch('products.json',{cache:'no-store'}); if(r.ok){ const d=await r.json(); list=Array.isArray(d)?d:(d.products||[]); } }catch(e){} }
+    products = (list||[]).map(p=>({
+      nama:p.nama||p.title||'', kat:p.kat||p.kind||'Produk', desk:p.desk||p.desc||'',
+      harga:rp(p.harga||p.price||''), coret:rp(p.coret||''), aksi:p.aksi||p.action||'Beli',
+      img:p.img||'', emoji:p.emoji||'', checkout:safeUrl(p.checkout_url||p.checkout||'')
+    })).filter(p=>p.nama);
+    return products;
+  }
+  const STOP = new Set(['dan','untuk','dengan','yang','dari','ke','di','pakai','cara','paket','hari','ai','saya','mau','ingin','kak','min','bisa','ada','apa','the','buku','beli','pesan','harga','berapa']);
+  function matchProducts(text, list){
+    const q=' '+norm(text).replace(/e book/g,'ebook')+' ';
+    const scored=list.map(p=>{
+      let s=0;
+      norm(p.nama).split(' ').forEach(w=>{ if(w.length>2 && !STOP.has(w) && q.includes(' '+w+' ')) s+=2; });
+      norm(p.desk).split(' ').forEach(w=>{ if(w.length>4 && !STOP.has(w) && q.includes(' '+w+' ')) s+=0.5; });
+      const k=norm(p.kat); if(k && q.includes(' '+k.replace(/ /g,'')+' ')) s+=1;
+      if(/ebook/.test(q) && /^e ?book$/.test(k)) s+=1;
+      return {p,s};
+    }).filter(x=>x.s>=2).sort((a,b)=>b.s-a.s);
+    return scored.map(x=>x.p);
+  }
+  function order(p){
+    const ticket = mkTicket('ORD');
+    saveLead({tiket:ticket, tipe:'Pesanan', produk:p.nama, harga:p.harga, nama:lead.nama||'', via:p.checkout?'checkout':'form'});
+    if(p.checkout){
+      bubble('assistant','Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak. Kode pesanan: **'+ticket+'**');
+      const w=window.open(p.checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else location.href=p.checkout;
+    } else if(typeof openModal==='function'){
+      bubble('assistant','Siap Kak! Formulir pesanan **'+p.nama+'** sudah terbuka. Isi nama, pilih metode bayar, lalu klik **Lanjutkan pembayaran via WhatsApp**. Kode: **'+ticket+'**');
+      close(); openModal(p.nama, p.harga);
+      setTimeout(()=>{ const n=$('clientName'); if(n && lead.nama && !n.value) n.value=lead.nama; }, 30);
+    } else {
+      window.open(waLink('Halo Gozali Corp, saya ingin memesan *'+p.nama+'* ('+p.harga+').\nKode: '+ticket),'_blank');
+    }
+  }
+  function cardsEl(list){
+    const wrap=document.createElement('div'); wrap.className='csw-cards';
+    list.forEach(p=>{
+      const isJasa=/konsultasi|pesan/i.test(p.aksi) && !p.checkout && !/^e ?-?book|digital$/i.test(p.kat);
+      const c=document.createElement('div'); c.className='csw-card';
+      const icon=p.img?'<img src="'+E(p.img)+'" alt="">':(p.emoji||(/book/i.test(p.kat)?'📘':'🛍️'));
+      c.innerHTML='<div class="em">'+icon+'</div><div style="flex:1;min-width:0"><h5>'+E(p.nama)+'</h5><p>'+E(p.desk)+'</p>'
+        +'<div class="pr">'+(p.coret?'<s>'+E(p.coret)+'</s>':'')+E(p.harga)+'</div>'
+        +'<div class="ac"><button type="button" class="csw-btn go">'+(p.checkout?'Bayar sekarang':(isJasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button>'
+        +(isJasa?'<button type="button" class="csw-btn ln">Catat kebutuhan</button>':'')+'</div></div>';
+      c.querySelector('.go').onclick=()=>{ if(isJasa && /konsultasi/i.test(p.aksi)){ startIntake(guessLayanan(p.nama+' '+p.desk), p.nama); } else order(p); };
+      const ln=c.querySelector('.ln'); if(ln) ln.onclick=()=>startIntake(guessLayanan(p.nama+' '+p.desk), p.nama);
+      wrap.appendChild(c);
+    });
+    return wrap;
+  }
+  async function showCatalog(filterText, intro){
+    const list=await getProducts();
+    let show=filterText?matchProducts(filterText,list):list;
+    if(filterText && !show.length){
+      const q=norm(filterText);
+      if(/ebook|e book|buku/.test(q)) show=list.filter(p=>/book/i.test(p.kat));
+      else if(/jasa|layanan/.test(q)) show=list.filter(p=>!/book|digital/i.test(p.kat));
+    }
+    if(!show.length) show=list;
+    if(!show.length){ await say('Katalog sedang dimuat ulang, Kak. Sementara itu, saya bisa catat kebutuhan Kakak dulu.'); setChips(menu()); return; }
+    await say(intro || 'Ini pilihan produk & layanan kami. Klik tombol untuk langsung memesan 👇');
+    node(cardsEl(show));
+    bubble('assistant','Ada yang ingin ditanyakan soal produknya, Kak?',null,false);
+    setChips([{l:'💳 Cara bayar'},{l:'📝 Catat kebutuhan saya',f:()=>startIntake()},{l:'👤 Chat admin',f:handoff},{l:'☰ Menu',f:showMenu}]);
+  }
+
+  /* ---------- Pencatatan kebutuhan (intake) ---------- */
+  const STEPS=[
+    {k:'nama', q:'Boleh tahu nama Kakak?', ph:'Nama Kakak'},
+    {k:'layanan', q:'Layanan apa yang Kakak butuhkan?', ch:LAYANAN},
+    {k:'detail', q:'Ceritakan singkat kebutuhannya, Kak. Misal: jenis usaha, fitur yang diinginkan, atau masalah yang ingin diselesaikan.', ph:'Contoh: website toko kue 5 halaman + tombol order WA'},
+    {k:'budget', q:'Kisaran budget-nya berapa, Kak?', ch:BUDGET},
+    {k:'waktu', q:'Targetnya kapan harus selesai?', ch:WAKTU},
+    {k:'kontak', q:'Terakhir, nomor WhatsApp atau email yang bisa kami hubungi? (ketik **lewati** kalau mau lanjut chat WA saja)', ph:'08xx / email', ch:['Lewati']}
+  ];
+  function guessLayanan(t){
+    const q=norm(t);
+    if(/chatbot|bot|agent|auto reply|balas otomatis/.test(q)) return 'Chatbot / AI Agent WhatsApp';
+    if(/website|web|landing|toko online|situs/.test(q)) return 'Website custom';
+    if(/otomasi|automasi|automation|otomatis/.test(q)) return 'Otomasi bisnis';
+    if(/konten|medsos|instagram|tiktok|reels|video|sosmed|media sosial/.test(q)) return 'Konten medsos / video';
+    if(/aplikasi|android|ios|app/.test(q)) return 'Aplikasi mobile';
+    if(/ebook|e book|buku/.test(q)) return 'E-book / produk digital';
+    return '';
+  }
+  let step=0;
+  async function startIntake(layanan, produk){
+    mode='intake'; step=0;
+    lead={nama:lead.nama||'', layanan:layanan||'', produk:produk||''};
+    await say('Baik Kak, saya bantu catat kebutuhannya supaya tim kami bisa kasih solusi & penawaran yang pas 📝\n(Ketik **batal** kapan saja untuk berhenti.)');
+    nextStep();
+  }
+  async function nextStep(){
+    while(step<STEPS.length && lead[STEPS[step].k]) step++;
+    if(step>=STEPS.length) return finishIntake();
+    const s=STEPS[step];
+    await say(s.q);
+    input.placeholder=s.ph||'Ketik jawaban...';
+    setChips((s.ch||[]).map(c=>({l:c,f:()=>answer(c)})));
+    if(!s.ch || s.k==='kontak') input.focus();
+  }
+  function answer(v){
+    v=String(v||'').trim(); if(!v) return;
+    bubble('user', v);
+    if(/^(batal|cancel|stop)$/i.test(v)){ mode=null; input.placeholder='Ketik pesan...'; say('Oke Kak, pencatatan dibatalkan. Ada yang bisa saya bantu lagi?').then(()=>setChips(menu())); return; }
+    const s=STEPS[step];
+    if(s.k==='nama' && v.length<2){ say('Namanya minimal 2 huruf ya, Kak 🙂'); return; }
+    if(s.k==='detail' && v.length<8){ say('Boleh diceritakan sedikit lebih detail, Kak? Biar penawarannya tepat.'); return; }
+    if(s.k==='kontak' && /^lewati$/i.test(v)) v='-';
+    else if(s.k==='kontak'){
+      const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || /^(\+?62|0)8[0-9\s-]{7,14}$/.test(v.replace(/\s/g,''));
+      if(!ok){ say('Formatnya belum pas, Kak. Contoh: **0812xxxxxxx** atau **nama@email.com** — atau ketik **lewati**.'); return; }
+    }
+    lead[s.k]=v; step++;
+    if(s.k==='nama'){ say('Salam kenal, Kak **'+v.split(' ')[0]+'** 🙌').then(nextStep); return; }
+    nextStep();
+  }
+  function mkTicket(prefix){
+    const d=new Date(), p=n=>String(n).padStart(2,'0');
+    return 'GCT-'+(prefix?prefix+'-':'')+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+  }
+  function saveLead(rec){
+    rec.waktu=new Date().toISOString();
+    const all=ls.get(LEADS,[]); all.push(rec); ls.set(LEADS, all.slice(-20));
+    // laporan ke email admin lewat Worker yang sama dengan formulir pesanan (tidak menghambat bila gagal)
+    try{
+      if(window.GCT_API) fetch(window.GCT_API+'/order',{method:'POST',keepalive:true,headers:{'Content-Type':'text/plain'},
+        body:JSON.stringify({produk:'[CS '+rec.tipe+'] '+(rec.produk||rec.layanan||'-'),harga:rec.harga||rec.budget||'-',nama:rec.nama||'-',email:rec.kontak||'-',
+          metode:'Chat CS · '+rec.tiket, detail:rec.detail||'', waktu_target:rec.waktu_target||'', tiket:rec.tiket})}).catch(()=>{});
+    }catch(e){}
+  }
+  async function finishIntake(){
+    mode=null; input.placeholder='Ketik pesan...'; setChips([]);
+    const tiket=mkTicket();
+    lead.tiket=tiket;
+    saveLead({tiket, tipe:'Kebutuhan', nama:lead.nama, layanan:lead.layanan, produk:lead.produk, detail:lead.detail, budget:lead.budget, waktu_target:lead.waktu, kontak:lead.kontak});
+    const msg='Halo Gozali Corp, saya sudah mengisi catatan kebutuhan di website.\n\n'
+      +'*No. Tiket:* '+tiket+'\n*Nama:* '+lead.nama+'\n*Layanan:* '+lead.layanan+(lead.produk?'\n*Produk diminati:* '+lead.produk:'')
+      +'\n*Kebutuhan:* '+lead.detail+'\n*Budget:* '+lead.budget+'\n*Target selesai:* '+lead.waktu+'\n*Kontak:* '+(lead.kontak||'-')
+      +'\n\nMohon info solusi & penawarannya. Terima kasih!';
+    await say('Terima kasih Kak **'+lead.nama.split(' ')[0]+'**! Kebutuhan Kakak sudah saya catat ✅');
+    const sum=document.createElement('div'); sum.className='csw-sum';
+    sum.innerHTML='<span class="id">🎫 '+E(tiket)+'</span><dl>'
+      +[['Layanan',lead.layanan],['Produk',lead.produk],['Kebutuhan',lead.detail],['Budget',lead.budget],['Target',lead.waktu],['Kontak',lead.kontak]]
+        .filter(r=>r[1]).map(r=>'<dt>'+r[0]+'</dt><dd>'+E(r[1])+'</dd>').join('')+'</dl>'
+      +'<div class="ac" style="display:flex;gap:6px;flex-wrap:wrap"><a class="csw-btn wa" target="_blank" rel="noopener" href="'+E(waLink(msg))+'">Kirim ke CS via WhatsApp</a>'
+      +(typeof rfqOpen==='function'?'<button type="button" class="csw-btn ln" data-rfq>Minta penawaran via email</button>':'')+'</div>';
+    node(sum);
+    const rq=sum.querySelector('[data-rfq]');
+    if(rq) rq.onclick=()=>{ close(); rfqOpen(); setTimeout(()=>{ const f=(i,v)=>{const el=$(i); if(el && v) el.value=v;}; f('rfqNama',lead.nama); f('rfqDetail',lead.detail+'\n\nBudget: '+lead.budget+'\nTarget: '+lead.waktu+'\nTiket: '+tiket);
+      const sel=$('rfqLayanan'); if(sel){ const o=[...sel.options].find(o=>norm(o.text).split(' ')[0]===norm(lead.layanan).split(' ')[0]); if(o) sel.value=o.value; } },60); };
+    await say('Klik **Kirim ke CS via WhatsApp** supaya admin langsung menindaklanjuti. Biasanya kami balas di jam kerja, Kak.');
+    // tawarkan produk siap pesan yang sesuai
+    const kw=LAYANAN_PRODUK[lead.layanan];
+    if(kw){
+      const list=await getProducts();
+      const rel=list.filter(p=>kw.some(k=>norm(p.nama+' '+p.kat).replace(/ /g,'').includes(k)));
+      if(rel.length){ await say('Oh ya, ini produk kami yang sesuai dengan kebutuhan Kakak, bisa langsung dipesan:'); node(cardsEl(rel.slice(0,3))); }
+    }
+    setChips([{l:'🛒 Lihat katalog',f:()=>showCatalog()},{l:'❓ Tanya lagi',f:()=>{ input.focus(); }},{l:'☰ Menu',f:showMenu}]);
+  }
+
+  /* ---------- Admin / handoff ---------- */
+  function handoff(){
+    const q=log.filter(m=>m.r==='user').slice(-3).map(m=>'• '+m.t).join('\n');
+    const t='Halo Gozali Corp, saya ingin dibantu admin.'+(lead.tiket?'\nNo. Tiket: '+lead.tiket:'')+(q?'\n\nPertanyaan saya:\n'+q:'');
+    bubble('assistant','Siap, saya sambungkan ke admin manusia ya Kak 🙌 Ringkasan pertanyaan Kakak sudah saya siapkan di pesan WhatsApp.','<br><a class="csw-btn wa" style="margin-top:8px" target="_blank" rel="noopener" href="'+E(waLink(t))+'">Buka WhatsApp admin</a>');
+    setChips(menu());
+  }
+
+  /* ---------- Menu ---------- */
+  function menu(){
+    return [
+      {l:'🛒 Lihat produk & harga',f:()=>{bubble('user','Lihat produk & harga');showCatalog();}},
+      {l:'📘 E-book',f:()=>{bubble('user','E-book');showCatalog('ebook','Ini e-book yang tersedia 📘');}},
+      {l:'📝 Konsultasi / catat kebutuhan',f:()=>{bubble('user','Konsultasi kebutuhan');startIntake();}},
+      {l:'💳 Cara bayar'},
+      {l:'👤 Chat admin',f:()=>{bubble('user','Chat admin');handoff();}}
+    ];
+  }
+  async function showMenu(){ mode=null; input.placeholder='Ketik pesan...'; await say('Silakan pilih menu, atau ketik pertanyaan Kakak langsung 👇'); setChips(menu()); }
+
+  /* ---------- Otak CS ---------- */
+  function faq(q){
+    let best=null, bs=0;
+    CS_FAQ.forEach(f=>{ const s=f.k.reduce((n,k)=>n+(q.includes(k)?(k.includes(' ')?2:1):0),0); if(s>bs){bs=s;best=f;} });
+    return best;
+  }
+  async function askAI(text){
+    if(!window.GCT_API) return '';
+    try{
+      const ctrl=new AbortController(); const to=setTimeout(()=>ctrl.abort(),25000);
+      const msgs=log.slice(-12).map(m=>({role:m.r==='user'?'user':'assistant',content:m.t}));
+      const r=await fetch(window.GCT_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:msgs}),signal:ctrl.signal});
+      clearTimeout(to);
+      const d=await r.json().catch(()=>({}));
+      return (d && typeof d.reply==='string') ? d.reply.trim() : '';
+    }catch(e){ return ''; }
+  }
+  async function handle(raw){
+    const text=String(raw||'').trim(); if(!text || busy) return;
+    if(mode==='intake'){ answer(text); return; }
+    busy=true; send.disabled=true; setChips([]);
+    try{
+      bubble('user', text);
+      const q=' '+norm(text)+' ';
+      if(/^ ?(menu|mulai|start) ?$/.test(q)) return showMenu();
+      if(/ (halo|hai|hi|hello|pagi|siang|sore|malam|assalamualaikum|permisi|p) /.test(q) && q.trim().split(' ').length<=4){
+        await say('Halo Kak! 👋 Terima kasih sudah menghubungi **Gozali Corp Technology**. Ada yang bisa saya bantu?'); setChips(menu()); return;
+      }
+      if(/ (terima kasih|makasih|thanks|thank you|tq|oke siap|sip) /.test(q)){
+        await say('Sama-sama, Kak! 🙏 Kalau ada yang ingin ditanyakan lagi, saya siap bantu kapan saja.'); setChips(menu()); return;
+      }
+      if(/ (admin|manusia|orang|cs asli|telepon|telpon|call) /.test(q)) return handoff();
+
+      const list=await getProducts();
+      const hit=matchProducts(text,list);
+      const wantsOrder=/ (beli|pesan|order|checkout|mau ambil|ambil|daftar|langganan) /.test(q);
+      const wantsList=/ (produk|katalog|harga|price|pricelist|daftar harga|ebook|e book|jual apa|ada apa saja|list) /.test(q);
+      const needs=/ (butuh|bikin|buat|membuat|jasa|konsultasi|website|aplikasi|chatbot|otomasi|custom|penawaran|proyek|project) /.test(q);
+
+      if(wantsOrder && hit.length===1){ await say('Pilihan bagus, Kak! 👍 Ini detail **'+hit[0].nama+'**:'); node(cardsEl(hit)); setChips([{l:'💳 Cara bayar'},{l:'☰ Menu',f:showMenu}]); return; }
+      if(hit.length && (wantsOrder||wantsList||hit.length<=2)){
+        const f=faq(q);
+        await say(f && !f.act ? f.a : (hit.length===1?'Ini info **'+hit[0].nama+'**:':'Ini produk yang cocok dengan pertanyaan Kakak:'));
+        node(cardsEl(hit.slice(0,4)));
+        setChips([{l:'🛒 Semua produk',f:()=>showCatalog()},{l:'💳 Cara bayar'},{l:'👤 Chat admin',f:handoff}]); return;
+      }
+      const f=faq(q);
+      if(f){
+        await say(f.a);
+        if(f.act==='katalog') setChips([{l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Chat admin',f:handoff},{l:'☰ Menu',f:showMenu}]);
+        else if(f.act==='intake') setChips([{l:'📝 Catat kebutuhan saya',f:()=>startIntake(guessLayanan(text))},{l:'☰ Menu',f:showMenu}]);
+        else if(f.act==='admin'){ handoff(); }
+        else setChips(menu());
+        return;
+      }
+      if(wantsList) return showCatalog(text);
+      if(needs && (guessLayanan(text) || !window.GCT_API)){ return startIntake(guessLayanan(text)); }
+
+      // pertanyaan bebas → AI Worker (bila aktif)
+      const t=document.createElement('div'); t.className='csw-msg bot'; t.innerHTML='<span class="csw-typing"><i></i><i></i><i></i></span>'; node(t);
+      const reply=await askAI(text); t.remove();
+      if(reply){
+        bubble('assistant', reply);
+        const ch=[];
+        if(needs) ch.push({l:'📝 Catat kebutuhan saya',f:()=>startIntake(guessLayanan(text))});
+        ch.push({l:'🛒 Lihat produk & pesan',f:()=>showCatalog()},{l:'👤 Chat admin',f:handoff});
+        setChips(ch); return;
+      }
+      if(needs) return startIntake(guessLayanan(text));
+      await say('Pertanyaan Kakak sudah saya catat 📝 Untuk jawaban paling tepat, saya teruskan ke admin kami ya.');
+      handoff();
+    } finally { busy=false; send.disabled=false; }
+  }
+
+  /* ---------- Buka / tutup ---------- */
+  function hideTeaser(){ teaser.classList.remove('show'); if(floatBtn) floatBtn.classList.remove('has-badge'); ss.set('gct_cs_teased',1); }
+  async function open(){
+    hideTeaser();
+    if(typeof aiChatClose==='function') try{ aiChatClose(); }catch(e){}
+    box.classList.add('open');
+    if(floatBtn) floatBtn.setAttribute('aria-expanded','true');
+    if(!opened){
+      opened=true; body.innerHTML='';
+      const h=new Date().getHours(), salam=h<11?'Selamat pagi':h<15?'Selamat siang':h<18?'Selamat sore':'Selamat malam';
+      if(log.length){
+        bubble('assistant', salam+' Kak! 👋 Selamat datang kembali.', null, false);
+        log.forEach(m=>bubble(m.r, m.t, null, false));
+        setChips(menu());
+      } else {
+        await say(salam+' Kak! 👋 Saya **CS virtual Gozali Corp Technology**.\n\nSaya bisa bantu:\n• info produk, harga & cara pesan\n• mencatat kebutuhan jasa (website, chatbot, otomasi, konten)\n• menjawab pertanyaan seputar layanan kami');
+        setChips(menu());
+      }
+    }
+    setTimeout(()=>input.focus(),60);
+  }
+  function close(){ box.classList.remove('open'); if(floatBtn) floatBtn.setAttribute('aria-expanded','false'); }
+  window.csOpen=open; window.csClose=close;
+
+  if(floatBtn){
+    floatBtn.setAttribute('aria-haspopup','dialog');
+    floatBtn.insertAdjacentHTML('beforeend','<span class="wa-badge">1</span>');
+    floatBtn.addEventListener('click', e=>{ e.preventDefault(); box.classList.contains('open')?close():open(); });
+  }
+  $('cswClose').onclick=close;
+  $('cswMenuBtn').onclick=()=>{ if(mode==='intake'){ mode=null; } showMenu(); };
+  teaser.addEventListener('click', e=>{ if(e.target.id==='cswTeaserX'){ e.stopPropagation(); hideTeaser(); return; } open(); });
+  teaser.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+  form.addEventListener('submit', e=>{ e.preventDefault(); const t=input.value; input.value=''; input.style.height=''; handle(t); });
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); form.requestSubmit?form.requestSubmit():form.dispatchEvent(new Event('submit',{cancelable:true})); } });
+  input.addEventListener('input', ()=>{ input.style.height='auto'; input.style.height=Math.min(input.scrollHeight,96)+'px'; });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape' && box.classList.contains('open')) close(); });
+
+  // sapaan otomatis sekali per sesi
+  if(!ss.get('gct_cs_teased',0)) setTimeout(()=>{ if(!box.classList.contains('open')){ teaser.classList.add('show'); if(floatBtn) floatBtn.classList.add('has-badge'); } }, 7000);
+})();
+</script>
+
 </body>
 </html>
