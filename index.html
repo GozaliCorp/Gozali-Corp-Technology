@@ -215,6 +215,13 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .prod:hover{border-color:#C5CCDD;box-shadow:0 24px 50px -30px rgba(14,26,64,.35)}
 .prod-cover{position:relative;aspect-ratio:4/3;display:grid;place-items:center;background:var(--paper);overflow:hidden}
 .prod-cover img{width:100%;height:100%;object-fit:cover}
+.prod-cover.fit{background:#fff}
+.prod-cover.fit img{object-fit:contain;padding:10px}
+.prod.is-more{display:none}
+.shop-grid.show-all .prod.is-more{display:flex}
+.shop-more{text-align:center;margin-top:26px}
+.shop-more button{font:inherit;font-weight:700;font-size:15px;padding:12px 26px;border-radius:999px;border:2px solid var(--ink,#0E1A40);background:transparent;color:var(--ink,#0E1A40);cursor:pointer}
+.shop-more button:hover{background:var(--ink,#0E1A40);color:#fff}
 .prod-cover .emoji{font-size:58px;line-height:1}
 .prod-cover .kind{position:absolute;top:14px;left:14px;z-index:2;font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(14,26,64,.08)}
 .prod-cover.k-ebook{background:linear-gradient(135deg,#1C2E63,#0E1A40)}
@@ -643,9 +650,10 @@ footer .pay b{color:#fff;font-weight:600}
     <div class="section-head reveal">
       <span class="eyebrow">Etalase digital</span>
       <h2>Produk digital premium</h2>
-      <p>Panduan, template, dan tools siap pakai. Pilih produk, isi data singkat, lalu pembayaran dilanjutkan via WhatsApp.</p>
+      <p>Panduan, template, dan tools siap pakai. Pilih produk lalu bayar otomatis via Lynk — file langsung terkirim. Produk tertentu dipesan lewat formulir WhatsApp.</p>
     </div>
     <div class="shop-grid" id="shopGrid"><!-- produk dimuat dinamis dari products.json / admin --></div>
+    <div class="shop-more" id="shopMore" hidden><button type="button" id="shopMoreBtn">Lihat semua produk</button></div>
   </div>
 </section>
 
@@ -1022,8 +1030,9 @@ async function loadProducts(){
 function renderProducts(list){
   const grid=document.getElementById('shopGrid'); if(!grid) return;
   if(!list || !list.length){ grid.innerHTML='<div class="shop-empty">Belum ada produk. Tambahkan lewat panel admin.</div>'; return; }
-  grid.innerHTML='';
-  list.forEach(p=>{
+  grid.innerHTML=''; grid.classList.remove('show-all');
+  const SHOP_LIMIT=9;
+  list.forEach((p,idx)=>{
     const kind=p.kat||p.kind||'Produk';
     const title=p.nama||p.title||'';
     const desc=p.desk||p.desc||'';
@@ -1038,10 +1047,10 @@ function renderProducts(list){
     const cover = img ? `<img src="${esc(img)}" alt="${esc(title)}" loading="lazy">`
       : isBook ? `<div class="book"><b>${esc(title)}</b><small>GOZALI CORP</small></div>`
       : `<span class="emoji">${emoji}</span>`;
-    const coverCls = img ? '' : (isBook ? 'k-ebook' : /^ai$/i.test(kind) ? 'k-ai' : 'k-jasa');
+    const coverCls = img ? (/lynkid\.my\.id/i.test(img) ? 'fit' : '') : (isBook ? 'k-ebook' : /^ai$/i.test(kind) ? 'k-ai' : 'k-jasa');
     const hemat = hitungHemat(p.harga||p.price, p.coret);
     const card=document.createElement('div');
-    card.className='prod reveal in';
+    card.className='prod reveal in'+(idx>=SHOP_LIMIT?' is-more':'');
     card.innerHTML=`
       <div class="prod-cover ${coverCls}"><span class="kind">${esc(kind)}</span>${cover}</div>
       <div class="prod-body">
@@ -1060,6 +1069,13 @@ function renderProducts(list){
     card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',(e.clientX-r.left)+'px');card.style.setProperty('--my',(e.clientY-r.top)+'px');});
     grid.appendChild(card);
   });
+  const more=document.getElementById('shopMore'), btn=document.getElementById('shopMoreBtn');
+  if(more && btn){
+    if(list.length>SHOP_LIMIT){
+      more.hidden=false; btn.textContent='Lihat semua produk ('+list.length+')';
+      btn.onclick=()=>{ const all=grid.classList.toggle('show-all'); btn.textContent= all ? 'Tampilkan lebih sedikit' : 'Lihat semua produk ('+list.length+')'; if(!all) document.getElementById('shop').scrollIntoView({behavior:'smooth'}); };
+    } else more.hidden=true;
+  }
 }
 loadProducts().then(renderProducts);
 
