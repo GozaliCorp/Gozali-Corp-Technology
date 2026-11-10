@@ -221,6 +221,13 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .prod.is-more{display:none}
 .shop-grid.filtered .prod.is-more{display:flex}
 .shop-grid .prod.is-off{display:none!important}
+.shop-search{position:relative;max-width:520px;margin:0 auto 16px}
+.shop-search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;opacity:.5;pointer-events:none}
+.shop-search input{width:100%;box-sizing:border-box;font:inherit;font-size:15px;padding:13px 44px 13px 46px;border-radius:999px;border:1px solid var(--line,#e3e3e3);background:#fff;color:var(--ink,#0E1A40);outline:none;transition:border-color .2s,box-shadow .2s}
+.shop-search input:focus{border-color:var(--ink,#0E1A40);box-shadow:0 0 0 3px rgba(14,26,64,.08)}
+.shop-search input::-webkit-search-cancel-button{display:none}
+.shop-search .clr{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:28px;height:28px;border:0;border-radius:50%;background:var(--paper,#f1f1f1);color:var(--ink,#0E1A40);font-size:16px;line-height:1;cursor:pointer}
+.shop-empty-q{grid-column:1/-1;text-align:center;padding:36px 16px;opacity:.75}
 .shop-filter{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 24px}
 .shop-filter button{font:inherit;font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px;border:1px solid var(--line,#e3e3e3);background:#fff;color:var(--ink,#0E1A40);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
 .shop-filter button small{opacity:.6;margin-left:4px;font-weight:500}
@@ -662,6 +669,11 @@ footer .pay b{color:#fff;font-weight:600}
       <h2>Produk digital premium</h2>
       <p>Panduan, template, dan tools siap pakai. Pilih produk lalu bayar otomatis via Lynk — file langsung terkirim. Produk tertentu dipesan lewat formulir WhatsApp.</p>
     </div>
+    <div class="shop-search" id="shopSearchWrap" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="shopSearch" placeholder="Cari produk, misalnya: template, canva, wordpress…" aria-label="Cari produk" autocomplete="off">
+      <button type="button" class="clr" id="shopSearchClr" aria-label="Hapus pencarian" hidden>×</button>
+    </div>
     <div class="shop-filter" id="shopFilter" role="tablist" aria-label="Kategori produk" hidden></div>
     <div class="shop-grid" id="shopGrid"><!-- produk dimuat dinamis dari products.json / admin --></div>
     <div class="shop-more" id="shopMore" hidden><button type="button" id="shopMoreBtn">Lihat semua produk</button></div>
@@ -1060,12 +1072,13 @@ function renderProducts(list){
     const cover = img ? `<img src="${esc(img)}" alt="${esc(title)}" loading="lazy">`
       : isBook ? `<div class="book"><b>${esc(title)}</b><small>GOZALI CORP</small></div>`
       : `<span class="emoji">${emoji}</span>`;
-    const coverCls = img ? (/lynkid\.my\.id/i.test(img) ? 'fit' : '') : (isBook ? 'k-ebook' : /^(ai|otomasi)$/i.test(kind) ? 'k-ai' : 'k-jasa');
+    const coverCls = img ? (/lynkid\.my\.id|lynk\.b-cdn\.net/i.test(img) ? 'fit' : '') : (isBook ? 'k-ebook' : /^(ai|otomasi)$/i.test(kind) ? 'k-ai' : 'k-jasa');
     const viaLynk = isLynk(checkout);
     const hemat = viaLynk ? 0 : hitungHemat(p.harga||p.price, p.coret);
     const card=document.createElement('div');
     card.className='prod reveal in'+(idx>=SHOP_LIMIT?' is-more':'');
     card.dataset.kat=katKey(kind);
+    card.dataset.q=normQ([title,desc,kind,KAT_LABEL[katKey(kind)]||''].join(' '));
     card.innerHTML=`
       <div class="prod-cover ${coverCls}"><span class="kind">${esc(kind)}</span>${cover}</div>
       <div class="prod-body">
@@ -1095,10 +1108,12 @@ function renderProducts(list){
     } else more.hidden=true;
   }
   buildShopFilter(list);
+  const sw=document.getElementById('shopSearchWrap'); if(sw) sw.hidden = list.length<2;
+  SHOP_STATE.k='all'; applyShopFilter();
 }
 /* ---- Filter kategori produk ---- */
-const KAT_ORDER=['ebook','template','mrr','plr','kursus','database','bundle','digital','otomasi','ai','jasa'];
-const KAT_LABEL={ebook:'E-Book',template:'Template',mrr:'MRR',plr:'PLR',kursus:'Kursus',database:'Database',bundle:'Bundle',digital:'Digital',otomasi:'Otomasi',ai:'AI',jasa:'Jasa'};
+const KAT_ORDER=['ebook','template','mrr','plr','kursus','database','bundle','digital','tools','otomasi','ai','jasa'];
+const KAT_LABEL={ebook:'E-Book',template:'Template',mrr:'MRR',plr:'PLR',kursus:'Kursus',database:'Database',bundle:'Bundle',digital:'Digital',tools:'Tools & Software',otomasi:'Otomasi',ai:'AI',jasa:'Jasa'};
 function katKey(k){ const t=String(k||'Produk').trim().toLowerCase().replace(/[^a-z0-9]+/g,''); return t==='ebooks'?'ebook':(t||'produk'); }
 function katRank(k){ const i=KAT_ORDER.indexOf(katKey(k)); return i<0?KAT_ORDER.length:i; }
 function buildShopFilter(list){
@@ -1111,13 +1126,40 @@ function buildShopFilter(list){
   bar.innerHTML=[['all','Semua',list.length]].concat(keys.map(k=>[k,labels[k],counts[k]]))
     .map(([k,l,n])=>`<button type="button" role="tab" data-k="${esc(k)}" aria-selected="${k==='all'}" class="${k==='all'?'on':''}">${esc(l)}<small>${n}</small></button>`).join('');
   bar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
-    const k=b.dataset.k;
+    SHOP_STATE.k=b.dataset.k;
     bar.querySelectorAll('button').forEach(x=>{ const on=x===b; x.classList.toggle('on',on); x.setAttribute('aria-selected',on); });
-    grid.classList.toggle('filtered',k!=='all');
-    grid.querySelectorAll('.prod').forEach(c=>c.classList.toggle('is-off',k!=='all'&&c.dataset.kat!==k));
-    const more=document.getElementById('shopMore'); if(more) more.hidden = k!=='all' || list.length<=9;
+    applyShopFilter();
   }));
 }
+/* ---- Pencarian + kategori ---- */
+const SHOP_STATE={k:'all',q:''};
+function normQ(t){ return String(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim(); }
+function applyShopFilter(){
+  const grid=document.getElementById('shopGrid'); if(!grid) return;
+  const k=SHOP_STATE.k, words=normQ(SHOP_STATE.q).split(' ').filter(Boolean);
+  const active = k!=='all' || words.length>0;
+  grid.classList.toggle('filtered',active);
+  let shown=0;
+  grid.querySelectorAll('.prod').forEach(c=>{
+    const okK = k==='all' || c.dataset.kat===k;
+    const okQ = !words.length || words.every(w=>(c.dataset.q||'').includes(w));
+    c.classList.toggle('is-off',!(okK&&okQ)); if(okK&&okQ) shown++;
+  });
+  let empty=grid.querySelector('.shop-empty-q');
+  if(!shown && active){
+    if(!empty){ empty=document.createElement('div'); empty.className='shop-empty-q'; grid.appendChild(empty); }
+    empty.innerHTML='Produk <b>'+esc(SHOP_STATE.q||'')+'</b> belum ada'+(k!=='all'?' di kategori ini':'')+'. Coba kata lain, atau <a href="https://wa.me/6285600000279" target="_blank" rel="noopener">tanya kami via WhatsApp</a>.';
+  } else if(empty) empty.remove();
+  const more=document.getElementById('shopMore');
+  if(more) more.hidden = active || grid.querySelectorAll('.prod').length<=9;
+}
+(function initShopSearch(){
+  const inp=document.getElementById('shopSearch'), clr=document.getElementById('shopSearchClr'); if(!inp) return;
+  let t;
+  inp.addEventListener('input',()=>{ clr.hidden=!inp.value; clearTimeout(t); t=setTimeout(()=>{ SHOP_STATE.q=inp.value; applyShopFilter(); },120); });
+  inp.addEventListener('keydown',e=>{ if(e.key==='Escape'){ inp.value=''; clr.hidden=true; SHOP_STATE.q=''; applyShopFilter(); } });
+  clr.addEventListener('click',()=>{ inp.value=''; clr.hidden=true; SHOP_STATE.q=''; applyShopFilter(); inp.focus(); });
+})();
 loadProducts().then(renderProducts);
 
 /* ---- Dynamic payment info (dikelola lewat admin.html) ---- */
