@@ -216,8 +216,18 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .prod-cover{position:relative;aspect-ratio:4/3;display:grid;place-items:center;background:var(--paper);overflow:hidden}
 .prod-cover img{width:100%;height:100%;object-fit:cover}
 .prod-cover.fit{background:#fff}
+.price.lynk-price{font-size:14px}
 .prod-cover.fit img{object-fit:contain;padding:10px}
 .prod.is-more{display:none}
+.shop-grid.filtered .prod.is-more{display:flex}
+.shop-grid .prod.is-off{display:none!important}
+.shop-filter{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 24px}
+.shop-filter button{font:inherit;font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px;border:1px solid var(--line,#e3e3e3);background:#fff;color:var(--ink,#0E1A40);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.shop-filter button small{opacity:.6;margin-left:4px;font-weight:500}
+.shop-filter button:hover{border-color:var(--ink,#0E1A40)}
+.shop-filter button.on{background:var(--ink,#0E1A40);color:#fff;border-color:var(--ink,#0E1A40)}
+.shop-filter button.on small{opacity:.8}
+@media (max-width:600px){.shop-filter{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;-webkit-overflow-scrolling:touch}.shop-filter button{flex:0 0 auto}}
 .shop-grid.show-all .prod.is-more{display:flex}
 .shop-more{text-align:center;margin-top:26px}
 .shop-more button{font:inherit;font-weight:700;font-size:15px;padding:12px 26px;border-radius:999px;border:2px solid var(--ink,#0E1A40);background:transparent;color:var(--ink,#0E1A40);cursor:pointer}
@@ -652,6 +662,7 @@ footer .pay b{color:#fff;font-weight:600}
       <h2>Produk digital premium</h2>
       <p>Panduan, template, dan tools siap pakai. Pilih produk lalu bayar otomatis via Lynk — file langsung terkirim. Produk tertentu dipesan lewat formulir WhatsApp.</p>
     </div>
+    <div class="shop-filter" id="shopFilter" role="tablist" aria-label="Kategori produk" hidden></div>
     <div class="shop-grid" id="shopGrid"><!-- produk dimuat dinamis dari products.json / admin --></div>
     <div class="shop-more" id="shopMore" hidden><button type="button" id="shopMoreBtn">Lihat semua produk</button></div>
   </div>
@@ -1014,12 +1025,13 @@ const DEFAULT_PRODUCTS = [
   {nama:"AI Agent Auto-Reply WhatsApp",kat:"AI",harga:"Rp 750.000",coret:"",desk:"Chatbot AI yang membalas pesan pelanggan otomatis 24/7, lengkap dengan setup.",img:"",emoji:"🤖",note:"Setup + support",aksi:"Konsultasi"},
   {nama:"Bundle Template & Preset Konten",kat:"Digital",harga:"Rp 79.000",coret:"Rp 149.000",desk:"Template dan preset siap pakai untuk membuat konten lebih cepat, rapi, dan konsisten.",img:"",emoji:"🎨",note:"Sekali bayar",aksi:"Beli"}
 ];
-const EMOJI_BY_KAT = {Ebook:'📘','E-Book':'📘',Bundle:'📚',AI:'🤖',Jasa:'🌐',Digital:'⚙️','Smart Tools':'⚙️'};
+const EMOJI_BY_KAT = {Ebook:'📘','E-Book':'📘',Bundle:'📚',AI:'🤖',Jasa:'🌐',Digital:'⚙️','Smart Tools':'⚙️',Otomasi:'⚡'};
 function angka(v){ const d=String(v==null?'':v).replace(/[^0-9]/g,''); return d?+d:0; }
 function fmtRp(v){ const t=String(v==null?'':v).trim(); if(/^\d+$/.test(t)) return 'Rp ' + (+t).toLocaleString('id-ID'); return t; }
 function hitungHemat(h,c){ const a=angka(h), b=angka(c); return (a&&b&&b>a) ? Math.round((1-a/b)*100) : 0; }
 function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 /* Link checkout otomatis (Mayar dll). Hanya https:// yang diterima. */
+function isLynk(u){ return /^https:\/\/(www\.)?lynk\.id\//i.test(String(u||'')); }
 function safeCheckout(u){ const t=String(u==null?'':u).trim(); return /^https:\/\/[^\s"'<>]+$/i.test(t) ? t : ''; }
 
 async function loadProducts(){
@@ -1030,8 +1042,9 @@ async function loadProducts(){
 function renderProducts(list){
   const grid=document.getElementById('shopGrid'); if(!grid) return;
   if(!list || !list.length){ grid.innerHTML='<div class="shop-empty">Belum ada produk. Tambahkan lewat panel admin.</div>'; return; }
-  grid.innerHTML=''; grid.classList.remove('show-all');
+  grid.innerHTML=''; grid.classList.remove('show-all','filtered');
   const SHOP_LIMIT=9;
+  list=list.map((p,i)=>({p,i})).sort((a,b)=>katRank(a.p.kat||a.p.kind)-katRank(b.p.kat||b.p.kind)||a.i-b.i).map(x=>x.p);
   list.forEach((p,idx)=>{
     const kind=p.kat||p.kind||'Produk';
     const title=p.nama||p.title||'';
@@ -1047,18 +1060,23 @@ function renderProducts(list){
     const cover = img ? `<img src="${esc(img)}" alt="${esc(title)}" loading="lazy">`
       : isBook ? `<div class="book"><b>${esc(title)}</b><small>GOZALI CORP</small></div>`
       : `<span class="emoji">${emoji}</span>`;
-    const coverCls = img ? (/lynkid\.my\.id/i.test(img) ? 'fit' : '') : (isBook ? 'k-ebook' : /^ai$/i.test(kind) ? 'k-ai' : 'k-jasa');
-    const hemat = hitungHemat(p.harga||p.price, p.coret);
+    const coverCls = img ? (/lynkid\.my\.id/i.test(img) ? 'fit' : '') : (isBook ? 'k-ebook' : /^(ai|otomasi)$/i.test(kind) ? 'k-ai' : 'k-jasa');
+    const viaLynk = isLynk(checkout);
+    const hemat = viaLynk ? 0 : hitungHemat(p.harga||p.price, p.coret);
     const card=document.createElement('div');
     card.className='prod reveal in'+(idx>=SHOP_LIMIT?' is-more':'');
+    card.dataset.kat=katKey(kind);
     card.innerHTML=`
       <div class="prod-cover ${coverCls}"><span class="kind">${esc(kind)}</span>${cover}</div>
       <div class="prod-body">
         <h3>${esc(title)}</h3>
         <p>${esc(desc)}</p>
         <div class="prod-foot">
-          <div class="price">${coret?`<span class="coret">${esc(coret)}</span>`:''}${esc(price)}${hemat?`<span class="save">-${hemat}%</span>`:''}${note?`<small>${esc(note)}</small>`:''}</div>
-          <button class="buy"${checkout?' title="Bayar otomatis, file langsung dikirim ke email"':''}>${esc(aksi)}</button>
+          ${viaLynk
+            ? `<div class="price lynk-price">Harga promo di Lynk<small>File langsung terkirim</small></div>
+          <button class="buy" title="Buka halaman produk di Lynk">Lihat harga &amp; beli</button>`
+            : `<div class="price">${coret?`<span class="coret">${esc(coret)}</span>`:''}${esc(price)}${hemat?`<span class="save">-${hemat}%</span>`:''}${note?`<small>${esc(note)}</small>`:''}</div>
+          <button class="buy"${checkout?' title="Bayar otomatis, file langsung dikirim ke email"':''}>${esc(aksi)}</button>`}
         </div>
       </div>`;
     card.querySelector('.buy').addEventListener('click',()=>{
@@ -1076,6 +1094,29 @@ function renderProducts(list){
       btn.onclick=()=>{ const all=grid.classList.toggle('show-all'); btn.textContent= all ? 'Tampilkan lebih sedikit' : 'Lihat semua produk ('+list.length+')'; if(!all) document.getElementById('shop').scrollIntoView({behavior:'smooth'}); };
     } else more.hidden=true;
   }
+  buildShopFilter(list);
+}
+/* ---- Filter kategori produk ---- */
+const KAT_ORDER=['ebook','template','mrr','plr','kursus','database','bundle','digital','otomasi','ai','jasa'];
+const KAT_LABEL={ebook:'E-Book',template:'Template',mrr:'MRR',plr:'PLR',kursus:'Kursus',database:'Database',bundle:'Bundle',digital:'Digital',otomasi:'Otomasi',ai:'AI',jasa:'Jasa'};
+function katKey(k){ const t=String(k||'Produk').trim().toLowerCase().replace(/[^a-z0-9]+/g,''); return t==='ebooks'?'ebook':(t||'produk'); }
+function katRank(k){ const i=KAT_ORDER.indexOf(katKey(k)); return i<0?KAT_ORDER.length:i; }
+function buildShopFilter(list){
+  const bar=document.getElementById('shopFilter'), grid=document.getElementById('shopGrid'); if(!bar||!grid) return;
+  const counts={}, labels={};
+  list.forEach(p=>{ const raw=p.kat||p.kind||'Produk', k=katKey(raw); counts[k]=(counts[k]||0)+1; if(!labels[k]) labels[k]=KAT_LABEL[k]||raw; });
+  const keys=Object.keys(counts).sort((a,b)=>katRank(a)-katRank(b)||labels[a].localeCompare(labels[b]));
+  if(keys.length<2){ bar.hidden=true; return; }
+  bar.hidden=false;
+  bar.innerHTML=[['all','Semua',list.length]].concat(keys.map(k=>[k,labels[k],counts[k]]))
+    .map(([k,l,n])=>`<button type="button" role="tab" data-k="${esc(k)}" aria-selected="${k==='all'}" class="${k==='all'?'on':''}">${esc(l)}<small>${n}</small></button>`).join('');
+  bar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.k;
+    bar.querySelectorAll('button').forEach(x=>{ const on=x===b; x.classList.toggle('on',on); x.setAttribute('aria-selected',on); });
+    grid.classList.toggle('filtered',k!=='all');
+    grid.querySelectorAll('.prod').forEach(c=>c.classList.toggle('is-off',k!=='all'&&c.dataset.kat!==k));
+    const more=document.getElementById('shopMore'); if(more) more.hidden = k!=='all' || list.length<=9;
+  }));
 }
 loadProducts().then(renderProducts);
 
@@ -1613,7 +1654,7 @@ loadEdukasi().then(renderEdukasi);
   }
   function order(p){
     if(p.checkout){
-      bubble('assistant','Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak.');
+      bubble('assistant', isLynk(p.checkout) ? 'Siap Kak! Halaman **'+p.nama+'** di Lynk saya buka di tab baru — harga terbaru & pembayaran ada di sana. Setelah bayar, file langsung dikirim ke email Kakak.' : 'Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak.');
       const w=window.open(p.checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else location.href=p.checkout;
     } else if(typeof openModal==='function'){
       bubble('assistant','Siap Kak! Formulir pesanan **'+p.nama+'** sudah terbuka. Isi nama, pilih metode bayar, lalu klik **Lanjutkan pembayaran via WhatsApp**.');
@@ -1631,8 +1672,8 @@ loadEdukasi().then(renderEdukasi);
       const c=document.createElement('div'); c.className='csw-card';
       const icon=p.img?'<img src="'+E(p.img)+'" alt="">':(p.emoji||(/book/i.test(p.kat)?'📘':'🛍️'));
       c.innerHTML='<div class="em">'+icon+'</div><div style="flex:1;min-width:0"><h5>'+E(p.nama)+'</h5><p>'+E(p.desk)+'</p>'
-        +'<div class="pr">'+(p.coret?'<s>'+E(p.coret)+'</s>':'')+E(p.harga)+'</div>'
-        +'<div class="ac"><button type="button" class="csw-btn go">'+(p.checkout?'Bayar sekarang':(jasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button></div></div>';
+        +'<div class="pr">'+(isLynk(p.checkout)?'Harga promo di Lynk':(p.coret?'<s>'+E(p.coret)+'</s>':'')+E(p.harga))+'</div>'
+        +'<div class="ac"><button type="button" class="csw-btn go">'+(isLynk(p.checkout)?'Lihat harga & beli':p.checkout?'Bayar sekarang':(jasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button></div></div>';
       c.querySelector('.go').onclick=()=>{
         if(jasa) startIntake({keperluan:'Jasa / proyek custom', layanan:guessLayanan(p.nama+' '+p.desk)||'Lainnya', produk:p.nama});
         else order(p);
