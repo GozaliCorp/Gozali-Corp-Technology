@@ -92,6 +92,8 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .nav-links a{color:var(--on-ink-2);font-size:14px;font-weight:600;padding:8px 13px;border-radius:999px;transition:color .2s,background .2s}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.08)}
 .nav-cta{display:flex;align-items:center;gap:10px}
+.nav-links a{white-space:nowrap}
+@media(min-width:1021px) and (max-width:1220px){.nav-links{gap:0}.nav-links a{padding:8px 8px;font-size:13.5px}.nav-cta .btn{padding:10px 16px;font-size:13.5px}}
 .nav-cta .btn{padding:11px 20px;font-size:14px}
 .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--ink-line);color:#fff;align-items:center;justify-content:center}
 
@@ -176,6 +178,8 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .pillar h3{font-size:24px;margin:34px 0 10px}
 .pillar p{color:var(--muted);font-size:15px;max-width:440px}
 .pillar.wide{grid-column:span 2}
+.pillar-link{margin-top:14px;font-weight:700;font-size:14.5px;color:#1192AC}
+.pillar-link:hover{text-decoration:underline}
 .pillar.p-prod{background:var(--ink);color:#fff;border-color:var(--ink)}
 .pillar.p-prod p{color:var(--on-ink-2)}
 .pillar.p-prod .ico{background:rgba(244,182,62,.15);color:var(--gold)}
@@ -470,6 +474,7 @@ footer .pay b{color:#fff;font-weight:600}
       <a href="#services">Layanan</a>
       <a href="#trust">Mengapa Kami</a>
       <a href="#shop">Produk Digital</a>
+      <a href="otomasi.html">Otomasi</a>
       <a href="#edukasi">Edukasi</a>
       <a href="#berita">Berita</a>
     </nav>
@@ -594,6 +599,7 @@ footer .pay b{color:#fff;font-weight:600}
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
         <h3>Smart Tools &amp; Automation</h3>
         <p>Pangkas jam kerja yang terbuang dengan bot, sistem makro, dan automasi yang berjalan 24/7.</p>
+        <a href="otomasi.html" class="pillar-link">Lihat paket otomasi →</a>
       </div>
       <div class="pillar p-it reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
@@ -744,6 +750,7 @@ footer .pay b{color:#fff;font-weight:600}
           <li><a href="#services">Layanan</a></li>
           <li><a href="#trust">Mengapa Kami</a></li>
           <li><a href="#shop">Produk Digital</a></li>
+          <li><a href="otomasi.html">Paket Otomasi</a></li>
           <li><a href="#berita">Berita</a></li>
         </ul>
       </div>
@@ -1043,6 +1050,7 @@ function fmtRp(v){ const t=String(v==null?'':v).trim(); if(/^\d+$/.test(t)) retu
 function hitungHemat(h,c){ const a=angka(h), b=angka(c); return (a&&b&&b>a) ? Math.round((1-a/b)*100) : 0; }
 function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 /* Link checkout otomatis (Mayar dll). Hanya https:// yang diterima. */
+function isInternal(u){ return /^https:\/\/(www\.)?gozalicorp\.my\.id\//i.test(String(u||'')); }
 function isLynk(u){ return /^https:\/\/(www\.)?lynk\.id\//i.test(String(u||'')); }
 function safeCheckout(u){ const t=String(u==null?'':u).trim(); return /^https:\/\/[^\s"'<>]+$/i.test(t) ? t : ''; }
 
@@ -1089,11 +1097,12 @@ function renderProducts(list){
             ? `<div class="price lynk-price">Harga promo di Lynk<small>File langsung terkirim</small></div>
           <button class="buy" title="Buka halaman produk di Lynk">Lihat harga &amp; beli</button>`
             : `<div class="price">${coret?`<span class="coret">${esc(coret)}</span>`:''}${esc(price)}${hemat?`<span class="save">-${hemat}%</span>`:''}${note?`<small>${esc(note)}</small>`:''}</div>
-          <button class="buy"${checkout?' title="Bayar otomatis, file langsung dikirim ke email"':''}>${esc(aksi)}</button>`}
+          <button class="buy"${checkout&&!isInternal(checkout)?' title="Bayar otomatis, file langsung dikirim ke email"':''}>${esc(aksi)}</button>`}
         </div>
       </div>`;
     card.querySelector('.buy').addEventListener('click',()=>{
       // Ada link checkout otomatis → buka halaman pembayaran; kalau tidak, pakai formulir WhatsApp lama
+      if(checkout && isInternal(checkout)){ location.href=checkout.replace(/^https:\/\/(www\.)?gozalicorp\.my\.id\//i,'/'); return; }
       if(checkout){ const w=window.open(checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else { location.href=checkout; } }
       else openModal(title, price);
     });
@@ -1695,6 +1704,10 @@ loadEdukasi().then(renderEdukasi);
     }).filter(x=>x.s>=2).sort((a,b)=>b.s-a.s).map(x=>x.p);
   }
   function order(p){
+    if(p.checkout && isInternal(p.checkout)){
+      bubble('assistant','Siap Kak! Saya buka halaman **'+p.nama+'** — di sana ada detail paket, harga, dan tombol daftar audit gratis.');
+      setTimeout(()=>{ location.href=p.checkout.replace(/^https:\/\/(www\.)?gozalicorp\.my\.id\//i,'/'); }, 600); return;
+    }
     if(p.checkout){
       bubble('assistant', isLynk(p.checkout) ? 'Siap Kak! Halaman **'+p.nama+'** di Lynk saya buka di tab baru — harga terbaru & pembayaran ada di sana. Setelah bayar, file langsung dikirim ke email Kakak.' : 'Siap Kak! Halaman pembayaran **'+p.nama+'** saya buka di tab baru. Setelah bayar, file langsung dikirim ke email Kakak.');
       const w=window.open(p.checkout,'_blank'); if(w){ try{ w.opener=null; }catch(e){} } else location.href=p.checkout;
@@ -1715,7 +1728,7 @@ loadEdukasi().then(renderEdukasi);
       const icon=p.img?'<img src="'+E(p.img)+'" alt="">':(p.emoji||(/book/i.test(p.kat)?'📘':'🛍️'));
       c.innerHTML='<div class="em">'+icon+'</div><div style="flex:1;min-width:0"><h5>'+E(p.nama)+'</h5><p>'+E(p.desk)+'</p>'
         +'<div class="pr">'+(isLynk(p.checkout)?'Harga promo di Lynk':(p.coret?'<s>'+E(p.coret)+'</s>':'')+E(p.harga))+'</div>'
-        +'<div class="ac"><button type="button" class="csw-btn go">'+(isLynk(p.checkout)?'Lihat harga & beli':p.checkout?'Bayar sekarang':(jasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button></div></div>';
+        +'<div class="ac"><button type="button" class="csw-btn go">'+(isLynk(p.checkout)?'Lihat harga & beli':isInternal(p.checkout)?'Lihat paket':p.checkout?'Bayar sekarang':(jasa?'Pesan / konsultasi':'Pesan sekarang'))+' →</button></div></div>';
       c.querySelector('.go').onclick=()=>{
         if(jasa) startIntake({keperluan:'Jasa / proyek custom', layanan:guessLayanan(p.nama+' '+p.desk)||'Lainnya', produk:p.nama});
         else order(p);
