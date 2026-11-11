@@ -1249,14 +1249,15 @@
   },
   {
     "kat": "Otomasi",
-    "nama": "Otomasi Sesuai Request",
-    "desk": "Otomasi alur kerja bisnis sesuai kebutuhan: laporan & rekap data, notifikasi, posting konten terjadwal, sampai integrasi antar aplikasi.",
-    "harga": "Sesuai kebutuhan",
+    "nama": "Paket Otomasi Bisnis",
+    "desk": "Starter, Growth, atau Custom — otomasi laporan, chat WhatsApp, notifikasi, sampai integrasi aplikasi. Mulai dari audit proses gratis.",
+    "harga": "Mulai Rp1,5 jt",
     "coret": "",
-    "note": "Konsultasi gratis",
-    "aksi": "Konsultasi",
+    "note": "Audit gratis",
+    "aksi": "Lihat Paket",
     "emoji": "⚡",
-    "img": ""
+    "img": "",
+    "checkout_url": "https://gozalicorp.my.id/otomasi.html"
   },
   {
     "nama": "Paket Konten Medsos 30 Hari",
