@@ -1232,10 +1232,11 @@ function tglIndo(s){
   const d=new Date(s);
   return isNaN(d) ? (s||'') : `${d.getDate()} ${b[d.getMonth()]} ${d.getFullYear()}`;
 }
+function isSkipNews(t){ const s=String(t||'').toLowerCase().replace(/[^a-z]/g,''); return !s || s==='skip' || s==='skipped' || s==='lewati'; }
 async function loadNews(){
   try{
     const r = await fetch('news.json',{cache:'no-store'});
-    if(r.ok){ const d = await r.json(); if(Array.isArray(d)) return d; }
+    if(r.ok){ const d = await r.json(); if(Array.isArray(d)) return d.filter(n=>n && !isSkipNews(n.judul) && !isSkipNews(n.ringkasan)); }
   }catch(e){}
   return [];
 }
