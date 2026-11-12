@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<script>
+/* Terapkan tema sebelum render agar tidak berkedip. */
+(function(){try{var t=localStorage.getItem('gc-tema');if(t!=='gelap'&&t!=='terang'){t=matchMedia('(prefers-color-scheme: dark)').matches?'gelap':'terang'}
+document.documentElement.setAttribute('data-tema',t);}catch(e){document.documentElement.setAttribute('data-tema','terang')}})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paket Otomasi Bisnis — Gozali Corp Technology</title>
@@ -522,6 +528,41 @@ section[id]{scroll-margin-top:84px}
 @media(max-width:480px){.ot-grid4,.ot-steps{grid-template-columns:1fr}}
 
 </style>
+<style id="tema-css">
+/* ===== TEMA GELAP / TERANG (tombol bulan sabit) ===== */
+.theme-btn{width:42px;height:42px;border-radius:12px;border:1px solid var(--ink-line);color:#fff;display:inline-flex;align-items:center;justify-content:center;flex:none;transition:background .2s,border-color .2s,color .2s}
+.theme-btn:hover{background:rgba(255,255,255,.1);border-color:var(--gold);color:var(--gold)}
+.theme-btn svg{width:19px;height:19px}
+:root[data-tema="gelap"]{color-scheme:dark;--paper:#0A1230;--white:#111D47;--text:#E8EDFA;--muted:#9AA6C6;--line:rgba(255,255,255,.14)}
+[data-tema="gelap"] footer{border-top:1px solid var(--ink-line)}
+[data-tema="gelap"] .btn-line-dark{background:var(--white);color:var(--text)}
+[data-tema="gelap"] .btn-ink{background:var(--ink-3);border:1px solid var(--ink-line)}
+[data-tema="gelap"] .sol-card .who{background:rgba(255,255,255,.07);color:var(--gold)}
+[data-tema="gelap"] .sol-card.featured,[data-tema="gelap"] .pillar.p-prod,[data-tema="gelap"] .news:first-child{background:var(--ink-3);border-color:rgba(255,255,255,.18)}
+[data-tema="gelap"] .pillar.p-it .ico{background:rgba(255,255,255,.08);color:var(--gold)}
+[data-tema="gelap"] .price,[data-tema="gelap"] .edu .go,[data-tema="gelap"] .news .go,[data-tema="gelap"] .num-row .num,[data-tema="gelap"] .qris-brand .q,[data-tema="gelap"] .rfq-card h3,[data-tema="gelap"] .rfq-card label,[data-tema="gelap"] .aic-chips button,[data-tema="gelap"] .aic-msg a,[data-tema="gelap"] .aic-foot a,[data-tema="gelap"] .rfq-alt button,[data-tema="gelap"] .rfq-alt a{color:var(--text)}
+[data-tema="gelap"] .news:first-child .go{color:#fff}
+[data-tema="gelap"] .buy,[data-tema="gelap"] .copy-btn{background:var(--gold);color:var(--ink)}
+[data-tema="gelap"] .buy:hover{background:#fff}
+[data-tema="gelap"] a.news:hover,[data-tema="gelap"] a.edu:hover{border-color:var(--gold)}
+[data-tema="gelap"] a.edu:hover{background:var(--white)}
+[data-tema="gelap"] .edu-cover,[data-tema="gelap"] .prod-cover .kind,[data-tema="gelap"] .shop-filter button,[data-tema="gelap"] .shop-search input,[data-tema="gelap"] .inp,[data-tema="gelap"] .rfq-card input,[data-tema="gelap"] .rfq-card select,[data-tema="gelap"] .rfq-card textarea,[data-tema="gelap"] .aic-form textarea,[data-tema="gelap"] .aic-chips button{background:var(--paper);color:var(--text)}
+[data-tema="gelap"] .prod-cover .kind{background:rgba(10,18,48,.85);color:var(--text)}
+[data-tema="gelap"] .shop-filter button[aria-pressed="true"],[data-tema="gelap"] .shop-filter button.on,[data-tema="gelap"] .shop-filter button.active{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+[data-tema="gelap"] .modal-card,[data-tema="gelap"] .rfq-card,[data-tema="gelap"] .aic,[data-tema="gelap"] .aic-form,[data-tema="gelap"] .aic-foot,[data-tema="gelap"] .aic-msg.bot{background:var(--white);color:var(--text)}
+[data-tema="gelap"] .inp:focus,[data-tema="gelap"] .rfq-card input:focus,[data-tema="gelap"] .rfq-card select:focus,[data-tema="gelap"] .rfq-card textarea:focus,[data-tema="gelap"] .aic-form textarea:focus{border-color:var(--gold)}
+[data-tema="gelap"] .pay-opt.sel{border-color:var(--gold);background:rgba(244,182,62,.08);box-shadow:inset 0 0 0 1px var(--gold)}
+[data-tema="gelap"] .lvl-pemula{background:rgba(34,197,94,.18);color:#86EFAC}
+[data-tema="gelap"] .lvl-menengah{background:rgba(244,182,62,.18);color:#FCD34D}
+[data-tema="gelap"] .lvl-lanjut{background:rgba(129,140,248,.2);color:#C7D2FE}
+[data-tema="gelap"] .aic-msg a,[data-tema="gelap"] .aic-foot a{color:var(--gold)}
+.brand{flex:none}
+@media(min-width:1021px) and (max-width:1400px){.nav{gap:12px}.nav-links{gap:0}.nav-links a{padding:8px 9px;font-size:13.5px}.nav-cta{gap:8px}.nav-cta .btn{padding:10px 16px;font-size:13.5px}}
+@media(max-width:1020px){.theme-btn{width:44px;height:44px}}
+[data-tema="gelap"] .shop-more button{color:var(--text);border-color:var(--gold)}
+[data-tema="gelap"] .shop-more button:hover{background:var(--gold);color:var(--ink)}
+[data-tema="gelap"] .rfq-card .btn-line{color:var(--text)!important;border-color:var(--line)!important}
+</style>
 </head>
 <body>
 <div id="scrollbar"></div>
@@ -540,6 +581,7 @@ section[id]{scroll-margin-top:84px}
       <a href="index.html#berita">Berita</a>
     </nav>
     <div class="nav-cta">
+      <button class="theme-btn" id="temaBtn" type="button" aria-label="Ganti ke tema gelap" title="Ganti tema gelap / terang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
       <a href="https://wa.me/6281399899954" target="_blank" rel="noopener" class="btn btn-gold desktop-only" data-wa="Halo Gozali Corp, saya mau daftar audit proses gratis untuk otomasi bisnis saya.">Audit Gratis</a>
       <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -817,6 +859,18 @@ section[id]{scroll-margin-top:84px}
   window.addEventListener('scroll',on,{passive:true}); on();
   var fl=document.getElementById('footLogo'), hl=document.querySelector('header .brand-mark'); if(fl&&hl) fl.src=hl.src;
   var sb=document.getElementById('scrollbar'); if(sb){ var p=function(){ var h=document.documentElement; sb.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; }; window.addEventListener('scroll',p,{passive:true}); }
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('temaBtn'),r=document.documentElement,m=document.querySelector('meta[name="theme-color"]');
+  function sync(){var g=r.getAttribute('data-tema')==='gelap';
+    if(b){b.setAttribute('aria-label',g?'Ganti ke tema terang':'Ganti ke tema gelap');b.title=g?'Tema terang':'Tema gelap';}
+    if(m)m.setAttribute('content',g?'#0A1230':'#0E1A40');}
+  sync();
+  if(b)b.addEventListener('click',function(){
+    var n=r.getAttribute('data-tema')==='gelap'?'terang':'gelap';
+    r.setAttribute('data-tema',n);try{localStorage.setItem('gc-tema',n)}catch(e){}sync();});
 })();
 </script>
 </body>
