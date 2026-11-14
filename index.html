@@ -108,6 +108,10 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .jam-wib::before{content:"";width:5px;height:5px;border-radius:50%;background:#22c55e}
 @media(max-width:480px){.jam-wib{right:8px;font-size:10px}}
 
+.marquee-item{transition:color .2s}
+a.marquee-item:hover{color:#fff}
+a.marquee-item:hover::after{background:#fff}
+.pillar[id]{scroll-margin-top:100px}
 /* ---------- Marquee di atas hero ---------- */
 .hero.has-marquee{padding-top:74px}
 .hero-marquee{background:transparent;border-top:0;border-bottom:1px solid var(--ink-line);padding:14px 0;margin-bottom:56px}
@@ -543,9 +547,9 @@ footer .pay b{color:#fff;font-weight:600}
 
 <!-- ================= HERO ================= -->
 <section id="home" class="hero dark has-marquee">
-  <div class="marquee hero-marquee" aria-hidden="true">
+  <div class="marquee hero-marquee">
     <div class="marquee-track">
-      <span class="marquee-item">AI &amp; Automation</span><span class="marquee-item">Cloud Infrastructure</span><span class="marquee-item">Web &amp; Mobile Apps</span><span class="marquee-item">Video Production</span><span class="marquee-item">Chatbot &amp; API</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">Smart Tools</span><span class="marquee-item">E-Book Premium</span><span class="marquee-item">Digital Marketing</span><span class="marquee-item">Cyber Security</span>
+      <a class="marquee-item" href="otomasi.html">AI &amp; Automation</a><a class="marquee-item" href="#pilar-it">Cloud Infrastructure</a><a class="marquee-item" href="#pilar-it">Web &amp; Mobile Apps</a><a class="marquee-item" href="#pilar-prod">Video Production</a><a class="marquee-item" href="otomasi.html">Chatbot &amp; API</a><a class="marquee-item" href="#pilar-prod">UI / UX Design</a><a class="marquee-item" href="#pilar-auto">Smart Tools</a><a class="marquee-item" href="#shop">E-Book Premium</a><a class="marquee-item" href="#pilar-prod">Digital Marketing</a><a class="marquee-item" href="#pilar-it">Cyber Security</a>
     </div>
   </div>
   <div class="wrap hero-grid">
@@ -582,9 +586,9 @@ footer .pay b{color:#fff;font-weight:600}
 </section>
 
 <!-- ================= TECH MARQUEE ================= -->
-<div class="marquee" aria-hidden="true">
+<div class="marquee">
   <div class="marquee-track" id="mtrack">
-    <span class="marquee-item">AI &amp; Automation</span><span class="marquee-item">Cloud Infrastructure</span><span class="marquee-item">Web &amp; Mobile Apps</span><span class="marquee-item">Video Production</span><span class="marquee-item">Chatbot &amp; API</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">Smart Tools</span><span class="marquee-item">E-Book Premium</span><span class="marquee-item">Digital Marketing</span><span class="marquee-item">Cyber Security</span>
+    <a class="marquee-item" href="otomasi.html">AI &amp; Automation</a><a class="marquee-item" href="#pilar-it">Cloud Infrastructure</a><a class="marquee-item" href="#pilar-it">Web &amp; Mobile Apps</a><a class="marquee-item" href="#pilar-prod">Video Production</a><a class="marquee-item" href="otomasi.html">Chatbot &amp; API</a><a class="marquee-item" href="#pilar-prod">UI / UX Design</a><a class="marquee-item" href="#pilar-auto">Smart Tools</a><a class="marquee-item" href="#shop">E-Book Premium</a><a class="marquee-item" href="#pilar-prod">Digital Marketing</a><a class="marquee-item" href="#pilar-it">Cyber Security</a>
   </div>
 </div>
 
@@ -648,19 +652,19 @@ footer .pay b{color:#fff;font-weight:600}
     </div>
 
     <div class="bento">
-      <div class="pillar wide p-prod reveal">
+      <div id="pilar-prod" class="pillar wide p-prod reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M10 9l5 3-5 3V9z" fill="currentColor" stroke="none"/><path d="M7 21h10"/></svg></div>
         <h3>Digital Production</h3>
         <p>Dari konsep hingga konversi. Kami memproduksi video iklan komersial, aset visual, dan konten kreatif yang menceritakan nilai brand Anda.</p>
         <div class="chips"><span>Video iklan</span><span>Reels &amp; TikTok</span><span>Desain visual</span></div>
       </div>
-      <div class="pillar p-auto reveal">
+      <div id="pilar-auto" class="pillar p-auto reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
         <h3>Smart Tools &amp; Automation</h3>
         <p>Pangkas jam kerja yang terbuang dengan bot, sistem makro, dan automasi yang berjalan 24/7.</p>
         <a href="otomasi.html" class="pillar-link">Lihat paket otomasi →</a>
       </div>
-      <div class="pillar p-it reveal">
+      <div id="pilar-it" class="pillar p-it reveal">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
         <h3>One-Stop IT Solution</h3>
         <p>Aplikasi mobile, website kustom, hingga tata kelola komputasi awan (cloud) yang rapi.</p>
