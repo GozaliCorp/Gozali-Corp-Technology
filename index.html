@@ -103,6 +103,11 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .nav-cta .btn{padding:11px 20px;font-size:14px}
 .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--ink-line);color:#fff;align-items:center;justify-content:center}
 
+/* ---------- Jam WIB ---------- */
+.jam-wib{position:absolute;top:3px;right:10px;display:flex;align-items:center;gap:5px;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.4px;color:var(--on-ink-2,#C9D3F0);pointer-events:none;white-space:nowrap}
+.jam-wib::before{content:"";width:5px;height:5px;border-radius:50%;background:#22c55e}
+@media(max-width:480px){.jam-wib{right:8px;font-size:10px}}
+
 /* ---------- Hero ---------- */
 .hero{position:relative;padding:150px 0 90px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:
@@ -527,6 +532,7 @@ footer .pay b{color:#fff;font-weight:600}
       </button>
     </div>
   </div>
+  <div class="jam-wib" id="jamWib" aria-label="Waktu Indonesia Barat">--.--.-- WIB</div>
 </header>
 
 <!-- ================= HERO ================= -->
@@ -2154,6 +2160,14 @@ loadEdukasi().then(renderEdukasi);
   if(b)b.addEventListener('click',function(){
     var n=r.getAttribute('data-tema')==='gelap'?'terang':'gelap';
     r.setAttribute('data-tema',n);try{localStorage.setItem('gc-tema',n)}catch(e){}sync();});
+})();
+</script>
+<script>
+(function(){
+  var el=document.getElementById('jamWib');if(!el)return;
+  var f=new Intl.DateTimeFormat('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  function t(){el.textContent=f.format(new Date()).replace(/:/g,'.')+' WIB';}
+  t();setInterval(t,1000);
 })();
 </script>
 </body>
