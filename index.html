@@ -108,6 +108,12 @@ header.solid{background:rgba(14,26,64,.92);backdrop-filter:blur(14px);-webkit-ba
 .jam-wib::before{content:"";width:5px;height:5px;border-radius:50%;background:#22c55e}
 @media(max-width:480px){.jam-wib{right:8px;font-size:10px}}
 
+/* ---------- Marquee di atas hero ---------- */
+.hero.has-marquee{padding-top:74px}
+.hero-marquee{background:transparent;border-top:0;border-bottom:1px solid var(--ink-line);padding:14px 0;margin-bottom:56px}
+.hero-marquee .marquee-item{font-size:14px}
+@media(max-width:1020px){.hero.has-marquee{padding-top:74px}.hero-marquee{margin-bottom:36px}}
+
 /* ---------- Hero ---------- */
 .hero{position:relative;padding:150px 0 90px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:
@@ -536,7 +542,12 @@ footer .pay b{color:#fff;font-weight:600}
 </header>
 
 <!-- ================= HERO ================= -->
-<section id="home" class="hero dark">
+<section id="home" class="hero dark has-marquee">
+  <div class="marquee hero-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">AI &amp; Automation</span><span class="marquee-item">Cloud Infrastructure</span><span class="marquee-item">Web &amp; Mobile Apps</span><span class="marquee-item">Video Production</span><span class="marquee-item">Chatbot &amp; API</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">Smart Tools</span><span class="marquee-item">E-Book Premium</span><span class="marquee-item">Digital Marketing</span><span class="marquee-item">Cyber Security</span>
+    </div>
+  </div>
   <div class="wrap hero-grid">
     <div>
       <span class="pill"><span class="live"></span>One-stop IT solution &amp; digital production</span>
