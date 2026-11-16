@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gozalicorp.my.id/sitemap.xml
+Sitemap: https://gozalicorp.my.id/sitemap.xml
