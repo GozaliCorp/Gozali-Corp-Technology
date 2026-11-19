@@ -2413,6 +2413,7 @@ loadEdukasi().then(renderEdukasi);
   var _open=window.open;
   window.open=function(u){
     if(typeof u==='string' && u.indexOf('wa.me')>-1){ u=waUrl(u); track('click_whatsapp',{via:'js',sumber:src||'langsung'}); }
+     else if(typeof u==='string' && u.indexOf('lynk.id')>-1){ track('click_beli_lynk',{via:'js',link_url:u}); }
     return _open.apply(this,[u].concat([].slice.call(arguments,1)));
   };
   document.addEventListener('submit',function(e){ track('form_submit',{form_id:(e.target&&e.target.id)||'form'}); },true);
@@ -2435,14 +2436,6 @@ loadEdukasi().then(renderEdukasi);
     document.getElementById('bukti').hidden=false;
   }
 })();
-</script>
-   <script>
-document.addEventListener('click', function (e) {
-  var a = e.target.closest('a[href*="lynk.id"]');
-  if (a && typeof gtag === 'function') {
-    gtag('event', 'qualify_lead', { link_url: a.href });
-  }
-});
 </script>
 </body>
 </html>
