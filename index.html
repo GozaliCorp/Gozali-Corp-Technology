@@ -2436,5 +2436,13 @@ loadEdukasi().then(renderEdukasi);
   }
 })();
 </script>
+   <script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href*="lynk.id"]');
+  if (a && typeof gtag === 'function') {
+    gtag('event', 'qualify_lead', { link_url: a.href });
+  }
+});
+</script>
 </body>
 </html>
