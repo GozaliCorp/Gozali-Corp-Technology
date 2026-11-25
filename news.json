@@ -1,5 +1,85 @@
 [
   {
+    "judul": "Perkembangan AI Dorong Pertumbuhan Ekonomi Global Secara Signifikan",
+    "kategori": "AI",
+    "ringkasan": "Revolusi kecerdasan buatan memicu akselerasi ekonomi dunia, membuka peluang baru dan meningkatkan produktivitas secara masif.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNTRBTTZIMEVXY2NtMVQyVzBsSk45SUtUYkM4eThxVThrUEJkTTRjYlZQaXJhUTFUZ3NXbFE5Zi1BVE9zU2NaWmlNVEE1OGJZRmVnS0NFSUhsOFMwOEpILWVZcEN4WXZIQUxaY2stRjRRTVYtbmwxTVEzQk45T2xEb3E5cEN1d1VPQ0JNai04S2RkOUNhRHc?oc=5",
+    "sumber": "Bisnis Indonesia e-Paper"
+  },
+  {
+    "judul": "SecurXcess Luncurkan VERA AI SOC untuk Analisis Keamanan Siber Canggih",
+    "kategori": "AI",
+    "ringkasan": "Platform VERA AI SOC dari SecurXcess hadir sebagai solusi inovatif untuk analisis keamanan siber berbasis kecerdasan buatan.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNVJ6bTE0N21rTFFfOS1yREtpbTFNWk4xV084d1o4OWV1ZW9zeVZTSG1DNl9mUE14R3A4QV9JcEJNdVphZlZ5bVE4QlZuRUdGRFU4aVdobUJRZWwtNUdJeWE1ZC1DMW1WbXhQNUdmVTJzcUtZUVdKd1dldUplRkRFU2FSODVYRWdudTgwM0c1Tkpydm5ZWVHSAZgBQVVfeXFMTVIxQjFQQ0xibjNza09zVEVBTXJwMVZVUEFfb1E2Y1BPUU5YQllUUldoSnMtbzhRc2JueEFYZUtLZExsR1VCS1djRm9WUGJDRVFWMGx2WFlyZ3NzS0pTVm1XeGdvZHBNZWtJakV6ZEhZaDVwRnh0WUZtSDI5TTJkamdrTkFObHFBUXJJT3daSGthRE8tY2Z5OEQ?oc=5",
+    "sumber": "JPNN.com"
+  },
+  {
+    "judul": "Binance Blokir Akun Pengguna Prancis, Perkuat Keamanan Pasca Insiden Peretasan",
+    "kategori": "Keamanan",
+    "ringkasan": "Menyusul insiden peretasan, Binance menutup akses akun pengguna di Prancis dan menjalin kerja sama dengan firma keamanan siber.",
+    "tanggal": "2026-11-25",
+    "baca": 4,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMkFKT1B3RkozXy0tNUk4UEJYekNMbnRyUHBOQXhXaTN1eC1iYTYxalFfYmd0cWdpU0l6d2M1UWdhdVZaUVVSWkVFNFV0RVBxaV9TVE5JTVFLX0QxZjJLRUJLZ1dGTGV6eG5MYlZEMjRSSXV6Q0ctaW9tejNZRWZSMDlhbDA0TDcyRG9qbWgzbnl5Q0tWRGQ3WUotMDcxOUE4UTlPT3lXeVZvNzc2NGstOUtTOW8wZw?oc=5",
+    "sumber": "Inforiau"
+  },
+  {
+    "judul": "Infrastruktur Digital Terpadu Jadi Magnet Investasi Teknologi Global",
+    "kategori": "Startup",
+    "ringkasan": "Pengembangan infrastruktur digital yang terintegrasi menjadi kunci utama menarik minat investasi di sektor teknologi.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaUsydGFreVhFYlFndHNROWVhOVFIVUlKNnlyX3A3WFUwZVJjYWFrMzl6cU9UdmZ6S2otbzZhVFVGMzRaRkQ5dWhDOVBObHV0blBtMVpDYmtBWmFLU3NCTUFrOFZGMVQwVmdVRkV1VTFPQXY5VmF5S0c4Yy1BWW5QOUczRTJpaWFXRGwzSzFKQzhMUzFCaUJF?oc=5",
+    "sumber": "Vietnam.vn"
+  },
+  {
+    "judul": "Pertanian Lombok Timur Modernisasi Lewat Adopsi Teknologi",
+    "kategori": "Startup",
+    "ringkasan": "Petani di Lombok Timur didorong untuk mengadopsi teknologi modern guna meningkatkan efektivitas dan hasil pertanian.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZXlPWktlaDl3OGZUX25xMnJrQjFaaUdoQkMyZG4ybjNfWjR1VmNQODZFeDJrNjEybHA3X1VUT28tZXR6eUJyYnNEVDhaQmxTLXdGTGFrS1hqc0JEVHBQbThwcGtVNUNEM3N3T1BLTzRkM09meDJzVnI0SzNDbGZ4M0tMaHVOSUFPVHEtXzJuQzFhZXN5eWZ1YzJ4YmFZcTFJMkZlZHNVUUg0X3JZT2RxMnd1VWtpUG1rMTVNNWNRMlk3dzI0SGhyajF0MkcwYVFHb0I1YkJPbkdlc3pi?oc=5",
+    "sumber": "Gerbang Indonesia"
+  },
+  {
+    "judul": "CEO Rekosistem Raih Penghargaan Penggerak Transformasi Digital",
+    "kategori": "Startup",
+    "ringkasan": "Ernest Christian Layman, CEO Rekosistem, dianugerahi penghargaan atas perannya dalam mendorong transformasi digital.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZmdsN2hBZVlvb1pnOVVSSmIxdTJVMzRYNjJRUW5oVU54MzNvSDRRRTZocVdRQ2ZibnZIQU9QQVNFYm4yVHZTN1VreHFxR244YXJaSldHYVpqai02SnZJeG10TFFrMHZkZHJaai12eEFPby1uQWdGU214Q3l1RWhsTXNtUGlvbEdRT0hRYVpGd3d0TzhVaVlpNExGQmwtaG01UWltYlNnVVk5S2pkNHJuNXQ4WVFSMTh2b2ItN3VyT1E1RVhlLXBkNnpQQVRQd0hiQ2FrSEtIZmVWYlYtdEE3Y0UtMA?oc=5",
+    "sumber": "MetroTVNews.com"
+  },
+  {
+    "judul": "Cilegon Jajaki Kolaborasi Teknologi dan Ketenagakerjaan dengan Perusahaan Jepang",
+    "kategori": "Startup",
+    "ringkasan": "Pemerintah Kota Cilegon menjajaki potensi kerja sama di bidang ketenagakerjaan dan teknologi dengan perusahaan asal Jepang.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZHV6TWQ2TEM0SC13aXFVX0x1S2RBUndINGszeFhFclk4b3JweDlnNmlmMHUxYW8zRVpOWWdYX1VhN2FhZEJRWWVKMWgzSloybktjdi1LQkxXSUpuYTFmSm9BT3p4cVNvNXRJSlpBQU96OEdOd3pxVGN0bU9QWm1VNGJaa2tkNXh4V1oxZnRoVUZJQV9NNVpuVThiNi1WcTVFM2psaTVjLUNDdTFVa3l1ekFCSDRFdWxCVm5HamI0NnY5eE5YUHhlNnpNcEhtbGwyNUFrd21oNy1XNXNJOHRB?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
+    "judul": "Pemkot Cilegon Kolaborasi Atasi Sampah dengan PT Green Eco Teknologi",
+    "kategori": "Startup",
+    "ringkasan": "Pemerintah Kota Cilegon bekerja sama dengan PT Green Eco Teknologi untuk mengelola volume sampah secara efektif.",
+    "tanggal": "2026-11-25",
+    "baca": 3,
+    "img": "",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWV8ya2J1SjZ1U2dSUElfazVSZDk4NG9jSjdfbmwzQm9xVWhpLUh6UVMwbHl5c2RnWk9oU21JOHZ4dlpoVXRrWUtjZm1LMzJRVWQ0VWxwdHlNNHFwdlRmZnNkanBSSEhJRmlPWm9WZVBScFBHZWdvYnpXd1dFd0xzNjRQZlpMV0lrLTFmbk5FUmtTdzE4dFdKQjJLcWhGT1NZUlBTZ0JmRDFMalgwYjVPV1M4eF95YkdaUEJKcEVLVDhvaTR6TnVMa204WnpUOEtqaWhoUnpUQ0Z6TkRVTS1HcHVB?oc=5",
+    "sumber": "Berita Cilegon"
+  },
+  {
     "judul": "ANTAM Berbagi Pengetahuan Teknologi dan Hilirisasi kepada Mahasiswa USN Kolaka",
     "kategori": "Startup",
     "ringkasan": "Direktur ANTAM memberikan wawasan mengenai teknologi dan proses hilirisasi kepada mahasiswa Universitas Sembilan Nopember Kolaka.",
@@ -158,85 +238,5 @@
     "img": "",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVmc2amVjbFk3QWZ5Nnh1Q280WnhFVzhKcWRDSU16NjhDTERwM0pBUmJ1TXRMWmtlTWI4UV9SMWVIUV9nNW9KWXk0ajd2YnhlYTFacU5YcHR0eEUyOFc1dWxMOUxTQi1CN1BqOTRhcXQ0NjJvY25LTU5hWnVESjRwRExCM29kakpKV0tSQnpXM0xSOWNyVjF4ZWU3SUg?oc=5",
     "sumber": "gadget.qoo10.co.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBtQi11X0dTRFIteUJTakMtSHJ2Z0pqNU9rN3IxWDRVUElqdHBCXzltYTFpMVZjUXRER3QtZlNybVpTVlI4YUU5RzlOMWhnR3BXampOZGh3SFpaTXlCTUN4V3ZReFlZZw?oc=5",
-    "sumber": "TradingView"
-  },
-  {
-    "judul": "Anthropic Otomatiskan Proses Pull Request di GitHub dengan Claude Ship",
-    "kategori": "Software",
-    "ringkasan": "Anthropic memperkenalkan Claude Ship, sebuah alat yang dirancang untuk mengotomatiskan proses pengajuan permintaan perubahan kode (pull request) di platform GitHub.",
-    "tanggal": "2026-11-23",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT0xWaFE2OHRFV1VqYjNJNF9UczNDZVY2VFQ5LW5EZWhpbE9OS0l0LUJ2RTVTQTEtMlpnUnlnVHc5RktoSVh1UXlxdFVzZmdsOThoRTVQOUhLYlNLUUVEOUV4QkZXTnZVU1BtYWhWaUc2NGMxc09uUXpyWU05Sk5JcEU2NXNRc0JYa2VDaldzYno5T2ROSTJVZExDSUM5V09pR3huaXJPVUxnLUU0aFE?oc=5",
-    "sumber": "Meteora Web"
-  },
-  {
-    "judul": "Ketahanan Digital Pemerintah Kunci Keamanan Data dan Layanan Publik",
-    "kategori": "Keamanan",
-    "ringkasan": "Pemerintah menekankan pentingnya ketahanan digital sebagai fondasi utama untuk menjaga keamanan data sensitif dan kelancaran layanan publik.",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdFF6V0JYVDM2bW4wV3VnNjJLVDNIQ2RyMUUzVjBabkhCbFI5RWdlSmhrS1hmZTZ5dnFOYlBDcUp3OVo3QXBRbUJ5anN0RW9id2NOZ1lFUmFveGVZb0x1SVk3VjRucjRoQVVaUGx2MkxyWFVndjNIZkRVYzZQaFB1MklIVFdwZE93dkNQZTk1eGFTNVlPSmhieEYwXzNNbzFoRndtSG1CUnNBcDMwWkNUNWFLVVN6d2JxUlNSa3JwVU9vUUsxMjktbGZmWFI?oc=5",
-    "sumber": "kemenkum.go.id"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbWhwNElDYjRMTEVnNFltM1IzbElyclktblNITnpQMXFWeTJrenQ3OVNobkdmMHg5NVFZTWg1TjlfbWVvV3dIbjRhZUZHNDY3OE1seGJNcDBOZ19mYjNwRm9DSE1XN09XMEV3X2x4NlFaQmtiM0JKbUpIbjh6aVhaQzlnUkVkVTVNbWE5d2ZBVXVqWEZ1?oc=5",
-    "sumber": "Vietnam.vn"
-  },
-  {
-    "judul": "skip",
-    "kategori": "AI",
-    "ringkasan": "skip",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcE1lMFAySWlra241Y05nVGljRnhFLTlwZXhMaEloaUplUkNpb2NOODYyMzhoZXNFM3p1UW9pSkI5cUhLZzItdHpkbzZ2UnJKZzJFbngxTzFPY0pMZ3VnNEVmRGU1NkRQRFl3SXNJVlBESlN6M0lBSVpuZGVKMS03Q1dXVF9vZUVPN0xLalFCei1KUndZWllZeFI5SzhOSk9qa2xSQXJJNXZpS04zcUx4aVR5UVZ1VFptUFZ1SjJtMHFPVlRNWThUY1F3?oc=5",
-    "sumber": "konstruksimedia.com"
-  },
-  {
-    "judul": "Indiana University Terima Dana Besar untuk Ekspansi Penggunaan AI",
-    "kategori": "AI",
-    "ringkasan": "Indiana University mendapatkan pendanaan signifikan untuk memperluas penerapan teknologi kecerdasan buatan di sembilan kampusnya.",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUWl5Q0R5Z1BvQ280QzcxQ1REejl5UG1BcUE1ZWFWV3g0Mnp5UkhPejBsTGNnLXlVU1c2bU14cElZbVFUb1JsOEo0SV9TXzdCRWthOWdBZDNKeUtuclhXdG83bjRNZ1I2SWV3aDI4RWtGZTRRTnE3MW1hN09aMWZiMUpRa2lrV0E?oc=5",
-    "sumber": "Unite.AI"
-  },
-  {
-    "judul": "Kata 'Human' Dinobatkan Sebagai Pilihan Kata Tahun Ini di Era AI",
-    "kategori": "AI",
-    "ringkasan": "Di tengah pesatnya perkembangan kecerdasan buatan, kata 'Human' justru terpilih sebagai kata paling relevan tahun ini.",
-    "tanggal": "2026-11-23",
-    "baca": 3,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObUV6V3JkNWpaSVh1WGxmekFRU3YzVFk2WGNsLW9RbWxwOWNHcnpWbTJaT2pfLVVNcERDZUFJcGd1dzdwTWtiNXJjTDBZUm1JLXhXdkd6UTJRaE9vR3p4eDliWXlpQTJiREFNVXlUTFdjZkRJcHdjeThuUHl3RHFxQzlldWlIelhTOWFncmVLTmxVZ1lmSnhZTkpQNjlpQUJYcWo2VWRoNkQzdERJUkE?oc=5",
-    "sumber": "Kompas.com"
-  },
-  {
-    "judul": "Pusat Data AI Elon Musk Berpotensi Tingkatkan Tagihan Listrik Warga",
-    "kategori": "AI",
-    "ringkasan": "Pembangunan pusat data kecerdasan buatan oleh Elon Musk dikhawatirkan akan membebani pasokan listrik dan menaikkan tarif bagi masyarakat.",
-    "tanggal": "2026-11-23",
-    "baca": 4,
-    "img": "",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQT0N5aHFOZlRpRFVFR3JSQUZaVkd3UG9mNnc2WUFIcXR5MGU0MW9CZUJlMWRBLUoxZ3dsdUpvRHZZMWE5RjJkZ2dFVGY3OHBqTG9QaFBGNW9ZZll0SnpQRjBEMjZQcUNjc0c2MkJnd2xCOWl3ZWs1bTNINUo0RUVUZTF3YWFiRWtGbmRtMC1kRmZEZWJ4a21Ra1Z0MVcwd0Foa2FDd3lfXy1WbGl3am81bklFU0pjUnRo?oc=5",
-    "sumber": "Kompas.com"
   }
 ]
